@@ -1,0 +1,1 @@
+# Krypton-Toolkit-Suite-NET-Core
