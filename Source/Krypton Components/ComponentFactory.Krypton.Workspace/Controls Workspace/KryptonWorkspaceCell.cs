@@ -5,18 +5,19 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
-using System.Xml;
-using System.Drawing;
-using System.ComponentModel;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using System.Xml;
+
 using ComponentFactory.Krypton.Navigator;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Workspace
 {
@@ -124,7 +125,7 @@ namespace ComponentFactory.Krypton.Workspace
             catch { }
         }
         #endregion
-        
+
         #region Public
         /// <summary>
         /// Gets and sets the docking value of the cell.
@@ -135,7 +136,7 @@ namespace ComponentFactory.Krypton.Workspace
         public override DockStyle Dock
         {
             get { return DockStyle.None; }
-            
+
             set
             {
                 // The cell must never have dock defined because that would interfere with 
@@ -232,7 +233,7 @@ namespace ComponentFactory.Krypton.Workspace
         [EditorBrowsable(EditorBrowsableState.Never)]
         public Size WorkspacePreferredSize
         {
-            get 
+            get
             {
                 if (IsDisposed)
                 {
@@ -310,7 +311,7 @@ namespace ComponentFactory.Krypton.Workspace
         {
             get => _parent;
 
-            internal set 
+            internal set
             {
                 if (_parent != value)
                 {
@@ -457,7 +458,7 @@ namespace ComponentFactory.Krypton.Workspace
         /// <param name="workspace">Reference to owning workspace instance.</param>
         /// <param name="xmlReader">Xml reader for loading information.</param>
         /// <param name="existingPages">Dictionary on existing pages before load.</param>
-        public void LoadFromXml(KryptonWorkspace workspace, 
+        public void LoadFromXml(KryptonWorkspace workspace,
                                 XmlReader xmlReader,
                                 UniqueNameToPage existingPages)
         {
@@ -672,5 +673,5 @@ namespace ComponentFactory.Krypton.Workspace
     /// <summary>
     /// Manages a list of KryptonWorkspaceCell instances.
     /// </summary>
-    public class KryptonWorkspaceCellList : List<KryptonWorkspaceCell> {}
+    public class KryptonWorkspaceCellList : List<KryptonWorkspaceCell> { }
 }

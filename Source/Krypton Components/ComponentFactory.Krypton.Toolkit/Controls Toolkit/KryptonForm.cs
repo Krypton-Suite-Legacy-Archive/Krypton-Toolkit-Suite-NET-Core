@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -14,7 +14,6 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Runtime.InteropServices;
 using System.Security.Principal;
 using System.Windows.Forms;
 
@@ -24,6 +23,7 @@ namespace ComponentFactory.Krypton.Toolkit
     /// <summary>
     /// Used for wrapping the administrator title text
     /// </summary>
+    // ReSharper disable IdentifierTypo
     public enum BracketType
     {
         CURVEDBRACKET,
@@ -31,6 +31,7 @@ namespace ComponentFactory.Krypton.Toolkit
         SQUAREBRACKET,
         NOBRACKET
     }
+    // ReSharper restore IdentifierTypo
     #endregion
 
     /// <summary>
@@ -39,8 +40,6 @@ namespace ComponentFactory.Krypton.Toolkit
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonForm), "ToolboxBitmaps.KryptonForm.bmp")]
     [Description("Draws the window chrome using a Krypton palette.")]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class KryptonForm : VisualForm,
                                IContentValues
     {
@@ -118,6 +117,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private Bitmap _cacheBitmap;
         private Icon _cacheIcon;
         private BracketType _bracketType;
+        private int _cornerRoundingRadius;
         #endregion
 
         #region Identity
@@ -213,7 +213,10 @@ namespace ComponentFactory.Krypton.Toolkit
 
             BracketType = BracketType.CURVEDBRACKET;
 
-            DisableCloseButton = false;
+            //DisableCloseButton = false;
+
+            // Set the CornerRoundingRadius to '-1', default value
+            CornerRoundingRadius = -1;
         }
 
         /// <summary>
@@ -401,7 +404,15 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <value>
         ///   <c>true</c> if [disable close button]; otherwise, <c>false</c>.</value>
         [Category("Appearance"), Description("Disables the close button."), DefaultValue(false)]
-        public bool DisableCloseButton { get => _disableCloseButton; set { _disableCloseButton = value; UpdateDisableCloseButton(_disableCloseButton); } }
+        public bool DisableCloseButton 
+        { 
+            get => _disableCloseButton; 
+            set 
+            { 
+                _disableCloseButton = value; 
+                UpdateDisableCloseButton(_disableCloseButton); 
+            } 
+        }
 
         /// <summary>
         /// Gets or sets the administrator text.
@@ -635,6 +646,15 @@ namespace ComponentFactory.Krypton.Toolkit
                 return FormWindowState.Normal;
             }
         }
+
+        /// <summary>
+        /// Gets or sets the corner rounding radius.
+        /// </summary>
+        /// <value>
+        /// The corner rounding radius.
+        /// </value>
+        [DefaultValue(-1), Description("Defines the corner roundness on the current window (-1 is the default look).")]
+        public int CornerRoundingRadius { get => _cornerRoundingRadius; set { _cornerRoundingRadius = value; Invalidate(); } }
         #endregion
 
         #region Public Chrome
@@ -673,6 +693,17 @@ namespace ComponentFactory.Krypton.Toolkit
             _drawHeading.DrawCanvas = false;
 
             ViewManager.Paint(context);
+        }
+
+        /// <summary>
+        /// Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.
+        /// </summary>
+        /// <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            StateCommon.Border.Rounding = CornerRoundingRadius;
+
+            base.OnPaint(e);
         }
 
         /// <summary>
@@ -1664,6 +1695,10 @@ namespace ComponentFactory.Krypton.Toolkit
         #endregion
 
         #region Disable Close Button
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
         public void UpdateDisableCloseButton(bool value)
         {
             if (value)
@@ -1736,10 +1771,10 @@ namespace ComponentFactory.Krypton.Toolkit
                     cp.ClassStyle |= CS_DROPSHADOW;
                 }
 
-                if (DisableCloseButton)
-                {
-                    cp.ClassStyle = cp.ClassStyle | CP_NOCLOSE_BUTTON;
-                }
+                //if (DisableCloseButton)
+                //{
+                //    cp.ClassStyle = cp.ClassStyle | CP_NOCLOSE_BUTTON;
+                //}
 
                 return cp;
             }

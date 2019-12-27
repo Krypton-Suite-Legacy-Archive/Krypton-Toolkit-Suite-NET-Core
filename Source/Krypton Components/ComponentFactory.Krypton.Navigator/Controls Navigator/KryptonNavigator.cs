@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -17,7 +17,6 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 using ComponentFactory.Krypton.Toolkit;
@@ -35,8 +34,6 @@ namespace ComponentFactory.Krypton.Navigator
     [DesignerCategory("code")]
     [Description("Allows navigation between pages.")]
     [Docking(DockingBehavior.Ask)]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class KryptonNavigator : VisualSimple,
                                     IDragTargetProvider
     {
@@ -1586,7 +1583,7 @@ namespace ComponentFactory.Krypton.Navigator
                 }
                 else
                 {
-                    // https://github.com/Wagnerp/Krypton-NET-5.472/issues/93
+                    // https://github.com/Wagnerp/Krypton-NET-5.490/issues/93
                     SelectNextPageControl(false, false);
                 }
 

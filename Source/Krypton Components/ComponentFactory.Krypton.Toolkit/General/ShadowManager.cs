@@ -1,7 +1,7 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2019 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2019 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -77,7 +77,7 @@ namespace ComponentFactory.Krypton.Toolkit
 
             for (int i = 0; i < 4; i++)
             {
-                _shadowForms[i] = new VisualShadowBase(_shadowValues, (VisualOrientation)i, _parentForm.Handle);
+                _shadowForms[i] = new VisualShadowBase(_shadowValues, (VisualOrientation)i);
             }
         }
 
@@ -99,7 +99,6 @@ namespace ComponentFactory.Krypton.Toolkit
                     shadowForm.Dispose();
                 }
             }
-
         }
 
         private void FormLoaded(object sender, EventArgs e)
@@ -194,11 +193,11 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <returns></returns>
         private Bitmap DrawShadowBitmap(Rectangle clientRectangle)
         {
-            int extraWidth = (_shadowValues.ExtraWidth > 0) ? _shadowValues.ExtraWidth : 0;
+            int extraWidth = _shadowValues.ExtraWidth;
             int w = clientRectangle.Width + extraWidth * 2;
             int h = clientRectangle.Height + extraWidth * 2;
 
-            float blur = (float)(_shadowValues.BlurDistance / 100.0 * Math.Abs(_shadowValues.ExtraWidth));
+            float blur = (float)(_shadowValues.BlurDistance / 100.0 * extraWidth);
             float solidW = clientRectangle.Width + blur * 2;
             float solidH = clientRectangle.Height + blur * 2;
             float blurOffset = _shadowValues.ExtraWidth - blur;

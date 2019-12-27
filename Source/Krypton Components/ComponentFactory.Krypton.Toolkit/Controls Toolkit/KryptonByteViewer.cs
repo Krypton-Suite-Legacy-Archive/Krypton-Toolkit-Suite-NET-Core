@@ -5,10 +5,11 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Megakraken & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Megakraken & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
+#if NETFRAMEWORK // https://docs.microsoft.com/en-us/dotnet/standard/frameworks#how-to-specify-target-frameworks
 using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
@@ -33,7 +34,7 @@ namespace ComponentFactory.Krypton.Toolkit
     [DesignTimeVisible(false)]
     public class KryptonByteViewer : TableLayoutPanel
     {
-        #region Private Classes
+#region Private Classes
         /// <summary>
         /// VScrollBar is a simple wrapper for the ancient WINAPI scrollbar from the early
         /// 90s which has the annoying property of blinking like a cursor when selected. I don't
@@ -52,9 +53,9 @@ namespace ComponentFactory.Krypton.Toolkit
                 base.OnKeyDown(e);
             }
         }
-        #endregion
+#endregion
 
-        #region Private Constants
+#region Private Constants
         private const int DEFAULT_COLUMN_COUNT = 16;
         private const int DEFAULT_ROW_COUNT = 25;
         private const int COLUMN_COUNT = 16;
@@ -73,14 +74,14 @@ namespace ComponentFactory.Krypton.Toolkit
         private const int HEX_START_X = 74;
         private const int DUMP_START_X = 479;
         private const int SCROLLBAR_START_X = 612;
-        #endregion
+#endregion
 
-        #region Static Fields
+#region Static Fields
         private static readonly Font ADDRESS_FONT = new Font("Microsoft Sans Serif", 8f);
         private static readonly Font HEXDUMP_FONT = new Font("Consolas", 9.75f);
-        #endregion
+#endregion
 
-        #region Instance Fields
+#region Instance Fields
         private readonly int SCROLLBAR_HEIGHT = SystemInformation.HorizontalScrollBarHeight;
         private readonly int SCROLLBAR_WIDTH = SystemInformation.VerticalScrollBarWidth;
 
@@ -93,9 +94,9 @@ namespace ComponentFactory.Krypton.Toolkit
         private int _displayLinesCount;
         private int _linesCount;
         private DisplayMode _displayMode;
-        #endregion
+#endregion
 
-        #region Identity
+#region Identity
         /// <summary>
         /// Initializes a new instance of the ByteViewer class.
         /// </summary>
@@ -114,9 +115,9 @@ namespace ComponentFactory.Krypton.Toolkit
             SetStyle(ControlStyles.ResizeRedraw, value: true);
             SetBytes(new byte[] { });
         }
-        #endregion
+#endregion
 
-        #region Private
+#region Private
 
         private int CellToIndex(int column, int row)
         {
@@ -325,9 +326,9 @@ namespace ComponentFactory.Krypton.Toolkit
         {
             return value >= minValue && value <= maxValue;
         }
-        #endregion
+#endregion
 
-        #region Protected Overrides
+#region Protected Overrides
         /// <param name="e">
         /// A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.
         /// </param>
@@ -430,9 +431,9 @@ namespace ComponentFactory.Krypton.Toolkit
                 _displayLinesCount = ((_startLine + _rowCount < _linesCount) ? _rowCount : (_linesCount - _startLine));
             }
         }
-        #endregion
+#endregion
 
-        #region Protected Virtual
+#region Protected Virtual
         /// <summary>Handles the <see cref="E:System.Windows.Forms.ScrollBar.ValueChanged" /> event on the <see cref="T:System.ComponentModel.Design.ByteViewer" /> control's <see cref="T:System.Windows.Forms.ScrollBar" />.</summary>
         /// <param name="source">The source of the event. </param>
         /// <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data. </param>
@@ -441,9 +442,9 @@ namespace ComponentFactory.Krypton.Toolkit
             _startLine = _scrollBar.Value;
             Invalidate();
         }
-        #endregion
+#endregion
 
-        #region Public Virtual
+#region Public Virtual
         /// <summary>Gets the bytes in the buffer.</summary>
         /// <returns>The unsigned byte array reference.</returns>
         public virtual byte[] GetBytes()
@@ -598,12 +599,13 @@ namespace ComponentFactory.Krypton.Toolkit
                 _startLine = line;
             }
         }
-        #endregion
+#endregion
 
-        #region Internal
+#region Internal
         [DllImport("kernel32.dll", CharSet = CharSet.Unicode, ExactSpelling = true)]
         private static extern int MultiByteToWideChar(int codePage, int dwFlags, byte[] lpMultiByteStr,
             int cchMultiByte, char[] lpWideCharStr, int cchWideChar);
-        #endregion
+#endregion
     }
 }
+#endif // NETFRAMEWORK 

@@ -45,12 +45,12 @@ namespace KryptonToolkitHub.UX
 
         private void kbtnProjectHomepage_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/Wagnerp/Krypton-NET-5.4720");
+            Process.Start("https://github.com/Wagnerp/Krypton-NET-5.4900");
         }
 
         private void kbtnReportABug_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/Wagnerp/Krypton-NET-5.4720/issues");
+            Process.Start("https://github.com/Wagnerp/Krypton-NET-5.4900/issues");
         }
 
         private void tsslCurrentStatus_MouseEnter(object sender, EventArgs e)

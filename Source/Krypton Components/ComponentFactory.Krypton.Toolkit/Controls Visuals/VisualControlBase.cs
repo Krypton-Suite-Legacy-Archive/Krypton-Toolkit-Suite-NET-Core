@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -28,8 +28,6 @@ namespace ComponentFactory.Krypton.Toolkit
     /// </summary>
     [ToolboxItem(false)]
     [DesignerCategory("code")]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public abstract class VisualControlBase : Control,
                                               IKryptonDebug
     {
@@ -1407,6 +1405,18 @@ namespace ComponentFactory.Krypton.Toolkit
             // Not showing a popup page any more
             _visualPopupToolTip = null;
         }
+
+        protected override void OnHandleCreated(EventArgs e)
+        {
+            SetWindowTheme(Handle, "DarkMode_Explorer", null);
+
+            base.OnHandleCreated(e);
+        }
+        #endregion
+
+        #region Calls
+        [DllImport("uxtheme.dll", ExactSpelling = true, CharSet = CharSet.Unicode)]
+        public static extern int SetWindowTheme(IntPtr hwnd, string pszSubAppName, string pszSubIdList);
         #endregion
 
     }

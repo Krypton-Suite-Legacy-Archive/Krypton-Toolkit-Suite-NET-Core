@@ -38,7 +38,7 @@
   <ItemGroup>
     <Reference Include="Krypton Toolkit, Version=5.472.872.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bin\Krypton Toolkit.dll</HintPath>
+      <HintPath>..\..\..\Bin\$(Configuration)\Krypton Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

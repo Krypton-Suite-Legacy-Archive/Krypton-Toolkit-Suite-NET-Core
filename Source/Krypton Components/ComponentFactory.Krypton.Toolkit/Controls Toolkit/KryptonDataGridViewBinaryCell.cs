@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Megakraken & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Megakraken & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -143,6 +143,7 @@ namespace ComponentFactory.Krypton.Toolkit
         protected override void OnClick(DataGridViewCellEventArgs e)
         {
             base.OnClick(e);
+#if NETFRAMEWORK // https://docs.microsoft.com/en-us/dotnet/standard/frameworks#how-to-specify-target-frameworks
             Form editor;
             // If the user has provided a custom editor type, use that instead of the default
             // form.
@@ -162,10 +163,11 @@ namespace ComponentFactory.Krypton.Toolkit
                 object result = editor.Tag;
                 Value = result;
             }
+#endif // NETFRAMEWORK
         }
-        #endregion
+#endregion
 
-        #region Private
+#region Private
 
 
         private void OnCommonChange()
@@ -182,14 +184,14 @@ namespace ComponentFactory.Krypton.Toolkit
                 }
             }
         }
-        #endregion
+#endregion
 
-        #region Internal
+#region Internal
 
         internal void SetEditorType(int rowIndex, Type editorType)
         {
             _editorType = editorType;
         }
-        #endregion
+#endregion
     }
 }

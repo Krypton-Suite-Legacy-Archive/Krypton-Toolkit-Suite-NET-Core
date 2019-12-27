@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -16,7 +16,6 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Drawing.Drawing2D;
 using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace ComponentFactory.Krypton.Toolkit
@@ -32,8 +31,6 @@ namespace ComponentFactory.Krypton.Toolkit
     [DesignerCategory("code")]
     [Description("Displays a hierarchical collection of labeled items, each represented by a TreeNode")]
     [Docking(DockingBehavior.Ask)]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class KryptonTreeView : VisualControlBase,
                                    IContainedInputControl
     {
@@ -855,7 +852,7 @@ namespace ComponentFactory.Krypton.Toolkit
         [Category("Behavior")]
         [Description("The default image index for nodes.")]
         [Localizable(true)]
-        [TypeConverter("ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.472.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+        [TypeConverter("ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
         [Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
         [RefreshProperties(RefreshProperties.Repaint)]
         [RelatedImageList("ImageList")]
@@ -938,7 +935,7 @@ namespace ComponentFactory.Krypton.Toolkit
         [Category("Behavior")]
         [Description("The default image index for selected nodes.")]
         [Localizable(true)]
-        [TypeConverter("ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.472.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+        [TypeConverter("ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
         [Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
         [RelatedImageList("ImageList")]
         [DefaultValue(-1)]
@@ -1085,7 +1082,7 @@ namespace ComponentFactory.Krypton.Toolkit
             get => _treeView.RightToLeftLayout;
             set => _treeView.RightToLeftLayout = value;
         }
-       
+
         /// <summary>
         /// Gets the collection of tree nodes that are assigned to the tree view control.
         /// </summary>
@@ -1569,7 +1566,7 @@ namespace ComponentFactory.Krypton.Toolkit
             UpdateItemHeight();
             base.OnCreateControl();
         }
-        
+
         /// <summary>
         /// Raises the EnabledChanged event.
         /// </summary>
@@ -1762,6 +1759,14 @@ namespace ComponentFactory.Krypton.Toolkit
         /// </summary>
         protected override Size DefaultSize => new Size(120, 96);
 
+        protected override void CreateHandle()
+        {
+            base.CreateHandle();
+
+            SetWindowTheme(Handle, "DarkMode_Explorer", null);
+        }
+
+        //protected override onh
         #endregion
 
         #region Implementation
@@ -1936,8 +1941,8 @@ namespace ComponentFactory.Krypton.Toolkit
             _layoutImageCenterState.Visible = (drawStateImage != null);
 
             // Do we need the check box?
-            _layoutCheckBoxStack.Visible = (StateImageList == null) 
-                                      && CheckBoxes 
+            _layoutCheckBoxStack.Visible = (StateImageList == null)
+                                      && CheckBoxes
                                       && (kryptonNode?.IsCheckBoxVisible != false);
             if (_layoutCheckBoxStack.Visible)
             {
@@ -2278,5 +2283,6 @@ namespace ComponentFactory.Krypton.Toolkit
             }
         }
         #endregion
+
     }
 }

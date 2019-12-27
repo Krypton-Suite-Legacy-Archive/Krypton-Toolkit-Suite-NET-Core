@@ -1,13 +1,12 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2019 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2019 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
 using System.ComponentModel;
 using System.Drawing;
-using System.Runtime.InteropServices;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
@@ -16,8 +15,6 @@ namespace ComponentFactory.Krypton.Toolkit
     /// </summary>
     [ToolboxItem(false)]
     [DesignerCategory("code")]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class ShadowValues : Storage
     {
         #region statics
@@ -25,7 +22,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private double _blurDistance;
         private bool _enableShadows;
         private Point _offset;
-        private sbyte _extraWidth;
+        private byte _extraWidth;
         private Color _colour;
         private double _opacity;
         #endregion
@@ -128,8 +125,8 @@ namespace ComponentFactory.Krypton.Toolkit
 
         /// <summary>
         /// </summary>
-        [Description("Extra width to be applied to all edges 'Signed byte'. A -ve value will not have a blur applied.")]
-        public sbyte ExtraWidth
+        [Description("Extra width to be applied to all edges.")]
+        public byte ExtraWidth
         {
             get => _extraWidth;
             set

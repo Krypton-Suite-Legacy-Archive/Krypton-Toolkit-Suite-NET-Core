@@ -1,11 +1,10 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2019 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2019 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System.ComponentModel;
-using System.Runtime.InteropServices;
 
 namespace ComponentFactory.Krypton.Toolkit.Values
 {
@@ -14,8 +13,6 @@ namespace ComponentFactory.Krypton.Toolkit.Values
     /// </summary>
     [ToolboxItem(false)]
     [DesignerCategory("code")]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class ToolTipValues : HeaderValues
     {
         private LabelStyle _toolTipStyle;
@@ -30,6 +27,9 @@ namespace ComponentFactory.Krypton.Toolkit.Values
             ToolTipPosition = new PopupPositionValues();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void Reset()
         {
             ResetEnableToolTips();
@@ -49,6 +49,9 @@ namespace ComponentFactory.Krypton.Toolkit.Values
             return EnableToolTips;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void ResetEnableToolTips()
         {
             EnableToolTips = false;

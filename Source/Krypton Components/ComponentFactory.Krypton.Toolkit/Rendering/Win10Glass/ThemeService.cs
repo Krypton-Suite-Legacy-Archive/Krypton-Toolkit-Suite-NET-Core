@@ -1,6 +1,4 @@
-﻿using ComponentFactory.Krypton.Toolkit;
-using System.Drawing;
-using System.Windows;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 //Seb add

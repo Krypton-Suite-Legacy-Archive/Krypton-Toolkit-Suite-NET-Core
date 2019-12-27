@@ -5,15 +5,15 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
-using System.Drawing;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
+
 using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Ribbon
@@ -28,8 +28,6 @@ namespace ComponentFactory.Krypton.Ribbon
     [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner))]
     [DesignerCategory("code")]
     [Description("Select from a group of possible images.")]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class KryptonGallery : VisualSimpleBase
     {
         #region Instance Fields
@@ -222,7 +220,7 @@ namespace ComponentFactory.Krypton.Ribbon
         {
             get => _preferredItemSize;
 
-            set 
+            set
             {
                 if (!_preferredItemSize.Equals(value))
                 {
@@ -330,8 +328,8 @@ namespace ComponentFactory.Krypton.Ribbon
         {
             get => _imageList;
 
-            set 
-            { 
+            set
+            {
                 _imageList = value;
                 PerformNeedPaint(true);
                 OnImageListChanged(EventArgs.Empty);
@@ -385,7 +383,7 @@ namespace ComponentFactory.Krypton.Ribbon
         {
             return !StateCommon.IsDefault;
         }
-            
+
         /// <summary>
         /// Gets access to the disabled gallery appearance entries.
         /// </summary>
@@ -733,7 +731,7 @@ namespace ComponentFactory.Krypton.Ribbon
         {
             get => _trackingIndex;
 
-            set 
+            set
             {
                 if (_trackingIndex != value)
                 {
@@ -940,7 +938,7 @@ namespace ComponentFactory.Krypton.Ribbon
 
         private void OnDropImageTracking(object sender, ImageSelectEventArgs e)
         {
-            KryptonContextMenuImageSelect imageSelect = (KryptonContextMenuImageSelect)sender;
+            //KryptonContextMenuImageSelect imageSelect = (KryptonContextMenuImageSelect)sender;
             TrackingIndex = e.ImageIndex;
         }
 
