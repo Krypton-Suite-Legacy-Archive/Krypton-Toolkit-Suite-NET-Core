@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System.Collections;
@@ -81,7 +81,7 @@ namespace ComponentFactory.Krypton.Toolkit
                 // Get access to the actual control instance
                 KryptonTextBox textBox = (KryptonTextBox)Component;
 
-                // With multiline and autosize we prevent the user changing the height
+                // With multiline or autosize we prevent the user changing the height
                 if (!textBox.Multiline && textBox.AutoSize)
                 {
                     rules &= ~(SelectionRules.TopSizeable | SelectionRules.BottomSizeable);

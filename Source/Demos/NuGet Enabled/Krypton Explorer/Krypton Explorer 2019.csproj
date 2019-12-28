@@ -65,11 +65,11 @@
   <ItemGroup>
     <Reference Include="Krypton Navigator, Version=5.472.673.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Bin\Krypton Navigator.dll</HintPath>
+      <HintPath>..\..\Bin\$(Configuration)\Krypton Navigator.dll</HintPath>
     </Reference>
     <Reference Include="Krypton Toolkit, Version=5.472.872.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Bin\Krypton Toolkit.dll</HintPath>
+      <HintPath>..\..\Bin\$(Configuration)\Krypton Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -120,7 +120,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(ProjectDir)..\..\Binaries\" /D /R /Y /S</PostBuildEvent>
+      <OutputPath>..\..\..\Binaries\Krypton Toolkit Examples\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

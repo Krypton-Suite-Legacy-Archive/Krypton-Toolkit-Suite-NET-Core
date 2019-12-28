@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -16,7 +16,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
@@ -32,8 +31,6 @@ namespace ComponentFactory.Krypton.Toolkit
     [DesignerCategory("code")]
     [Designer(typeof(KryptonDataGridViewDesigner))]
     [Description("Display rows and columns of data of a grid you can customize.")]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class KryptonDataGridView : DataGridView
     {
         #region Type Declaractions
@@ -1397,8 +1394,8 @@ namespace ComponentFactory.Krypton.Toolkit
                                             tempCellBounds = new Rectangle(tempCellBounds.X +
                                                                            (spec.Alignment == IconSpec.IconAlignment.Left ? iconWidth : 0), tempCellBounds.Y, width, tempCellBounds.Height);
                                         }
-                                    }                                    
-                                    
+                                    }
+
                                     // Is there an error icon associated with the cell that needs showing
                                     if (ShowCellErrors && !string.IsNullOrEmpty(Rows[e.RowIndex].Cells[e.ColumnIndex].ErrorText))
                                     {

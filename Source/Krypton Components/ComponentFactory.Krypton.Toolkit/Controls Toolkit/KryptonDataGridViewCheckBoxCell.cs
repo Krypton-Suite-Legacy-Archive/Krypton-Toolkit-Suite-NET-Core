@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System.Drawing;
@@ -190,7 +190,7 @@ namespace ComponentFactory.Krypton.Toolkit
                         {
                             checkBoxSize = renderContext.Renderer.RenderGlyph.GetCheckBoxPreferredSize(viewContent, 
                                 kDgv.Redirector,
-                                kDgv.Enabled,
+                                kDgv.Enabled && !base.ReadOnly,
                                 checkState,
                                 tracking,
                                 pressed);
@@ -247,7 +247,7 @@ namespace ComponentFactory.Krypton.Toolkit
                         renderContext.Renderer.RenderGlyph.DrawCheckBox(renderContext,
                             cellBounds,
                             kDgv.Redirector,
-                            kDgv.Enabled,
+                            kDgv.Enabled && !base.ReadOnly,
                             checkState,
                             tracking,
                             pressed);

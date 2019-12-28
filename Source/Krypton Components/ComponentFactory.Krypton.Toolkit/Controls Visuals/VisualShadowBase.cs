@@ -1,7 +1,7 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2019 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Created by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2019 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -18,7 +18,6 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Instance Fields
         private readonly ShadowValues _shadowValues;
         private readonly VisualOrientation _visualOrientation;
-        private readonly IntPtr _ownerHandle;
         private bool _optimisedVisible;
         private Bitmap _shadowClip;
         #endregion
@@ -30,14 +29,10 @@ namespace ComponentFactory.Krypton.Toolkit
         /// </summary>
         /// <param name="shadowValues">What value will be used</param>
         /// <param name="visualOrientation">What orientation for the shadow placement</param>
-        /// <param name="control"></param>
-        public VisualShadowBase(ShadowValues shadowValues, VisualOrientation visualOrientation, IntPtr control)
+        public VisualShadowBase(ShadowValues shadowValues, VisualOrientation visualOrientation)
         {
-            //Form kryptonFormOwner = kryptonForm.Owner;
-            //Owner = kryptonFormOwner;
             _shadowValues = shadowValues;
             _visualOrientation = visualOrientation;
-            _ownerHandle = control;
             // Update form properties so we do not have a border and do not show
             // in the task bar. We draw the background in Magenta and set that as
             // the transparency key so it is a see through window.
@@ -223,7 +218,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <returns></returns>
         private Rectangle CalcRectangle(Rectangle windowBounds)
         {
-            int extraWidth = (_shadowValues.ExtraWidth > 0) ? _shadowValues.ExtraWidth : 0;
+            int extraWidth = _shadowValues.ExtraWidth;
             int w = windowBounds.Width + extraWidth*2;
             int h = windowBounds.Height + extraWidth*2;
 

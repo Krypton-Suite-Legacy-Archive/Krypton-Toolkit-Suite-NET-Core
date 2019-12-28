@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
 // 
-//  Version 5.472.0.0 	www.ComponentFactory.com
+//  Version 5.490.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -15,10 +15,10 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyVersion("5.472.4.0")]
-[assembly: AssemblyFileVersion("5.472.4.0")]
+[assembly: AssemblyVersion("5.490.4.0")]
+[assembly: AssemblyFileVersion("5.490.4.0")]
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd 2012 - 2019. All rights reserved.")]
-[assembly: AssemblyInformationalVersion("5.472.4.0")]
+[assembly: AssemblyInformationalVersion("5.490.4.0")]
 [assembly: AssemblyProduct("KryptonCheckBox Examples")]
 [assembly: AssemblyDefaultAlias("KryptonCheckBoxExamples.dll")]
 [assembly: AssemblyTitle("KryptonCheckBox Examples")]

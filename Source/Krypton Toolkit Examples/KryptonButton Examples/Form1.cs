@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
 // 
-//  Version 5.472.0.0 	www.ComponentFactory.com
+//  Version 5.490.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -32,7 +32,8 @@ namespace KryptonButtonExamples
         private void button_Enter(object sender, EventArgs e)
         {
             // Setup the property grid to edit this button
-            propertyGrid.SelectedObject = new KryptonButtonProxy(sender as KryptonButton);
+            if (sender is KryptonButton kb )
+                propertyGrid.SelectedObject = new KryptonButtonProxy(kb);
         }
 
         private void buttonClose_Click(object sender, EventArgs e)

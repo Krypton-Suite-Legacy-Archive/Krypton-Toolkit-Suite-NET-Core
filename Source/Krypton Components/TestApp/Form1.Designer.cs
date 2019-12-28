@@ -384,7 +384,7 @@
             this.ShadowValues.BlurDistance = 100D;
             this.ShadowValues.Colour = System.Drawing.Color.Maroon;
             this.ShadowValues.EnableShadows = true;
-            this.ShadowValues.ExtraWidth = ((sbyte)(-2));
+            this.ShadowValues.ExtraWidth = 2;
             this.ShadowValues.Opacity = 40D;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

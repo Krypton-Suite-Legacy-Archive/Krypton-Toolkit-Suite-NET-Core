@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -30,8 +30,6 @@ namespace ComponentFactory.Krypton.Toolkit
     [Designer(typeof(KryptonRichTextBoxDesigner))]
     [DesignerCategory("code")]
     [Description("Enables the user to enter text, and provides multi-line editing and password character masking.")]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class KryptonRichTextBox : VisualControlBase,
                                       IContainedInputControl
     {
@@ -1724,7 +1722,7 @@ namespace ComponentFactory.Krypton.Toolkit
 
                 if (MaximumSize.Height > 0)
                 {
-                    retSize.Height = Math.Min(MaximumSize.Height, retSize.Width);
+                    retSize.Height = Math.Min(MaximumSize.Height, retSize.Height);
                 }
 
                 // Apply the minimum sizing

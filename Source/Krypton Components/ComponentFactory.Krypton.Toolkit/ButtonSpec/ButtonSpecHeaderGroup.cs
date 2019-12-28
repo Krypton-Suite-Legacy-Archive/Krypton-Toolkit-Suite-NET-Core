@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System.ComponentModel;
@@ -37,7 +37,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// Gets a value indicating if all values are default.
         /// </summary>
         [Browsable(false)]
-        public override bool IsDefault => (base.IsDefault && 
+        public override bool IsDefault => (base.IsDefault &&
                                            (HeaderLocation == HeaderLocation.PrimaryHeader));
 
         #endregion
@@ -60,7 +60,7 @@ namespace ComponentFactory.Krypton.Toolkit
                 if (_location != value)
                 {
                     _location = value;
-                    OnButtonSpecPropertyChanged("Location");
+                    OnButtonSpecPropertyChanged(@"Location");
                 }
             }
         }
@@ -76,7 +76,7 @@ namespace ComponentFactory.Krypton.Toolkit
 
         #region CopyFrom
         /// <summary>
-        /// Value copy form the provided source to ourself.
+        /// Value copy form the provided source to our self.
         /// </summary>
         /// <param name="source">Source instance.</param>
         public void CopyFrom(ButtonSpecHeaderGroup source)

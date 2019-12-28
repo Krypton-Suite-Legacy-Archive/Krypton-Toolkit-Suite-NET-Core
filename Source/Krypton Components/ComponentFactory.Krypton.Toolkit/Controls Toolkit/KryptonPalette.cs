@@ -5,8 +5,8 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.472)
-//  Version 5.472.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2019. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -17,7 +17,6 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading;
@@ -35,7 +34,7 @@ namespace ComponentFactory.Krypton.Toolkit
     //[DefaultEvent("PalettePaint")]
     //[DefaultProperty("BasePaletteMode")]
     //[DesignerCategory("code")]
-    //[Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Design, Version=5.472.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    //[Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     //[Description("Customisable palette component.")]
     //[ClassInterface(ClassInterfaceType.AutoDispatch)]
     //[ComVisible(true)]
@@ -6108,10 +6107,8 @@ namespace ComponentFactory.Krypton.Toolkit
     [DefaultEvent("PalettePaint")]
     [DefaultProperty("BasePaletteMode")]
     [DesignerCategory("code")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Toolkit, Version=5.472.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Toolkit, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [Description("Customisable palette component.")]
-    [ClassInterface(ClassInterfaceType.AutoDispatch)]
-    [ComVisible(true)]
     public class KryptonPalette : Component, IPalette
     {
         #region Type Definitions
@@ -6157,6 +6154,11 @@ namespace ComponentFactory.Krypton.Toolkit
         private NeedPaintHandler _needPaintDelegate;
         private NeedPaintHandler _needTMSPaintDelegate;
         private string _customisedKryptonPaletteFilePath;
+
+        #region Property Grid Variables
+       
+        #endregion
+
         #endregion
 
         #region Events

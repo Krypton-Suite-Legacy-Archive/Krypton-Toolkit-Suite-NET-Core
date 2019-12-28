@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemThemedForms 2019", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentFactory.Krypton.Toolkit 2019", "..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj", "{96ECAECC-54F8-4AA5-8591-B443C2D9565F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Combo Domain Numeric", "Test Combo Domain Numeric\Test Combo Domain Numeric.csproj", "{3436FF91-57D6-49CB-9642-EAAB015A20C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Combo Domain Numeric 2019", "Test Combo Domain Numeric\Test Combo Domain Numeric 2019.csproj", "{3436FF91-57D6-49CB-9642-EAAB015A20C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
