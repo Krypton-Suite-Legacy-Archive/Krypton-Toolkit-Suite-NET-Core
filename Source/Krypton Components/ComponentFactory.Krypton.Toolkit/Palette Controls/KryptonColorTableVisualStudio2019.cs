@@ -8,10 +8,10 @@ using System.Security;
 namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
-    /// Provide KryptonColorTableVisualStudio2019 values using an array of Color values as the source.
+    /// Provide KryptonColorTableVisualStudio2020 values using an array of Color values as the source.
     /// </summary>
     /// <seealso cref="ComponentFactory.Krypton.Toolkit.KryptonColorTable" />
-    public class KryptonColorTableVisualStudio2019 : KryptonColorTable
+    public class KryptonColorTableVisualStudio2020 : KryptonColorTable
     {
         #region Static Fields
         private static readonly Color _contextMenuBackground = Color.White;
@@ -36,7 +36,7 @@ namespace ComponentFactory.Krypton.Toolkit
 
         #region Identity
         [SecuritySafeCritical]
-        static KryptonColorTableVisualStudio2019()
+        static KryptonColorTableVisualStudio2020()
         {
             // Get the font settings from the system
             DefineFonts();
@@ -51,7 +51,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <param name="colors">Source of </param>
         /// <param name="roundedEdges">Should have rounded edges.</param>
         /// <param name="palette">Associated palette instance.</param>
-        public KryptonColorTableVisualStudio2019(Color[] colors, InheritBool roundedEdges, IPalette palette) : base(palette)
+        public KryptonColorTableVisualStudio2020(Color[] colors, InheritBool roundedEdges, IPalette palette) : base(palette)
         {
             Debug.Assert(colors != null);
             _colors = colors;

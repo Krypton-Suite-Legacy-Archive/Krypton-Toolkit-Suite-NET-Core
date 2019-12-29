@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
     <PropertyGroup>
-        <TargetFrameworks>net40;net45;net46;net47;net48;netcoreapp3.1</TargetFrameworks>
+        <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
         <LangVersion>8.0</LangVersion>
         <OutputType>Library</OutputType>
         <RootNamespace>ComponentFactory.Krypton.Toolkit</RootNamespace>
@@ -96,7 +96,7 @@
         <Compile Update="Palette Builtin\PaletteOffice365White.cs">
             <SubType>Component</SubType>
         </Compile>
-        <Compile Update="Palette Builtin\PaletteVisualStudio2019Base.cs">
+        <Compile Update="Palette Builtin\PaletteVisualStudio2020Base.cs">
             <SubType>Component</SubType>
         </Compile>
         <Compile Update="Palette Builtin\PaletteOffice2010Black.cs">
