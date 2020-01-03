@@ -184,9 +184,66 @@
             <SubType>Component</SubType>
         </Compile>
     </ItemGroup>
-  
     <ItemGroup>
-        <EmbeddedResource Include="ToolboxBitmaps\*.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonTreeView.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonInputBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonTaskDialogCommand.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonTaskDialog.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonMessageBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonTrackBar.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonManager.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonHeaderGroup.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonButton.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonGroup.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonHeader.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonPanel.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonLabel.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonPalette.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonSplitContainer.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckButton.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckSet.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonBorderEdge.bmp" />
+        <Content Include="Krypton.ico" />
+        <Content Include="Resources\BlackButtonCloseA.bmp" />
+        <Content Include="Resources\BlackDropDownButton.png" />
+        <Content Include="Resources\BlueDropDownButton.png" />
+        <Content Include="Resources\ButtonColorImageSmall.png" />
+        <Content Include="Resources\ButtonNoColor.png" />
+        <Content Include="Resources\DisabledDropDownButton.png" />
+        <Content Include="Resources\SelectParentControlFlipped.png" />
+        <Content Include="Resources\SilverDropDownButton.png" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonWrapLabel.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonSeparator.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonDateTimePicker.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonMonthCalendar.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonBreadCrumbItem.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonDomainUpDown.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonBreadCrumb.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonNumericUpDown.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuImageSelect.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonCommand.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckedListBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonListBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonColorButton.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonDropButton.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuColorColumns.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonMaskedTextBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuItem.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuItems.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuSeparator.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuHeading.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenu.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonRichTextBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonComboBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonTextBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonDataGridView.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonRadioButton.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckBox.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonButtonSpec.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupPanel.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonForm.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\KryptonLinkLabel.bmp" />
     </ItemGroup>
   
     <ItemGroup>
@@ -194,15 +251,9 @@
         <EmbeddedResource Remove="Controls Toolkit\KryptonInputBoxNew.resx" />
     </ItemGroup>
   
-    <ItemGroup>
-        <Compile Remove="Toolkit\*.cs" />
-        <EmbeddedResource Remove="Toolkit\*.resx" />
-    </ItemGroup>
-  
     <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
       <Reference Include="System.Design" />
     </ItemGroup>
-  
     <PropertyGroup>
         <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Toolkit.xml</DocumentationFile>
         <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>
