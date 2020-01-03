@@ -16,15 +16,8 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 
-[assembly: AssemblyVersion("5.490.748.0")]
-[assembly: AssemblyFileVersion("5.490.748.0")]
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006-2020. Then modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017-2020. All rights reserved.")]
-[assembly: AssemblyProduct("Krypton Docking")]
 [assembly: AssemblyDefaultAlias("ComponentFactory.Krypton.Docking.dll")]
-[assembly: AssemblyTitle("ComponentFactory.Krypton.Docking")]
-[assembly: AssemblyCompany("Component Factory Pty Ltd, Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV)")]
-[assembly: AssemblyDescription("ComponentFactory.Krypton.Docking")]
-[assembly: AssemblyConfiguration("Production")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: StringFreezing]
 [assembly: ComVisible(true)]

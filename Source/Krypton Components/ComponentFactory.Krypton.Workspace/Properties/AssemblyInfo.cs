@@ -16,8 +16,6 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 
-[assembly: AssemblyVersion("5.490.737.0")]
-[assembly: AssemblyFileVersion("5.490.737.0")]
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006-2020. Then modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017-2020. All rights reserved.")]
 [assembly: AssemblyProduct("Krypton Workspace")]
 [assembly: AssemblyDefaultAlias("ComponentFactory.Krypton.Workspace.dll")]

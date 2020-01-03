@@ -1,8 +1,9 @@
 <Project>
+	<Import Project="Directory.Build.props" />
+	
 	<PropertyGroup>
 		<RootFolder>$(MSBuildProjectDirectory)</RootFolder>
 		<Configuration>Release</Configuration>
-		<Version Condition="'$(Version)' == ''">5.490.2116</Version>
 	</PropertyGroup>
 	
 	<Target Name="Build">
@@ -12,10 +13,24 @@
 		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" />
 	</Target>
 	
-	<Target Name="Pack">
+	<Target Name="CleanPackages">
+		<ItemGroup>
+			<NugetPkgs Include="$(RootFolder)\Bin\Release\*.nupkg" />
+		</ItemGroup>
+		<Delete Files="@(NugetPkgs)" />
+	</Target>
+	
+	<Target Name="Pack" DependsOnTargets="CleanPackages">
 		<ItemGroup>
 			<Projects Include="$(RootFolder)\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
 		</ItemGroup>
-		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);Version=$(Version)" Targets="Pack" />
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" Targets="Pack" />
+	</Target>
+	
+	<Target Name="Push">
+		<ItemGroup>
+			<NugetPkgs Include="$(RootFolder)\Bin\Release\*.$(LibraryVersion).nupkg" />
+		</ItemGroup>
+		<Exec Command="nuget.exe push %(NugetPkgs.Identity)" />
 	</Target>
 </Project>

@@ -1,5 +1,12 @@
 <Project>
-  <PropertyGroup>    
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../../'))" />
+  
+  <PropertyGroup>
+    <!-- common project data -->
+	<Version>$(LibraryVersion)</Version>
+  </PropertyGroup>
+  
+  <PropertyGroup>
     <!-- common package data -->
     <PackageProjectUrl>https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core</PackageProjectUrl>
 	<PackageIcon>Square Design 64 x 64 New Green.png</PackageIcon>
