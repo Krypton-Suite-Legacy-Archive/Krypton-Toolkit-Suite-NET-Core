@@ -71,7 +71,7 @@
     <Compile Remove="Palette\PaletteNavigatorOtherOverride.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2020.csproj" />
+    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Design" />

@@ -11,7 +11,7 @@
         <ApplicationIcon>Resources\Krypton.ico</ApplicationIcon>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2020.csproj" />
+        <ProjectReference Include="..\..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <OutputPath>..\..\..\Binaries\Krypton Toolkit Examples\$(Configuration)\</OutputPath>
