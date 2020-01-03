@@ -1,4 +1,4 @@
-# <img src="https://github.com/Wagnerp/Krypton-Toolkit-Suite-Toolkit-Suite-NET-Core/blob/master/Krypton.png"> .NET 5.490  (Core)
+# <img src="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core/blob/master/Krypton.png"> .NET 5.490  (Core)
 
 =======
 
@@ -16,7 +16,7 @@
 
 =======
 
-# <img src="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Version-Dashboard/blob/master/Assets/Icons/PNG/KR%2064%20%20x%2064%20Purple.png" /><a href="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Version-Dashboard"> <img src="https://img.shields.io/badge/GitHub-Krypton%20Releases-blueviolet.svg" alt="Krypton Releases" /></a>
+# <img src="https://github.com/Wagnerp/Krypton-NET-Version-Dashboard/blob/master/Assets/Icons/PNG/KR%2064%20%20x%2064%20Purple.png" /><a href="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Version-Dashboard"> <img src="https://img.shields.io/badge/GitHub-Krypton%20Releases-blueviolet.svg" alt="Krypton Releases" /></a>
 
 =======
 
