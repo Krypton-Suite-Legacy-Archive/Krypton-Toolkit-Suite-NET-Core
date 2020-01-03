@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
     <PropertyGroup>
-        <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
+        <TargetFrameworks>net40;netcoreapp3.1</TargetFrameworks>
         <LangVersion>8.0</LangVersion>
         <OutputType>Library</OutputType>
         <RootNamespace>ComponentFactory.Krypton.Toolkit</RootNamespace>
@@ -31,6 +31,7 @@
     <PropertyGroup>
         <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
+  
     <ItemGroup>
         <Compile Update="ButtonSpec\ButtonSpecFormFixed.cs">
             <SubType>Component</SubType>
@@ -178,170 +179,25 @@
             <SubType>Component</SubType>
         </Compile>
     </ItemGroup>
+  
     <ItemGroup>
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonTreeView.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonInputBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonTaskDialogCommand.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonTaskDialog.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonMessageBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonTrackBar.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonManager.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonHeaderGroup.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonButton.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonGroup.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonHeader.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonPanel.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonLabel.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonPalette.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonSplitContainer.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckButton.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckSet.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonBorderEdge.bmp" />
-        <Content Include="Krypton.ico" />
-        <Content Include="Resources\BlackButtonCloseA.bmp" />
-        <Content Include="Resources\BlackDropDownButton.png" />
-        <Content Include="Resources\BlueDropDownButton.png" />
-        <Content Include="Resources\ButtonColorImageSmall.png" />
-        <Content Include="Resources\ButtonNoColor.png" />
-        <Content Include="Resources\DisabledDropDownButton.png" />
-        <Content Include="Resources\SelectParentControlFlipped.png" />
-        <Content Include="Resources\SilverDropDownButton.png" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonWrapLabel.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonSeparator.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonDateTimePicker.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonMonthCalendar.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonBreadCrumbItem.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonDomainUpDown.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonBreadCrumb.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonNumericUpDown.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuImageSelect.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonCommand.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckedListBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonListBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonColorButton.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonDropButton.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuColorColumns.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonMaskedTextBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuItem.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuItems.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuSeparator.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuHeading.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenu.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonRichTextBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonComboBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonTextBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonDataGridView.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonRadioButton.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckBox.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonButtonSpec.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupPanel.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonForm.bmp" />
-        <EmbeddedResource Include="ToolboxBitmaps\KryptonLinkLabel.bmp" />
+        <EmbeddedResource Include="ToolboxBitmaps\*.bmp" />
     </ItemGroup>
+  
     <ItemGroup>
         <Compile Remove="Controls Toolkit\KryptonInputBoxNew.cs" />
-        <Compile Remove="Toolkit\KryptonBorderEdgeActionList.cs" />
-        <Compile Remove="Toolkit\KryptonBorderEdgeDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonBreadCrumbActionList.cs" />
-        <Compile Remove="Toolkit\KryptonBreadCrumbDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonBreadCrumbItemDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonBreadCrumbItemsEditor.cs" />
-        <Compile Remove="Toolkit\KryptonButtonActionList.cs" />
-        <Compile Remove="Toolkit\KryptonButtonDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonCheckBoxActionList.cs" />
-        <Compile Remove="Toolkit\KryptonCheckBoxDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonCheckButtonActionList.cs" />
-        <Compile Remove="Toolkit\KryptonCheckButtonCollectionEditor.cs" />
-        <Compile Remove="Toolkit\KryptonCheckButtonCollectionForm.cs" />
-        <Compile Remove="Toolkit\KryptonCheckButtonCollectionForm.Designer.cs" />
-        <Compile Remove="Toolkit\KryptonCheckButtonDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonCheckedListBoxActionList.cs" />
-        <Compile Remove="Toolkit\KryptonCheckedListBoxDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonCheckSetActionList.cs" />
-        <Compile Remove="Toolkit\KryptonCheckSetDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonColorButtonActionList.cs" />
-        <Compile Remove="Toolkit\KryptonColorButtonDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonComboBoxActionList.cs" />
-        <Compile Remove="Toolkit\KryptonComboBoxColumnDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonComboBoxDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonCommandActionList.cs" />
-        <Compile Remove="Toolkit\KryptonCommandDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonContextMenuActionList.cs" />
-        <Compile Remove="Toolkit\KryptonContextMenuCollectionEditor.cs" />
-        <Compile Remove="Toolkit\KryptonContextMenuDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonContextMenuItemCollectionEditor.cs" />
-        <Compile Remove="Toolkit\KryptonContextMenuItemDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonContextMenuItemsDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonDataGridViewDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonDateTimePickerActionList.cs" />
-        <Compile Remove="Toolkit\KryptonDateTimePickerColumnDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonDateTimePickerDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonDesignerActionItem.cs" />
-        <Compile Remove="Toolkit\KryptonDomainUpDownActionList.cs" />
-        <Compile Remove="Toolkit\KryptonDomainUpDownColumnDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonDomainUpDownDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonDropButtonActionList.cs" />
-        <Compile Remove="Toolkit\KryptonDropButtonDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonGroupActionList.cs" />
-        <Compile Remove="Toolkit\KryptonGroupBoxActionList.cs" />
-        <Compile Remove="Toolkit\KryptonGroupBoxDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonGroupDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonGroupPanelDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonHeaderActionList.cs" />
-        <Compile Remove="Toolkit\KryptonHeaderDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonHeaderGroupActionList.cs" />
-        <Compile Remove="Toolkit\KryptonHeaderGroupDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonLabelActionList.cs" />
-        <Compile Remove="Toolkit\KryptonLabelDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonLinkLabelActionList.cs" />
-        <Compile Remove="Toolkit\KryptonLinkLabelDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonListBoxActionList.cs" />
-        <Compile Remove="Toolkit\KryptonListBoxDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonManagerActionList.cs" />
-        <Compile Remove="Toolkit\KryptonManagerDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonMaskedTextBoxActionList.cs" />
-        <Compile Remove="Toolkit\KryptonMaskedTextBoxColumnDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonMaskedTextBoxDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonMonthCalendarActionList.cs" />
-        <Compile Remove="Toolkit\KryptonMonthCalendarDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonNumericUpDownActionList.cs" />
-        <Compile Remove="Toolkit\KryptonNumericUpDownColumnDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonNumericUpDownDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonPaletteActionList.cs" />
-        <Compile Remove="Toolkit\KryptonPaletteDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonPanelActionList.cs" />
-        <Compile Remove="Toolkit\KryptonPanelDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonRadioButtonActionList.cs" />
-        <Compile Remove="Toolkit\KryptonRadioButtonDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonRichTextBoxActionList.cs" />
-        <Compile Remove="Toolkit\KryptonRichTextBoxDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonSeparatorActionList.cs" />
-        <Compile Remove="Toolkit\KryptonSeparatorDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonSplitContainerActionList.cs" />
-        <Compile Remove="Toolkit\KryptonSplitContainerBehavior.cs" />
-        <Compile Remove="Toolkit\KryptonSplitContainerDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonSplitContainerGlyph.cs" />
-        <Compile Remove="Toolkit\KryptonSplitterPanelDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonTextBoxActionList.cs" />
-        <Compile Remove="Toolkit\KryptonTextBoxColumnDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonTextBoxDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonTrackBarActionList.cs" />
-        <Compile Remove="Toolkit\KryptonTrackBarDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonTreeViewActionList.cs" />
-        <Compile Remove="Toolkit\KryptonTreeViewDesigner.cs" />
-        <Compile Remove="Toolkit\KryptonWrapLabelActionList.cs" />
-        <Compile Remove="Toolkit\KryptonWrapLabelDesigner.cs" />
-        <Compile Remove="Toolkit\PaletteDrawBordersEditor.cs" />
-        <Compile Remove="Toolkit\PaletteDrawBordersSelector.cs" />
-        <Compile Remove="Toolkit\PaletteDrawBordersSelector.Designer.cs" />
         <EmbeddedResource Remove="Controls Toolkit\KryptonInputBoxNew.resx" />
-        <EmbeddedResource Remove="Toolkit\KryptonCheckButtonCollectionForm.resx" />
-        <EmbeddedResource Remove="Toolkit\PaletteDrawBordersSelector.resx" />
     </ItemGroup>
+  
     <ItemGroup>
+        <Compile Remove="Toolkit\*.cs" />
+        <EmbeddedResource Remove="Toolkit\*.resx" />
+    </ItemGroup>
+  
+    <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
       <Reference Include="System.Design" />
     </ItemGroup>
+  
     <PropertyGroup>
         <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Toolkit.xml</DocumentationFile>
         <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net40;netcoreapp3.1</TargetFrameworks>
       <LangVersion>8.0</LangVersion>
     <OutputType>Library</OutputType>
     <RootNamespace>ComponentFactory.Krypton.Workspace</RootNamespace>
@@ -49,9 +49,11 @@
   <ItemGroup>
     <Compile Include="..\ComponentFactory.Krypton.Toolkit\General\GlobalSuppressions.cs" Link="General\GlobalSuppressions.cs" />
   </ItemGroup>
-  <ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
     <Reference Include="System.Design" />
   </ItemGroup>
+
   <PropertyGroup>
       <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Workspace.xml</DocumentationFile>
       <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>
