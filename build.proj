@@ -1,0 +1,21 @@
+<Project>
+	<PropertyGroup>
+		<RootFolder>$(MSBuildProjectDirectory)</RootFolder>
+		<Configuration>Release</Configuration>
+		<Version Condition="'$(Version)' == ''">5.490.2116</Version>
+	</PropertyGroup>
+	
+	<Target Name="Build">
+		<ItemGroup>
+			<Projects Include="$(RootFolder)\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
+		</ItemGroup>
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" />
+	</Target>
+	
+	<Target Name="Pack">
+		<ItemGroup>
+			<Projects Include="$(RootFolder)\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
+		</ItemGroup>
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);Version=$(Version)" Targets="Pack" />
+	</Target>
+</Project>
