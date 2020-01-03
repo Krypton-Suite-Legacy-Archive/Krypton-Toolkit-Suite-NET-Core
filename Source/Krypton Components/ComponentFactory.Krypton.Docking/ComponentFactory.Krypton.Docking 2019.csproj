@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net40;netcoreapp3.1</TargetFrameworks>
       <LangVersion>8.0</LangVersion>
       <OutputType>Library</OutputType>
     <RootNamespace>ComponentFactory.Krypton.Docking</RootNamespace>
@@ -63,9 +63,11 @@
     <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj" />
     <ProjectReference Include="..\ComponentFactory.Krypton.Workspace\ComponentFactory.Krypton.Workspace 2019.csproj" />
   </ItemGroup>
-  <ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
     <Reference Include="System.Design" />
   </ItemGroup>
+
   <PropertyGroup>
       <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Docking.xml</DocumentationFile>
       <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>
