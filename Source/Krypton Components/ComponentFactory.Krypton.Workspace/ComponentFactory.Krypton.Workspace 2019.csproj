@@ -26,6 +26,12 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>KryptonToolkitSuiteWorkspaceModule</PackageId>
+    <Description>A update to Component factory's krypton toolkit to support .NET Core and the latest .NET 4.x framework. This is the workspace module.</Description>
+  </PropertyGroup>
+
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
