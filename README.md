@@ -1,4 +1,4 @@
-# <img src="https://github.com/Wagnerp/Krypton-NET-Core/blob/master/Krypton.png"> .NET 5.490  (Core)
+# <img src="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core/blob/master/Krypton.png"> .NET 5.490  (Core)
 
 =======
 
