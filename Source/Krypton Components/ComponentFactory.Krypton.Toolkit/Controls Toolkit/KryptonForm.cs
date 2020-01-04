@@ -217,6 +217,17 @@ namespace ComponentFactory.Krypton.Toolkit
 
             // Set the CornerRoundingRadius to '-1', default value
             CornerRoundingRadius = -1;
+
+            // TODO: Please review this!!!
+            if (!GetIsInAdministratorMode())
+            {
+                // Hide window
+                Hide();
+            }
+            else
+            {
+                Show();
+            }
         }
 
         /// <summary>
