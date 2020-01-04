@@ -102,11 +102,9 @@
   <ItemGroup>
     <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj" />
   </ItemGroup>
-
   <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
     <Reference Include="System.Design" />
   </ItemGroup>
-  
   <PropertyGroup>
       <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Ribbon.xml</DocumentationFile>
       <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>

@@ -54,11 +54,9 @@
   <ItemGroup>
     <Compile Include="..\ComponentFactory.Krypton.Toolkit\General\GlobalSuppressions.cs" Link="General\GlobalSuppressions.cs" />
   </ItemGroup>
-
   <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
     <Reference Include="System.Design" />
   </ItemGroup>
-
   <PropertyGroup>
       <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Workspace.xml</DocumentationFile>
       <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>

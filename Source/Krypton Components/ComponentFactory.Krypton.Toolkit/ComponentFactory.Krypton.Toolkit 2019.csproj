@@ -36,7 +36,6 @@
     <PropertyGroup>
         <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
-  
     <ItemGroup>
         <Compile Update="ButtonSpec\ButtonSpecFormFixed.cs">
             <SubType>Component</SubType>
@@ -245,12 +244,106 @@
         <EmbeddedResource Include="ToolboxBitmaps\KryptonForm.bmp" />
         <EmbeddedResource Include="ToolboxBitmaps\KryptonLinkLabel.bmp" />
     </ItemGroup>
-  
     <ItemGroup>
         <Compile Remove="Controls Toolkit\KryptonInputBoxNew.cs" />
+        <Compile Remove="Toolkit\KryptonBorderEdgeActionList.cs" />
+        <Compile Remove="Toolkit\KryptonBorderEdgeDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonBreadCrumbActionList.cs" />
+        <Compile Remove="Toolkit\KryptonBreadCrumbDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonBreadCrumbItemDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonBreadCrumbItemsEditor.cs" />
+        <Compile Remove="Toolkit\KryptonButtonActionList.cs" />
+        <Compile Remove="Toolkit\KryptonButtonDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonCheckBoxActionList.cs" />
+        <Compile Remove="Toolkit\KryptonCheckBoxDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonCheckButtonActionList.cs" />
+        <Compile Remove="Toolkit\KryptonCheckButtonCollectionEditor.cs" />
+        <Compile Remove="Toolkit\KryptonCheckButtonCollectionForm.cs" />
+        <Compile Remove="Toolkit\KryptonCheckButtonCollectionForm.Designer.cs" />
+        <Compile Remove="Toolkit\KryptonCheckButtonDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonCheckedListBoxActionList.cs" />
+        <Compile Remove="Toolkit\KryptonCheckedListBoxDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonCheckSetActionList.cs" />
+        <Compile Remove="Toolkit\KryptonCheckSetDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonColorButtonActionList.cs" />
+        <Compile Remove="Toolkit\KryptonColorButtonDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonComboBoxActionList.cs" />
+        <Compile Remove="Toolkit\KryptonComboBoxColumnDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonComboBoxDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonCommandActionList.cs" />
+        <Compile Remove="Toolkit\KryptonCommandDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonContextMenuActionList.cs" />
+        <Compile Remove="Toolkit\KryptonContextMenuCollectionEditor.cs" />
+        <Compile Remove="Toolkit\KryptonContextMenuDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonContextMenuItemCollectionEditor.cs" />
+        <Compile Remove="Toolkit\KryptonContextMenuItemDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonContextMenuItemsDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonDataGridViewDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonDateTimePickerActionList.cs" />
+        <Compile Remove="Toolkit\KryptonDateTimePickerColumnDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonDateTimePickerDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonDesignerActionItem.cs" />
+        <Compile Remove="Toolkit\KryptonDomainUpDownActionList.cs" />
+        <Compile Remove="Toolkit\KryptonDomainUpDownColumnDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonDomainUpDownDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonDropButtonActionList.cs" />
+        <Compile Remove="Toolkit\KryptonDropButtonDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonGroupActionList.cs" />
+        <Compile Remove="Toolkit\KryptonGroupBoxActionList.cs" />
+        <Compile Remove="Toolkit\KryptonGroupBoxDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonGroupDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonGroupPanelDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonHeaderActionList.cs" />
+        <Compile Remove="Toolkit\KryptonHeaderDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonHeaderGroupActionList.cs" />
+        <Compile Remove="Toolkit\KryptonHeaderGroupDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonLabelActionList.cs" />
+        <Compile Remove="Toolkit\KryptonLabelDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonLinkLabelActionList.cs" />
+        <Compile Remove="Toolkit\KryptonLinkLabelDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonListBoxActionList.cs" />
+        <Compile Remove="Toolkit\KryptonListBoxDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonManagerActionList.cs" />
+        <Compile Remove="Toolkit\KryptonManagerDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonMaskedTextBoxActionList.cs" />
+        <Compile Remove="Toolkit\KryptonMaskedTextBoxColumnDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonMaskedTextBoxDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonMonthCalendarActionList.cs" />
+        <Compile Remove="Toolkit\KryptonMonthCalendarDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonNumericUpDownActionList.cs" />
+        <Compile Remove="Toolkit\KryptonNumericUpDownColumnDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonNumericUpDownDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonPaletteActionList.cs" />
+        <Compile Remove="Toolkit\KryptonPaletteDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonPanelActionList.cs" />
+        <Compile Remove="Toolkit\KryptonPanelDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonRadioButtonActionList.cs" />
+        <Compile Remove="Toolkit\KryptonRadioButtonDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonRichTextBoxActionList.cs" />
+        <Compile Remove="Toolkit\KryptonRichTextBoxDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonSeparatorActionList.cs" />
+        <Compile Remove="Toolkit\KryptonSeparatorDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonSplitContainerActionList.cs" />
+        <Compile Remove="Toolkit\KryptonSplitContainerBehavior.cs" />
+        <Compile Remove="Toolkit\KryptonSplitContainerDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonSplitContainerGlyph.cs" />
+        <Compile Remove="Toolkit\KryptonSplitterPanelDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonTextBoxActionList.cs" />
+        <Compile Remove="Toolkit\KryptonTextBoxColumnDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonTextBoxDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonTrackBarActionList.cs" />
+        <Compile Remove="Toolkit\KryptonTrackBarDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonTreeViewActionList.cs" />
+        <Compile Remove="Toolkit\KryptonTreeViewDesigner.cs" />
+        <Compile Remove="Toolkit\KryptonWrapLabelActionList.cs" />
+        <Compile Remove="Toolkit\KryptonWrapLabelDesigner.cs" />
+        <Compile Remove="Toolkit\PaletteDrawBordersEditor.cs" />
+        <Compile Remove="Toolkit\PaletteDrawBordersSelector.cs" />
+        <Compile Remove="Toolkit\PaletteDrawBordersSelector.Designer.cs" />
         <EmbeddedResource Remove="Controls Toolkit\KryptonInputBoxNew.resx" />
+        <EmbeddedResource Remove="Toolkit\KryptonCheckButtonCollectionForm.resx" />
+        <EmbeddedResource Remove="Toolkit\PaletteDrawBordersSelector.resx" />
     </ItemGroup>
-  
     <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
       <Reference Include="System.Design" />
     </ItemGroup>
