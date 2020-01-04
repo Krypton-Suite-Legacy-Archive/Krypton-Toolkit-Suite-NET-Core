@@ -404,14 +404,14 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <value>
         ///   <c>true</c> if [disable close button]; otherwise, <c>false</c>.</value>
         [Category("Appearance"), Description("Disables the close button."), DefaultValue(false)]
-        public bool DisableCloseButton 
-        { 
-            get => _disableCloseButton; 
-            set 
-            { 
-                _disableCloseButton = value; 
-                UpdateDisableCloseButton(_disableCloseButton); 
-            } 
+        public bool DisableCloseButton
+        {
+            get => _disableCloseButton;
+            set
+            {
+                _disableCloseButton = value;
+                UpdateDisableCloseButton(_disableCloseButton);
+            }
         }
 
         /// <summary>
@@ -1796,17 +1796,41 @@ namespace ComponentFactory.Krypton.Toolkit
 
                 if (hasAdministrativeRights)
                 {
+                    SetIsInAdministratorMode(true);
+
                     return true;
                 }
                 else
                 {
+                    SetIsInAdministratorMode(false);
+
                     return false;
                 }
             }
             catch
             {
+                SetIsInAdministratorMode(false);
+
                 return false;
             }
+        }
+
+        /// <summary>Sets the is in administrator mode.</summary>
+        /// <param name="value">if set to <c>true</c> [value].</param>
+        public static void SetIsInAdministratorMode(bool value)
+        {
+            KryptonForm form = new KryptonForm();
+
+            form.IsInAdministratorMode = value;
+        }
+
+        /// <summary>Gets the is in administrator mode.</summary>
+        /// <returns>IsInAdministratorMode</returns>
+        public static bool GetIsInAdministratorMode()
+        {
+            KryptonForm form = new KryptonForm();
+
+            return form.IsInAdministratorMode;
         }
 
         /// <summary>
