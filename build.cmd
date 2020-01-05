@@ -1,3 +1,5 @@
+@echo off
+
 if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin" goto vs16prev
 if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin" goto vs16ent
 if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin" goto vs16pro
@@ -6,6 +8,8 @@ if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\BuildTools\MSBuild\Cu
 
 echo "Unable to detect suitable environment. Check if VS 2019 is installed."
 exit 1
+
+goto CheckVersionChange
 
 :CheckVersionChange
 echo Have you made sure that you have changed the build/release number before publishing? (Y/N)

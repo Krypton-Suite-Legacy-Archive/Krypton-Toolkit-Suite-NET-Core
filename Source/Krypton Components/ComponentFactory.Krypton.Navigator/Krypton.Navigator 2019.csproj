@@ -4,7 +4,7 @@
       <LangVersion>8.0</LangVersion>
     <OutputType>Library</OutputType>
     <RootNamespace>ComponentFactory.Krypton.Navigator</RootNamespace>
-    <AssemblyName>Krypton Navigator</AssemblyName>
+    <AssemblyName>Krypton.Navigator</AssemblyName>
     <ApplicationIcon>Krypton.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
@@ -76,7 +76,7 @@
     <Compile Remove="Palette\PaletteNavigatorOtherOverride.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj" />
+    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Design" />
