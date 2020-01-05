@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class KryptonTreeView
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. </title>
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class KryptonTreeView
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. ">
-    <meta name="generator" content="docfx 2.33.1.0">
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. ">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../Krypton.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -26,7 +26,7 @@ BSD 3-Clause License
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -78,7 +78,7 @@ BSD 3-Clause License
   <div class="markdown level0 summary"><p>Provide a TreeView with Krypton styling applied.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -94,6 +94,9 @@ BSD 3-Clause License
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_PaletteChanged">VisualControlBase.PaletteChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_GlobalPaletteChanged">VisualControlBase.GlobalPaletteChanged</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ContextMenuStrip">VisualControlBase.ContextMenuStrip</a>
@@ -130,6 +133,12 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_BackgroundImageLayout">VisualControlBase.BackgroundImageLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ToolTipValues">VisualControlBase.ToolTipValues</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ResetToolTipValues">VisualControlBase.ResetToolTipValues()</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ViewFromPoint_System_Drawing_Point_">VisualControlBase.ViewFromPoint(Point)</a>
@@ -189,9 +198,6 @@ BSD 3-Clause License
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseMove_System_Windows_Forms_MouseEventArgs_">VisualControlBase.OnMouseMove(MouseEventArgs)</a>
     </div>
     <div>
-      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseDown_System_Windows_Forms_MouseEventArgs_">VisualControlBase.OnMouseDown(MouseEventArgs)</a>
-    </div>
-    <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseUp_System_Windows_Forms_MouseEventArgs_">VisualControlBase.OnMouseUp(MouseEventArgs)</a>
     </div>
     <div>
@@ -228,6 +234,9 @@ BSD 3-Clause License
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ContextMenuClosed">VisualControlBase.ContextMenuClosed()</a>
     </div>
     <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_SetWindowTheme_System_IntPtr_System_String_System_String_">VisualControlBase.SetWindowTheme(IntPtr, String, String)</a>
+    </div>
+    <div>
       <span class="xref">System.Windows.Forms.Control.GetAccessibilityObjectById(System.Int32)</span>
     </div>
     <div>
@@ -262,9 +271,6 @@ BSD 3-Clause License
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.CreateGraphics()</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Forms.Control.CreateHandle()</span>
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.CreateControl()</span>
@@ -1262,17 +1268,17 @@ BSD 3-Clause License
   </div>
   
   <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
-  <h6><strong>Assembly</strong>: ComponentFactory.Krypton.Toolkit.dll</h6>
+  <h6><strong>Assembly</strong>: Krypton Toolkit.dll</h6>
   
   <h5 id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof (KryptonTreeView), &quot;ToolboxBitmaps.KryptonTreeView.bmp&quot;)]
+    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof(KryptonTreeView), &quot;ToolboxBitmaps.KryptonTreeView.bmp&quot;)]
 [Docking(DockingBehavior.Ask)]
 [ClassInterface(ClassInterfaceType.AutoDispatch)]
 [ComVisible(true)]
 public class KryptonTreeView : VisualControlBase, IDropTarget, ISynchronizeInvoke, IWin32Window, IArrangedElement, IBindableComponent, IComponent, IDisposable, IKryptonDebug, IContainedInputControl</code></pre>
   </div>
-
+  
   
   
   
@@ -1290,11 +1296,11 @@ public class KryptonTreeView : VisualControlBase, IDropTarget, ISynchronizeInvok
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonTreeView()</code></pre>
   </div>
-
+  
   
   
   
@@ -1320,11 +1326,11 @@ public class KryptonTreeView : VisualControlBase, IDropTarget, ISynchronizeInvok
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AlwaysActive { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1357,11 +1363,11 @@ public class KryptonTreeView : VisualControlBase, IDropTarget, ISynchronizeInvok
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteBackStyle BackStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1394,11 +1400,11 @@ public class KryptonTreeView : VisualControlBase, IDropTarget, ISynchronizeInvok
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteBorderStyle BorderStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1431,11 +1437,11 @@ public class KryptonTreeView : VisualControlBase, IDropTarget, ISynchronizeInvok
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool CheckBoxes { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1468,11 +1474,11 @@ public class KryptonTreeView : VisualControlBase, IDropTarget, ISynchronizeInvok
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CheckBoxImages CheckBoxImages { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1505,12 +1511,12 @@ public class KryptonTreeView : VisualControlBase, IDropTarget, ISynchronizeInvok
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public Control ContainedControl { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1545,11 +1551,11 @@ public Control ContainedControl { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override Size DefaultSize { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1584,11 +1590,11 @@ public Control ContainedControl { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool FullRowSelect { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1621,11 +1627,11 @@ public Control ContainedControl { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool HideSelection { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1658,11 +1664,11 @@ public Control ContainedControl { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool HotTracking { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1695,13 +1701,13 @@ public Control ContainedControl { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TypeConverter(&quot;ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=4.70.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e&quot;)]
+    <pre><code class="lang-csharp hljs">[TypeConverter(&quot;ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.470.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e&quot;)]
 [RelatedImageList(&quot;ImageList&quot;)]
 public int ImageIndex { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1734,13 +1740,13 @@ public int ImageIndex { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TypeConverter(typeof (ImageKeyConverter))]
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ImageKeyConverter))]
 [RelatedImageList(&quot;ImageList&quot;)]
 public string ImageKey { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1773,11 +1779,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ImageList ImageList { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1810,11 +1816,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int ItemHeight { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1847,11 +1853,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ButtonStyle ItemStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1884,11 +1890,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool LabelEdit { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1921,11 +1927,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TreeNodeCollection Nodes { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1958,11 +1964,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeNodeTripleRedirect OverrideFocus { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1995,11 +2001,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Padding Padding { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2032,11 +2038,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string PathSeparator { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2069,11 +2075,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TreeViewImages PlusMinusImages { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2106,11 +2112,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool RightToLeftLayout { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2143,11 +2149,11 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Scrollable { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2180,13 +2186,13 @@ public string ImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TypeConverter(&quot;ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=4.70.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e&quot;)]
+    <pre><code class="lang-csharp hljs">[TypeConverter(&quot;ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.470.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e&quot;)]
 [RelatedImageList(&quot;ImageList&quot;)]
 public int SelectedImageIndex { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2219,13 +2225,13 @@ public int SelectedImageIndex { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TypeConverter(typeof (ImageKeyConverter))]
+    <pre><code class="lang-csharp hljs">[TypeConverter(typeof(ImageKeyConverter))]
 [RelatedImageList(&quot;ImageList&quot;)]
 public string SelectedImageKey { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2258,12 +2264,12 @@ public string SelectedImageKey { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public TreeNode SelectedNode { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2296,11 +2302,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowLines { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2333,11 +2339,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowNodeToolTips { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2370,11 +2376,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowPlusMinus { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2407,11 +2413,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowRootLines { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2444,11 +2450,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Sorted { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2481,11 +2487,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteDouble StateActive { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2518,11 +2524,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeNodeTriple StateCheckedNormal { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2555,11 +2561,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeNodeTriple StateCheckedPressed { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2592,11 +2598,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeNodeTriple StateCheckedTracking { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2629,11 +2635,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeStateRedirect StateCommon { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2666,11 +2672,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeState StateDisabled { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2703,11 +2709,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ImageList StateImageList { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2740,11 +2746,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeState StateNormal { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2777,11 +2783,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeNodeTriple StatePressed { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2814,11 +2820,11 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTreeNodeTriple StateTracking { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2851,12 +2857,12 @@ public TreeNode SelectedNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public TreeNode TopNode { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2889,12 +2895,12 @@ public TreeNode TopNode { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public TreeView TreeView { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2927,12 +2933,12 @@ public TreeView TreeView { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public IComparer TreeViewNodeSorter { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2965,12 +2971,12 @@ public IComparer TreeViewNodeSorter { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public int VisibleCount { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -3005,11 +3011,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void BeginUpdate()</code></pre>
   </div>
-
+  
   
   
   
@@ -3033,11 +3039,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void CollapseAll()</code></pre>
   </div>
-
+  
   
   
   
@@ -3061,11 +3067,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override Control.ControlCollection CreateControlsInstance()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -3092,6 +3098,35 @@ public int VisibleCount { get; }</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_CreateHandle_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTreeView.CreateHandle*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_CreateHandle" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTreeView.CreateHandle"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTreeView_CreateHandle" class="expander" data-toggle="collapse">CreateHandle()</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTreeView_CreateHandle" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void CreateHandle()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Windows.Forms.Control.CreateHandle()</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_Dispose_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTreeView.Dispose*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_Dispose_System_Boolean_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTreeView.Dispose(System.Boolean)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTreeView_Dispose_System_Boolean_" class="expander" data-toggle="collapse">Dispose(Boolean)</a></h4>
@@ -3101,11 +3136,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3142,11 +3177,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void EndUpdate()</code></pre>
   </div>
-
+  
   
   
   
@@ -3170,11 +3205,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ExpandAll()</code></pre>
   </div>
-
+  
   
   
   
@@ -3198,11 +3233,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Focus()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -3236,11 +3271,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void ForceControlLayout()</code></pre>
   </div>
-
+  
   
   
   
@@ -3264,11 +3299,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TreeNode GetNodeAt(Point pt)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3313,11 +3348,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TreeNode GetNodeAt(int x, int y)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3370,11 +3405,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int GetNodeCount(bool includeSubTrees)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3419,11 +3454,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TreeViewHitTestInfo HitTest(Point pt)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3468,11 +3503,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TreeViewHitTestInfo HitTest(int x, int y)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3525,11 +3560,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAfterCheck(TreeViewEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3564,11 +3599,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAfterCollapse(TreeViewEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3603,11 +3638,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAfterExpand(TreeViewEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3642,11 +3677,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAfterLabelEdit(NodeLabelEditEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3681,11 +3716,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAfterSelect(TreeViewEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3720,11 +3755,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnBackColorChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3761,11 +3796,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnBackgroundImageChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3802,11 +3837,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnBackgroundImageLayoutChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3843,11 +3878,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnBeforeCheck(TreeViewCancelEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3882,11 +3917,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnBeforeCollapse(TreeViewCancelEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3921,11 +3956,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnBeforeExpand(TreeViewCancelEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3960,11 +3995,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnBeforeLabelEdit(NodeLabelEditEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3999,11 +4034,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnBeforeSelect(TreeViewCancelEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4038,11 +4073,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnCausesValidationChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4079,11 +4114,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnCreateControl()</code></pre>
   </div>
-
+  
   
   
   
@@ -4109,11 +4144,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnEnabledChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4150,11 +4185,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnForeColorChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4191,11 +4226,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnHandleCreated(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4214,7 +4249,7 @@ public int VisibleCount { get; }</code></pre>
   
   
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)</span></div>
+  <div><a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnHandleCreated_System_EventArgs_">VisualControlBase.OnHandleCreated(EventArgs)</a></div>
   
   
   
@@ -4232,11 +4267,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnItemDrag(ItemDragEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4271,11 +4306,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnLayout(LayoutEventArgs levent)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4303,6 +4338,47 @@ public int VisibleCount { get; }</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_OnMouseDown_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTreeView.OnMouseDown*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_OnMouseDown_System_Windows_Forms_MouseEventArgs_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTreeView.OnMouseDown(System.Windows.Forms.MouseEventArgs)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTreeView_OnMouseDown_System_Windows_Forms_MouseEventArgs_" class="expander" data-toggle="collapse">OnMouseDown(MouseEventArgs)</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTreeView_OnMouseDown_System_Windows_Forms_MouseEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the MouseDown event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnMouseDown(MouseEventArgs e)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Forms.MouseEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>A MouseEventArgs that contains the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseDown_System_Windows_Forms_MouseEventArgs_">VisualControlBase.OnMouseDown(MouseEventArgs)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_OnMouseEnter_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTreeView.OnMouseEnter*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTreeView_OnMouseEnter_System_EventArgs_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTreeView.OnMouseEnter(System.EventArgs)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTreeView_OnMouseEnter_System_EventArgs_" class="expander" data-toggle="collapse">OnMouseEnter(EventArgs)</a></h4>
@@ -4312,11 +4388,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseEnter(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4335,7 +4411,7 @@ public int VisibleCount { get; }</code></pre>
   
   
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)</span></div>
+  <div><a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseEnter_System_EventArgs_">VisualControlBase.OnMouseEnter(EventArgs)</a></div>
   
   
   
@@ -4353,11 +4429,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseLeave(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4394,11 +4470,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnNeedPaint(object sender, NeedLayoutEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4443,11 +4519,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnNodeMouseClick(TreeNodeMouseClickEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4482,11 +4558,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnNodeMouseDoubleClick(TreeNodeMouseClickEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4521,11 +4597,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnNodeMouseHover(TreeNodeMouseHoverEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4560,11 +4636,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPaddingChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4601,11 +4677,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPaint(PaintEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4642,11 +4718,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPaletteChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4683,11 +4759,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPaletteNeedPaint(object sender, NeedLayoutEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4732,11 +4808,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnRightToLeftLayoutChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4771,11 +4847,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnTabStopChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4812,11 +4888,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnTextChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4853,11 +4929,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnTrackMouseEnter(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4892,11 +4968,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnTrackMouseLeave(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4931,11 +5007,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Select()</code></pre>
   </div>
-
+  
   
   
   
@@ -4959,11 +5035,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetFixedState(bool active)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -4998,11 +5074,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Sort()</code></pre>
   </div>
-
+  
   
   
   
@@ -5027,11 +5103,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeViewEventHandler AfterCheck</code></pre>
   </div>
-
+  
   
   
   
@@ -5063,11 +5139,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeViewEventHandler AfterCollapse</code></pre>
   </div>
-
+  
   
   
   
@@ -5099,11 +5175,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeViewEventHandler AfterExpand</code></pre>
   </div>
-
+  
   
   
   
@@ -5135,11 +5211,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event NodeLabelEditEventHandler AfterLabelEdit</code></pre>
   </div>
-
+  
   
   
   
@@ -5171,11 +5247,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeViewEventHandler AfterSelect</code></pre>
   </div>
-
+  
   
   
   
@@ -5207,11 +5283,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeViewCancelEventHandler BeforeCheck</code></pre>
   </div>
-
+  
   
   
   
@@ -5243,11 +5319,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeViewCancelEventHandler BeforeCollapse</code></pre>
   </div>
-
+  
   
   
   
@@ -5279,11 +5355,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeViewCancelEventHandler BeforeExpand</code></pre>
   </div>
-
+  
   
   
   
@@ -5315,11 +5391,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event NodeLabelEditEventHandler BeforeLabelEdit</code></pre>
   </div>
-
+  
   
   
   
@@ -5351,11 +5427,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeViewCancelEventHandler BeforeSelect</code></pre>
   </div>
-
+  
   
   
   
@@ -5387,11 +5463,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event ItemDragEventHandler ItemDrag</code></pre>
   </div>
-
+  
   
   
   
@@ -5423,11 +5499,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeNodeMouseClickEventHandler NodeMouseClick</code></pre>
   </div>
-
+  
   
   
   
@@ -5459,11 +5535,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeNodeMouseClickEventHandler NodeMouseDoubleClick</code></pre>
   </div>
-
+  
   
   
   
@@ -5495,11 +5571,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event TreeNodeMouseHoverEventHandler NodeMouseHover</code></pre>
   </div>
-
+  
   
   
   
@@ -5531,11 +5607,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler RightToLeftLayoutChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -5567,11 +5643,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler TrackMouseEnter</code></pre>
   </div>
-
+  
   
   
   
@@ -5603,11 +5679,11 @@ public int VisibleCount { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler TrackMouseLeave</code></pre>
   </div>
-
+  
   
   
   
@@ -5650,7 +5726,7 @@ public int VisibleCount { get; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.7)
+            <span>Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2019. All rights reserved. <a href="https://github.com/Wagnerp/Krypton-NET-5.470">https://github.com/Wagnerp/Krypton-NET-5.470</a></span>
             
           </div>
         </div>

@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class KryptonDataGridViewTextBoxColumn
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. </title>
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class KryptonDataGridViewTextBoxColumn
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. ">
-    <meta name="generator" content="docfx 2.33.1.0">
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. ">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../Krypton.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -26,7 +26,7 @@ BSD 3-Clause License
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -78,19 +78,23 @@ BSD 3-Clause License
   <div class="markdown level0 summary"><p>Hosts a collection of KryptonDataGridViewTextBoxCell cells.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Windows.Forms.DataGridViewElement</span></div>
     <div class="level2"><span class="xref">System.Windows.Forms.DataGridViewBand</span></div>
     <div class="level3"><span class="xref">System.Windows.Forms.DataGridViewColumn</span></div>
-    <div class="level4"><span class="xref">KryptonDataGridViewTextBoxColumn</span></div>
+    <div class="level4"><a class="xref" href="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewIconColumn.html">KryptonDataGridViewIconColumn</a></div>
+    <div class="level5"><span class="xref">KryptonDataGridViewTextBoxColumn</span></div>
   </div>
   
   
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewIconColumn.html#ComponentFactory_Krypton_Toolkit_KryptonDataGridViewIconColumn_IconSpecs">KryptonDataGridViewIconColumn.IconSpecs</a>
+    </div>
     <div>
       <span class="xref">System.Windows.Forms.DataGridViewColumn.GetPreferredWidth(System.Windows.Forms.DataGridViewAutoSizeColumnMode, System.Boolean)</span>
     </div>
@@ -241,14 +245,14 @@ BSD 3-Clause License
   </div>
   
   <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
-  <h6><strong>Assembly</strong>: ComponentFactory.Krypton.Toolkit.dll</h6>
+  <h6><strong>Assembly</strong>: Krypton Toolkit.dll</h6>
   
   <h5 id="ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof (KryptonDataGridViewTextBoxColumn), &quot;ToolboxBitmaps.KryptonTextBox.bmp&quot;)]
-public class KryptonDataGridViewTextBoxColumn : DataGridViewColumn, ICloneable, IComponent, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof(KryptonDataGridViewTextBoxColumn), &quot;ToolboxBitmaps.KryptonTextBox.bmp&quot;)]
+public class KryptonDataGridViewTextBoxColumn : KryptonDataGridViewIconColumn, ICloneable, IComponent, IDisposable, IIconCell</code></pre>
   </div>
-
+  
   
   
   
@@ -266,11 +270,11 @@ public class KryptonDataGridViewTextBoxColumn : DataGridViewColumn, ICloneable, 
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonDataGridViewTextBoxColumn()</code></pre>
   </div>
-
+  
   
   
   
@@ -296,11 +300,11 @@ public class KryptonDataGridViewTextBoxColumn : DataGridViewColumn, ICloneable, 
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DataGridViewColumnSpecCollection ButtonSpecs { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -333,12 +337,12 @@ public class KryptonDataGridViewTextBoxColumn : DataGridViewColumn, ICloneable, 
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public override DataGridViewCell CellTemplate { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -373,11 +377,11 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int MaxInputLength { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -401,6 +405,80 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_Multiline_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn.Multiline*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_Multiline" data-uid="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn.Multiline"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_Multiline" class="expander" data-toggle="collapse">Multiline</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_Multiline" class="collapse in">
+  <div class="markdown level1 summary"><p>Replicates the Multiline property of the KryptonDataGridViewTextBoxCell cell type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Multiline { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_MultilineStringEditor_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn.MultilineStringEditor*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_MultilineStringEditor" data-uid="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn.MultilineStringEditor"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_MultilineStringEditor" class="expander" data-toggle="collapse">MultilineStringEditor</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_MultilineStringEditor" class="collapse in">
+  <div class="markdown level1 summary"><p>Replicates the MultilineStringEditor property of the KryptonDataGridViewTextBoxCell cell type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MultilineStringEditor { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_SortMode_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn.SortMode*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_SortMode" data-uid="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn.SortMode"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonDataGridViewTextBoxColumn_SortMode" class="expander" data-toggle="collapse">SortMode</a></h4>
@@ -410,11 +488,11 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DataGridViewColumnSortMode SortMode { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -449,11 +527,11 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override object Clone()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -470,7 +548,7 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
   
   
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Windows.Forms.DataGridViewColumn.Clone()</span></div>
+  <div><a class="xref" href="ComponentFactory.Krypton.Toolkit.KryptonDataGridViewIconColumn.html#ComponentFactory_Krypton_Toolkit_KryptonDataGridViewIconColumn_Clone">KryptonDataGridViewIconColumn.Clone()</a></div>
   
   
   
@@ -488,11 +566,11 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -529,11 +607,11 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -570,11 +648,11 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;DataGridViewButtonSpecClickEventArgs&gt; ButtonSpecClick</code></pre>
   </div>
-
+  
   
   
   
@@ -617,7 +695,7 @@ public override DataGridViewCell CellTemplate { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.7)
+            <span>Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2019. All rights reserved. <a href="https://github.com/Wagnerp/Krypton-NET-5.470">https://github.com/Wagnerp/Krypton-NET-5.470</a></span>
             
           </div>
         </div>

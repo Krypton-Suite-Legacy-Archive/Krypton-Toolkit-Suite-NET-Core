@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class KryptonRibbon
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. </title>
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class KryptonRibbon
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. ">
-    <meta name="generator" content="docfx 2.33.1.0">
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. ">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../Krypton.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -26,7 +26,7 @@ BSD 3-Clause License
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -78,7 +78,7 @@ BSD 3-Clause License
   <div class="markdown level0 summary"><p>Ribbon control presents a tabbed set of user options.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -128,6 +128,9 @@ BSD 3-Clause License
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_PaletteChanged">VisualControlBase.PaletteChanged</a>
     </div>
     <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_GlobalPaletteChanged">VisualControlBase.GlobalPaletteChanged</a>
+    </div>
+    <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ContextMenuStrip">VisualControlBase.ContextMenuStrip</a>
     </div>
     <div>
@@ -162,6 +165,12 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_BackgroundImageLayout">VisualControlBase.BackgroundImageLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ToolTipValues">VisualControlBase.ToolTipValues</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ResetToolTipValues">VisualControlBase.ResetToolTipValues()</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ViewFromPoint_System_Drawing_Point_">VisualControlBase.ViewFromPoint(Point)</a>
@@ -221,6 +230,9 @@ BSD 3-Clause License
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnPaint_System_Windows_Forms_PaintEventArgs_">VisualControlBase.OnPaint(PaintEventArgs)</a>
     </div>
     <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseEnter_System_EventArgs_">VisualControlBase.OnMouseEnter(EventArgs)</a>
+    </div>
+    <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseMove_System_Windows_Forms_MouseEventArgs_">VisualControlBase.OnMouseMove(MouseEventArgs)</a>
     </div>
     <div>
@@ -243,6 +255,9 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ContextMenuClosed">VisualControlBase.ContextMenuClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_SetWindowTheme_System_IntPtr_System_String_System_String_">VisualControlBase.SetWindowTheme(IntPtr, String, String)</a>
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.GetAccessibilityObjectById(System.Int32)</span>
@@ -546,9 +561,6 @@ BSD 3-Clause License
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.OnMouseCaptureChanged(System.EventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)</span>
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.OnDpiChangedBeforeParent(System.EventArgs)</span>
@@ -1297,17 +1309,17 @@ BSD 3-Clause License
   </div>
   
   <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
-  <h6><strong>Assembly</strong>: ComponentFactory.Krypton.Ribbon.dll</h6>
+  <h6><strong>Assembly</strong>: Krypton Ribbon.dll</h6>
   
   <h5 id="ComponentFactory_Krypton_Ribbon_KryptonRibbon_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof (KryptonRibbon), &quot;ToolboxBitmaps.KryptonRibbon.bmp&quot;)]
+    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof(KryptonRibbon), &quot;ToolboxBitmaps.KryptonRibbon.bmp&quot;)]
 [Docking(DockingBehavior.Never)]
 [ClassInterface(ClassInterfaceType.AutoDispatch)]
 [ComVisible(true)]
 public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin32Window, IArrangedElement, IBindableComponent, IComponent, IDisposable, IKryptonDebug, ISupportInitializeNotification, ISupportInitialize, IMessageFilter</code></pre>
   </div>
-
+  
   
   
   
@@ -1325,11 +1337,11 @@ public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonRibbon()</code></pre>
   </div>
-
+  
   
   
   
@@ -1355,11 +1367,11 @@ public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AllowButtonSpecToolTips { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1388,15 +1400,14 @@ public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin
   <h4 id="ComponentFactory_Krypton_Ribbon_KryptonRibbon_AllowFormIntegrate" data-uid="ComponentFactory.Krypton.Ribbon.KryptonRibbon.AllowFormIntegrate"><a href="#collapsible-ComponentFactory_Krypton_Ribbon_KryptonRibbon_AllowFormIntegrate" class="expander" data-toggle="collapse">AllowFormIntegrate</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Ribbon_KryptonRibbon_AllowFormIntegrate" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets or sets if the ribbon is allowed to override form chrome by integrating instead with operating system chrome.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AllowFormIntegrate { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1429,11 +1440,11 @@ public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AllowMinimizedChange { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1466,11 +1477,11 @@ public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonRibbon.RibbonButtonSpecAnyCollection ButtonSpecs { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1503,11 +1514,11 @@ public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Control.ControlCollection Controls { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1540,11 +1551,11 @@ public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Size HideRibbonSize { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1577,12 +1588,12 @@ public class KryptonRibbon : VisualSimple, IDropTarget, ISynchronizeInvoke, IWin
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public bool KeyboardMode { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1615,11 +1626,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool MinimizedMode { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1652,11 +1663,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonFocus OverrideFocus { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1689,11 +1700,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonRibbonQATButtonCollection QATButtons { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1726,11 +1737,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public QATLocation QATLocation { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1763,11 +1774,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool QATUserChange { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1800,11 +1811,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RibbonAppButton RibbonAppButton { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1837,11 +1848,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonRibbonContextCollection RibbonContexts { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1874,11 +1885,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RibbonShortcuts RibbonShortcuts { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1911,11 +1922,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RibbonStrings RibbonStrings { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1948,11 +1959,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonStyles RibbonStyles { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1985,11 +1996,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonRibbonTabCollection RibbonTabs { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2022,11 +2033,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string SelectedContext { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2059,11 +2070,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonRibbonTab SelectedTab { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2096,11 +2107,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ShowMinimizeButton { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2133,11 +2144,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonGroupAreaTab StateCheckedNormal { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2170,11 +2181,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonJustTab StateCheckedTracking { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2207,11 +2218,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonRedirect StateCommon { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2244,11 +2255,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonGroupAreaTab StateContextCheckedNormal { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2281,11 +2292,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonJustTab StateContextCheckedTracking { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2318,11 +2329,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonJustGroup StateContextNormal { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2355,11 +2366,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonGroupTab StateContextTracking { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2392,11 +2403,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonDisabled StateDisabled { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2429,11 +2440,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonNormal StateNormal { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2466,11 +2477,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonAppButton StatePressed { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2503,11 +2514,11 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteRibbonAppGroupTab StateTracking { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2540,12 +2551,12 @@ public bool KeyboardMode { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public ToolTipManager ToolTipManager { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2580,11 +2591,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override Control.ControlCollection CreateControlsInstance()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -2620,11 +2631,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2661,11 +2672,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAppButtonMenuClosed(ToolStripDropDownClosedEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2700,11 +2711,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAppButtonMenuClosing(CancelEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2739,11 +2750,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAppButtonMenuOpened(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2778,11 +2789,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAppButtonMenuOpening(CancelEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2817,11 +2828,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnButtonSpecChanged(object sender, EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2866,11 +2877,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnEnabledChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2907,11 +2918,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnGotFocus(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2948,11 +2959,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnHandleCreated(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2971,7 +2982,7 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
   
   
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)</span></div>
+  <div><a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnHandleCreated_System_EventArgs_">VisualControlBase.OnHandleCreated(EventArgs)</a></div>
   
   
   
@@ -2989,11 +3000,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnInitialized(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3030,11 +3041,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnKeyPress(KeyPressEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3071,11 +3082,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnLayout(LayoutEventArgs levent)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3112,11 +3123,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnLostFocus(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3153,11 +3164,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnMinimizedModeChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3192,11 +3203,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseDown(MouseEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3233,11 +3244,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseUp(MouseEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3274,11 +3285,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnNeedPaint(object sender, NeedLayoutEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3323,11 +3334,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPaintBackground(PaintEventArgs pevent)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3364,11 +3375,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnResize(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3405,11 +3416,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnSelectedContextChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3444,11 +3455,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnSelectedTabChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3483,11 +3494,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnShowQATCustomizeMenu(ContextMenuArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3522,11 +3533,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnShowRibbonContextMenu(ContextMenuArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3561,11 +3572,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void PaintBackground(Graphics g, Brush backBrush, Rectangle backRect)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3618,12 +3629,12 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)]
 public bool PreFilterMessage(ref Message m)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3670,11 +3681,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override bool ProcessCmdKey(ref Message msg, Keys keyData)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3729,11 +3740,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override bool ProcessDialogKey(Keys keyData)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3771,6 +3782,34 @@ public bool PreFilterMessage(ref Message m)</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Ribbon_KryptonRibbon_ResetAllowFormIntegrate_" data-uid="ComponentFactory.Krypton.Ribbon.KryptonRibbon.ResetAllowFormIntegrate*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Ribbon_KryptonRibbon_ResetAllowFormIntegrate" data-uid="ComponentFactory.Krypton.Ribbon.KryptonRibbon.ResetAllowFormIntegrate"><a href="#collapsible-ComponentFactory_Krypton_Ribbon_KryptonRibbon_ResetAllowFormIntegrate" class="expander" data-toggle="collapse">ResetAllowFormIntegrate()</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Ribbon_KryptonRibbon_ResetAllowFormIntegrate" class="collapse in">
+  <div class="markdown level1 summary"><p>Resets the AllowFormIntegrate property to its default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetAllowFormIntegrate()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Ribbon_KryptonRibbon_ResetMinimizedMode_" data-uid="ComponentFactory.Krypton.Ribbon.KryptonRibbon.ResetMinimizedMode*"></a>
   
   <h4 id="ComponentFactory_Krypton_Ribbon_KryptonRibbon_ResetMinimizedMode" data-uid="ComponentFactory.Krypton.Ribbon.KryptonRibbon.ResetMinimizedMode"><a href="#collapsible-ComponentFactory_Krypton_Ribbon_KryptonRibbon_ResetMinimizedMode" class="expander" data-toggle="collapse">ResetMinimizedMode()</a></h4>
@@ -3780,11 +3819,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetMinimizedMode()</code></pre>
   </div>
-
+  
   
   
   
@@ -3808,11 +3847,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetQATLocation()</code></pre>
   </div>
-
+  
   
   
   
@@ -3836,11 +3875,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetQATUserChange()</code></pre>
   </div>
-
+  
   
   
   
@@ -3864,11 +3903,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetSelectedTab()</code></pre>
   </div>
-
+  
   
   
   
@@ -3892,11 +3931,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetShowMinimizeButton()</code></pre>
   </div>
-
+  
   
   
   
@@ -3920,11 +3959,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ToggleKeyboardMode()</code></pre>
   </div>
-
+  
   
   
   
@@ -3948,11 +3987,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void WndProc(ref Message m)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3990,11 +4029,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event ToolStripDropDownClosedEventHandler AppButtonMenuClosed</code></pre>
   </div>
-
+  
   
   
   
@@ -4026,11 +4065,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event CancelEventHandler AppButtonMenuClosing</code></pre>
   </div>
-
+  
   
   
   
@@ -4062,11 +4101,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler AppButtonMenuOpened</code></pre>
   </div>
-
+  
   
   
   
@@ -4098,11 +4137,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event CancelEventHandler AppButtonMenuOpening</code></pre>
   </div>
-
+  
   
   
   
@@ -4134,11 +4173,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler MinimizedModeChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -4170,11 +4209,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler SelectedContextChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -4206,11 +4245,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler SelectedTabChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -4242,11 +4281,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;ContextMenuArgs&gt; ShowQATCustomizeMenu</code></pre>
   </div>
-
+  
   
   
   
@@ -4278,11 +4317,11 @@ public bool PreFilterMessage(ref Message m)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler&lt;ContextMenuArgs&gt; ShowRibbonContextMenu</code></pre>
   </div>
-
+  
   
   
   
@@ -4325,7 +4364,7 @@ public bool PreFilterMessage(ref Message m)</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.7)
+            <span>Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2019. All rights reserved. <a href="https://github.com/Wagnerp/Krypton-NET-5.470">https://github.com/Wagnerp/Krypton-NET-5.470</a></span>
             
           </div>
         </div>

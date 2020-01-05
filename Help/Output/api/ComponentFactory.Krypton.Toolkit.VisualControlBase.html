@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class VisualControlBase
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. </title>
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VisualControlBase
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. ">
-    <meta name="generator" content="docfx 2.33.1.0">
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. ">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../Krypton.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -26,7 +26,7 @@ BSD 3-Clause License
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -78,7 +78,7 @@ BSD 3-Clause License
   <div class="markdown level0 summary"><p>Base class used for implementation of actual controls.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -366,9 +366,6 @@ BSD 3-Clause License
       <span class="xref">System.Windows.Forms.Control.OnCreateControl()</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)</span>
-    </div>
-    <div>
       <span class="xref">System.Windows.Forms.Control.OnLocationChanged(System.EventArgs)</span>
     </div>
     <div>
@@ -418,9 +415,6 @@ BSD 3-Clause License
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.OnMouseCaptureChanged(System.EventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)</span>
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.OnDpiChangedBeforeParent(System.EventArgs)</span>
@@ -1190,7 +1184,7 @@ BSD 3-Clause License
   </div>
   
   <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
-  <h6><strong>Assembly</strong>: ComponentFactory.Krypton.Toolkit.dll</h6>
+  <h6><strong>Assembly</strong>: Krypton Toolkit.dll</h6>
   
   <h5 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_syntax">Syntax</h5>
   <div class="codewrapper">
@@ -1198,7 +1192,7 @@ BSD 3-Clause License
 [ComVisible(true)]
 public abstract class VisualControlBase : Control, IDropTarget, ISynchronizeInvoke, IWin32Window, IArrangedElement, IBindableComponent, IComponent, IDisposable, IKryptonDebug</code></pre>
   </div>
-
+  
   
   
   
@@ -1216,11 +1210,11 @@ public abstract class VisualControlBase : Control, IDropTarget, ISynchronizeInvo
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected VisualControlBase()</code></pre>
   </div>
-
+  
   
   
   
@@ -1246,13 +1240,13 @@ public abstract class VisualControlBase : Control, IDropTarget, ISynchronizeInvo
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 [Bindable(false)]
 public override Image BackgroundImage { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1287,13 +1281,13 @@ public override Image BackgroundImage { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 [Bindable(false)]
 public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1324,15 +1318,15 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
   <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_ContextMenuStrip" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.ContextMenuStrip"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_ContextMenuStrip" class="expander" data-toggle="collapse">ContextMenuStrip</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_ContextMenuStrip" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets or sets the ContextMenuStrip associated with this control.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the <span class="xref">System.Windows.Forms.ContextMenuStrip</span> associated with this control.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override ContextMenuStrip ContextMenuStrip { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1342,7 +1336,8 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
     <tr>
       <td>
         <span class="xref">System.Windows.Forms.ContextMenuStrip</span>
-        <p>
+        <p><p>The <span class="xref">System.Windows.Forms.ContextMenuStrip</span> for this control, or <span class="xref">null</span> if there is no <span class="xref">System.Windows.Forms.ContextMenuStrip</span>. The default is <span class="xref">null</span>.</p>
+</p>
       </td>
     </tr>
   </table>
@@ -1367,11 +1362,11 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual bool EvalInvokePaint { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1404,11 +1399,11 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual KryptonContextMenu KryptonContextMenu { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1441,11 +1436,11 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected NeedPaintHandler NeedPaintDelegate { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1478,11 +1473,11 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected NeedPaintHandler NeedPaintPaletteDelegate { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1515,11 +1510,11 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool NeedTransparentPaint { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1552,11 +1547,11 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IPalette Palette { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1589,11 +1584,11 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteMode PaletteMode { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1626,11 +1621,11 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected PaletteRedirect Redirector { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1663,12 +1658,12 @@ public override ImageLayout BackgroundImageLayout { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public IRenderer Renderer { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1692,6 +1687,43 @@ public IRenderer Renderer { get; }</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_VisualControlBase_ToolTipValues_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.ToolTipValues*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_ToolTipValues" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.ToolTipValues"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_ToolTipValues" class="expander" data-toggle="collapse">ToolTipValues</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_ToolTipValues" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets access to the button content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolTipValues ToolTipValues { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="ComponentFactory.Krypton.Toolkit.Values.ToolTipValues.html">ToolTipValues</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_VisualControlBase_TransparentParent_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.TransparentParent*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_TransparentParent" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.TransparentParent"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_TransparentParent" class="expander" data-toggle="collapse">TransparentParent</a></h4>
@@ -1701,11 +1733,11 @@ public IRenderer Renderer { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual Control TransparentParent { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1738,11 +1770,11 @@ public IRenderer Renderer { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ViewManager ViewManager { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ViewManager ViewManager { get; protected set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1777,11 +1809,11 @@ public IRenderer Renderer { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool CanProcessMnemonic()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -1815,12 +1847,12 @@ public IRenderer Renderer { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public void CheckPerformLayout()</code></pre>
   </div>
-
+  
   
   
   
@@ -1844,11 +1876,11 @@ public void CheckPerformLayout()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void ContextMenuClosed()</code></pre>
   </div>
-
+  
   
   
   
@@ -1872,11 +1904,11 @@ public void CheckPerformLayout()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual PaletteRedirect CreateRedirector()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -1910,12 +1942,12 @@ public void CheckPerformLayout()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public ToolStripRenderer CreateToolStripRenderer()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -1948,11 +1980,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1989,11 +2021,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual bool EvalTransparentPaint()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -2027,11 +2059,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool ForceViewLayout()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -2065,11 +2097,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void InvokeLayout()</code></pre>
   </div>
-
+  
   
   
   
@@ -2093,11 +2125,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void MarkLayoutDirty()</code></pre>
   </div>
-
+  
   
   
   
@@ -2121,11 +2153,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnButtonSpecChanged(object sender, EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2177,11 +2209,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnDoubleClick(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2218,11 +2250,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnGlobalPaletteChanged(object sender, EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2265,11 +2297,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnGotFocus(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2297,6 +2329,45 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_VisualControlBase_OnHandleCreated_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.OnHandleCreated*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_OnHandleCreated_System_EventArgs_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.OnHandleCreated(System.EventArgs)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_OnHandleCreated_System_EventArgs_" class="expander" data-toggle="collapse">OnHandleCreated(EventArgs)</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_OnHandleCreated_System_EventArgs_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnHandleCreated(EventArgs e)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.EventArgs</span></span>
+        <span class="parametername">e</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_VisualControlBase_OnKeyDown_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.OnKeyDown*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_OnKeyDown_System_Windows_Forms_KeyEventArgs_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.OnKeyDown(System.Windows.Forms.KeyEventArgs)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_OnKeyDown_System_Windows_Forms_KeyEventArgs_" class="expander" data-toggle="collapse">OnKeyDown(KeyEventArgs)</a></h4>
@@ -2306,11 +2377,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnKeyDown(KeyEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2347,11 +2418,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnKeyPress(KeyPressEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2388,11 +2459,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnKeyUp(KeyEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2429,11 +2500,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnLayout(LayoutEventArgs levent)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2470,11 +2541,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnLostFocus(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2511,11 +2582,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseDown(MouseEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2543,6 +2614,45 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseEnter_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.OnMouseEnter*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseEnter_System_EventArgs_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.OnMouseEnter(System.EventArgs)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseEnter_System_EventArgs_" class="expander" data-toggle="collapse">OnMouseEnter(EventArgs)</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseEnter_System_EventArgs_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnMouseEnter(EventArgs e)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.EventArgs</span></span>
+        <span class="parametername">e</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseLeave_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.OnMouseLeave*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseLeave_System_EventArgs_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.OnMouseLeave(System.EventArgs)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseLeave_System_EventArgs_" class="expander" data-toggle="collapse">OnMouseLeave(EventArgs)</a></h4>
@@ -2552,11 +2662,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseLeave(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2593,11 +2703,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseMove(MouseEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2634,11 +2744,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseUp(MouseEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2675,11 +2785,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnNeedPaint(object sender, NeedLayoutEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2731,11 +2841,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPaint(PaintEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2772,11 +2882,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnPaletteChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2811,11 +2921,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnPaletteNeedPaint(object sender, NeedLayoutEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2858,11 +2968,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnRightToLeftChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2899,11 +3009,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnUserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2946,11 +3056,11 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void PaintBackground(Graphics g, Brush backBrush, Rectangle backRect)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3001,12 +3111,12 @@ public ToolStripRenderer CreateToolStripRenderer()</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public virtual void PerformNeedPaint(bool needLayout)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3041,11 +3151,11 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override bool ProcessCmdKey(ref Message msg, Keys keyData)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3100,11 +3210,11 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetPalette()</code></pre>
   </div>
-
+  
   
   
   
@@ -3128,12 +3238,100 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetPaletteMode()</code></pre>
   </div>
-
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="ComponentFactory_Krypton_Toolkit_VisualControlBase_ResetToolTipValues_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.ResetToolTipValues*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_ResetToolTipValues" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.ResetToolTipValues"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_ResetToolTipValues" class="expander" data-toggle="collapse">ResetToolTipValues()</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_ResetToolTipValues" class="collapse in">
+  <div class="markdown level1 summary"><p>Resets the ToolTipValues property to its default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetToolTipValues()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="ComponentFactory_Krypton_Toolkit_VisualControlBase_SetWindowTheme_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.SetWindowTheme*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_SetWindowTheme_System_IntPtr_System_String_System_String_" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.SetWindowTheme(System.IntPtr,System.String,System.String)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_SetWindowTheme_System_IntPtr_System_String_System_String_" class="expander" data-toggle="collapse">SetWindowTheme(IntPtr, String, String)</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_SetWindowTheme_System_IntPtr_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SetWindowTheme(IntPtr hwnd, string pszSubAppName, string pszSubIdList)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.IntPtr</span></span>
+        <span class="parametername">hwnd</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">pszSubAppName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">pszSubIdList</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
   
   
   
@@ -3156,11 +3354,11 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void UpdateGlobalEvents(bool attach)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3195,11 +3393,11 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ViewBase ViewFromPoint(Point pt)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3244,11 +3442,11 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void WndProc(ref Message m)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3279,6 +3477,42 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
   
   
   
+  <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_GlobalPaletteChanged" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.GlobalPaletteChanged"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_GlobalPaletteChanged" class="expander" data-toggle="collapse">GlobalPaletteChanged</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_GlobalPaletteChanged" class="collapse in">
+  <div class="markdown level1 summary"><p>Occurs when the Global palette changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler GlobalPaletteChanged</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.EventHandler</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
   <h4 id="ComponentFactory_Krypton_Toolkit_VisualControlBase_PaletteChanged" data-uid="ComponentFactory.Krypton.Toolkit.VisualControlBase.PaletteChanged"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_PaletteChanged" class="expander" data-toggle="collapse">PaletteChanged</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_VisualControlBase_PaletteChanged" class="collapse in">
@@ -3286,11 +3520,11 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler PaletteChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -3333,7 +3567,7 @@ public virtual void PerformNeedPaint(bool needLayout)</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.7)
+            <span>Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2019. All rights reserved. <a href="https://github.com/Wagnerp/Krypton-NET-5.470">https://github.com/Wagnerp/Krypton-NET-5.470</a></span>
             
           </div>
         </div>

@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class KryptonForm
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. </title>
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class KryptonForm
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. ">
-    <meta name="generator" content="docfx 2.33.1.0">
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. ">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../Krypton.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -26,7 +26,7 @@ BSD 3-Clause License
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -78,7 +78,7 @@ BSD 3-Clause License
   <div class="markdown level0 summary"><p>Draws the window chrome using a Krypton palette.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -93,8 +93,11 @@ BSD 3-Clause License
   </div>
   
       <div class="level9"><a class="xref" href="ComponentFactory.Krypton.Docking.KryptonFloatingWindow.html">KryptonFloatingWindow</a></div>
+      <div class="level9"><a class="xref" href="ComponentFactory.Krypton.Toolkit.ByteViewerForm.html">ByteViewerForm</a></div>
       <div class="level9"><a class="xref" href="ComponentFactory.Krypton.Toolkit.KryptonInputBox.html">KryptonInputBox</a></div>
+      <div class="level9"><a class="xref" href="ComponentFactory.Krypton.Toolkit.KryptonInputBoxOld.html">KryptonInputBoxOld</a></div>
       <div class="level9"><a class="xref" href="ComponentFactory.Krypton.Toolkit.KryptonMessageBox.html">KryptonMessageBox</a></div>
+      <div class="level9"><a class="xref" href="ComponentFactory.Krypton.Toolkit.ModalWaitDialog.html">ModalWaitDialog</a></div>
       <div class="level9"><a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualTaskDialog.html">VisualTaskDialog</a></div>
   
   <div class="inheritedMembers">
@@ -103,10 +106,25 @@ BSD 3-Clause License
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_PaletteChanged">VisualForm.PaletteChanged</a>
     </div>
     <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_GlobalPaletteChanged">VisualForm.GlobalPaletteChanged</a>
+    </div>
+    <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_PaletteMode">VisualForm.PaletteMode</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_ResetPaletteMode">VisualForm.ResetPaletteMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_ShadowValues">VisualForm.ShadowValues</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_ResetShadowValues">VisualForm.ResetShadowValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_BlurValues">VisualForm.BlurValues</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_ResetBlurValues">VisualForm.ResetBlurValues()</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_Palette">VisualForm.Palette</a>
@@ -356,9 +374,6 @@ BSD 3-Clause License
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Form.OnMenuComplete(System.EventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Forms.Form.OnPaint(System.Windows.Forms.PaintEventArgs)</span>
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Form.OnDpiChanged(System.Windows.Forms.DpiChangedEventArgs)</span>
@@ -1758,16 +1773,16 @@ BSD 3-Clause License
   </div>
   
   <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
-  <h6><strong>Assembly</strong>: ComponentFactory.Krypton.Toolkit.dll</h6>
+  <h6><strong>Assembly</strong>: Krypton Toolkit.dll</h6>
   
   <h5 id="ComponentFactory_Krypton_Toolkit_KryptonForm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof (KryptonForm), &quot;ToolboxBitmaps.KryptonForm.bmp&quot;)]
+    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof(KryptonForm), &quot;ToolboxBitmaps.KryptonForm.bmp&quot;)]
 [ClassInterface(ClassInterfaceType.AutoDispatch)]
 [ComVisible(true)]
 public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IArrangedElement, IComponent, IDisposable, IContainerControl, IKryptonDebug, IContentValues</code></pre>
   </div>
-
+  
   
   
   
@@ -1785,11 +1800,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonForm()</code></pre>
   </div>
-
+  
   
   
   
@@ -1806,6 +1821,44 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
   </h3>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_AdministratorText_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.AdministratorText*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_AdministratorText" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.AdministratorText"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_AdministratorText" class="expander" data-toggle="collapse">AdministratorText</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_AdministratorText" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the administrator text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AdministratorText { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p>The administrator text.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_AllowButtonSpecToolTips_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.AllowButtonSpecToolTips*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_AllowButtonSpecToolTips" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.AllowButtonSpecToolTips"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_AllowButtonSpecToolTips" class="expander" data-toggle="collapse">AllowButtonSpecToolTips</a></h4>
@@ -1815,11 +1868,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AllowButtonSpecToolTips { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1848,15 +1901,15 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_AllowFormChrome" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.AllowFormChrome"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_AllowFormChrome" class="expander" data-toggle="collapse">AllowFormChrome</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_AllowFormChrome" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating if custome chrome is allowed.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating if custom chrome is allowed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AllowFormChrome { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1889,11 +1942,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AllowStatusStripMerge { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1917,6 +1970,44 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_BracketType_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.BracketType*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_BracketType" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.BracketType"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_BracketType" class="expander" data-toggle="collapse">BracketType</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_BracketType" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the type of the bracket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BracketType BracketType { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="ComponentFactory.Krypton.Toolkit.BracketType.html">BracketType</a>
+        <p><p>The type of the bracket.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_ButtonSpecs_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.ButtonSpecs*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_ButtonSpecs" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.ButtonSpecs"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_ButtonSpecs" class="expander" data-toggle="collapse">ButtonSpecs</a></h4>
@@ -1926,11 +2017,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonForm.FormButtonSpecCollection ButtonSpecs { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1954,19 +2045,58 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_CornerRoundingRadius_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.CornerRoundingRadius*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_CornerRoundingRadius" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.CornerRoundingRadius"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_CornerRoundingRadius" class="expander" data-toggle="collapse">CornerRoundingRadius</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_CornerRoundingRadius" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets the corner rounding radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CornerRoundingRadius { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>The corner rounding radius.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_CreateParams_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.CreateParams*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_CreateParams" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.CreateParams"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_CreateParams" class="expander" data-toggle="collapse">CreateParams</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_CreateParams" class="collapse in">
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Example by juverpp </p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override CreateParams CreateParams { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2001,11 +2131,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteBackStyle GroupBackStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2038,11 +2168,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteBorderStyle GroupBorderStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2075,11 +2205,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public HeaderStyle HeaderStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2103,6 +2233,44 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_IsInAdministratorMode_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.IsInAdministratorMode*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_IsInAdministratorMode" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.IsInAdministratorMode"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_IsInAdministratorMode" class="expander" data-toggle="collapse">IsInAdministratorMode</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_IsInAdministratorMode" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is in administrator mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInAdministratorMode { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p><code>true</code> if this instance is in administrator mode; otherwise, <code>false</code>.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_StateActive_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.StateActive*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_StateActive" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.StateActive"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_StateActive" class="expander" data-toggle="collapse">StateActive</a></h4>
@@ -2112,11 +2280,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteForm StateActive { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2149,11 +2317,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteFormRedirect StateCommon { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2186,11 +2354,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteForm StateInactive { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2223,11 +2391,11 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string TextExtra { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2260,12 +2428,12 @@ public class KryptonForm : VisualForm, IDropTarget, ISynchronizeInvoke, IWin32Wi
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public ToolTipManager ToolTipManager { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2298,11 +2466,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool UseDropShadow { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2337,11 +2505,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2369,6 +2537,43 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_GetHasCurrentInstanceGotAdministrativeRights_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.GetHasCurrentInstanceGotAdministrativeRights*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_GetHasCurrentInstanceGotAdministrativeRights" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.GetHasCurrentInstanceGotAdministrativeRights"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_GetHasCurrentInstanceGotAdministrativeRights" class="expander" data-toggle="collapse">GetHasCurrentInstanceGotAdministrativeRights()</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_GetHasCurrentInstanceGotAdministrativeRights" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the has current instance got administrative rights.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetHasCurrentInstanceGotAdministrativeRights()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_GetImage_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.GetImage*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_GetImage_ComponentFactory_Krypton_Toolkit_PaletteState_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.GetImage(ComponentFactory.Krypton.Toolkit.PaletteState)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_GetImage_ComponentFactory_Krypton_Toolkit_PaletteState_" class="expander" data-toggle="collapse">GetImage(PaletteState)</a></h4>
@@ -2378,11 +2583,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Image GetImage(PaletteState state)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2429,11 +2634,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Color GetImageTransparentColor(PaletteState state)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2480,11 +2685,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string GetLongText()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -2520,11 +2725,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string GetShortText()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -2560,11 +2765,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool HitTestCloseButton(Point pt)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2609,11 +2814,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool HitTestMaxButton(Point pt)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2658,11 +2863,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool HitTestMinButton(Point pt)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2707,11 +2912,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnAllowFormChromeChanged(object sender, EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2756,11 +2961,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnButtonSpecChanged(object sender, EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2814,11 +3019,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnControlAdded(ControlEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2855,11 +3060,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnControlRemoved(ControlEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2896,11 +3101,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnLoad(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2928,6 +3133,47 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
   </div>
   
   
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_OnPaint_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.OnPaint*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_OnPaint_System_Windows_Forms_PaintEventArgs_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.OnPaint(System.Windows.Forms.PaintEventArgs)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_OnPaint_System_Windows_Forms_PaintEventArgs_" class="expander" data-toggle="collapse">OnPaint(PaintEventArgs)</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_OnPaint_System_Windows_Forms_PaintEventArgs_" class="collapse in">
+  <div class="markdown level1 summary"><p>Raises the <span class="xref">System.Windows.Forms.Control.Paint</span> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnPaint(PaintEventArgs e)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Windows.Forms.PaintEventArgs</span></span>
+        <span class="parametername">e</span>
+        <p><p>A <span class="xref">System.Windows.Forms.PaintEventArgs</span> that contains the event data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Windows.Forms.Form.OnPaint(System.Windows.Forms.PaintEventArgs)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
   <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_OnPaletteChanged_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.OnPaletteChanged*"></a>
   
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_OnPaletteChanged_System_EventArgs_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.OnPaletteChanged(System.EventArgs)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_OnPaletteChanged_System_EventArgs_" class="expander" data-toggle="collapse">OnPaletteChanged(EventArgs)</a></h4>
@@ -2937,11 +3183,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPaletteChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2978,11 +3224,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnTextChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3019,11 +3265,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnWindowActiveChanged()</code></pre>
   </div>
-
+  
   
   
   
@@ -3032,6 +3278,129 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
   
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualForm.html#ComponentFactory_Krypton_Toolkit_VisualForm_OnWindowActiveChanged">VisualForm.OnWindowActiveChanged()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateDisableCloseButton_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.UpdateDisableCloseButton*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateDisableCloseButton_System_Boolean_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.UpdateDisableCloseButton(System.Boolean)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateDisableCloseButton_System_Boolean_" class="expander" data-toggle="collapse">UpdateDisableCloseButton(Boolean)</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateDisableCloseButton_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateDisableCloseButton(bool value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateDropShadowDraw_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.UpdateDropShadowDraw*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateDropShadowDraw_System_Boolean_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.UpdateDropShadowDraw(System.Boolean)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateDropShadowDraw_System_Boolean_" class="expander" data-toggle="collapse">UpdateDropShadowDraw(Boolean)</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateDropShadowDraw_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calls the method that draws the drop shadow around the form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateDropShadowDraw(bool useDropShadow)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">useDropShadow</span>
+        <p><p>Use dropshadow user input value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateTitle_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.UpdateTitle*"></a>
+  
+  <h4 id="ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateTitle_System_Boolean_ComponentFactory_Krypton_Toolkit_BracketType_" data-uid="ComponentFactory.Krypton.Toolkit.KryptonForm.UpdateTitle(System.Boolean,ComponentFactory.Krypton.Toolkit.BracketType)"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateTitle_System_Boolean_ComponentFactory_Krypton_Toolkit_BracketType_" class="expander" data-toggle="collapse">UpdateTitle(Boolean, BracketType)</a></h4>
+  
+  <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonForm_UpdateTitle_System_Boolean_ComponentFactory_Krypton_Toolkit_BracketType_" class="collapse in">
+  <div class="markdown level1 summary"><p>Updates the title.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTitle(bool hasAdministrativeRights, BracketType bracketType = BracketType.CURVEDBRACKET)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">hasAdministrativeRights</span>
+        <p><p>if set to <code>true</code> [has administrative rights].</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="ComponentFactory.Krypton.Toolkit.BracketType.html">BracketType</a></span>
+        <span class="parametername">bracketType</span>
+        <p><p>The type of bracket that will encapsulate the administrator text.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
   
   
   
@@ -3049,11 +3418,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void WindowChromeCompositionLayout(ViewLayoutContext context, Rectangle compRect)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3098,11 +3467,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void WindowChromeCompositionPaint(RenderContext context)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3139,11 +3508,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void WindowChromeEnd()</code></pre>
   </div>
-
+  
   
   
   
@@ -3169,11 +3538,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override IntPtr WindowChromeHitTest(Point pt, bool composition)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3227,11 +3596,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override bool WindowChromeLeftMouseDown(Point pt)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3278,11 +3647,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void WindowChromePaint(Graphics g, Rectangle bounds)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3327,11 +3696,11 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void WindowChromeStart()</code></pre>
   </div>
-
+  
   
   
   
@@ -3354,6 +3723,9 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
   <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.BlurWindowExtensions.html#ComponentFactory_Krypton_Toolkit_BlurWindowExtensions_DisableBlur_System_Windows_Forms_Form_">BlurWindowExtensions.DisableBlur(Form)</a>
   </div>
+  <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.BlurWindowExtensions.html#ComponentFactory_Krypton_Toolkit_BlurWindowExtensions_ApplyGlass_System_Windows_Forms_Form_System_Boolean_">BlurWindowExtensions.ApplyGlass(Form, Boolean)</a>
+  </div>
   
 </article>
           </div>
@@ -3374,7 +3746,7 @@ public ToolTipManager ToolTipManager { get; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.7)
+            <span>Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2019. All rights reserved. <a href="https://github.com/Wagnerp/Krypton-NET-5.470">https://github.com/Wagnerp/Krypton-NET-5.470</a></span>
             
           </div>
         </div>

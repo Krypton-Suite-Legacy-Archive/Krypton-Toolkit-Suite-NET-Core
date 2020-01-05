@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class KryptonPage
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. </title>
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class KryptonPage
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. ">
-    <meta name="generator" content="docfx 2.33.1.0">
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. ">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../Krypton.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -26,7 +26,7 @@ BSD 3-Clause License
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -78,7 +78,7 @@ BSD 3-Clause License
   <div class="markdown level0 summary"><p>Page class used inside visual containers.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -101,6 +101,9 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualPanel.html#ComponentFactory_Krypton_Toolkit_VisualPanel_PaletteChanged">VisualPanel.PaletteChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualPanel.html#ComponentFactory_Krypton_Toolkit_VisualPanel_GlobalPaletteChanged">VisualPanel.GlobalPaletteChanged</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualPanel.html#ComponentFactory_Krypton_Toolkit_VisualPanel_Dispose_System_Boolean_">VisualPanel.Dispose(Boolean)</a>
@@ -197,6 +200,9 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualPanel.html#ComponentFactory_Krypton_Toolkit_VisualPanel_OnRightToLeftChanged_System_EventArgs_">VisualPanel.OnRightToLeftChanged(EventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualPanel.html#ComponentFactory_Krypton_Toolkit_VisualPanel_ProcessCmdKey_System_Windows_Forms_Message__System_Windows_Forms_Keys_">VisualPanel.ProcessCmdKey(Message, Keys)</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualPanel.html#ComponentFactory_Krypton_Toolkit_VisualPanel_OnLayout_System_Windows_Forms_LayoutEventArgs_">VisualPanel.OnLayout(LayoutEventArgs)</a>
@@ -695,9 +701,6 @@ BSD 3-Clause License
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.PreProcessControlMessage(System.Windows.Forms.Message)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Forms.Control.ProcessCmdKey(System.Windows.Forms.Message, System.Windows.Forms.Keys)</span>
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.ProcessDialogChar(System.Char)</span>
@@ -1362,14 +1365,14 @@ BSD 3-Clause License
   </div>
   
   <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
-  <h6><strong>Assembly</strong>: ComponentFactory.Krypton.Navigator.dll</h6>
+  <h6><strong>Assembly</strong>: Krypton Navigator.dll</h6>
   
   <h5 id="ComponentFactory_Krypton_Navigator_KryptonPage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof (KryptonPage), &quot;ToolboxBitmaps.KryptonPage.bmp&quot;)]
+    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof(KryptonPage), &quot;ToolboxBitmaps.KryptonPage.bmp&quot;)]
 public class KryptonPage : VisualPanel, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IArrangedElement, IComponent, IDisposable, ISupportInitializeNotification, ISupportInitialize, IKryptonDebug</code></pre>
   </div>
-
+  
   
   
   
@@ -1387,11 +1390,11 @@ public class KryptonPage : VisualPanel, IDropTarget, ISynchronizeInvoke, IWin32W
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonPage()</code></pre>
   </div>
-
+  
   
   
   
@@ -1415,11 +1418,11 @@ public class KryptonPage : VisualPanel, IDropTarget, ISynchronizeInvoke, IWin32W
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonPage(string text)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1454,11 +1457,11 @@ public class KryptonPage : VisualPanel, IDropTarget, ISynchronizeInvoke, IWin32W
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonPage(string text, Image imageSmall, string uniqueName)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1509,11 +1512,11 @@ public class KryptonPage : VisualPanel, IDropTarget, ISynchronizeInvoke, IWin32W
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonPage(string text, string uniqueName)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1558,12 +1561,11 @@ public class KryptonPage : VisualPanel, IDropTarget, ISynchronizeInvoke, IWin32W
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Browsable(false)]
-public virtual Size AutoHiddenSlideSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Size AutoHiddenSlideSize { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1596,12 +1598,12 @@ public virtual Size AutoHiddenSlideSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public override Color BackColor { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1636,11 +1638,11 @@ public override Color BackColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual PageButtonSpecCollection ButtonSpecs { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1673,12 +1675,12 @@ public override Color BackColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public virtual int Flags { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1711,11 +1713,11 @@ public virtual int Flags { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Image ImageLarge { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1748,11 +1750,11 @@ public virtual int Flags { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Image ImageMedium { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1785,11 +1787,11 @@ public virtual int Flags { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Image ImageSmall { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1822,11 +1824,11 @@ public virtual int Flags { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual KryptonContextMenu KryptonContextMenu { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1859,12 +1861,12 @@ public virtual int Flags { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public Control KryptonParentContainer { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1897,12 +1899,12 @@ public Control KryptonParentContainer { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public virtual bool LastVisibleSet { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1935,11 +1937,11 @@ public virtual bool LastVisibleSet { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual PaletteNavigatorOtherRedirect OverrideFocus { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1972,11 +1974,11 @@ public virtual bool LastVisibleSet { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual PaletteNavigatorRedirect StateCommon { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2009,11 +2011,11 @@ public virtual bool LastVisibleSet { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual PaletteNavigator StateDisabled { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2046,11 +2048,11 @@ public virtual bool LastVisibleSet { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual PaletteNavigator StateNormal { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2083,11 +2085,11 @@ public virtual bool LastVisibleSet { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual PaletteNavigatorOtherEx StatePressed { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2120,11 +2122,11 @@ public virtual bool LastVisibleSet { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual PaletteNavigatorOther StateSelected { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2157,11 +2159,11 @@ public virtual bool LastVisibleSet { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual PaletteNavigatorOtherEx StateTracking { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2194,13 +2196,13 @@ public virtual bool LastVisibleSet { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Bindable(true)]
 [Browsable(true)]
 public override string Text { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2235,12 +2237,12 @@ public override string Text { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Bindable(true)]
 public virtual string TextDescription { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2273,12 +2275,12 @@ public virtual string TextDescription { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Bindable(true)]
 public virtual string TextTitle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2311,11 +2313,11 @@ public virtual string TextTitle { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual string ToolTipBody { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2348,11 +2350,11 @@ public virtual string TextTitle { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Image ToolTipImage { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2385,12 +2387,12 @@ public virtual string TextTitle { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[KryptonDefaultColor]
 public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2423,11 +2425,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual LabelStyle ToolTipStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2460,11 +2462,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual string ToolTipTitle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2497,11 +2499,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual string UniqueName { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2536,11 +2538,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual bool AreFlagsSet(KryptonPageFlags flags)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2585,11 +2587,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void ClearFlags(KryptonPageFlags flags)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2624,11 +2626,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual Image GetImageMapping(MapKryptonPageImage mapping)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2673,11 +2675,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual string GetTextMapping(MapKryptonPageText mapping)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2722,11 +2724,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAppearancePropertyChanged(string propertyName)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2761,11 +2763,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnAutoHiddenSlideSizeChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2800,11 +2802,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnCreateControl()</code></pre>
   </div>
-
+  
   
   
   
@@ -2830,11 +2832,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnDockChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2871,11 +2873,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnEnabledChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2912,11 +2914,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnFlagsChanged(KryptonPageFlags changed)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2951,11 +2953,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnLoad(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2990,11 +2992,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnLocationChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3031,11 +3033,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnNeedDisabledPaint(object sender, NeedLayoutEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3078,11 +3080,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnNeedNormalPaint(object sender, NeedLayoutEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3125,11 +3127,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnTabIndexChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3166,11 +3168,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnTabStopChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3207,11 +3209,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetImageLarge()</code></pre>
   </div>
-
+  
   
   
   
@@ -3235,11 +3237,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetImageMedium()</code></pre>
   </div>
-
+  
   
   
   
@@ -3263,11 +3265,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetImageSmall()</code></pre>
   </div>
-
+  
   
   
   
@@ -3291,11 +3293,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void ResetInherit(Control alignControl)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3330,11 +3332,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetTextDescription()</code></pre>
   </div>
-
+  
   
   
   
@@ -3358,11 +3360,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetTextTitle()</code></pre>
   </div>
-
+  
   
   
   
@@ -3386,11 +3388,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetToolTipBody()</code></pre>
   </div>
-
+  
   
   
   
@@ -3414,11 +3416,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetToolTipImage()</code></pre>
   </div>
-
+  
   
   
   
@@ -3442,11 +3444,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetToolTipImageTransparentColor()</code></pre>
   </div>
-
+  
   
   
   
@@ -3470,11 +3472,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetToolTipStyle()</code></pre>
   </div>
-
+  
   
   
   
@@ -3498,11 +3500,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetToolTipTitle()</code></pre>
   </div>
-
+  
   
   
   
@@ -3526,11 +3528,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetUniqueName()</code></pre>
   </div>
-
+  
   
   
   
@@ -3554,11 +3556,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void SetFixedState(PaletteState state)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3593,11 +3595,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void SetFlags(KryptonPageFlags flags)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3632,11 +3634,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void SetInherit(Control alignControl, PaletteNavigatorRedirect common, PaletteNavigator disabled, PaletteNavigator normal, PaletteNavigatorOtherEx tracking, PaletteNavigatorOtherEx pressed, PaletteNavigatorOther selected, PaletteNavigatorOtherRedirect focus)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3727,11 +3729,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void SetVisibleCore(bool value)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3768,11 +3770,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -3808,11 +3810,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void WndProc(ref Message m)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -3831,7 +3833,7 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
   
   
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Windows.Forms.ScrollableControl.WndProc(System.Windows.Forms.Message)</span></div>
+  <div><a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualPanel.html#ComponentFactory_Krypton_Toolkit_VisualPanel_WndProc_System_Windows_Forms_Message__">VisualPanel.WndProc(ref Message)</a></div>
   
   
   
@@ -3850,11 +3852,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler AppearancePropertyChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -3886,11 +3888,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler AutoHiddenSlideSizeChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -3922,11 +3924,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event KryptonPageFlagsEventHandler FlagsChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -3958,11 +3960,11 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler Load</code></pre>
   </div>
-
+  
   
   
   
@@ -4005,7 +4007,7 @@ public virtual Color ToolTipImageTransparentColor { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.7)
+            <span>Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2019. All rights reserved. <a href="https://github.com/Wagnerp/Krypton-NET-5.470">https://github.com/Wagnerp/Krypton-NET-5.470</a></span>
             
           </div>
         </div>

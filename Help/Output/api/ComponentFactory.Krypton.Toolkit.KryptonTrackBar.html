@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class KryptonTrackBar
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. </title>
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class KryptonTrackBar
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. ">
-    <meta name="generator" content="docfx 2.33.1.0">
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. ">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../Krypton.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -26,7 +26,7 @@ BSD 3-Clause License
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -78,7 +78,7 @@ BSD 3-Clause License
   <div class="markdown level0 summary"><p>Allow user to scroll between a range of values.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -110,6 +110,9 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_PaletteChanged">VisualControlBase.PaletteChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_GlobalPaletteChanged">VisualControlBase.GlobalPaletteChanged</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_Dispose_System_Boolean_">VisualControlBase.Dispose(Boolean)</a>
@@ -149,6 +152,12 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_BackgroundImageLayout">VisualControlBase.BackgroundImageLayout</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ToolTipValues">VisualControlBase.ToolTipValues</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ResetToolTipValues">VisualControlBase.ResetToolTipValues()</a>
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ViewFromPoint_System_Drawing_Point_">VisualControlBase.ViewFromPoint(Point)</a>
@@ -214,6 +223,9 @@ BSD 3-Clause License
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnPaint_System_Windows_Forms_PaintEventArgs_">VisualControlBase.OnPaint(PaintEventArgs)</a>
     </div>
     <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseEnter_System_EventArgs_">VisualControlBase.OnMouseEnter(EventArgs)</a>
+    </div>
+    <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnMouseMove_System_Windows_Forms_MouseEventArgs_">VisualControlBase.OnMouseMove(MouseEventArgs)</a>
     </div>
     <div>
@@ -245,6 +257,9 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_ContextMenuClosed">VisualControlBase.ContextMenuClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_SetWindowTheme_System_IntPtr_System_String_System_String_">VisualControlBase.SetWindowTheme(IntPtr, String, String)</a>
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.GetAccessibilityObjectById(System.Int32)</span>
@@ -548,9 +563,6 @@ BSD 3-Clause License
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.OnMouseCaptureChanged(System.EventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)</span>
     </div>
     <div>
       <span class="xref">System.Windows.Forms.Control.OnDpiChangedBeforeParent(System.EventArgs)</span>
@@ -1296,16 +1308,16 @@ BSD 3-Clause License
   </div>
   
   <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
-  <h6><strong>Assembly</strong>: ComponentFactory.Krypton.Toolkit.dll</h6>
+  <h6><strong>Assembly</strong>: Krypton Toolkit.dll</h6>
   
   <h5 id="ComponentFactory_Krypton_Toolkit_KryptonTrackBar_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof (KryptonTrackBar), &quot;ToolboxBitmaps.KryptonTrackBar.bmp&quot;)]
+    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof(KryptonTrackBar), &quot;ToolboxBitmaps.KryptonTrackBar.bmp&quot;)]
 [ClassInterface(ClassInterfaceType.AutoDispatch)]
 [ComVisible(true)]
 public class KryptonTrackBar : VisualSimpleBase, IDropTarget, ISynchronizeInvoke, IWin32Window, IArrangedElement, IBindableComponent, IComponent, IDisposable, IKryptonDebug</code></pre>
   </div>
-
+  
   
   
   
@@ -1323,11 +1335,11 @@ public class KryptonTrackBar : VisualSimpleBase, IDropTarget, ISynchronizeInvoke
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonTrackBar()</code></pre>
   </div>
-
+  
   
   
   
@@ -1353,12 +1365,12 @@ public class KryptonTrackBar : VisualSimpleBase, IDropTarget, ISynchronizeInvoke
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(true)]
 public override bool AutoSize { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1393,11 +1405,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteBackStyle BackStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1430,11 +1442,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override Size DefaultSize { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1469,11 +1481,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int LargeChange { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1502,15 +1514,15 @@ public override bool AutoSize { get; set; }</code></pre>
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTrackBar_Maximum" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTrackBar.Maximum"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_Maximum" class="expander" data-toggle="collapse">Maximum</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_Maximum" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets or sets the upper limit of the range this trackbar is working with.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the upper limit of the range this TrackBar is working with.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Maximum { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1539,15 +1551,15 @@ public override bool AutoSize { get; set; }</code></pre>
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTrackBar_Minimum" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTrackBar.Minimum"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_Minimum" class="expander" data-toggle="collapse">Minimum</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_Minimum" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets or sets the lower limit of the range this trackbar is working with.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the lower limit of the range this TrackBar is working with.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Minimum { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1580,11 +1592,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Orientation Orientation { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1617,11 +1629,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTrackBarRedirect OverrideFocus { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1654,11 +1666,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Padding Padding { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1691,11 +1703,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int SmallChange { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1724,15 +1736,15 @@ public override bool AutoSize { get; set; }</code></pre>
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateCommon" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTrackBar.StateCommon"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateCommon" class="expander" data-toggle="collapse">StateCommon</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateCommon" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets access to the common trackbar appearance that other states can override.</p>
+  <div class="markdown level1 summary"><p>Gets access to the common TrackBar appearance that other states can override.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTrackBarRedirect StateCommon { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1761,15 +1773,15 @@ public override bool AutoSize { get; set; }</code></pre>
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateDisabled" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTrackBar.StateDisabled"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateDisabled" class="expander" data-toggle="collapse">StateDisabled</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateDisabled" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets access to the disabled trackbar appearance.</p>
+  <div class="markdown level1 summary"><p>Gets access to the disabled TrackBar appearance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTrackBarStates StateDisabled { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1798,15 +1810,15 @@ public override bool AutoSize { get; set; }</code></pre>
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateNormal" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTrackBar.StateNormal"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateNormal" class="expander" data-toggle="collapse">StateNormal</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateNormal" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets access to the normal trackbar appearance.</p>
+  <div class="markdown level1 summary"><p>Gets access to the normal TrackBar appearance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTrackBarStates StateNormal { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1835,15 +1847,15 @@ public override bool AutoSize { get; set; }</code></pre>
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StatePressed" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTrackBar.StatePressed"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StatePressed" class="expander" data-toggle="collapse">StatePressed</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StatePressed" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets access to the pressed trackbar appearance.</p>
+  <div class="markdown level1 summary"><p>Gets access to the pressed TrackBar appearance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTrackBarPositionStates StatePressed { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1872,15 +1884,15 @@ public override bool AutoSize { get; set; }</code></pre>
   <h4 id="ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateTracking" data-uid="ComponentFactory.Krypton.Toolkit.KryptonTrackBar.StateTracking"><a href="#collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateTracking" class="expander" data-toggle="collapse">StateTracking</a></h4>
   
   <div id="collapsible-ComponentFactory_Krypton_Toolkit_KryptonTrackBar_StateTracking" class="collapse in">
-  <div class="markdown level1 summary"><p>Gets access to the tracking trackbar appearance.</p>
+  <div class="markdown level1 summary"><p>Gets access to the tracking TrackBar appearance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTrackBarPositionStates StateTracking { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1913,11 +1925,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int TickFrequency { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1950,11 +1962,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public TickStyle TickStyle { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -1987,11 +1999,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PaletteTrackBarSize TrackBarSize { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2024,11 +2036,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Value { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2061,11 +2073,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool VolumeControl { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -2100,11 +2112,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override bool EvalTransparentPaint()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -2140,11 +2152,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override bool IsInputKey(Keys keyData)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2191,11 +2203,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnEnabledChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2232,11 +2244,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnGotFocus(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2273,11 +2285,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnHandleCreated(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2296,7 +2308,7 @@ public override bool AutoSize { get; set; }</code></pre>
   
   
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)</span></div>
+  <div><a class="xref" href="ComponentFactory.Krypton.Toolkit.VisualControlBase.html#ComponentFactory_Krypton_Toolkit_VisualControlBase_OnHandleCreated_System_EventArgs_">VisualControlBase.OnHandleCreated(EventArgs)</a></div>
   
   
   
@@ -2314,11 +2326,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnLostFocus(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2355,11 +2367,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseDown(MouseEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2396,11 +2408,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnMouseWheel(MouseEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2437,11 +2449,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnPaddingChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2478,11 +2490,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnRightToLeftChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2519,11 +2531,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnScroll(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2558,11 +2570,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnValueChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2597,11 +2609,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void SetBoundsCore(int x, int y, int width, int height, BoundsSpecified specified)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2670,11 +2682,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void SetFixedState(PaletteState state)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2709,11 +2721,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetRange(int minValue, int maxValue)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2756,11 +2768,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void WndProc(ref Message m)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -2798,11 +2810,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler Scroll</code></pre>
   </div>
-
+  
   
   
   
@@ -2834,11 +2846,11 @@ public override bool AutoSize { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler ValueChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -2881,7 +2893,7 @@ public override bool AutoSize { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.7)
+            <span>Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2019. All rights reserved. <a href="https://github.com/Wagnerp/Krypton-NET-5.470">https://github.com/Wagnerp/Krypton-NET-5.470</a></span>
             
           </div>
         </div>

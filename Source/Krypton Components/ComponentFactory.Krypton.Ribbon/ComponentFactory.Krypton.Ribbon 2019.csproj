@@ -125,6 +125,8 @@
     <UpdatePackageVersion>False</UpdatePackageVersion>
     <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+    <AssemblyVersion>5.490.2202.0</AssemblyVersion>
+    <FileVersion>5.490.2202.0</FileVersion>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

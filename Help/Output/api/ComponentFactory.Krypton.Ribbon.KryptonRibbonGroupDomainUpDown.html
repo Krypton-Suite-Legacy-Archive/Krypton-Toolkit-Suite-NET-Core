@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class KryptonRibbonGroupDomainUpDown
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. </title>
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class KryptonRibbonGroupDomainUpDown
-   | Krypton Component Suite 2018
+   | Krypton Component Suite 2019
 BSD 3-Clause License
-&#65533; Component Factory Pty Ltd, 2006-2018, All rights reserved. ">
-    <meta name="generator" content="docfx 2.33.1.0">
+&#65533; Component Factory Pty Ltd, 2006-2019, All rights reserved. ">
+    <meta name="generator" content="docfx 2.48.0.0">
     
     <link rel="shortcut icon" href="../Krypton.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -26,7 +26,7 @@ BSD 3-Clause License
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -78,7 +78,7 @@ BSD 3-Clause License
   <div class="markdown level0 summary"><p>Represents a ribbon group domain up-down.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -96,6 +96,12 @@ BSD 3-Clause License
     </div>
     <div>
       <a class="xref" href="ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem.html#ComponentFactory_Krypton_Ribbon_KryptonRibbonGroupItem_ChainVisible">KryptonRibbonGroupItem.ChainVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem.html#ComponentFactory_Krypton_Ribbon_KryptonRibbonGroupItem_BindingContext">KryptonRibbonGroupItem.BindingContext</a>
+    </div>
+    <div>
+      <a class="xref" href="ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem.html#ComponentFactory_Krypton_Ribbon_KryptonRibbonGroupItem_DataBindings">KryptonRibbonGroupItem.DataBindings</a>
     </div>
     <div>
       <span class="xref">System.ComponentModel.Component.Dispose()</span>
@@ -157,14 +163,14 @@ BSD 3-Clause License
   </div>
   
   <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
-  <h6><strong>Assembly</strong>: ComponentFactory.Krypton.Ribbon.dll</h6>
+  <h6><strong>Assembly</strong>: Krypton Ribbon.dll</h6>
   
   <h5 id="ComponentFactory_Krypton_Ribbon_KryptonRibbonGroupDomainUpDown_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof (KryptonRibbonGroupDomainUpDown), &quot;ToolboxBitmaps.KryptonRibbonGroupDomainUpDown.bmp&quot;)]
-public class KryptonRibbonGroupDomainUpDown : KryptonRibbonGroupItem, IComponent, IDisposable, IRibbonGroupItem</code></pre>
+    <pre><code class="lang-csharp hljs">[ToolboxBitmap(typeof(KryptonRibbonGroupDomainUpDown), &quot;ToolboxBitmaps.KryptonRibbonGroupDomainUpDown.bmp&quot;)]
+public class KryptonRibbonGroupDomainUpDown : KryptonRibbonGroupItem, IRibbonGroupItem, IBindableComponent, IComponent, IDisposable</code></pre>
   </div>
-
+  
   
   
   
@@ -182,11 +188,11 @@ public class KryptonRibbonGroupDomainUpDown : KryptonRibbonGroupItem, IComponent
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonRibbonGroupDomainUpDown()</code></pre>
   </div>
-
+  
   
   
   
@@ -212,11 +218,11 @@ public class KryptonRibbonGroupDomainUpDown : KryptonRibbonGroupItem, IComponent
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool AllowButtonSpecToolTips { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -249,11 +255,11 @@ public class KryptonRibbonGroupDomainUpDown : KryptonRibbonGroupItem, IComponent
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonDomainUpDown.DomainUpDownButtonSpecCollection ButtonSpecs { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -286,11 +292,11 @@ public class KryptonRibbonGroupDomainUpDown : KryptonRibbonGroupItem, IComponent
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ContextMenuStrip ContextMenuStrip { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -323,12 +329,12 @@ public class KryptonRibbonGroupDomainUpDown : KryptonRibbonGroupItem, IComponent
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public KryptonDomainUpDown DomainUpDown { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -361,12 +367,12 @@ public KryptonDomainUpDown DomainUpDown { get; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Bindable(true)]
 public bool Enabled { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -399,11 +405,11 @@ public bool Enabled { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool InterceptArrowKeys { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -436,11 +442,11 @@ public bool Enabled { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DomainUpDown.DomainUpDownItemCollection Items { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -473,12 +479,12 @@ public bool Enabled { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Bindable(true)]
 public string KeyTip { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -511,11 +517,11 @@ public string KeyTip { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public KryptonContextMenu KryptonContextMenu { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -548,11 +554,11 @@ public string KeyTip { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Size MaximumSize { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -585,11 +591,11 @@ public string KeyTip { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Size MinimumSize { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -622,11 +628,11 @@ public string KeyTip { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ReadOnly { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -659,12 +665,12 @@ public string KeyTip { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public int SelectedIndex { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -697,12 +703,12 @@ public int SelectedIndex { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public object SelectedItem { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -735,11 +741,11 @@ public object SelectedItem { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Keys ShortcutKeys { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -772,11 +778,11 @@ public object SelectedItem { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Sorted { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -809,11 +815,11 @@ public object SelectedItem { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Text { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -846,11 +852,11 @@ public object SelectedItem { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public HorizontalAlignment TextAlign { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -883,11 +889,11 @@ public object SelectedItem { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public LeftRightAlignment UpDownAlign { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -920,13 +926,13 @@ public object SelectedItem { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Bindable(true)]
 [Browsable(true)]
 public override bool Visible { get; set; }</code></pre>
   </div>
-
+  
   
   
   
@@ -963,11 +969,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1004,11 +1010,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
   </div>
-
+  
   
   
   
@@ -1032,11 +1038,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnGotFocus(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1071,11 +1077,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnKeyDown(KeyEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1110,11 +1116,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnKeyPress(KeyPressEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1149,11 +1155,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnKeyUp(KeyEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1188,11 +1194,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnLostFocus(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1227,11 +1233,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnPreviewKeyDown(PreviewKeyDownEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1266,11 +1272,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnPropertyChanged(string propertyName)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1305,11 +1311,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnScroll(ScrollEventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1344,11 +1350,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnSelectedItemChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1383,11 +1389,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnTextChanged(EventArgs e)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1422,11 +1428,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetShortcutKeys()</code></pre>
   </div>
-
+  
   
   
   
@@ -1450,11 +1456,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Select(int start, int length)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -1497,11 +1503,11 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Show()</code></pre>
   </div>
-
+  
   
   
   
@@ -1526,12 +1532,12 @@ public override bool Visible { get; set; }</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public event EventHandler GotFocus</code></pre>
   </div>
-
+  
   
   
   
@@ -1563,11 +1569,11 @@ public event EventHandler GotFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event KeyEventHandler KeyDown</code></pre>
   </div>
-
+  
   
   
   
@@ -1599,11 +1605,11 @@ public event EventHandler GotFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event KeyPressEventHandler KeyPress</code></pre>
   </div>
-
+  
   
   
   
@@ -1635,11 +1641,11 @@ public event EventHandler GotFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event KeyEventHandler KeyUp</code></pre>
   </div>
-
+  
   
   
   
@@ -1671,12 +1677,12 @@ public event EventHandler GotFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Browsable(false)]
 public event EventHandler LostFocus</code></pre>
   </div>
-
+  
   
   
   
@@ -1708,11 +1714,11 @@ public event EventHandler LostFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event PreviewKeyDownEventHandler PreviewKeyDown</code></pre>
   </div>
-
+  
   
   
   
@@ -1744,11 +1750,11 @@ public event EventHandler LostFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event PropertyChangedEventHandler PropertyChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -1780,11 +1786,11 @@ public event EventHandler LostFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event ScrollEventHandler Scroll</code></pre>
   </div>
-
+  
   
   
   
@@ -1816,11 +1822,11 @@ public event EventHandler LostFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler SelectedItemChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -1852,11 +1858,11 @@ public event EventHandler LostFocus</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public event EventHandler TextChanged</code></pre>
   </div>
-
+  
   
   
   
@@ -1899,7 +1905,7 @@ public event EventHandler LostFocus</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2018. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-4.7)
+            <span>Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2019. All rights reserved. <a href="https://github.com/Wagnerp/Krypton-NET-5.470">https://github.com/Wagnerp/Krypton-NET-5.470</a></span>
             
           </div>
         </div>
