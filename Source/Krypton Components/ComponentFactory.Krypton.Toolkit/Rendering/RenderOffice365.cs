@@ -4,12 +4,12 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Extends the professional renderer to provide Office365 style additions.
     /// </summary>
-    /// <seealso cref="ComponentFactory.Krypton.Toolkit.RenderOffice2010" />
+    /// <seealso cref="Krypton.Toolkit.RenderOffice2010" />
     public class RenderOffice365 : RenderOffice2010
     {
         #region Static Variables

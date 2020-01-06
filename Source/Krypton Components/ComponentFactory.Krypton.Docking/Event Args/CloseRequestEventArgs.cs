@@ -9,7 +9,7 @@
 //  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Event arguments for the PageCloseRequest event.

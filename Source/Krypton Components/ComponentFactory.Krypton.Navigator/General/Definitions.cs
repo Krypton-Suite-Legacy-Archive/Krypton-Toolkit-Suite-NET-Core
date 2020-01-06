@@ -13,10 +13,10 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 // ReSharper disable MemberCanBeInternal
 
-namespace ComponentFactory.Krypton.Navigator
+namespace Krypton.Navigator
 {
     #region PageButtonSpecCollection
     /// <summary>

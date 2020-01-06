@@ -16,9 +16,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Provides docking functionality for a control instance.

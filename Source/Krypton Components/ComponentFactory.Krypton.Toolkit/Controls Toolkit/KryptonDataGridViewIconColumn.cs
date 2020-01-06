@@ -19,7 +19,7 @@ using System.Windows.Forms;
 // ReSharper disable MemberCanBeInternal
 // ReSharper disable MemberCanBePrivate.Global
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Icon specification that can be assigned to DataGridViewColumns.

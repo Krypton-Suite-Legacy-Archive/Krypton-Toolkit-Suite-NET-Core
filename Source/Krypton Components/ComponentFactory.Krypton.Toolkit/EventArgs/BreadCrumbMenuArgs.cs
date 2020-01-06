@@ -9,7 +9,7 @@
 //  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Details of the context menu showing related to a bread crumb.

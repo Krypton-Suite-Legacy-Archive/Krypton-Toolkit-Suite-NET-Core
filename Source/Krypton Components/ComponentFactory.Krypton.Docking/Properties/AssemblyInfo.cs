@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006-2020. Then modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017-2020. All rights reserved.")]
-[assembly: AssemblyDefaultAlias("ComponentFactory.Krypton.Docking.dll")]
+[assembly: AssemblyDefaultAlias("Krypton.Docking.dll")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: StringFreezing]
 [assembly: ComVisible(true)]
@@ -27,7 +27,7 @@ using System.Security;
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
 [assembly: Dependency("System.Xml", LoadHint.Always)]
-[assembly: Dependency("ComponentFactory.Krypton.Toolkit", LoadHint.Always)]
-[assembly: Dependency("ComponentFactory.Krypton.Navigator", LoadHint.Always)]
-[assembly: Dependency("ComponentFactory.Krypton.Workspace", LoadHint.Always)]
+[assembly: Dependency("Krypton.Toolkit", LoadHint.Always)]
+[assembly: Dependency("Krypton.Navigator", LoadHint.Always)]
+[assembly: Dependency("Krypton.Workspace", LoadHint.Always)]
 [assembly: SecurityRules(SecurityRuleSet.Level1)]

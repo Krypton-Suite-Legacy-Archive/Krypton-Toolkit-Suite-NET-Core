@@ -12,9 +12,9 @@
 using System;
 using System.ComponentModel.Design;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Navigator
+namespace Krypton.Navigator
 {
     /// <summary>
     /// Designer time action list for the navigator.

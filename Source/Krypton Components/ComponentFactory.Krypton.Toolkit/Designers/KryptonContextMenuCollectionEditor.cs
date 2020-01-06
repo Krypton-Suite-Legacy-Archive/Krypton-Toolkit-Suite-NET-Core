@@ -12,7 +12,7 @@
 using System;
 using System.ComponentModel.Design;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Designer for a collection of context menu items.

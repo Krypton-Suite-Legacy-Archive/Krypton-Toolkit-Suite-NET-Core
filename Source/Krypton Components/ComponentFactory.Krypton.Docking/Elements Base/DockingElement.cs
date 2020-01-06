@@ -17,11 +17,11 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Workspace;
 // ReSharper disable MemberCanBeInternal
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Implements base docking element functionality.

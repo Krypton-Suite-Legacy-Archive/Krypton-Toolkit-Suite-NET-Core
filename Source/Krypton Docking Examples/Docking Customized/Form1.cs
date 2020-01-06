@@ -14,11 +14,11 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Docking;
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Ribbon;
-using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Docking;
+using Krypton.Navigator;
+using Krypton.Ribbon;
+using Krypton.Toolkit;
+using Krypton.Workspace;
 
 namespace DockingCustomized
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     public class KryptonInputBox : KryptonForm
     {
@@ -16,12 +16,12 @@ namespace ComponentFactory.Krypton.Toolkit
 
         private void InitializeComponent()
         {
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kbtnOk = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kbtnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.ktxtPrompt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kwlMessage = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kbtnOk = new Krypton.Toolkit.KryptonButton();
+            this.kbtnCancel = new Krypton.Toolkit.KryptonButton();
+            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
+            this.ktxtPrompt = new Krypton.Toolkit.KryptonTextBox();
+            this.kwlMessage = new Krypton.Toolkit.KryptonWrapLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();

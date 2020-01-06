@@ -12,9 +12,9 @@
 using System;
 using System.Collections.Generic;
 
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Event data for listing pages unmatched during the load process.

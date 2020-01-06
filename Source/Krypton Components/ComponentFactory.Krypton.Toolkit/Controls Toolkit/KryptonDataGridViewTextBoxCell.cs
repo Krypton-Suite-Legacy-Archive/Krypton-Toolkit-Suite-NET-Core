@@ -16,7 +16,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Displays editable text information in a KryptonDataGridView control.

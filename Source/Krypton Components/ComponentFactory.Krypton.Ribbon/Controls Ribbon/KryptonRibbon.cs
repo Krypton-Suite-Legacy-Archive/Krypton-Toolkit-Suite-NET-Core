@@ -19,9 +19,9 @@ using System.Reflection;
 using System.Security.Permissions;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Ribbon control presents a tabbed set of user options.
@@ -30,7 +30,7 @@ namespace ComponentFactory.Krypton.Ribbon
     [ToolboxBitmap(typeof(KryptonRibbon), "ToolboxBitmaps.KryptonRibbon.bmp")]
     [DefaultEvent("SelectedTabChanged")]
     [DefaultProperty("RibbonTabs")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonRibbonDesigner))]
     [DesignerCategory("code")]
     [Description("Ribbon control presents a tabbed set of user options.")]
     [Docking(DockingBehavior.Never)]
@@ -757,7 +757,7 @@ namespace ComponentFactory.Krypton.Ribbon
         [Category("Values")]
         [Description("Collection of ribbon quick access toolbar buttons.")]
         [MergableProperty(false)]
-        [Editor(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonQATButtonCollectionEditor), typeof(UITypeEditor))]
+        [Editor(typeof(Krypton.Ribbon.KryptonRibbonQATButtonCollectionEditor), typeof(UITypeEditor))]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public KryptonRibbonQATButtonCollection QATButtons { get; private set; }
 

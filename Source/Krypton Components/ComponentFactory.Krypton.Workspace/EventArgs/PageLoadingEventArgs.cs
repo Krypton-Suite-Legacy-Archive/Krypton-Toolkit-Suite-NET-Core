@@ -11,9 +11,9 @@
 
 using System.Xml;
 
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Event data for persisting extra data for a workspace cell page.

@@ -12,7 +12,7 @@
 using System;
 using System.ComponentModel;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Extend the visual control base class with the ISupportInitializeNotification interface.

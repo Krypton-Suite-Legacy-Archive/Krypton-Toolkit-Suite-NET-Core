@@ -12,12 +12,12 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provides a base for Visual Studio 2020 palettes.
     /// </summary>
-    /// <seealso cref="ComponentFactory.Krypton.Toolkit.PaletteBase" />
+    /// <seealso cref="Krypton.Toolkit.PaletteBase" />
     public abstract class PaletteVisualStudio2020Base : PaletteBase
     {
         #region Static Fields

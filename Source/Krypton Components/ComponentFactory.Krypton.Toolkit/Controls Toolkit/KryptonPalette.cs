@@ -23,7 +23,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     #region Old Code
     /// <summary>
@@ -34,7 +34,7 @@ namespace ComponentFactory.Krypton.Toolkit
     //[DefaultEvent("PalettePaint")]
     //[DefaultProperty("BasePaletteMode")]
     //[DesignerCategory("code")]
-    //[Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    //[Designer("Krypton.Toolkit.KryptonPaletteDesigner, Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     //[Description("Customisable palette component.")]
     //[ClassInterface(ClassInterfaceType.AutoDispatch)]
     //[ComVisible(true)]
@@ -6107,7 +6107,7 @@ namespace ComponentFactory.Krypton.Toolkit
     [DefaultEvent("PalettePaint")]
     [DefaultProperty("BasePaletteMode")]
     [DesignerCategory("code")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Toolkit, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("Krypton.Toolkit.KryptonPaletteDesigner, Krypton.Toolkit, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [Description("Customisable palette component.")]
     public class KryptonPalette : Component, IPalette
     {

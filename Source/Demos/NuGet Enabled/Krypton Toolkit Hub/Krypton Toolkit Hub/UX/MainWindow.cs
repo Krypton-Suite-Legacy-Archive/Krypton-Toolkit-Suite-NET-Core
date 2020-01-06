@@ -1,4 +1,4 @@
-﻿using ComponentFactory.Krypton.Toolkit;
+﻿using Krypton.Toolkit;
 using KryptonToolkitHub.Classes;
 using KryptonToolkitHub.Enumerations;
 using System;

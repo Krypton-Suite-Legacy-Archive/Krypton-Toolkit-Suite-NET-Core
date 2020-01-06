@@ -16,7 +16,7 @@ using System.Drawing.Design;
 using System.Windows.Forms;
 // ReSharper disable MemberCanBePrivate.Global
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Combines button functionality with the styling features of the Krypton Toolkit.

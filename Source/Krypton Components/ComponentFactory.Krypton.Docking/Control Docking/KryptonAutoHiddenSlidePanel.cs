@@ -16,12 +16,12 @@ using System.Runtime.InteropServices;
 using System.Security.Permissions;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Toolkit;
+using Krypton.Workspace;
 // ReSharper disable MemberCanBeInternal
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Extends the KryptonPanel to work as a panel for hosting the display of a sliding in/out page.

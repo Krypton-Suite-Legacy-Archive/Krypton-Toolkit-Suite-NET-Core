@@ -18,7 +18,7 @@ using System.Windows.Forms;
 // ReSharper disable MemberCanBeInternal
 // ReSharper disable EventNeverSubscribedTo.Global
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Hosts a collection of KryptonDataGridViewTextBoxCell cells.

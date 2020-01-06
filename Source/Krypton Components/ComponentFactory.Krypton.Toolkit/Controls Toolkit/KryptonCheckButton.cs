@@ -13,7 +13,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Presents the user with a binary choice such as Yes/No or True/False.

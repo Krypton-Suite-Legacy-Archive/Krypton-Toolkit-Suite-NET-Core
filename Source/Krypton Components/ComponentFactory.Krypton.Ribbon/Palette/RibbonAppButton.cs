@@ -13,9 +13,9 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.ComponentModel;
 using System.Diagnostics;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Storage for application button related properties.
@@ -251,7 +251,7 @@ namespace ComponentFactory.Krypton.Ribbon
         [Category("Values")]
         [Description("Context menu items for the application button.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        [Editor(typeof(ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemCollectionEditor), typeof(UITypeEditor))]
+        [Editor(typeof(Krypton.Toolkit.KryptonContextMenuItemCollectionEditor), typeof(UITypeEditor))]
         public virtual KryptonContextMenuItemCollection AppButtonMenuItems => _appButtonMenuItems.Items;
 
         #endregion
@@ -263,7 +263,7 @@ namespace ComponentFactory.Krypton.Ribbon
         [Category("Values")]
         [Description("Recent document entries for the application buttton.")]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        [Editor(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonRecentDocCollectionEditor), typeof(UITypeEditor))]
+        [Editor(typeof(Krypton.Ribbon.KryptonRibbonRecentDocCollectionEditor), typeof(UITypeEditor))]
         public virtual KryptonRibbonRecentDocCollection AppButtonRecentDocs { get; }
 
         #endregion

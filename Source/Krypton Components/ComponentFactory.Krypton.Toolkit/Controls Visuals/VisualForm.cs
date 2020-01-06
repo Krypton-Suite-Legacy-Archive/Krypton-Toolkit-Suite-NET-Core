@@ -19,11 +19,11 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 
-using ComponentFactory.Krypton.Toolkit.General;
+using Krypton.Toolkit.General;
 
 using Microsoft.Win32;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Base class that allows a form to have custom chrome applied. You should derive 

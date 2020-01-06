@@ -16,7 +16,7 @@ using System.Drawing.Design;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provide a DomainUpDown with Krypton styling applied.

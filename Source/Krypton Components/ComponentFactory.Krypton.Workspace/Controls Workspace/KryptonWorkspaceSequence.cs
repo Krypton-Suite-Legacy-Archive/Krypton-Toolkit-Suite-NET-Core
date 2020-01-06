@@ -16,10 +16,10 @@ using System.Drawing.Design;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Navigator;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Represents a sequence of workspace items.
@@ -27,7 +27,7 @@ namespace ComponentFactory.Krypton.Workspace
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonWorkspaceSequence), "ToolboxBitmaps.KryptonWorkspaceSequence.bmp")]
     [TypeConverter(typeof(KryptonWorkspaceSequenceConverter))]
-    [Designer(typeof(ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequenceDesigner))]
+    [Designer(typeof(Krypton.Workspace.KryptonWorkspaceSequenceDesigner))]
     [DesignTimeVisible(false)]
     [DesignerCategory("code")]
     [DefaultProperty("Children")]
@@ -124,7 +124,7 @@ namespace ComponentFactory.Krypton.Workspace
         [Category("Workspace")]
         [Description("Collection of child workspace items.")]
         [MergableProperty(false)]
-        [Editor(typeof(ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor), typeof(UITypeEditor))]
+        [Editor(typeof(Krypton.Workspace.KryptonWorkspaceCollectionEditor), typeof(UITypeEditor))]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public KryptonWorkspaceCollection Children { get; }
 

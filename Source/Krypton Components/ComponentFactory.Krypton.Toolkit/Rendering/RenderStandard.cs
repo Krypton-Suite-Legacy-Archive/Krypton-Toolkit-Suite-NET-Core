@@ -18,7 +18,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using System.Diagnostics;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provides the standard renderer that honors all palette properties.

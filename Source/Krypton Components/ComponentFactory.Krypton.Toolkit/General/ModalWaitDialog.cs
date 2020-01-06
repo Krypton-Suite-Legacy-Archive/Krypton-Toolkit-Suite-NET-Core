@@ -9,14 +9,14 @@
 //  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
-using ComponentFactory.Krypton.Toolkit.Properties;
+using Krypton.Toolkit.Properties;
 using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Security.Permissions;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Show a wait dialog during long operations.

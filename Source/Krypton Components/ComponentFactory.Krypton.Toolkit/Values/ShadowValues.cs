@@ -8,7 +8,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// 

@@ -17,7 +17,7 @@ using System.Windows.Forms;
 // ReSharper disable MemberCanBePrivate.Local
 // ReSharper disable UnusedMember.Local
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provide a NumericUpDown with Krypton styling applied.

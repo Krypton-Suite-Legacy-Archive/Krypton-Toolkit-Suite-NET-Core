@@ -19,9 +19,9 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Navigator
+namespace Krypton.Navigator
 {
     /// <summary>
     /// Navigator control allows a variety of methods for moving around a collection of pages.

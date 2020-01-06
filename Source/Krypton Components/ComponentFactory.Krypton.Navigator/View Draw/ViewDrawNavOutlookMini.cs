@@ -11,9 +11,9 @@
 
 using System;
 using System.Drawing;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Navigator
+namespace Krypton.Navigator
 {
     /// <summary>
     /// Navigator view element for drawing a selected check button for the Outlook mini mode.

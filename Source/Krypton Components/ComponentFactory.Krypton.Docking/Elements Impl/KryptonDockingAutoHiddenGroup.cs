@@ -15,11 +15,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Xml;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Toolkit;
+using Krypton.Workspace;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Provides display and docking functionality for a group of auto hidden pages.

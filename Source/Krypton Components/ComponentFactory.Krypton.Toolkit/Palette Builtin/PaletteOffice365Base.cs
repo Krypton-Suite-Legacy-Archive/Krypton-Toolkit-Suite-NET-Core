@@ -15,12 +15,12 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provides a base for Office 365 palettes.
     /// </summary>
-    /// <seealso cref="ComponentFactory.Krypton.Toolkit.PaletteBase" />
+    /// <seealso cref="Krypton.Toolkit.PaletteBase" />
     public abstract class PaletteOffice365Base : PaletteBase
     {
         #region Static Fields

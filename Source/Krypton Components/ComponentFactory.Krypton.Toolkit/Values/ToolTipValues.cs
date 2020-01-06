@@ -6,7 +6,7 @@
 
 using System.ComponentModel;
 
-namespace ComponentFactory.Krypton.Toolkit.Values
+namespace Krypton.Toolkit.Values
 {
     /// <summary>
     /// What will be displayed in the designer

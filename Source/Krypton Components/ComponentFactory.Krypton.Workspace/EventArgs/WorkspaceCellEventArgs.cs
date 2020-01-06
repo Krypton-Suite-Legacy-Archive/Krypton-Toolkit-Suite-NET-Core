@@ -11,7 +11,7 @@
 
 using System;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Workspace cell event data.

@@ -1,4 +1,4 @@
-﻿namespace ComponentFactory.Krypton.Toolkit.Converters
+﻿namespace Krypton.Toolkit.Converters
 {
     class PlacementModeConverter
     {

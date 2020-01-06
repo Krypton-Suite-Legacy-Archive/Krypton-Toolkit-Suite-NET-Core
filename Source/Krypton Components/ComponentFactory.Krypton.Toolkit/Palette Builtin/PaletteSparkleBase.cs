@@ -15,7 +15,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provides a fixed blue variantion on the sparkle appearance.

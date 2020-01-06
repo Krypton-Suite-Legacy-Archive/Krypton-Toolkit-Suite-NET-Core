@@ -3,7 +3,7 @@
     <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
       <LangVersion>8.0</LangVersion>
     <OutputType>Library</OutputType>
-    <RootNamespace>ComponentFactory.Krypton.Ribbon</RootNamespace>
+    <RootNamespace>Krypton.Ribbon</RootNamespace>
     <AssemblyName>Krypton.Ribbon</AssemblyName>
     <ApplicationIcon>Krypton.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
@@ -35,8 +35,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\ComponentFactory.Krypton.Toolkit\General\GlobalSuppressions.cs" Link="General\GlobalSuppressions.cs" />
-    <Compile Include="..\ComponentFactory.Krypton.Toolkit\General\PlatformInvoke.cs">
+    <Compile Include="..\Krypton.Toolkit\General\GlobalSuppressions.cs" Link="General\GlobalSuppressions.cs" />
+    <Compile Include="..\Krypton.Toolkit\General\PlatformInvoke.cs">
       <Link>General\PlatformInvoke.cs</Link>
     </Compile>
     <Compile Update="ButtonSpec\ButtonSpecAppMenu.cs">
@@ -100,7 +100,7 @@
     <Compile Remove="View Layout Install\ViewLayoutRibbonAppTab.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Design" />

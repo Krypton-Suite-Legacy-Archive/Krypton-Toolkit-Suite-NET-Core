@@ -12,9 +12,9 @@
 using System.ComponentModel.Design;
 using System.Windows.Forms.Design;
 
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     internal class KryptonWorkspaceCellDesigner : KryptonNavigatorDesigner
     {

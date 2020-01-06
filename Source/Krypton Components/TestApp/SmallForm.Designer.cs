@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonNumericUpDown1 = new ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
+            this.kryptonButton3 = new Krypton.Toolkit.KryptonButton();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonNumericUpDown1 = new Krypton.Toolkit.KryptonNumericUpDown();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -47,7 +47,7 @@
             this.kryptonButton2.TabIndex = 1;
             this.kryptonButton2.ToolTipValues.EnableToolTips = true;
             this.kryptonButton2.ToolTipValues.Image = null;
-            this.kryptonButton2.ToolTipValues.ToolTipPosition.PlacementMode = ComponentFactory.Krypton.Toolkit.PlacementMode.MousePoint;
+            this.kryptonButton2.ToolTipValues.ToolTipPosition.PlacementMode = Krypton.Toolkit.PlacementMode.MousePoint;
             this.kryptonButton2.Values.Text = "ToolTip Me";
             // 
             // kryptonButton3
@@ -116,11 +116,11 @@
         }
 
         #endregion
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private Krypton.Toolkit.KryptonButton kryptonButton2;
+        private Krypton.Toolkit.KryptonButton kryptonButton3;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonNumericUpDown kryptonNumericUpDown1;
+        private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.Timer timer1;
     }
 }

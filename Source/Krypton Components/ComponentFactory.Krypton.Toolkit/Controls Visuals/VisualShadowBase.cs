@@ -10,7 +10,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     [DebuggerDisplay("({_visualOrientation} {_optimisedVisible})")]
     internal class VisualShadowBase : NativeWindow, IDisposable
@@ -145,7 +145,7 @@ namespace ComponentFactory.Krypton.Toolkit
         internal void UpdateShadowLayer()
         {
             // The Following is also in
-            // $:\Krypton-NET-4.7\Source\Krypton Components\ComponentFactory.Krypton.Navigator\Dragging\DropDockingIndicatorsRounded.cs
+            // $:\Krypton-NET-4.7\Source\Krypton Components\Krypton.Navigator\Dragging\DropDockingIndicatorsRounded.cs
             // Does this bitmap contain an alpha channel?
             if (_shadowClip.PixelFormat != PixelFormat.Format32bppArgb)
             {

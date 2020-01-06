@@ -14,7 +14,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Design;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Krypton object used to represent nodes in a hierarchical bread crumb data structure.

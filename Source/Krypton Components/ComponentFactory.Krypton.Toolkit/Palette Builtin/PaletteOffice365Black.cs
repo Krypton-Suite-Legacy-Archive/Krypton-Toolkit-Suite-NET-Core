@@ -12,9 +12,9 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Toolkit.Properties;
+using Krypton.Toolkit.Properties;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// 

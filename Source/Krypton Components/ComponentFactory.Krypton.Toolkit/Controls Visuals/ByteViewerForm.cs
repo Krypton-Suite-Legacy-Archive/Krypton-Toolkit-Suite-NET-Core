@@ -17,7 +17,7 @@ using System.ComponentModel.Design;
 using System.IO;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// A simple hex-editor form for displaying binary data.

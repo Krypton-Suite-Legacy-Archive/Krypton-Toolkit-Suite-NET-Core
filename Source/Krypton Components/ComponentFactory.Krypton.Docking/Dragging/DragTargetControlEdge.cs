@@ -13,10 +13,10 @@ using System;
 using System.Drawing;
 using System.Diagnostics;
 using System.Collections.Generic;
-using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Toolkit;
+using Krypton.Navigator;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Target one of the four sides of a docking control.

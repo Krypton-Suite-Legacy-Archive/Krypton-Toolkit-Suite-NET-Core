@@ -21,7 +21,7 @@ using System.Windows.Forms;
 
 using Microsoft.Win32;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Display text and images with the styling features of the Krypton Toolkit

@@ -12,7 +12,7 @@
 using System;
 using System.Xml;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Event data for persisting extra data for a workspace.

@@ -12,7 +12,7 @@
 using System;
 using System.ComponentModel.Design;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     internal class KryptonRibbonGroupTripleCollectionEditor : CollectionEditor
     {

@@ -14,7 +14,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Defines the editing control for the DataGridViewNumericUpDownCell custom cell type.

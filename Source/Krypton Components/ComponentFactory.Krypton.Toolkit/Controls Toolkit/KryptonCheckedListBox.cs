@@ -17,7 +17,7 @@ using System.Drawing.Design;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provide a CheckedListBox with Krypton styling applied.

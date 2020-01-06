@@ -14,7 +14,7 @@ using System.Drawing;
 // ReSharper disable MemberCanBeInternal
 // ReSharper disable UnusedMember.Global
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Hovered Selection Changed event data.

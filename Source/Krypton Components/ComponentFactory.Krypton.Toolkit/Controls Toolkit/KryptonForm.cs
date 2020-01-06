@@ -17,7 +17,7 @@ using System.Drawing.Drawing2D;
 using System.Security.Principal;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     #region Enumerations
     /// <summary>

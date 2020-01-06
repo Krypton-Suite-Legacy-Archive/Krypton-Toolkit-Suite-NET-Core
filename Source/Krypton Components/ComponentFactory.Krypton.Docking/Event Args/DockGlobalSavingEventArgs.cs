@@ -12,7 +12,7 @@
 using System;
 using System.Xml;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Event data for saving global docking configuration.

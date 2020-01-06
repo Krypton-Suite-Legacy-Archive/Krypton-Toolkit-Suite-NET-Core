@@ -15,7 +15,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Defines a KryptonNumericUpDown cell type for the KryptonDataGridView control

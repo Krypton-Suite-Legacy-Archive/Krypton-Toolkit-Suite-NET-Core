@@ -12,9 +12,9 @@
 using System.Windows.Forms;
 using System.Drawing;
 
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Details for an cancellable event that provides pages and cell associated with a page dragging event.

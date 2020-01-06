@@ -18,7 +18,7 @@ using System.Windows.Forms;
 // ReSharper disable MemberCanBeInternal
 // ReSharper disable MemberCanBeProtected.Global
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Specification for a button.

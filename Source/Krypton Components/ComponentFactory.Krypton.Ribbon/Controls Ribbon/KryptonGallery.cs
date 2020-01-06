@@ -14,9 +14,9 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Provides a gallery for selecting from a group of possible images.
@@ -25,7 +25,7 @@ namespace ComponentFactory.Krypton.Ribbon
     [ToolboxBitmap(typeof(KryptonGallery), "ToolboxBitmaps.KryptonGallery.bmp")]
     [DefaultEvent("SelectedIndexChanged")]
     [DefaultProperty("SelectedIndex")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonGalleryDesigner))]
     [DesignerCategory("code")]
     [Description("Select from a group of possible images.")]
     public class KryptonGallery : VisualSimpleBase
