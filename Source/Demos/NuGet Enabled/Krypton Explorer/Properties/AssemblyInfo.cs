@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // 
-//  © Component Factory Pty Ltd 2012 - 2020. All rights reserved.
+//  © Component Factory Pty Ltd, 2006 - 2016. All rights reserved.
 //	The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, PO Box 1504, 
 //  Glen Waverley, Vic 3150, Australia and are supplied subject to licence terms.
@@ -18,7 +18,7 @@ using System.Security;
 [assembly: AssemblyVersion("5.490.6015.16")]
 [assembly: AssemblyFileVersion("5.490.6015.16")]
 [assembly: AssemblyInformationalVersion("17.472.6015.15")]
-[assembly: AssemblyCopyright("© Component Factory Pty Ltd 2012 - 2020. All rights reserved.")]
+[assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006 - 2016. All rights reserved.")]
 [assembly: AssemblyProduct("Krypton Explorer")]
 [assembly: AssemblyDefaultAlias("KryptonExplorer.dll")]
 [assembly: AssemblyTitle("Krypton Explorer")]
