@@ -35,6 +35,25 @@
             this.propertyGrid = new System.Windows.Forms.PropertyGrid();
             this.kryptonTreeView = new ComponentFactory.Krypton.Toolkit.KryptonTreeView();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.kryptonContextMenu1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenu();
+            this.kryptonContextMenuHeading1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuHeading();
+            this.kryptonContextMenuMonthCalendar1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuMonthCalendar();
+            this.kryptonContextMenuItems1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems();
+            this.kryptonContextMenuItem1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem();
+            this.kryptonContextMenuItems2 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems();
+            this.kryptonContextMenuHeading2 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuHeading();
+            this.kryptonContextMenuCheckBox1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox();
+            this.kryptonContextMenuCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton();
+            this.kryptonContextMenuRadioButton1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuRadioButton();
+            this.kryptonContextMenuLinkLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuLinkLabel();
+            this.kryptonContextMenuColorColumns1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuColorColumns();
+            this.kryptonContextMenuImageSelect1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuImageSelect();
+            this.kryptonContextMenuSeparator1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuSeparator();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBoxA = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkSystem = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.checkSparkle = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
@@ -46,7 +65,10 @@
             this.buttonRemove = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonManager1 = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonCheckSet = new ComponentFactory.Krypton.Toolkit.KryptonCheckSet(this.components);
+            this.kryptonContextMenuItem2 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem();
+            this.btnToggleNodeCheckBox = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.groupBox.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonCheckSet)).BeginInit();
             this.SuspendLayout();
@@ -86,15 +108,18 @@
             // 
             // kryptonTreeView
             // 
+            this.kryptonTreeView.CheckBoxes = true;
             this.kryptonTreeView.HideSelection = false;
             this.kryptonTreeView.HotTracking = true;
             this.kryptonTreeView.ImageIndex = 3;
             this.kryptonTreeView.ImageList = this.imageList;
+            this.kryptonTreeView.KryptonContextMenu = this.kryptonContextMenu1;
             this.kryptonTreeView.Location = new System.Drawing.Point(13, 31);
             this.kryptonTreeView.Name = "kryptonTreeView";
             this.kryptonTreeView.SelectedImageIndex = 3;
             this.kryptonTreeView.Size = new System.Drawing.Size(255, 259);
             this.kryptonTreeView.TabIndex = 6;
+            this.kryptonTreeView.BeforeCheck += new System.Windows.Forms.TreeViewCancelEventHandler(this.KryptonTreeView_BeforeCheck);
             // 
             // imageList
             // 
@@ -108,6 +133,97 @@
             this.imageList.Images.SetKeyName(5, "flag_greece.png");
             this.imageList.Images.SetKeyName(6, "flag_netherlands.png");
             this.imageList.Images.SetKeyName(7, "flag_poland.png");
+            // 
+            // kryptonContextMenu1
+            // 
+            this.kryptonContextMenu1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuHeading1,
+            this.kryptonContextMenuMonthCalendar1,
+            this.kryptonContextMenuItems1,
+            this.kryptonContextMenuCheckBox1,
+            this.kryptonContextMenuCheckButton1,
+            this.kryptonContextMenuRadioButton1,
+            this.kryptonContextMenuLinkLabel1,
+            this.kryptonContextMenuColorColumns1,
+            this.kryptonContextMenuImageSelect1,
+            this.kryptonContextMenuSeparator1});
+            // 
+            // kryptonContextMenuHeading1
+            // 
+            this.kryptonContextMenuHeading1.ExtraText = "";
+            // 
+            // kryptonContextMenuItems1
+            // 
+            this.kryptonContextMenuItems1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuItem1});
+            // 
+            // kryptonContextMenuItem1
+            // 
+            this.kryptonContextMenuItem1.Items.AddRange(new ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemBase[] {
+            this.kryptonContextMenuItems2,
+            this.kryptonContextMenuHeading2});
+            this.kryptonContextMenuItem1.Text = "Menu Item";
+            // 
+            // kryptonContextMenuHeading2
+            // 
+            this.kryptonContextMenuHeading2.ExtraText = "";
+            // 
+            // kryptonContextMenuCheckBox1
+            // 
+            this.kryptonContextMenuCheckBox1.ExtraText = "extra";
+            // 
+            // kryptonContextMenuCheckButton1
+            // 
+            this.kryptonContextMenuCheckButton1.ExtraText = "extra";
+            this.kryptonContextMenuCheckButton1.Text = "CheckButton";
+            // 
+            // kryptonContextMenuRadioButton1
+            // 
+            this.kryptonContextMenuRadioButton1.ExtraText = "extra";
+            // 
+            // kryptonContextMenuLinkLabel1
+            // 
+            this.kryptonContextMenuLinkLabel1.ExtraText = "extra";
+            // 
+            // kryptonContextMenuImageSelect1
+            // 
+            this.kryptonContextMenuImageSelect1.ImageIndexEnd = 0;
+            this.kryptonContextMenuImageSelect1.ImageIndexStart = 5;
+            this.kryptonContextMenuImageSelect1.ImageList = this.imageList;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripComboBoxA,
+            this.toolStripSeparator1,
+            this.toolStripSeparator2});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(182, 65);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(181, 22);
+            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            // 
+            // toolStripComboBoxA
+            // 
+            this.toolStripComboBoxA.Items.AddRange(new object[] {
+            "rew"});
+            this.toolStripComboBoxA.Name = "toolStripComboBoxA";
+            this.toolStripComboBoxA.Size = new System.Drawing.Size(121, 23);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(178, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
             // 
             // groupBox1
             // 
@@ -203,10 +319,6 @@
             this.buttonRemove.Values.Text = "Remove";
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
-            // kryptonManager1
-            // 
-            this.kryptonManager1.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue;
-            // 
             // kryptonCheckSet
             // 
             this.kryptonCheckSet.CheckButtons.Add(this.checkSystem);
@@ -216,11 +328,26 @@
             this.kryptonCheckSet.CheckedButton = this.check2010Blue;
             this.kryptonCheckSet.CheckedButtonChanged += new System.EventHandler(this.kryptonCheckSet_CheckedButtonChanged);
             // 
+            // kryptonContextMenuItem2
+            // 
+            this.kryptonContextMenuItem2.Text = "Menu Item";
+            // 
+            // btnToggleNodeCheckBox
+            // 
+            this.btnToggleNodeCheckBox.AutoSize = true;
+            this.btnToggleNodeCheckBox.Location = new System.Drawing.Point(13, 308);
+            this.btnToggleNodeCheckBox.Name = "btnToggleNodeCheckBox";
+            this.btnToggleNodeCheckBox.Size = new System.Drawing.Size(138, 25);
+            this.btnToggleNodeCheckBox.TabIndex = 8;
+            this.btnToggleNodeCheckBox.Values.Text = "Toggle Node CheckBox";
+            this.btnToggleNodeCheckBox.Click += new System.EventHandler(this.BtnToggleNodeCheckBox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 548);
+            this.Controls.Add(this.btnToggleNodeCheckBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.kryptonTreeView);
             this.Controls.Add(this.buttonClose);
@@ -232,10 +359,12 @@
             this.Name = "Form1";
             this.Text = "KryptonTreeView Examples";
             this.groupBox.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonCheckSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -257,6 +386,27 @@
         private ComponentFactory.Krypton.Toolkit.KryptonManager kryptonManager1;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckSet kryptonCheckSet;
         private System.Windows.Forms.ImageList imageList;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenu kryptonContextMenu1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuHeading kryptonContextMenuHeading1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems kryptonContextMenuItems1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckBox kryptonContextMenuCheckBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuRadioButton kryptonContextMenuRadioButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuLinkLabel kryptonContextMenuLinkLabel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuColorColumns kryptonContextMenuColorColumns1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuImageSelect kryptonContextMenuImageSelect1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBoxA;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuSeparator kryptonContextMenuSeparator1;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItems kryptonContextMenuItems2;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuHeading kryptonContextMenuHeading2;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuItem kryptonContextMenuItem2;
+        private ComponentFactory.Krypton.Toolkit.KryptonContextMenuMonthCalendar kryptonContextMenuMonthCalendar1;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnToggleNodeCheckBox;
     }
 }
 

@@ -1,10 +1,20 @@
-﻿using System;
+﻿// *****************************************************************************
+// BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
+//  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
+//  By Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
+//  Version 5.490.0.0  www.ComponentFactory.com
+// *****************************************************************************
+
+using System;
+using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+
 using ComponentFactory.Krypton.Toolkit;
 
 namespace KryptonTreeViewExamples
 {
-    public partial class Form1 : Form
+    public partial class Form1 : KryptonForm
     {
         private int _next = 1;
         private Random _rand = new Random();
@@ -33,7 +43,7 @@ namespace KryptonTreeViewExamples
         {
             KryptonTreeNode item = new KryptonTreeNode
             {
-                Text = "Item " + (_next++).ToString(),
+                Text = $"Item {(_next++)}",
                 ImageIndex = _rand.Next(imageList.Images.Count - 1)
             };
             item.SelectedImageIndex = item.ImageIndex;
@@ -110,6 +120,23 @@ namespace KryptonTreeViewExamples
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void BtnToggleNodeCheckBox_Click(object sender, EventArgs e)
+        {
+            if (kryptonTreeView.SelectedNode is KryptonTreeNode kryptonNode)
+            {
+                kryptonNode.IsCheckBoxVisible = !kryptonNode.IsCheckBoxVisible;
+            }
+        }
+
+        private void KryptonTreeView_BeforeCheck(object sender, TreeViewCancelEventArgs e)
+        {
+            if (kryptonTreeView.SelectedNode is KryptonTreeNode kryptonNode)
+            {
+                // If the CheckBox is hidden then prevent the checking change event
+                e.Cancel = !kryptonNode.IsCheckBoxVisible;
+            }
         }
     }
 }

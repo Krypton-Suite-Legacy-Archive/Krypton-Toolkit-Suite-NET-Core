@@ -1,10 +1,13 @@
-﻿using ComponentFactory.Krypton.Toolkit;
-using KryptonToolkitHub.Classes;
-using KryptonToolkitHub.Enumerations;
-using System;
+﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
+
+using ComponentFactory.Krypton.Toolkit;
+
+using KryptonToolkitHub.Classes;
+using KryptonToolkitHub.Enumerations;
 
 namespace KryptonToolkitHub.UX
 {
@@ -24,13 +27,14 @@ namespace KryptonToolkitHub.UX
         {
             TextExtra = $"(Beta Build: { _currentVersion.Build.ToString() })";
 
-            klblKryptonToolkitHubVersion.Text = $"Krypton Toolkit Hub Version: { _currentVersion.ToString() }";
+            klblKryptonToolkitHubVersion.Text = $"Krypton Toolkit Hub Version: {_currentVersion}";
 
-            if (_io.DoesFileExist(@".\Krypton Docking.dll"))
+            FileInfo fi = _io.GetFileInformationOn(@".\Krypton Docking.dll");
+            if (fi.Exists)
             {
-                _kryptonDocking = _io.GetFileVersion(@".\Krypton Docking.dll");
+                _kryptonDocking = _io.GetFileVersion(fi.FullName);
 
-                klblKryptonDockingVersion.Text = $"Krypton Docking Version: { _kryptonDocking.ToString() }";
+                klblKryptonDockingVersion.Text = $"Krypton Docking Version: {_kryptonDocking}";
             }
             else
             {
