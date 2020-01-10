@@ -207,7 +207,15 @@ namespace ComponentFactory.Krypton.Toolkit
             ViewManager = new ViewManager(this, _drawDocker);
 
             // Set the UseDropShadow to true
-            UseDropShadow = true;
+            // Check OS version for compatibility (can be overriden if needed)
+            if (Environment.OSVersion.Version.Major == 10)
+            {
+                UseDropShadow = true;
+            }
+            else if (Environment.OSVersion.Version.Major <= 6)
+            {
+                UseDropShadow = false;
+            }
 
             AdministratorText = "Administrator";
 
