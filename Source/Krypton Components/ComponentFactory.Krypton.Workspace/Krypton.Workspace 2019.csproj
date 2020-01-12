@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
-      <LangVersion>8.0</LangVersion>
+    <TargetFrameworks>net45;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks Condition="'$(TFMs)' == 'all'">net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
+    <LangVersion>8.0</LangVersion>
     <OutputType>Library</OutputType>
     <RootNamespace>ComponentFactory.Krypton.Workspace</RootNamespace>
     <AssemblyName>Krypton.Workspace</AssemblyName>
@@ -12,7 +13,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>KryptonToolkitSuiteWorkspaceModule</PackageId>
+    <PackageId>Krypton.Workspace</PackageId>
     <Description>A update to Component factory's krypton toolkit to support .NET Core and the latest .NET 4.x framework. This is the workspace module.</Description>
   </PropertyGroup>
 
@@ -39,7 +40,7 @@
   <ItemGroup>
     <Compile Include="..\ComponentFactory.Krypton.Toolkit\General\GlobalSuppressions.cs" Link="General\GlobalSuppressions.cs" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' != 'netcoreapp3.1'">
     <Reference Include="System.Design" />
   </ItemGroup>
   <PropertyGroup>
