@@ -9,22 +9,6 @@
         <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
         <ApplicationIcon>Krypton.ico</ApplicationIcon>
         <DelaySign>false</DelaySign>
-        <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
-        <OldToolsVersion>3.5</OldToolsVersion>
-        <PublishUrl>publish\</PublishUrl>
-        <Install>true</Install>
-        <InstallFrom>Disk</InstallFrom>
-        <UpdateEnabled>false</UpdateEnabled>
-        <UpdateMode>Foreground</UpdateMode>
-        <UpdateInterval>7</UpdateInterval>
-        <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-        <UpdatePeriodically>false</UpdatePeriodically>
-        <UpdateRequired>false</UpdateRequired>
-        <MapFileExtensions>true</MapFileExtensions>
-        <ApplicationRevision>0</ApplicationRevision>
-        <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-        <IsWebBootstrapper>false</IsWebBootstrapper>
-        <UseApplicationTrust>false</UseApplicationTrust>
         <UseWindowsForms>true</UseWindowsForms>
     </PropertyGroup>
 
@@ -202,15 +186,15 @@
         <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckButton.bmp" />
         <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckSet.bmp" />
         <EmbeddedResource Include="ToolboxBitmaps\KryptonBorderEdge.bmp" />
-        <Content Include="Krypton.ico" />
-        <Content Include="Resources\BlackButtonCloseA.bmp" />
-        <Content Include="Resources\BlackDropDownButton.png" />
-        <Content Include="Resources\BlueDropDownButton.png" />
-        <Content Include="Resources\ButtonColorImageSmall.png" />
-        <Content Include="Resources\ButtonNoColor.png" />
-        <Content Include="Resources\DisabledDropDownButton.png" />
-        <Content Include="Resources\SelectParentControlFlipped.png" />
-        <Content Include="Resources\SilverDropDownButton.png" />
+        <Content Include="Krypton.ico" Pack="false" />
+        <None Include="Resources\BlackButtonCloseA.bmp" />
+        <None Include="Resources\BlackDropDownButton.png" />
+        <None Include="Resources\BlueDropDownButton.png" />
+        <None Include="Resources\ButtonColorImageSmall.png" />
+        <None Include="Resources\ButtonNoColor.png" />
+        <None Include="Resources\DisabledDropDownButton.png" />
+        <None Include="Resources\SelectParentControlFlipped.png" />
+        <None Include="Resources\SilverDropDownButton.png" />
         <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupBox.bmp" />
         <EmbeddedResource Include="ToolboxBitmaps\KryptonWrapLabel.bmp" />
         <EmbeddedResource Include="ToolboxBitmaps\KryptonSeparator.bmp" />
@@ -348,7 +332,7 @@
       <Reference Include="System.Design" />
     </ItemGroup>
     <PropertyGroup>
-        <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Toolkit.xml</DocumentationFile>
+        <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton.Toolkit.xml</DocumentationFile>
         <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>
     </PropertyGroup>
     <PropertyGroup>

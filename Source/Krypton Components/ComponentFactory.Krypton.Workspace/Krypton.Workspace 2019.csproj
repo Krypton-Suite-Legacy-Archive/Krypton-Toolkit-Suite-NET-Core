@@ -8,21 +8,6 @@
     <ApplicationIcon>Krypton.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
@@ -38,7 +23,7 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Krypton.ico" />
+    <Content Include="Krypton.ico" Pack="false" />
     <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspaceSequence.bmp" />
     <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspaceCell.bmp" />
     <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspace.bmp" />
@@ -58,7 +43,7 @@
     <Reference Include="System.Design" />
   </ItemGroup>
   <PropertyGroup>
-      <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Workspace.xml</DocumentationFile>
+      <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton.Workspace.xml</DocumentationFile>
       <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
