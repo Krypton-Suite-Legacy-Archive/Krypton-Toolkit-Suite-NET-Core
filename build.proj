@@ -5,8 +5,22 @@
 		<RootFolder>$(MSBuildProjectDirectory)</RootFolder>
 		<Configuration>Release</Configuration>
 	</PropertyGroup>
+
+	<Target Name="Clean">
+		<ItemGroup>
+			<Projects Include="$(RootFolder)\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
+		</ItemGroup>
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" Targets="Clean" />
+	</Target>	
+
+	<Target Name="Restore">
+		<ItemGroup>
+			<Projects Include="$(RootFolder)\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
+		</ItemGroup>
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" Targets="Restore" />
+	</Target>
 	
-	<Target Name="Build">
+	<Target Name="Build" DependsOnTargets="Restore">
 		<ItemGroup>
 			<Projects Include="$(RootFolder)\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
 		</ItemGroup>
@@ -20,11 +34,12 @@
 		<Delete Files="@(NugetPkgs)" />
 	</Target>
 	
-	<Target Name="Pack" DependsOnTargets="CleanPackages">
+	<Target Name="Pack" DependsOnTargets="CleanPackages;Restore">
 		<ItemGroup>
 			<Projects Include="$(RootFolder)\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
 		</ItemGroup>
-		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" Targets="Pack" />
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" Targets="Pack" />
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=lite" Targets="Pack" />
 	</Target>
 	
 	<Target Name="Push">
