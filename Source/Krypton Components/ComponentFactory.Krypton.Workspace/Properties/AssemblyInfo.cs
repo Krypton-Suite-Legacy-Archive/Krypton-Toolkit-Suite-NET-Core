@@ -17,12 +17,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006 - 2016. Then modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2020. All rights reserved.")]
-[assembly: AssemblyProduct("Krypton Workspace")]
 [assembly: AssemblyDefaultAlias("ComponentFactory.Krypton.Workspace.dll")]
-[assembly: AssemblyTitle("ComponentFactory.Krypton.Workspace")]
-[assembly: AssemblyCompany("Component Factory Pty Ltd, Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV)")]
-[assembly: AssemblyDescription("ComponentFactory.Krypton.Workspace")]
-[assembly: AssemblyConfiguration("Production")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: StringFreezing]
 [assembly: ComVisible(true)]
