@@ -15,7 +15,7 @@
 *.sln.docstates
 
 # Documentation files
-Help/output/
+# Help/output/
 *.chm
 
 # User-specific files (MonoDevelop/Xamarin Studio)
