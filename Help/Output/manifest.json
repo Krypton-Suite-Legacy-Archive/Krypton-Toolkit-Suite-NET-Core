@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "T:/Development/Krypton/Versions/Standard/Krypton-Toolkit-Suite-NET-Core/Help/DocFX",
+  "source_base_path": "T:/Development/Krypton/Versions/Standard/Krypton-Toolkit-Suite-NET-Core/Help/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -20282,7 +20282,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "GCiQzIz1ZurgMjcWuLUL/A=="
+          "hash": "YvXNWSOROQrcyrk1Y4m3+Q=="
         }
       },
       "is_incremental": false,
@@ -20324,17 +20324,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 150,
-          "skipped_file_count": 149
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 1058,
           "skipped_file_count": 1058
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 150,
+          "skipped_file_count": 149
         }
       }
     },

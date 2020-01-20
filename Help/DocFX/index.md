@@ -17,7 +17,7 @@ The `Krypton Toolkit` is great resource for speeding up development of professio
  
 
 ## [Krypton Ribbon](./articles/Krypton_Ribbon.md)
-The `Krypton Ribbon` is designed to mimic the look, feel and operation of the ribbon control seen in the _Microsoft Office 2007/2010/2013_ applications such as _Word_ and _Excel_. It provides advanced capabilities including the quick access toolbar, contextual tabs and auto shrinking groups. With rich design time support and sample code you can be up and running with the ribbon in no time at all. It integrates with the `Krypton Toolkit` architecture to ensure a consistent look and feel. 
+The `Krypton Ribbon` is designed to mimic the look, feel and operation of the ribbon control seen in the _Microsoft Office 2007/2010/2013/365_ applications such as _Word_ and _Excel_. It provides advanced capabilities including the quick access toolbar, contextual tabs and auto shrinking groups. With rich design time support and sample code you can be up and running with the ribbon in no time at all. It integrates with the `Krypton Toolkit` architecture to ensure a consistent look and feel. 
 
 
 ## [Krypton Navigator](./articles/Krypton_Navigator.md)
