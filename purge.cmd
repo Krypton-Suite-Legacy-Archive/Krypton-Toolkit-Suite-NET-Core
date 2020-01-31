@@ -1,3 +1,3 @@
 @echo off
 
-deltree Bin /s
+rd /s /q "Bin"
