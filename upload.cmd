@@ -6,7 +6,9 @@ echo Before uploading packages, it is suggested that you are using the latest Nu
 set INPUT=
 set /P INPUT=Type input: %=%
 If /I "%INPUT%"=="y" goto updateself
-::If /I "%INPUT%"=="n" goto no
+If /I "%INPUT%"=="n" goto uploadprompt
+
+:uploadprompt
 
 :yes
 cd Bin\Release
@@ -38,5 +40,7 @@ pause
 
 :updateself
 nuget update -self
+
+goto uploadprompt
 
 pause
