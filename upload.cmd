@@ -30,4 +30,7 @@ nuget push Krypton.Workspace.Lite.5.500.2002.nupkg
 :deletepackages
 
 
+:updateself
+nuget update -self
+
 pause
