@@ -10,7 +10,10 @@
   <PropertyGroup>
     <ApplicationIcon>Resources\Square Design 48 x 48 Green.ico</ApplicationIcon>
   </PropertyGroup>
-  <ItemGroup>    <PackageReference Include="Krypton.Navigator" Version="5.490.2200" />    <PackageReference Include="Krypton.Ribbon" Version="5.490.2200" />    <PackageReference Include="Krypton.Toolkit" Version="5.490.2200" />
+  <ItemGroup>
+    <PackageReference Include="Krypton.Navigator" Version="5.490.2200" />
+    <PackageReference Include="Krypton.Ribbon" Version="5.490.2200" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.490.2200" />
   </ItemGroup>
   <ItemGroup>
 
