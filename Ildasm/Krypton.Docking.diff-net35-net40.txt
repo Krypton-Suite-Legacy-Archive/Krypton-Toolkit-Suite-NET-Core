@@ -1,0 +1,857 @@
+Comparing files BIN\RELEASE\NET35\Krypton.Docking.il and BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+// Metadata version: v2.0.50727
+.module extern user32.dll
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+// Metadata version: v4.0.30319
+.module extern user32.dll
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 3:5:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+                                73 70 61 63 65 01 00 00 00 00 00 )                // space......
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+                                73 70 61 63 65 01 00 00 00 00 00 )                // space......
+  .custom instance void [mscorlib]System.Security.SecurityRulesAttribute::.ctor(valuetype [mscorlib]System.Security.SecurityRul
+eSet) = ( 01 00 01 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1A 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 30 01 00 54   // ,Version=v4.0..T
+                                                                                                        0E 14 46 72 61 6D 65 77
+ 6F 72 6B 44 69 73 70 6C   // ..FrameworkDispl
+                                                                                                        61 79 4E 61 6D 65 10 2E
+ 4E 45 54 20 46 72 61 6D   // ayName..NET Fram
+                                                                                                        65 77 6F 72 6B 20 34 ) 
+                           // ework 4
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+.module Krypton.Docking.dll
+// MVID: {21DC6177-9CAA-40FD-AE89-1B9755F292C6}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+.module Krypton.Docking.dll
+// MVID: {13887B0B-5DEA-44FE-A32F-FD7DA69B73AE}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x09780000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x068E0000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+s [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_000e:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+s [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_000e:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [System.Core]System.Func`2<!!0,bool>)
+    IL_0018:  brfalse.s  IL_002a
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0018:  brfalse.s  IL_002a
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+  {
+    // Code size       27 (0x1b)
+    .maxstack  2
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+  {
+    // Code size       32 (0x20)
+    .maxstack  2
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0001:  stloc.0
+    IL_0002:  br.s       IL_0016
+    IL_0004:  ldloc.0
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0001:  stloc.0
+    IL_0002:  br.s       IL_001b
+    IL_0004:  ldloc.0
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_000a:  ldarg.1
+    IL_000b:  bne.un.s   IL_000f
+    IL_000d:  ldloc.0
+    IL_000e:  ret
+    IL_000f:  ldloc.0
+    IL_0010:  callvirt   instance class ComponentFactory.Krypton.Docking.IDockingElement ComponentFactory.Krypton.Docking.IDock
+ingElement::get_Parent()
+    IL_0015:  stloc.0
+    IL_0016:  ldloc.0
+    IL_0017:  brtrue.s   IL_0004
+    IL_0019:  ldnull
+    IL_001a:  ret
+  } // end of method DockingElement::GetParentType
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_000a:  ldarg.1
+    IL_000b:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                 class [mscorlib]System.Type)
+    IL_0010:  brfalse.s  IL_0014
+    IL_0012:  ldloc.0
+    IL_0013:  ret
+    IL_0014:  ldloc.0
+    IL_0015:  callvirt   instance class ComponentFactory.Krypton.Docking.IDockingElement ComponentFactory.Krypton.Docking.IDock
+ingElement::get_Parent()
+    IL_001a:  stloc.0
+    IL_001b:  ldloc.0
+    IL_001c:  brtrue.s   IL_0004
+    IL_001e:  ldnull
+    IL_001f:  ret
+  } // end of method DockingElement::GetParentType
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    .field public static initonly class ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c' '<>9'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__21_1'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__21_3'
+    .method private hidebysig specialname rtspecialname static 
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    .field public static initonly class ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c' '<>9'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__21_1'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__21_3'
+    .method private hidebysig specialname rtspecialname static 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+ton.Docking.KryptonDockingAutoHiddenGroup::'<PropogateAction>b__21_0'(string)
+    IL_0062:  newobj     instance void class [System.Core]System.Func`2<string,class [Krypton.Navigator]ComponentFactory.Krypto
+n.Navigator.KryptonPage>::.ctor(object,
+                                native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+ton.Docking.KryptonDockingAutoHiddenGroup::'<PropogateAction>b__21_0'(string)
+    IL_0062:  newobj     instance void class [mscorlib]System.Func`2<string,class [Krypton.Navigator]ComponentFactory.Krypton.N
+avigator.KryptonPage>::.ctor(object,
+                             native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+IEnumerable`1<!!0>,
+                                                                                    class [System.Core]System.Func`2<!!0,!!1>)
+    IL_006c:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c'::'<>9__21_1'
+    IL_0071:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+IEnumerable`1<!!0>,
+                                                                                    class [mscorlib]System.Func`2<!!0,!!1>)
+    IL_006c:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c'::'<>9__21_1'
+    IL_0071:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+b__21_1'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0080:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+b__21_1'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0080:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0085:  dup
+    IL_0086:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c'::'<>9__21_1'
+    IL_008b:  call       class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> [System.Core]System.Linq.Enumerable::Whe
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0085:  dup
+    IL_0086:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c'::'<>9__21_1'
+    IL_008b:  call       class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> [System.Core]System.Linq.Enumerable::Whe
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+ble`1<!!0>,
+                                                                            class [System.Core]System.Func`2<!!0,bool>)
+    IL_0090:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+ble`1<!!0>,
+                                                                            class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0090:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+ton.Docking.KryptonDockingAutoHiddenGroup::'<PropogateAction>b__21_2'(string)
+    IL_00f7:  newobj     instance void class [System.Core]System.Func`2<string,class [Krypton.Navigator]ComponentFactory.Krypto
+n.Navigator.KryptonPage>::.ctor(object,
+                                native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+ton.Docking.KryptonDockingAutoHiddenGroup::'<PropogateAction>b__21_2'(string)
+    IL_00f7:  newobj     instance void class [mscorlib]System.Func`2<string,class [Krypton.Navigator]ComponentFactory.Krypton.N
+avigator.KryptonPage>::.ctor(object,
+                             native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+IEnumerable`1<!!0>,
+                                                                                    class [System.Core]System.Func`2<!!0,!!1>)
+    IL_0101:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c'::'<>9__21_3'
+    IL_0106:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+IEnumerable`1<!!0>,
+                                                                                    class [mscorlib]System.Func`2<!!0,!!1>)
+    IL_0101:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c'::'<>9__21_3'
+    IL_0106:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+b__21_3'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0115:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+b__21_3'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0115:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_011a:  dup
+    IL_011b:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c'::'<>9__21_3'
+    IL_0120:  call       class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> [System.Core]System.Linq.Enumerable::Whe
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_011a:  dup
+    IL_011b:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup/'<>c'::'<>9__21_3'
+    IL_0120:  call       class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> [System.Core]System.Linq.Enumerable::Whe
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+ble`1<!!0>,
+                                                                            class [System.Core]System.Func`2<!!0,bool>)
+    IL_0125:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+ble`1<!!0>,
+                                                                            class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0125:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    .field public static initonly class ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c' '<>9'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__198_0'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__199_0'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__203_0'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__204_0'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__205_0'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__206_0'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__207_0'
+    .method private hidebysig specialname rtspecialname static 
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    .field public static initonly class ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c' '<>9'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__198_0'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__199_0'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__203_0'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__204_0'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__205_0'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__206_0'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__207_0'
+    .method private hidebysig specialname rtspecialname static 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_001d:  ldarg.3
+    IL_001e:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__198_0'
+    IL_0023:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_001d:  ldarg.3
+    IL_001e:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__198_0'
+    IL_0023:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+lass [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0032:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+lass [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0032:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0037:  dup
+    IL_0038:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__198_0'
+    IL_003d:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0037:  dup
+    IL_0038:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__198_0'
+    IL_003d:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [System.Core]System.Func`2<!!0,bool>)
+    IL_0042:  brfalse.s  IL_0054
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0042:  brfalse.s  IL_0054
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0022:  ldarg.3
+    IL_0023:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__199_0'
+    IL_0028:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0022:  ldarg.3
+    IL_0023:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__199_0'
+    IL_0028:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+9_0'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0037:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+9_0'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0037:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_003c:  dup
+    IL_003d:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__199_0'
+    IL_0042:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_003c:  dup
+    IL_003d:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__199_0'
+    IL_0042:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [System.Core]System.Func`2<!!0,bool>)
+    IL_0047:  brfalse.s  IL_0059
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0047:  brfalse.s  IL_0059
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0023:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__203_0'
+    IL_0028:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0023:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__203_0'
+    IL_0028:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+_0'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0037:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+_0'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0037:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_003c:  dup
+    IL_003d:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__203_0'
+    IL_0042:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_003c:  dup
+    IL_003d:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__203_0'
+    IL_0042:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [System.Core]System.Func`2<!!0,bool>)
+    IL_0047:  brfalse.s  IL_0059
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0047:  brfalse.s  IL_0059
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0022:  ldarg.2
+    IL_0023:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__204_0'
+    IL_0028:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0022:  ldarg.2
+    IL_0023:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__204_0'
+    IL_0028:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0037:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0037:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_003c:  dup
+    IL_003d:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__204_0'
+    IL_0042:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_003c:  dup
+    IL_003d:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__204_0'
+    IL_0042:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [System.Core]System.Func`2<!!0,bool>)
+    IL_0047:  brfalse.s  IL_0059
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0047:  brfalse.s  IL_0059
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0022:  ldarg.2
+    IL_0023:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__205_0'
+    IL_0028:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0022:  ldarg.2
+    IL_0023:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__205_0'
+    IL_0028:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0037:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0037:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_003c:  dup
+    IL_003d:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__205_0'
+    IL_0042:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_003c:  dup
+    IL_003d:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__205_0'
+    IL_0042:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [System.Core]System.Func`2<!!0,bool>)
+    IL_0047:  brfalse.s  IL_0059
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0047:  brfalse.s  IL_0059
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0024:  ldarg.s    pages
+    IL_0026:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__206_0'
+    IL_002b:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0024:  ldarg.s    pages
+    IL_0026:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__206_0'
+    IL_002b:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_003a:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_003a:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_003f:  dup
+    IL_0040:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__206_0'
+    IL_0045:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_003f:  dup
+    IL_0040:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__206_0'
+    IL_0045:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [System.Core]System.Func`2<!!0,bool>)
+    IL_004a:  brfalse.s  IL_005c
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [mscorlib]System.Func`2<!!0,bool>)
+    IL_004a:  brfalse.s  IL_005c
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0024:  ldarg.s    pages
+    IL_0026:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__207_0'
+    IL_002b:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0024:  ldarg.s    pages
+    IL_0026:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__207_0'
+    IL_002b:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+_207_0'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_003a:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+_207_0'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_003a:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_003f:  dup
+    IL_0040:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__207_0'
+    IL_0045:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_003f:  dup
+    IL_0040:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingManager/'<>c'::'<>9__207_0'
+    IL_0045:  call       bool [System.Core]System.Linq.Enumerable::Any<class [Krypton.Navigator]ComponentFactory.Krypton.Naviga
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [System.Core]System.Func`2<!!0,bool>)
+    IL_004a:  brfalse.s  IL_005c
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+tor.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                 class [mscorlib]System.Func`2<!!0,bool>)
+    IL_004a:  brfalse.s  IL_005c
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+  {
+    // Code size       56 (0x38)
+    .maxstack  3
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+  {
+    // Code size       61 (0x3d)
+    .maxstack  3
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_001c:  ldarg.2
+    IL_001d:  beq.s      IL_0036
+    IL_001f:  ldstr      "Docking element of type '{0}' found when type '{1}"
+    + "' was expected"
+    IL_0024:  ldloc.0
+    IL_0025:  callvirt   instance class [mscorlib]System.Type [mscorlib]System.Object::GetType()
+    IL_002a:  ldarg.2
+    IL_002b:  call       string [mscorlib]System.String::Format(string,
+                                                                object,
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_001c:  ldarg.2
+    IL_001d:  call       bool [mscorlib]System.Type::op_Inequality(class [mscorlib]System.Type,
+                                                                   class [mscorlib]System.Type)
+    IL_0022:  brfalse.s  IL_003b
+    IL_0024:  ldstr      "Docking element of type '{0}' found when type '{1}"
+    + "' was expected"
+    IL_0029:  ldloc.0
+    IL_002a:  callvirt   instance class [mscorlib]System.Type [mscorlib]System.Object::GetType()
+    IL_002f:  ldarg.2
+    IL_0030:  call       string [mscorlib]System.String::Format(string,
+                                                                object,
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+                                                                object)
+    IL_0030:  newobj     instance void [mscorlib]System.ApplicationException::.ctor(string)
+    IL_0035:  throw
+    IL_0036:  ldloc.0
+    IL_0037:  ret
+  } // end of method KryptonDockingManager::ExpectPageElement
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+                                                                object)
+    IL_0035:  newobj     instance void [mscorlib]System.ApplicationException::.ctor(string)
+    IL_003a:  throw
+    IL_003b:  ldloc.0
+    IL_003c:  ret
+  } // end of method KryptonDockingManager::ExpectPageElement
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    .field public static initonly class ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c' '<>9'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,valuetype [System.Drawing]System.Drawing.Size> '<>9__5_0'
+    .field public static class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> '<>9__12_1'
+    .method private hidebysig specialname rtspecialname static 
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    .field public static initonly class ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c' '<>9'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+valuetype [System.Drawing]System.Drawing.Size> '<>9__5_0'
+    .field public static class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> '<>9__12_1'
+    .method private hidebysig specialname rtspecialname static 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_000c:  ldarg.1
+    IL_000d:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,valuetype [System.Drawing]System.Drawing.Size> ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c'::'<>9__5_0'
+    IL_0012:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_000c:  ldarg.1
+    IL_000d:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+valuetype [System.Drawing]System.Drawing.Size> ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c'::'<>9__5_0'
+    IL_0012:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+Space/'<>c'::'<ObserveAutoHiddenSlideSize>b__5_0'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0021:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,valuetype [System.Drawing]System.Drawing.Size>::.ctor(object,
+                                                                       native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+Space/'<>c'::'<ObserveAutoHiddenSlideSize>b__5_0'(class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_0021:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,valuetype [System.Drawing]System.Drawing.Size>::.ctor(object,
+                                                                    native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_0026:  dup
+    IL_0027:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,valuetype [System.Drawing]System.Drawing.Size> ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c'::'<>9__5_0'
+    IL_002c:  call       class [mscorlib]System.Collections.Generic.IEnumerable`1<!!1> [System.Core]System.Linq.Enumerable::Sel
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_0026:  dup
+    IL_0027:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+valuetype [System.Drawing]System.Drawing.Size> ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c'::'<>9__5_0'
+    IL_002c:  call       class [mscorlib]System.Collections.Generic.IEnumerable`1<!!1> [System.Core]System.Linq.Enumerable::Sel
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+                                                                                                                           clas
+s [System.Core]System.Func`2<!!0,!!1>)
+    IL_0031:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+                                                                                                                           clas
+s [mscorlib]System.Func`2<!!0,!!1>)
+    IL_0031:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+ton.Docking.KryptonDockingSpace::'<PropogateAction>b__12_0'(string)
+    IL_0094:  newobj     instance void class [System.Core]System.Func`2<string,class [Krypton.Navigator]ComponentFactory.Krypto
+n.Navigator.KryptonPage>::.ctor(object,
+                                native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+ton.Docking.KryptonDockingSpace::'<PropogateAction>b__12_0'(string)
+    IL_0094:  newobj     instance void class [mscorlib]System.Func`2<string,class [Krypton.Navigator]ComponentFactory.Krypton.N
+avigator.KryptonPage>::.ctor(object,
+                             native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+IEnumerable`1<!!0>,
+                                                                                    class [System.Core]System.Func`2<!!0,!!1>)
+    IL_009e:  ldsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c'::'<>9__12_1'
+    IL_00a3:  dup
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+IEnumerable`1<!!0>,
+                                                                                    class [mscorlib]System.Func`2<!!0,!!1>)
+    IL_009e:  ldsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c'::'<>9__12_1'
+    IL_00a3:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+lass [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_00b2:  newobj     instance void class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navig
+ator.KryptonPage,bool>::.ctor(object,
+                              native int)
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+lass [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_00b2:  newobj     instance void class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigato
+r.KryptonPage,bool>::.ctor(object,
+                           native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+    IL_00b7:  dup
+    IL_00b8:  stsfld     class [System.Core]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPa
+ge,bool> ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c'::'<>9__12_1'
+    IL_00bd:  call       class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> [System.Core]System.Linq.Enumerable::Whe
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+    IL_00b7:  dup
+    IL_00b8:  stsfld     class [mscorlib]System.Func`2<class [Krypton.Navigator]ComponentFactory.Krypton.Navigator.KryptonPage,
+bool> ComponentFactory.Krypton.Docking.KryptonDockingSpace/'<>c'::'<>9__12_1'
+    IL_00bd:  call       class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> [System.Core]System.Linq.Enumerable::Whe
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+ble`1<!!0>,
+                                                                            class [System.Core]System.Func`2<!!0,bool>)
+    IL_00c2:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+ble`1<!!0>,
+                                                                            class [mscorlib]System.Func`2<!!0,bool>)
+    IL_00c2:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Docking.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net35\Krypton.Docking.res
+***** BIN\RELEASE\NET40\KRYPTON.DOCKING.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net40\Krypton.Docking.res
+*****
+

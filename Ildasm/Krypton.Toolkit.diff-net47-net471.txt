@@ -1,0 +1,318 @@
+Comparing files BIN\RELEASE\NET47\Krypton.Toolkit.il and BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+***** BIN\RELEASE\NET47\Krypton.Toolkit.il
+                                00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1A 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+***** BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+                                00 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1C 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+*****
+
+***** BIN\RELEASE\NET47\Krypton.Toolkit.il
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 37 01 00 54   // ,Version=v4.7..T
+                                                                                                        0E 14 46 72 61 6D 65 77
+ 6F 72 6B 44 69 73 70 6C   // ..FrameworkDispl
+                                                                                                        61 79 4E 61 6D 65 12 2E
+ 4E 45 54 20 46 72 61 6D   // ayName..NET Fram
+                                                                                                        65 77 6F 72 6B 20 34 2E
+ 37 )                      // ework 4.7
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 37 2E 31 01   // ,Version=v4.7.1.
+                                                                                                        00 54 0E 14 46 72 61 6D
+ 65 77 6F 72 6B 44 69 73   // .T..FrameworkDis
+                                                                                                        70 6C 61 79 4E 61 6D 65
+ 14 2E 4E 45 54 20 46 72   // playName..NET Fr
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 37 2E 31 )          // amework 4.7.1
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET47\Krypton.Toolkit.il
+.module Krypton.Toolkit.dll
+// MVID: {D0061DAB-13A2-4C1E-8918-DEB2034343EC}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+.module Krypton.Toolkit.dll
+// MVID: {A47A9E79-971B-4460-8538-92BF900E0591}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET47\Krypton.Toolkit.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x09730000
+// =============== CLASS MEMBERS DECLARATION ===================
+.class private auto ansi sealed beforefieldinit Microsoft.CodeAnalysis.EmbeddedAttribute
+       extends [mscorlib]System.Attribute
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .custom instance void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Attribute::.ctor()
+    IL_0006:  ret
+  } // end of method EmbeddedAttribute::.ctor
+} // end of class Microsoft.CodeAnalysis.EmbeddedAttribute
+.class private auto ansi sealed beforefieldinit System.Runtime.CompilerServices.IsReadOnlyAttribute
+       extends [mscorlib]System.Attribute
+{
+  .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .custom instance void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor() = ( 01 00 00 00 ) 
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Attribute::.ctor()
+    IL_0006:  ret
+  } // end of method IsReadOnlyAttribute::.ctor
+} // end of class System.Runtime.CompilerServices.IsReadOnlyAttribute
+.class public auto ansi beforefieldinit ComponentFactory.Krypton.Toolkit.AccurateText
+***** BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x094A0000
+// =============== CLASS MEMBERS DECLARATION ===================
+.class public auto ansi beforefieldinit ComponentFactory.Krypton.Toolkit.AccurateText
+*****
+
+***** BIN\RELEASE\NET47\Krypton.Toolkit.il
+    IL_0099:  switch     ( 
+                          IL_00e5,
+***** BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+    IL_0099:  switch     ( 
+                          IL_00e5,
+*****
+
+***** BIN\RELEASE\NET47\Krypton.Toolkit.il
+    {
+      .custom instance void System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor() = ( 01 00 00 00 ) 
+      .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+***** BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+    {
+      .custom instance void [mscorlib]System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor() = ( 01 00 00 00 ) 
+      .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+*****
+
+***** BIN\RELEASE\NET47\Krypton.Toolkit.il
+  {
+    .custom instance void System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor() = ( 01 00 00 00 ) 
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+***** BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+  {
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor() = ( 01 00 00 00 ) 
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+*****
+
+Resync Failed.  Files are too different.
+***** BIN\RELEASE\NET47\Krypton.Toolkit.il
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '068851C1E24949812E
+BCCE9C042619CA3BAF1C37BC22FCF3D21D3F64799E7E9E' at I_0033B42C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '129C9E21A51EDBE980
+7B4B33A7B6CA7521A71B791900B30478D8FC864F4C9785' at I_0033B43C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '1BF2D4AC0C1441CD17
+E7096C6636F2720B7AF799F23BC2EB33B5756F9632DD09' at I_0033B454
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '1D106343570A6AF273
+FE25A1FAA2106D2027B1A7CE8466E2CA566F723AE147AF' at I_0033B464
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '208050ED21F57E82B2
+BF129D837704C70DED445F7A16533C7A4F3A59D16CD115' at I_0033B474
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=26' '235AEE8B4B4C16A41E
+D643080E4D9DDF57B7FC8D17BB29EEF03686D069619D52' at I_0033B48C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '25B70030C693B7E550
+EB24D0A74B43C6CF1F913FC5E76F9CF86D5DB1FB355FD5' at I_0033B4AC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '2DB3AB17EFC74645AC
+69F01B4615DF56660923F90CC5474B56D4BB86307AD34E' at I_0033B4BC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '2FE60F361008B6B706
+F3DAE3C194DE24F64771661B21AFFEC4A4465466BFD6EA' at I_0033B4D4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '30A596BA07F539013C
+948A404F5110AF0F7E06FFCA29350192B0331022AA4DBE' at I_0033B4EC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '33B06539F55A30558F
+F9440C8B2B083745E42A93F483BC9476309C551AF4DAFC' at I_0033B4FC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=48' '3F1431B31172B4BE54
+18BDA2F4063F512F2F7A7CFDCE81A60B131792B5F7F694' at I_0033B514
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '421B580C15798B2C19
+35C366AA3F5922263D7150910B35D5BF88DA4254A3A718' at I_0033B544
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '440A676E1AEB18FA68
+D6926FF6D5C71CF1F3B1B85A3825CBA36F628D56ED13B5' at I_0033B55C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '4B6AFF7B4AFC7D2F7A
+E3E3186C56535E66D887D50DEDCA95EBAA91AA2373C468' at I_0033B56C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '5437FE318884C7CF51
+EF423BB15A63E327A4305F4BE707E6A9EC2699DCFF6553' at I_0033B57C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '57BAFF543EE1CBBC3E
+37BD174986A4842503AD3795835669C48919145FAEDF8A' at I_0033B58C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '5C76008DED8CE9DFC3
+AC95782B6C450378BFB224627E5D4BB9D448126993F509' at I_0033B59C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '66B491A5E7417214C4
+39E6BF2B113B40A5B10DE045ED77BF15DC6B3242FED38D' at I_0033B5AC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '6DEAFC592B480554E2
+33EA4BE94C765416C92DE56659326B3B2110FCB357EE36' at I_0033B5C4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '6FC0C8CDBA47BB7639
+EB5DBE1776B96AA34C4AE024CF2D0FB0626863F8186DF7' at I_0033B5D4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '71825690B4512B51C3
+5B617D1154F4ABFB9B6E32ACE35C50E8BC7DB3C144630D' at I_0033B5EC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '739C5029ADEE2B8B14
+1643B81D3A5CC114667A6566955E4D477481CA795E8D01' at I_0033B5FC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '7492F6631B8CFC3E10
+CF6F91567531B1AEF1DEE7F804FF45EF9D47D2EE2F78A3' at I_0033B614
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '7C64F1ABA12CBC2C5D
+E150984BAC548CFB26B20FD791DB312E106200D07B1FB9' at I_0033B624
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '805A8E12521C8DC904
+500A9A2EC76B817618B6A7565FD3D051D6D5834286D213' at I_0033B63C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '86524A5FC2C712A225
+3371A416E825B4B90BE83F28D816B6213156B8DBEC3B3D' at I_0033B654
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '8BD7E3D8F8D2D6F513
+F59C7E98CB9CFF0B2AC7C3CFAF8CEA3A931B32B3E5D5FF' at I_0033B664
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '8C17B853DA997047F7
+88D2093283622D69E09390E3388C6AF23631E2B2970FD8' at I_0033B67C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=12' '8FA351197DEBEA8F2D
+87D8E6AE6AE7A3EA2E75BF9145A2859771EBB70E74299A' at I_0033B694
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '9129498BF5E1B0E3E1
+EA4721132A7D8ABD01D2A838746B8393E5F74BA4574569' at I_0033B6A4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '9709E8D2D13907265C
+E667B2336DFD366255D6F5CB0CC6A32B920EFBDE4D979A' at I_0033B6B4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '9CA77A74CEDDF01E59
+80081C4CFD1D524DD4753AD50234F13C820AEFCC11BD03' at I_0033B6CC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' A32F9B6CF11D06D6F4F
+78AD782171B284991A253ACF10F7122A06F7D20984CD4 at I_0033B6E4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=32' AC0E2657BD2BFC13915
+D0286A732BC4FB4AF6AB2500B76BDCA38A646847D2251 at I_0033B6FC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' AF5F0FFEA506C3E44B9
+79679CD0EA87C7F47417CBE1896E467AC1F3A1FF20B32 at I_0033B71C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' B106721D97C945E33D9
+FCF35D83E87113AE0667D599852CF5D57E89B0446936F at I_0033B72C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' B6ADEA52E0D180D7E7B
+2B688400029014BE71BF2913580AD49827F69E0A87437 at I_0033B744
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' B946DCD7D46C9D67AC8
+F3B469093F05E595DE109FDFA015245F99A1F8A4473BA at I_0033B754
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' BC96A78DEC07D1F1638
+DE37D8DD1C580C6DB88646D46CA55AFB7D4B4ECB2A186 at I_0033B76C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' BCFADBFA2F3DB37BAAD
+40B1E0240EE4BB33FCEDA13C451733D114ECAF6A6E1FC at I_0033B77C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' C3422B13ED444C41714
+A6CB7EBD26395961AEC2BA706E32DF093C36BCD4484F5 at I_0033B794
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=32' C7632B39AB210306CBC
+51FAAF109CC4EA5ABD474FD7AC58BAF43C87A8154F094 at I_0033B7A4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' CC635D967F8D6667D5E
+8F5A71A4B65601A51499CB81BF52E365D0903B64F1414 at I_0033B7C4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' D342DDFDD7045847468
+1684D741DC9594ED2F51E4CB32E60CE1E44C313CF4101 at I_0033B7D4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=12' D83A52D73834217E6FD
+B85C476875994E9E5DE8A3FCAB369BC8D652379E46536 at I_0033B7E4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' D99AD013B9373E19316
+C47C8A438532FDC729CB0595FC89B22D430C52A4F5345 at I_0033B7F4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' E86880013D5D5FE4786
+C1415B972E85B2EDDE75568ACAC83DFF90069B45387D9 at I_0033B80C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' E9B07283E589D294D3B
+EAC377CEABC9FEDB16118FF938B3146CC4549700DE8D5 at I_0033B824
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' EBEA213A93DF2F69173
+6B036002B10F9D29983C2377CEE491249E2DF92D6743D at I_0033B834
+***** BIN\RELEASE\NET471\KRYPTON.TOOLKIT.IL
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '068851C1E24949812E
+BCCE9C042619CA3BAF1C37BC22FCF3D21D3F64799E7E9E' at I_0033B33C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '129C9E21A51EDBE980
+7B4B33A7B6CA7521A71B791900B30478D8FC864F4C9785' at I_0033B34C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '1BF2D4AC0C1441CD17
+E7096C6636F2720B7AF799F23BC2EB33B5756F9632DD09' at I_0033B364
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '1D106343570A6AF273
+FE25A1FAA2106D2027B1A7CE8466E2CA566F723AE147AF' at I_0033B374
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '208050ED21F57E82B2
+BF129D837704C70DED445F7A16533C7A4F3A59D16CD115' at I_0033B384
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=26' '235AEE8B4B4C16A41E
+D643080E4D9DDF57B7FC8D17BB29EEF03686D069619D52' at I_0033B39C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '25B70030C693B7E550
+EB24D0A74B43C6CF1F913FC5E76F9CF86D5DB1FB355FD5' at I_0033B3BC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '2DB3AB17EFC74645AC
+69F01B4615DF56660923F90CC5474B56D4BB86307AD34E' at I_0033B3CC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '2FE60F361008B6B706
+F3DAE3C194DE24F64771661B21AFFEC4A4465466BFD6EA' at I_0033B3E4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '30A596BA07F539013C
+948A404F5110AF0F7E06FFCA29350192B0331022AA4DBE' at I_0033B3FC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '33B06539F55A30558F
+F9440C8B2B083745E42A93F483BC9476309C551AF4DAFC' at I_0033B40C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=48' '3F1431B31172B4BE54
+18BDA2F4063F512F2F7A7CFDCE81A60B131792B5F7F694' at I_0033B424
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '421B580C15798B2C19
+35C366AA3F5922263D7150910B35D5BF88DA4254A3A718' at I_0033B454
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '440A676E1AEB18FA68
+D6926FF6D5C71CF1F3B1B85A3825CBA36F628D56ED13B5' at I_0033B46C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '4B6AFF7B4AFC7D2F7A
+E3E3186C56535E66D887D50DEDCA95EBAA91AA2373C468' at I_0033B47C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '5437FE318884C7CF51
+EF423BB15A63E327A4305F4BE707E6A9EC2699DCFF6553' at I_0033B48C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '57BAFF543EE1CBBC3E
+37BD174986A4842503AD3795835669C48919145FAEDF8A' at I_0033B49C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '5C76008DED8CE9DFC3
+AC95782B6C450378BFB224627E5D4BB9D448126993F509' at I_0033B4AC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '66B491A5E7417214C4
+39E6BF2B113B40A5B10DE045ED77BF15DC6B3242FED38D' at I_0033B4BC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '6DEAFC592B480554E2
+33EA4BE94C765416C92DE56659326B3B2110FCB357EE36' at I_0033B4D4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '6FC0C8CDBA47BB7639
+EB5DBE1776B96AA34C4AE024CF2D0FB0626863F8186DF7' at I_0033B4E4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '71825690B4512B51C3
+5B617D1154F4ABFB9B6E32ACE35C50E8BC7DB3C144630D' at I_0033B4FC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '739C5029ADEE2B8B14
+1643B81D3A5CC114667A6566955E4D477481CA795E8D01' at I_0033B50C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '7492F6631B8CFC3E10
+CF6F91567531B1AEF1DEE7F804FF45EF9D47D2EE2F78A3' at I_0033B524
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '7C64F1ABA12CBC2C5D
+E150984BAC548CFB26B20FD791DB312E106200D07B1FB9' at I_0033B534
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '805A8E12521C8DC904
+500A9A2EC76B817618B6A7565FD3D051D6D5834286D213' at I_0033B54C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '86524A5FC2C712A225
+3371A416E825B4B90BE83F28D816B6213156B8DBEC3B3D' at I_0033B564
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '8BD7E3D8F8D2D6F513
+F59C7E98CB9CFF0B2AC7C3CFAF8CEA3A931B32B3E5D5FF' at I_0033B574
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '8C17B853DA997047F7
+88D2093283622D69E09390E3388C6AF23631E2B2970FD8' at I_0033B58C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=12' '8FA351197DEBEA8F2D
+87D8E6AE6AE7A3EA2E75BF9145A2859771EBB70E74299A' at I_0033B5A4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' '9129498BF5E1B0E3E1
+EA4721132A7D8ABD01D2A838746B8393E5F74BA4574569' at I_0033B5B4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '9709E8D2D13907265C
+E667B2336DFD366255D6F5CB0CC6A32B920EFBDE4D979A' at I_0033B5C4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' '9CA77A74CEDDF01E59
+80081C4CFD1D524DD4753AD50234F13C820AEFCC11BD03' at I_0033B5DC
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' A32F9B6CF11D06D6F4F
+78AD782171B284991A253ACF10F7122A06F7D20984CD4 at I_0033B5F4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=32' AC0E2657BD2BFC13915
+D0286A732BC4FB4AF6AB2500B76BDCA38A646847D2251 at I_0033B60C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' AF5F0FFEA506C3E44B9
+79679CD0EA87C7F47417CBE1896E467AC1F3A1FF20B32 at I_0033B62C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' B106721D97C945E33D9
+FCF35D83E87113AE0667D599852CF5D57E89B0446936F at I_0033B63C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' B6ADEA52E0D180D7E7B
+2B688400029014BE71BF2913580AD49827F69E0A87437 at I_0033B654
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' B946DCD7D46C9D67AC8
+F3B469093F05E595DE109FDFA015245F99A1F8A4473BA at I_0033B664
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' BC96A78DEC07D1F1638
+DE37D8DD1C580C6DB88646D46CA55AFB7D4B4ECB2A186 at I_0033B67C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' BCFADBFA2F3DB37BAAD
+40B1E0240EE4BB33FCEDA13C451733D114ECAF6A6E1FC at I_0033B68C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' C3422B13ED444C41714
+A6CB7EBD26395961AEC2BA706E32DF093C36BCD4484F5 at I_0033B6A4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=32' C7632B39AB210306CBC
+51FAAF109CC4EA5ABD474FD7AC58BAF43C87A8154F094 at I_0033B6B4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' CC635D967F8D6667D5E
+8F5A71A4B65601A51499CB81BF52E365D0903B64F1414 at I_0033B6D4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' D342DDFDD7045847468
+1684D741DC9594ED2F51E4CB32E60CE1E44C313CF4101 at I_0033B6E4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=12' D83A52D73834217E6FD
+B85C476875994E9E5DE8A3FCAB369BC8D652379E46536 at I_0033B6F4
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' D99AD013B9373E19316
+C47C8A438532FDC729CB0595FC89B22D430C52A4F5345 at I_0033B704
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=20' E86880013D5D5FE4786
+C1415B972E85B2EDDE75568ACAC83DFF90069B45387D9 at I_0033B71C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' E9B07283E589D294D3B
+EAC377CEABC9FEDB16118FF938B3146CC4549700DE8D5 at I_0033B734
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' EBEA213A93DF2F69173
+6B036002B10F9D29983C2377CEE491249E2DF92D6743D at I_0033B744
+*****
+

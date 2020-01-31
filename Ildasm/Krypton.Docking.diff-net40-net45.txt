@@ -1,0 +1,77 @@
+Comparing files BIN\RELEASE\NET40\Krypton.Docking.il and BIN\RELEASE\NET45\KRYPTON.DOCKING.IL
+***** BIN\RELEASE\NET40\Krypton.Docking.il
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 30 01 00 54   // ,Version=v4.0..T
+                                                                                                        0E 14 46 72 61 6D 65 77
+***** BIN\RELEASE\NET45\KRYPTON.DOCKING.IL
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 35 01 00 54   // ,Version=v4.5..T
+                                                                                                        0E 14 46 72 61 6D 65 77
+*****
+
+***** BIN\RELEASE\NET40\Krypton.Docking.il
+ 6F 72 6B 44 69 73 70 6C   // ..FrameworkDispl
+                                                                                                        61 79 4E 61 6D 65 10 2E
+ 4E 45 54 20 46 72 61 6D   // ayName..NET Fram
+                                                                                                        65 77 6F 72 6B 20 34 ) 
+                           // ework 4
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET45\KRYPTON.DOCKING.IL
+ 6F 72 6B 44 69 73 70 6C   // ..FrameworkDispl
+                                                                                                        61 79 4E 61 6D 65 12 2E
+ 4E 45 54 20 46 72 61 6D   // ayName..NET Fram
+                                                                                                        65 77 6F 72 6B 20 34 2E
+ 35 )                      // ework 4.5
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET40\Krypton.Docking.il
+.module Krypton.Docking.dll
+// MVID: {13887B0B-5DEA-44FE-A32F-FD7DA69B73AE}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET45\KRYPTON.DOCKING.IL
+.module Krypton.Docking.dll
+// MVID: {F06160D7-7F21-4C8F-9A58-BA39EF1092CD}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET40\Krypton.Docking.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x06530000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET45\KRYPTON.DOCKING.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x07350000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET40\Krypton.Docking.il
+  {
+    // Code size       7 (0x7)
+***** BIN\RELEASE\NET45\KRYPTON.DOCKING.IL
+  {
+    .custom instance void [mscorlib]System.Runtime.CompilerServices.IteratorStateMachineAttribute::.ctor(class [mscorlib]System
+.Type) = ( 01 00 44 43 6F 6D 70 6F 6E 65 6E 74 46 61 63 74   // ..DComponentFact
+           6F 72 79 2E 4B 72 79 70 74 6F 6E 2E 44 6F 63 6B   // ory.Krypton.Dock
+           69 6E 67 2E 44 6F 63 6B 69 6E 67 45 6C 65 6D 65   // ing.DockingEleme
+           6E 74 2B 3C 47 65 74 45 6E 75 6D 65 72 61 74 6F   // nt+<GetEnumerato
+           72 3E 64 5F 5F 34 33 00 00 )                      // r>d__43..
+    // Code size       7 (0x7)
+*****
+
+***** BIN\RELEASE\NET40\Krypton.Docking.il
+    .custom instance void [System]System.ComponentModel.BrowsableAttribute::.ctor(bool) = ( 01 00 00 00 00 ) 
+    .get instance string ComponentFactory.Krypton.Docking.DockingElement::get_Path()
+***** BIN\RELEASE\NET45\KRYPTON.DOCKING.IL
+    .custom instance void [System]System.ComponentModel.BrowsableAttribute::.ctor(bool) = ( 01 00 00 00 00 ) 
+    .get instance string ComponentFactory.Krypton.Docking.DockingElement::get_Path()
+*****
+
+***** BIN\RELEASE\NET40\Krypton.Docking.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net40\Krypton.Docking.res
+***** BIN\RELEASE\NET45\KRYPTON.DOCKING.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net45\Krypton.Docking.res
+*****
+

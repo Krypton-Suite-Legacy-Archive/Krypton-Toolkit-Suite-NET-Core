@@ -1,0 +1,49 @@
+Comparing files BIN\RELEASE\NET471\Krypton.Toolkit.il and BIN\RELEASE\NET472\KRYPTON.TOOLKIT.IL
+***** BIN\RELEASE\NET471\Krypton.Toolkit.il
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 37 2E 31 01   // ,Version=v4.7.1.
+                                                                                                        00 54 0E 14 46 72 61 6D
+***** BIN\RELEASE\NET472\KRYPTON.TOOLKIT.IL
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 37 2E 32 01   // ,Version=v4.7.2.
+                                                                                                        00 54 0E 14 46 72 61 6D
+*****
+
+***** BIN\RELEASE\NET471\Krypton.Toolkit.il
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 37 2E 31 )          // amework 4.7.1
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET472\KRYPTON.TOOLKIT.IL
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 37 2E 32 )          // amework 4.7.2
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET471\Krypton.Toolkit.il
+.module Krypton.Toolkit.dll
+// MVID: {A47A9E79-971B-4460-8538-92BF900E0591}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET472\KRYPTON.TOOLKIT.IL
+.module Krypton.Toolkit.dll
+// MVID: {BBF9F811-5D76-4C35-89B3-D78877B59C55}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET471\Krypton.Toolkit.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x08E10000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET472\KRYPTON.TOOLKIT.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x09580000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET471\Krypton.Toolkit.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net471\Krypton.Toolkit.res
+***** BIN\RELEASE\NET472\KRYPTON.TOOLKIT.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net472\Krypton.Toolkit.res
+*****
+

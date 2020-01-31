@@ -1,0 +1,49 @@
+Comparing files BIN\RELEASE\NET461\Krypton.Ribbon.il and BIN\RELEASE\NET462\KRYPTON.RIBBON.IL
+***** BIN\RELEASE\NET461\Krypton.Ribbon.il
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 36 2E 31 01   // ,Version=v4.6.1.
+                                                                                                        00 54 0E 14 46 72 61 6D
+***** BIN\RELEASE\NET462\KRYPTON.RIBBON.IL
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 36 2E 32 01   // ,Version=v4.6.2.
+                                                                                                        00 54 0E 14 46 72 61 6D
+*****
+
+***** BIN\RELEASE\NET461\Krypton.Ribbon.il
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 36 2E 31 )          // amework 4.6.1
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET462\KRYPTON.RIBBON.IL
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 36 2E 32 )          // amework 4.6.2
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET461\Krypton.Ribbon.il
+.module Krypton.Ribbon.dll
+// MVID: {6704743F-D1D8-4032-B892-76038B292751}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET462\KRYPTON.RIBBON.IL
+.module Krypton.Ribbon.dll
+// MVID: {15388C93-FBE6-4472-B14F-97FA88AA529B}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET461\Krypton.Ribbon.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x094A0000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET462\KRYPTON.RIBBON.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x09180000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET461\Krypton.Ribbon.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net461\Krypton.Ribbon.res
+***** BIN\RELEASE\NET462\KRYPTON.RIBBON.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net462\Krypton.Ribbon.res
+*****
+

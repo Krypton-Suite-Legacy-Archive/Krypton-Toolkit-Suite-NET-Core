@@ -1,0 +1,49 @@
+Comparing files BIN\RELEASE\NET471\Krypton.Navigator.il and BIN\RELEASE\NET472\KRYPTON.NAVIGATOR.IL
+***** BIN\RELEASE\NET471\Krypton.Navigator.il
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 37 2E 31 01   // ,Version=v4.7.1.
+                                                                                                        00 54 0E 14 46 72 61 6D
+***** BIN\RELEASE\NET472\KRYPTON.NAVIGATOR.IL
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 37 2E 32 01   // ,Version=v4.7.2.
+                                                                                                        00 54 0E 14 46 72 61 6D
+*****
+
+***** BIN\RELEASE\NET471\Krypton.Navigator.il
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 37 2E 31 )          // amework 4.7.1
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET472\KRYPTON.NAVIGATOR.IL
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 37 2E 32 )          // amework 4.7.2
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET471\Krypton.Navigator.il
+.module Krypton.Navigator.dll
+// MVID: {6A97B40C-58F6-4219-AA05-C95DD0F4CAFA}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET472\KRYPTON.NAVIGATOR.IL
+.module Krypton.Navigator.dll
+// MVID: {5A55D508-F260-4ABB-9E00-2B1F7F1C3AA7}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET471\Krypton.Navigator.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x098C0000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET472\KRYPTON.NAVIGATOR.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x097A0000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET471\Krypton.Navigator.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net471\Krypton.Navigator.res
+***** BIN\RELEASE\NET472\KRYPTON.NAVIGATOR.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net472\Krypton.Navigator.res
+*****
+

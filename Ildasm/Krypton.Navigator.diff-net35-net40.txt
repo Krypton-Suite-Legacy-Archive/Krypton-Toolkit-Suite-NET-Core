@@ -1,0 +1,839 @@
+Comparing files BIN\RELEASE\NET35\Krypton.Navigator.il and BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+// Metadata version: v2.0.50727
+.module extern user32.dll
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+// Metadata version: v4.0.30319
+.module extern user32.dll
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+.assembly extern System.Core
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 3:5:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 4:0:0:0
+}
+.assembly extern System.Core
+{
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                6B 69 74 01 00 00 00 00 00 )                      // kit......
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                6B 69 74 01 00 00 00 00 00 )                      // kit......
+  .custom instance void [mscorlib]System.Security.SecurityRulesAttribute::.ctor(valuetype [mscorlib]System.Security.SecurityRul
+eSet) = ( 01 00 01 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1A 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 30 01 00 54   // ,Version=v4.0..T
+                                                                                                        0E 14 46 72 61 6D 65 77
+ 6F 72 6B 44 69 73 70 6C   // ..FrameworkDispl
+                                                                                                        61 79 4E 61 6D 65 10 2E
+ 4E 45 54 20 46 72 61 6D   // ayName..NET Fram
+                                                                                                        65 77 6F 72 6B 20 34 ) 
+                           // ework 4
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+.module Krypton.Navigator.dll
+// MVID: {F35DA618-852D-47DE-8832-03D5B0631756}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+.module Krypton.Navigator.dll
+// MVID: {77266C08-3BD1-451A-A165-083263549839}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x06FC0000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x06C00000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  {
+    // Code size       24 (0x18)
+    .maxstack  8
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  {
+    // Code size       29 (0x1d)
+    .maxstack  8
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+eTypeHandle)
+    IL_000b:  beq.s      IL_0016
+    IL_000d:  ldarg.0
+    IL_000e:  ldarg.1
+    IL_000f:  ldarg.2
+    IL_0010:  call       instance bool [System]System.ComponentModel.TypeConverter::CanConvertTo(class [System]System.Component
+Model.ITypeDescriptorContext,
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+eTypeHandle)
+    IL_000b:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                 class [mscorlib]System.Type)
+    IL_0010:  brtrue.s   IL_001b
+    IL_0012:  ldarg.0
+    IL_0013:  ldarg.1
+    IL_0014:  ldarg.2
+    IL_0015:  call       instance bool [System]System.ComponentModel.TypeConverter::CanConvertTo(class [System]System.Component
+Model.ITypeDescriptorContext,
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 class [mscorlib]System.Type)
+    IL_0015:  ret
+    IL_0016:  ldc.i4.1
+    IL_0017:  ret
+  } // end of method ButtonSpecNavFixedConverter::CanConvertTo
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 class [mscorlib]System.Type)
+    IL_001a:  ret
+    IL_001b:  ldc.i4.1
+    IL_001c:  ret
+  } // end of method ButtonSpecNavFixedConverter::CanConvertTo
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  {
+    // Code size       38 (0x26)
+    .maxstack  8
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  {
+    // Code size       43 (0x2b)
+    .maxstack  8
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+eTypeHandle)
+    IL_000c:  bne.un.s   IL_001a
+    IL_000e:  ldarg.3
+    IL_000f:  castclass  ComponentFactory.Krypton.Navigator.ButtonSpecNavFixed
+    IL_0014:  callvirt   instance string [mscorlib]System.Object::ToString()
+    IL_0019:  ret
+    IL_001a:  ldarg.0
+    IL_001b:  ldarg.1
+    IL_001c:  ldarg.2
+    IL_001d:  ldarg.3
+    IL_001e:  ldarg.s    destinationType
+    IL_0020:  call       instance object [System]System.ComponentModel.TypeConverter::ConvertTo(class [System]System.ComponentM
+odel.ITypeDescriptorContext,
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+eTypeHandle)
+    IL_000c:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                 class [mscorlib]System.Type)
+    IL_0011:  brfalse.s  IL_001f
+    IL_0013:  ldarg.3
+    IL_0014:  castclass  ComponentFactory.Krypton.Navigator.ButtonSpecNavFixed
+    IL_0019:  callvirt   instance string [mscorlib]System.Object::ToString()
+    IL_001e:  ret
+    IL_001f:  ldarg.0
+    IL_0020:  ldarg.1
+    IL_0021:  ldarg.2
+    IL_0022:  ldarg.3
+    IL_0023:  ldarg.s    destinationType
+    IL_0025:  call       instance object [System]System.ComponentModel.TypeConverter::ConvertTo(class [System]System.ComponentM
+odel.ITypeDescriptorContext,
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                class [mscorlib]System.Type)
+    IL_0025:  ret
+  } // end of method ButtonSpecNavFixedConverter::ConvertTo
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                class [mscorlib]System.Type)
+    IL_002a:  ret
+  } // end of method ButtonSpecNavFixedConverter::ConvertTo
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    .field public static initonly class ComponentFactory.Krypton.Navigator.KryptonNavigator/'<>c' '<>9'
+    .field public static class [System.Core]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bool> '<>9__351_
+0'
+    .method private hidebysig specialname rtspecialname static 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    .field public static initonly class ComponentFactory.Krypton.Navigator.KryptonNavigator/'<>c' '<>9'
+    .field public static class [mscorlib]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bool> '<>9__351_0'
+    .method private hidebysig specialname rtspecialname static 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+ator::_dragPages
+    IL_0090:  ldsfld     class [System.Core]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bool> ComponentF
+actory.Krypton.Navigator.KryptonNavigator/'<>c'::'<>9__351_0'
+    IL_0095:  dup
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+ator::_dragPages
+    IL_0090:  ldsfld     class [mscorlib]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bool> ComponentFact
+ory.Krypton.Navigator.KryptonNavigator/'<>c'::'<>9__351_0'
+    IL_0095:  dup
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+(class ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_00a4:  newobj     instance void class [System.Core]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bo
+ol>::.ctor(object,
+           native int)
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+(class ComponentFactory.Krypton.Navigator.KryptonPage)
+    IL_00a4:  newobj     instance void class [mscorlib]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bool>
+::.ctor(object,
+        native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    IL_00a9:  dup
+    IL_00aa:  stsfld     class [System.Core]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bool> ComponentF
+actory.Krypton.Navigator.KryptonNavigator/'<>c'::'<>9__351_0'
+    IL_00af:  call       bool [System.Core]System.Linq.Enumerable::Any<class ComponentFactory.Krypton.Navigator.KryptonPage>(cl
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    IL_00a9:  dup
+    IL_00aa:  stsfld     class [mscorlib]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bool> ComponentFact
+ory.Krypton.Navigator.KryptonNavigator/'<>c'::'<>9__351_0'
+    IL_00af:  call       bool [System.Core]System.Linq.Enumerable::Any<class ComponentFactory.Krypton.Navigator.KryptonPage>(cl
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                                             cl
+ass [System.Core]System.Func`2<!!0,bool>)
+    IL_00b4:  stloc.0
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                                             cl
+ass [mscorlib]System.Func`2<!!0,bool>)
+    IL_00b4:  stloc.0
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+omponentFactory.Krypton.Navigator.KryptonPage)
+    IL_002c:  newobj     instance void class [System.Core]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bo
+ol>::.ctor(object,
+           native int)
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+omponentFactory.Krypton.Navigator.KryptonPage)
+    IL_002c:  newobj     instance void class [mscorlib]System.Func`2<class ComponentFactory.Krypton.Navigator.KryptonPage,bool>
+::.ctor(object,
+        native int)
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+re<class ComponentFactory.Krypton.Navigator.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                                                         class [System.Core]System.Func`2<!!0,bool>)
+    IL_0036:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+re<class ComponentFactory.Krypton.Navigator.KryptonPage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>,
+                                                         class [mscorlib]System.Func`2<!!0,bool>)
+    IL_0036:  callvirt   instance class [mscorlib]System.Collections.Generic.IEnumerator`1<!0> class [mscorlib]System.Collectio
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  {
+    // Code size       249 (0xf9)
+    .maxstack  3
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  {
+    // Code size       260 (0x104)
+    .maxstack  3
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    IL_0001:  call       instance bool [System.Windows.Forms]System.Windows.Forms.Control::get_IsDisposed()
+    IL_0006:  brtrue     IL_00f8
+    IL_000b:  ldarg.0
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    IL_0001:  call       instance bool [System.Windows.Forms]System.Windows.Forms.Control::get_IsDisposed()
+    IL_0006:  brtrue     IL_0103
+    IL_000b:  ldarg.0
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+ryptonNavigator::get_ViewBuilder()
+    IL_0011:  brfalse    IL_00f8
+    IL_0016:  ldarg.0
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+ryptonNavigator::get_ViewBuilder()
+    IL_0011:  brfalse    IL_0103
+    IL_0016:  ldarg.0
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    IL_0017:  call       instance bool ComponentFactory.Krypton.Navigator.KryptonNavigator::get_IsChildPanelBorrowed()
+    IL_001c:  brtrue     IL_00f8
+    IL_0021:  ldarg.1
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    IL_0017:  call       instance bool ComponentFactory.Krypton.Navigator.KryptonNavigator::get_IsChildPanelBorrowed()
+    IL_001c:  brtrue     IL_0103
+    IL_0021:  ldarg.1
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    IL_003c:  ldarg.1
+    IL_003d:  brtrue     IL_00f8
+    IL_0042:  ldarg.0
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    IL_003c:  ldarg.1
+    IL_003d:  brtrue     IL_0103
+    IL_0042:  ldarg.0
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    IL_004d:  ldc.i4.0
+    IL_004e:  ble        IL_00f8
+    IL_0053:  ldarg.0
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    IL_004d:  ldc.i4.0
+    IL_004e:  ble        IL_0103
+    IL_0053:  ldarg.0
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    {
+      IL_006c:  br.s       IL_0094
+      IL_006e:  ldloc.0
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    {
+      IL_006c:  br.s       IL_009f
+      IL_006e:  ldloc.0
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+      IL_0075:  ldarg.2
+      IL_0076:  brfalse.s  IL_0081
+      IL_0078:  ldloc.1
+      IL_0079:  callvirt   instance class [mscorlib]System.Type [mscorlib]System.Object::GetType()
+      IL_007e:  ldarg.2
+      IL_007f:  beq.s      IL_0094
+      IL_0081:  ldloc.1
+      IL_0082:  ldarg.1
+      IL_0083:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Control::set_Visible(bool)
+      IL_0088:  ldarg.0
+      IL_0089:  call       instance class ComponentFactory.Krypton.Navigator.ViewBuilderBase ComponentFactory.Krypton.Navigator
+.KryptonNavigator::get_ViewBuilder()
+      IL_008e:  ldloc.1
+      IL_008f:  callvirt   instance void ComponentFactory.Krypton.Navigator.ViewBuilderBase::PageVisibleStateChanged(class Comp
+onentFactory.Krypton.Navigator.KryptonPage)
+      IL_0094:  ldloc.0
+      IL_0095:  callvirt   instance bool [mscorlib]System.Collections.IEnumerator::MoveNext()
+      IL_009a:  brtrue.s   IL_006e
+      IL_009c:  leave.s    IL_00a8
+    }  // end .try
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+      IL_0075:  ldarg.2
+      IL_0076:  ldnull
+      IL_0077:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                   class [mscorlib]System.Type)
+      IL_007c:  brtrue.s   IL_008c
+      IL_007e:  ldloc.1
+      IL_007f:  callvirt   instance class [mscorlib]System.Type [mscorlib]System.Object::GetType()
+      IL_0084:  ldarg.2
+      IL_0085:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                   class [mscorlib]System.Type)
+      IL_008a:  brtrue.s   IL_009f
+      IL_008c:  ldloc.1
+      IL_008d:  ldarg.1
+      IL_008e:  callvirt   instance void [System.Windows.Forms]System.Windows.Forms.Control::set_Visible(bool)
+      IL_0093:  ldarg.0
+      IL_0094:  call       instance class ComponentFactory.Krypton.Navigator.ViewBuilderBase ComponentFactory.Krypton.Navigator
+.KryptonNavigator::get_ViewBuilder()
+      IL_0099:  ldloc.1
+      IL_009a:  callvirt   instance void ComponentFactory.Krypton.Navigator.ViewBuilderBase::PageVisibleStateChanged(class Comp
+onentFactory.Krypton.Navigator.KryptonPage)
+      IL_009f:  ldloc.0
+      IL_00a0:  callvirt   instance bool [mscorlib]System.Collections.IEnumerator::MoveNext()
+      IL_00a5:  brtrue.s   IL_006e
+      IL_00a7:  leave.s    IL_00b3
+    }  // end .try
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    {
+      IL_009e:  ldloc.0
+      IL_009f:  brfalse.s  IL_00a7
+      IL_00a1:  ldloc.0
+      IL_00a2:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+      IL_00a7:  endfinally
+    }  // end handler
+    IL_00a8:  ldarg.0
+    IL_00a9:  ldc.i4.0
+    IL_00aa:  stfld      bool ComponentFactory.Krypton.Navigator.KryptonNavigator::_ignorePageVisibleChange
+    IL_00af:  ldarg.0
+    IL_00b0:  call       instance bool ComponentFactory.Krypton.Navigator.KryptonNavigator::get_AllowTabSelect()
+    IL_00b5:  brfalse.s  IL_00eb
+    IL_00b7:  ldarg.1
+    IL_00b8:  brfalse.s  IL_00c2
+    IL_00ba:  ldarg.0
+    IL_00bb:  call       instance void ComponentFactory.Krypton.Navigator.KryptonNavigator::SelectFirstAvailablePage()
+    IL_00c0:  br.s       IL_00eb
+    IL_00c2:  ldarg.0
+    IL_00c3:  ldarg.0
+    IL_00c4:  call       instance class ComponentFactory.Krypton.Navigator.KryptonPage ComponentFactory.Krypton.Navigator.Krypt
+onNavigator::get_SelectedPage()
+    IL_00c9:  ldarg.0
+    IL_00ca:  call       instance int32 ComponentFactory.Krypton.Navigator.KryptonNavigator::get_SelectedIndex()
+    IL_00cf:  newobj     instance void ComponentFactory.Krypton.Navigator.KryptonPageEventArgs::.ctor(class ComponentFactory.Kr
+ypton.Navigator.KryptonPage,
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    {
+      IL_00a9:  ldloc.0
+      IL_00aa:  brfalse.s  IL_00b2
+      IL_00ac:  ldloc.0
+      IL_00ad:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+      IL_00b2:  endfinally
+    }  // end handler
+    IL_00b3:  ldarg.0
+    IL_00b4:  ldc.i4.0
+    IL_00b5:  stfld      bool ComponentFactory.Krypton.Navigator.KryptonNavigator::_ignorePageVisibleChange
+    IL_00ba:  ldarg.0
+    IL_00bb:  call       instance bool ComponentFactory.Krypton.Navigator.KryptonNavigator::get_AllowTabSelect()
+    IL_00c0:  brfalse.s  IL_00f6
+    IL_00c2:  ldarg.1
+    IL_00c3:  brfalse.s  IL_00cd
+    IL_00c5:  ldarg.0
+    IL_00c6:  call       instance void ComponentFactory.Krypton.Navigator.KryptonNavigator::SelectFirstAvailablePage()
+    IL_00cb:  br.s       IL_00f6
+    IL_00cd:  ldarg.0
+    IL_00ce:  ldarg.0
+    IL_00cf:  call       instance class ComponentFactory.Krypton.Navigator.KryptonPage ComponentFactory.Krypton.Navigator.Krypt
+onNavigator::get_SelectedPage()
+    IL_00d4:  ldarg.0
+    IL_00d5:  call       instance int32 ComponentFactory.Krypton.Navigator.KryptonNavigator::get_SelectedIndex()
+    IL_00da:  newobj     instance void ComponentFactory.Krypton.Navigator.KryptonPageEventArgs::.ctor(class ComponentFactory.Kr
+ypton.Navigator.KryptonPage,
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                      int32)
+    IL_00d4:  callvirt   instance void ComponentFactory.Krypton.Navigator.KryptonNavigator::OnDeselected(class ComponentFactory
+.Krypton.Navigator.KryptonPageEventArgs)
+    IL_00d9:  ldarg.0
+    IL_00da:  ldnull
+    IL_00db:  stfld      class ComponentFactory.Krypton.Navigator.KryptonPage ComponentFactory.Krypton.Navigator.KryptonNavigat
+or::_selectedPage
+    IL_00e0:  ldarg.0
+    IL_00e1:  ldsfld     class [mscorlib]System.EventArgs [mscorlib]System.EventArgs::Empty
+    IL_00e6:  callvirt   instance void ComponentFactory.Krypton.Navigator.KryptonNavigator::OnSelectedPageChanged(class [mscorl
+ib]System.EventArgs)
+    IL_00eb:  ldarg.0
+    IL_00ec:  call       instance void ComponentFactory.Krypton.Navigator.KryptonNavigator::CheckForPageCountEvents()
+    IL_00f1:  ldarg.0
+    IL_00f2:  ldc.i4.1
+    IL_00f3:  callvirt   instance void [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualControlBase::PerformNeedPaint(bo
+ol)
+    IL_00f8:  ret
+  } // end of method KryptonNavigator::UpdateAllPagesVisible
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                      int32)
+    IL_00df:  callvirt   instance void ComponentFactory.Krypton.Navigator.KryptonNavigator::OnDeselected(class ComponentFactory
+.Krypton.Navigator.KryptonPageEventArgs)
+    IL_00e4:  ldarg.0
+    IL_00e5:  ldnull
+    IL_00e6:  stfld      class ComponentFactory.Krypton.Navigator.KryptonPage ComponentFactory.Krypton.Navigator.KryptonNavigat
+or::_selectedPage
+    IL_00eb:  ldarg.0
+    IL_00ec:  ldsfld     class [mscorlib]System.EventArgs [mscorlib]System.EventArgs::Empty
+    IL_00f1:  callvirt   instance void ComponentFactory.Krypton.Navigator.KryptonNavigator::OnSelectedPageChanged(class [mscorl
+ib]System.EventArgs)
+    IL_00f6:  ldarg.0
+    IL_00f7:  call       instance void ComponentFactory.Krypton.Navigator.KryptonNavigator::CheckForPageCountEvents()
+    IL_00fc:  ldarg.0
+    IL_00fd:  ldc.i4.1
+    IL_00fe:  callvirt   instance void [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualControlBase::PerformNeedPaint(bo
+ol)
+    IL_0103:  ret
+  } // end of method KryptonNavigator::UpdateAllPagesVisible
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+67 2C 20 56 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                                32 2E 30 2E 30 
+2E 30 2C 20 43 75 6C 74 75 72 65   // 2.0.0.0, Culture
+                                                                                                                3D 6E 65 75 74 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+67 2C 20 56 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                                34 2E 30 2E 30 
+2E 30 2C 20 43 75 6C 74 75 72 65   // 4.0.0.0, Culture
+                                                                                                                3D 6E 65 75 74 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+  {
+    // Code size       245 (0xf5)
+    .maxstack  4
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+  {
+    // Code size       255 (0xff)
+    .maxstack  4
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+      IL_0074:  ldloc.3
+      IL_0075:  brfalse.s  IL_00c6
+      IL_0077:  ldloc.3
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+      IL_0074:  ldloc.3
+      IL_0075:  brfalse.s  IL_00d0
+      IL_0077:  ldloc.3
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+imeTypeHandle)
+      IL_0087:  bne.un.s   IL_00c6
+      IL_0089:  ldloc.s    V_4
+      IL_008b:  brfalse.s  IL_00c6
+      IL_008d:  ldloc.s    V_4
+      IL_008f:  callvirt   instance class [mscorlib]System.Type [System]System.ComponentModel.PropertyDescriptor::get_PropertyT
+ype()
+      IL_0094:  ldtoken    [mscorlib]System.String
+      IL_0099:  call       class [mscorlib]System.Type [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.Runt
+imeTypeHandle)
+      IL_009e:  bne.un.s   IL_00c6
+      IL_00a0:  ldloc.3
+      IL_00a1:  ldloc.2
+      IL_00a2:  callvirt   instance object [System]System.ComponentModel.PropertyDescriptor::GetValue(object)
+      IL_00a7:  castclass  [mscorlib]System.String
+      IL_00ac:  stloc.s    V_5
+      IL_00ae:  ldloc.s    V_5
+      IL_00b0:  brfalse.s  IL_00c6
+      IL_00b2:  ldloc.s    V_5
+      IL_00b4:  callvirt   instance int32 [mscorlib]System.String::get_Length()
+      IL_00b9:  ldc.i4.0
+      IL_00ba:  ble.s      IL_00c6
+      IL_00bc:  ldloc.s    V_4
+      IL_00be:  ldloc.2
+      IL_00bf:  ldloc.s    V_5
+      IL_00c1:  callvirt   instance void [System]System.ComponentModel.PropertyDescriptor::SetValue(object,
+                                                                                                    object)
+      IL_00c6:  ldarg.0
+      IL_00c7:  callvirt   instance class ComponentFactory.Krypton.Navigator.KryptonNavigator ComponentFactory.Krypton.Navigato
+r.KryptonNavigatorDesigner::get_Navigator()
+      IL_00cc:  callvirt   instance class ComponentFactory.Krypton.Navigator.KryptonPageCollection ComponentFactory.Krypton.Nav
+igator.KryptonNavigator::get_Pages()
+      IL_00d1:  ldloc.2
+      IL_00d2:  callvirt   instance void class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.TypedCollection`1<class Compon
+entFactory.Krypton.Navigator.KryptonPage>::Add(!0)
+      IL_00d7:  ldarg.0
+      IL_00d8:  ldfld      bool ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner::_ignoreOnAddPage
+      IL_00dd:  brtrue.s   IL_00e8
+      IL_00df:  ldarg.0
+      IL_00e0:  ldloc.1
+      IL_00e1:  ldnull
+      IL_00e2:  ldnull
+      IL_00e3:  call       instance void [System.Design]System.ComponentModel.Design.ComponentDesigner::RaiseComponentChanged(c
+lass [System]System.ComponentModel.MemberDescriptor,
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+imeTypeHandle)
+      IL_0087:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                   class [mscorlib]System.Type)
+      IL_008c:  brfalse.s  IL_00d0
+      IL_008e:  ldloc.s    V_4
+      IL_0090:  brfalse.s  IL_00d0
+      IL_0092:  ldloc.s    V_4
+      IL_0094:  callvirt   instance class [mscorlib]System.Type [System]System.ComponentModel.PropertyDescriptor::get_PropertyT
+ype()
+      IL_0099:  ldtoken    [mscorlib]System.String
+      IL_009e:  call       class [mscorlib]System.Type [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.Runt
+imeTypeHandle)
+      IL_00a3:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                   class [mscorlib]System.Type)
+      IL_00a8:  brfalse.s  IL_00d0
+      IL_00aa:  ldloc.3
+      IL_00ab:  ldloc.2
+      IL_00ac:  callvirt   instance object [System]System.ComponentModel.PropertyDescriptor::GetValue(object)
+      IL_00b1:  castclass  [mscorlib]System.String
+      IL_00b6:  stloc.s    V_5
+      IL_00b8:  ldloc.s    V_5
+      IL_00ba:  brfalse.s  IL_00d0
+      IL_00bc:  ldloc.s    V_5
+      IL_00be:  callvirt   instance int32 [mscorlib]System.String::get_Length()
+      IL_00c3:  ldc.i4.0
+      IL_00c4:  ble.s      IL_00d0
+      IL_00c6:  ldloc.s    V_4
+      IL_00c8:  ldloc.2
+      IL_00c9:  ldloc.s    V_5
+      IL_00cb:  callvirt   instance void [System]System.ComponentModel.PropertyDescriptor::SetValue(object,
+                                                                                                    object)
+      IL_00d0:  ldarg.0
+      IL_00d1:  callvirt   instance class ComponentFactory.Krypton.Navigator.KryptonNavigator ComponentFactory.Krypton.Navigato
+r.KryptonNavigatorDesigner::get_Navigator()
+      IL_00d6:  callvirt   instance class ComponentFactory.Krypton.Navigator.KryptonPageCollection ComponentFactory.Krypton.Nav
+igator.KryptonNavigator::get_Pages()
+      IL_00db:  ldloc.2
+      IL_00dc:  callvirt   instance void class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.TypedCollection`1<class Compon
+entFactory.Krypton.Navigator.KryptonPage>::Add(!0)
+      IL_00e1:  ldarg.0
+      IL_00e2:  ldfld      bool ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner::_ignoreOnAddPage
+      IL_00e7:  brtrue.s   IL_00f2
+      IL_00e9:  ldarg.0
+      IL_00ea:  ldloc.1
+      IL_00eb:  ldnull
+      IL_00ec:  ldnull
+      IL_00ed:  call       instance void [System.Design]System.ComponentModel.Design.ComponentDesigner::RaiseComponentChanged(c
+lass [System]System.ComponentModel.MemberDescriptor,
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+bject)
+      IL_00e8:  leave.s    IL_00f4
+    }  // end .try
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+bject)
+      IL_00f2:  leave.s    IL_00fe
+    }  // end .try
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+    {
+      IL_00ea:  ldloc.0
+      IL_00eb:  brfalse.s  IL_00f3
+      IL_00ed:  ldloc.0
+      IL_00ee:  call       instance void [System]System.ComponentModel.Design.DesignerTransaction::Commit()
+      IL_00f3:  endfinally
+    }  // end handler
+    IL_00f4:  ret
+  } // end of method KryptonNavigatorDesigner::OnAddPage
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+    {
+      IL_00f4:  ldloc.0
+      IL_00f5:  brfalse.s  IL_00fd
+      IL_00f7:  ldloc.0
+      IL_00f8:  call       instance void [System]System.ComponentModel.Design.DesignerTransaction::Commit()
+      IL_00fd:  endfinally
+    }  // end handler
+    IL_00fe:  ret
+  } // end of method KryptonNavigatorDesigner::OnAddPage
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                                73 69 6F 6E 3D 
+32 2E 30 2E 30 2E 30 2C 20 43 75   // sion=2.0.0.0, Cu
+                                                                                                                6C 74 75 72 65 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                                73 69 6F 6E 3D 
+34 2E 30 2E 30 2E 30 2C 20 43 75   // sion=4.0.0.0, Cu
+                                                                                                                6C 74 75 72 65 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                                73 69 6F 6E 3D 
+32 2E 30 2E 30 2E 30 2C 20 43 75   // sion=2.0.0.0, Cu
+                                                                                                                6C 74 75 72 65 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                                73 69 6F 6E 3D 
+34 2E 30 2E 30 2E 30 2C 20 43 75   // sion=4.0.0.0, Cu
+                                                                                                                6C 74 75 72 65 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                 32 2E 30 2E 30 2E 30 2C 20 43 
+75 6C 74 75 72 65   // 2.0.0.0, Culture
+                                                                                                 3D 6E 65 75 74 72 61 6C 2C 20 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                 34 2E 30 2E 30 2E 30 2C 20 43 
+75 6C 74 75 72 65   // 4.0.0.0, Culture
+                                                                                                 3D 6E 65 75 74 72 61 6C 2C 20 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                 32 2E 30 2E 30 2E 30 2C 20 43 
+75 6C 74 75 72 65   // 2.0.0.0, Culture
+                                                                                                 3D 6E 65 75 74 72 61 6C 2C 20 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                 34 2E 30 2E 30 2E 30 2C 20 43 
+75 6C 74 75 72 65   // 4.0.0.0, Culture
+                                                                                                 3D 6E 65 75 74 72 61 6C 2C 20 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 6D 73 2C 20 56 65 72 73 69 6F 
+6E 3D 32 2E 30 2E   // ms, Version=2.0.
+                                                                                                 30 2E 30 2C 20 43 75 6C 74 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 6D 73 2C 20 56 65 72 73 69 6F 
+6E 3D 34 2E 30 2E   // ms, Version=4.0.
+                                                                                                 30 2E 30 2C 20 43 75 6C 74 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 6D 73 2C 20 56 65 72 73 69 6F 
+6E 3D 32 2E 30 2E   // ms, Version=2.0.
+                                                                                                 30 2E 30 2C 20 43 75 6C 74 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 6D 73 2C 20 56 65 72 73 69 6F 
+6E 3D 34 2E 30 2E   // ms, Version=4.0.
+                                                                                                 30 2E 30 2C 20 43 75 6C 74 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 6D 73 2C 20 56 65 72 73 69 6F 
+6E 3D 32 2E 30 2E   // ms, Version=2.0.
+                                                                                                 30 2E 30 2C 20 43 75 6C 74 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 6D 73 2C 20 56 65 72 73 69 6F 
+6E 3D 34 2E 30 2E   // ms, Version=4.0.
+                                                                                                 30 2E 30 2C 20 43 75 6C 74 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 6D 73 2C 20 56 65 72 73 69 6F 
+6E 3D 32 2E 30 2E   // ms, Version=2.0.
+                                                                                                 30 2E 30 2C 20 43 75 6C 74 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 6D 73 2C 20 56 65 72 73 69 6F 
+6E 3D 34 2E 30 2E   // ms, Version=4.0.
+                                                                                                 30 2E 30 2C 20 43 75 6C 74 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+20 56 65 72 73 69   // ows.Forms, Versi
+                                                                                                 6F 6E 3D 32 2E 30 2E 30 2E 30 
+2C 20 43 75 6C 74   // on=2.0.0.0, Cult
+                                                                                                 75 72 65 3D 6E 65 75 74 72 61 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+20 56 65 72 73 69   // ows.Forms, Versi
+                                                                                                 6F 6E 3D 34 2E 30 2E 30 2E 30 
+2C 20 43 75 6C 74   // on=4.0.0.0, Cult
+                                                                                                 75 72 65 3D 6E 65 75 74 72 61 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+20 56 65 72 73 69   // ows.Forms, Versi
+                                                                                                 6F 6E 3D 32 2E 30 2E 30 2E 30 
+2C 20 43 75 6C 74   // on=2.0.0.0, Cult
+                                                                                                 75 72 65 3D 6E 65 75 74 72 61 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+20 56 65 72 73 69   // ows.Forms, Versi
+                                                                                                 6F 6E 3D 34 2E 30 2E 30 2E 30 
+2C 20 43 75 6C 74   // on=4.0.0.0, Cult
+                                                                                                 75 72 65 3D 6E 65 75 74 72 61 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 32   // Forms, Version=2
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 34   // Forms, Version=4
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 32   // Forms, Version=2
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 34   // Forms, Version=4
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 32   // Forms, Version=2
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 34   // Forms, Version=4
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 32   // Forms, Version=2
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 34   // Forms, Version=4
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 32   // Forms, Version=2
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 34   // Forms, Version=4
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 32   // Forms, Version=2
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+                                                                                                 46 6F 72 6D 73 2C 20 56 65 72 
+73 69 6F 6E 3D 34   // Forms, Version=4
+                                                                                                 2E 30 2E 30 2E 30 2C 20 43 75 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Navigator.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net35\Krypton.Navigator.res
+***** BIN\RELEASE\NET40\KRYPTON.NAVIGATOR.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net40\Krypton.Navigator.res
+*****
+

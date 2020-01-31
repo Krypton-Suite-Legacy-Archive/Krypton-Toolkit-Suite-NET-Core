@@ -1,0 +1,61 @@
+Comparing files BIN\RELEASE\NET462\Krypton.Docking.il and BIN\RELEASE\NET47\KRYPTON.DOCKING.IL
+***** BIN\RELEASE\NET462\Krypton.Docking.il
+eSet) = ( 01 00 01 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1C 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+***** BIN\RELEASE\NET47\KRYPTON.DOCKING.IL
+eSet) = ( 01 00 01 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1A 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+*****
+
+***** BIN\RELEASE\NET462\Krypton.Docking.il
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 36 2E 32 01   // ,Version=v4.6.2.
+                                                                                                        00 54 0E 14 46 72 61 6D
+ 65 77 6F 72 6B 44 69 73   // .T..FrameworkDis
+                                                                                                        70 6C 61 79 4E 61 6D 65
+ 14 2E 4E 45 54 20 46 72   // playName..NET Fr
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 36 2E 32 )          // amework 4.6.2
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET47\KRYPTON.DOCKING.IL
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 37 01 00 54   // ,Version=v4.7..T
+                                                                                                        0E 14 46 72 61 6D 65 77
+ 6F 72 6B 44 69 73 70 6C   // ..FrameworkDispl
+                                                                                                        61 79 4E 61 6D 65 12 2E
+ 4E 45 54 20 46 72 61 6D   // ayName..NET Fram
+                                                                                                        65 77 6F 72 6B 20 34 2E
+ 37 )                      // ework 4.7
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET462\Krypton.Docking.il
+.module Krypton.Docking.dll
+// MVID: {207EE47B-7F53-43CE-B80A-81ABB5655A37}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET47\KRYPTON.DOCKING.IL
+.module Krypton.Docking.dll
+// MVID: {A3E026FB-4786-47CA-ACA0-AB7A08D5869C}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET462\Krypton.Docking.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x06550000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET47\KRYPTON.DOCKING.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x06580000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET462\Krypton.Docking.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net462\Krypton.Docking.res
+***** BIN\RELEASE\NET47\KRYPTON.DOCKING.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net47\Krypton.Docking.res
+*****
+

@@ -1,0 +1,1015 @@
+Comparing files BIN\RELEASE\NET45\Krypton.Ribbon.il and BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+eSet) = ( 01 00 01 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1A 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+eSet) = ( 01 00 01 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1C 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 35 01 00 54   // ,Version=v4.5..T
+                                                                                                        0E 14 46 72 61 6D 65 77
+ 6F 72 6B 44 69 73 70 6C   // ..FrameworkDispl
+                                                                                                        61 79 4E 61 6D 65 12 2E
+ 4E 45 54 20 46 72 61 6D   // ayName..NET Fram
+                                                                                                        65 77 6F 72 6B 20 34 2E
+ 35 )                      // ework 4.5
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 35 2E 31 01   // ,Version=v4.5.1.
+                                                                                                        00 54 0E 14 46 72 61 6D
+ 65 77 6F 72 6B 44 69 73   // .T..FrameworkDis
+                                                                                                        70 6C 61 79 4E 61 6D 65
+ 14 2E 4E 45 54 20 46 72   // playName..NET Fr
+                                                                                                        61 6D 65 77 6F 72 6B 20
+ 34 2E 35 2E 31 )          // amework 4.5.1
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+.module Krypton.Ribbon.dll
+// MVID: {2923E7D5-1F44-4576-BA97-E6C6531D7BFA}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+.module Krypton.Ribbon.dll
+// MVID: {E33E1227-3048-4F40-B618-8116C35A56D8}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x09300000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x09040000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+  {
+    // Code size       415 (0x19f)
+    .maxstack  4
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+  {
+    // Code size       410 (0x19a)
+    .maxstack  4
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+ibbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+    IL_000c:  brfalse    IL_019d
+    IL_0011:  ldarg.0
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+ibbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+    IL_000c:  brfalse    IL_0198
+    IL_0011:  ldarg.0
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+    IL_0017:  callvirt   instance bool [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm::get_ApplyCustomChrome()
+    IL_001c:  brfalse    IL_019d
+    IL_0021:  ldarg.0
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+    IL_0017:  callvirt   instance bool [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm::get_ApplyCustomChrome()
+    IL_001c:  brfalse    IL_0198
+    IL_0021:  ldarg.0
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+    IL_0027:  callvirt   instance bool [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm::get_ApplyComposition()
+    IL_002c:  brfalse    IL_019d
+    .try
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+    IL_0027:  callvirt   instance bool [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm::get_ApplyComposition()
+    IL_002c:  brfalse    IL_0198
+    .try
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+      IL_003b:  ldloc.1
+      IL_003c:  box        ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOEX
+      IL_0041:  call       int32 [mscorlib]System.Runtime.InteropServices.Marshal::SizeOf(object)
+      IL_0046:  stfld      uint32 ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOEX::cbSize
+      IL_004b:  ldarg.0
+      IL_004c:  call       instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm ComponentFactory.Krypton
+.Ribbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+      IL_0051:  callvirt   instance native int [System.Windows.Forms]System.Windows.Forms.Control::get_Handle()
+      IL_0056:  ldc.i4     0x33f
+      IL_005b:  ldsfld     native int [mscorlib]System.IntPtr::Zero
+      IL_0060:  ldloca.s   V_1
+      IL_0062:  call       uint32 ComponentFactory.Krypton.Toolkit.PI::SendMessage(native int,
+                                                                                   uint32,
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+      IL_003b:  ldloc.1
+      IL_003c:  call       int32 [mscorlib]System.Runtime.InteropServices.Marshal::SizeOf<valuetype ComponentFactory.Krypton.To
+olkit.PI/TITLEBARINFOEX>(!!0)
+      IL_0041:  stfld      uint32 ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOEX::cbSize
+      IL_0046:  ldarg.0
+      IL_0047:  call       instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm ComponentFactory.Krypton
+.Ribbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+      IL_004c:  callvirt   instance native int [System.Windows.Forms]System.Windows.Forms.Control::get_Handle()
+      IL_0051:  ldc.i4     0x33f
+      IL_0056:  ldsfld     native int [mscorlib]System.IntPtr::Zero
+      IL_005b:  ldloca.s   V_1
+      IL_005d:  call       uint32 ComponentFactory.Krypton.Toolkit.PI::SendMessage(native int,
+                                                                                   uint32,
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+I/TITLEBARINFOEX&)
+      IL_0067:  pop
+      IL_0068:  ldloc.1
+      IL_0069:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcCloseButton
+      IL_006e:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+      IL_0073:  ldloc.1
+      IL_0074:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcCloseButton
+      IL_0079:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_007e:  sub
+      IL_007f:  stloc.2
+      IL_0080:  ldloc.1
+      IL_0081:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcHelpButton
+      IL_0086:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+      IL_008b:  ldloc.1
+      IL_008c:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcHelpButton
+      IL_0091:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0096:  sub
+      IL_0097:  stloc.3
+      IL_0098:  ldloc.1
+      IL_0099:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMinimizeButton
+      IL_009e:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+      IL_00a3:  ldloc.1
+      IL_00a4:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMinimizeButton
+      IL_00a9:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_00ae:  sub
+      IL_00af:  stloc.s    V_4
+      IL_00b1:  ldloc.1
+      IL_00b2:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMaximizeButton
+      IL_00b7:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+      IL_00bc:  ldloc.1
+      IL_00bd:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMaximizeButton
+      IL_00c2:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_00c7:  sub
+      IL_00c8:  stloc.s    V_5
+      IL_00ca:  ldarg.0
+      IL_00cb:  call       instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm ComponentFactory.Krypton
+.Ribbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+      IL_00d0:  callvirt   instance valuetype [System.Drawing]System.Drawing.Size [System.Windows.Forms]System.Windows.Forms.Fo
+rm::get_ClientSize()
+      IL_00d5:  stloc.s    V_9
+      IL_00d7:  ldloca.s   V_9
+      IL_00d9:  call       instance int32 [System.Drawing]System.Drawing.Size::get_Width()
+      IL_00de:  stloc.s    V_6
+      IL_00e0:  ldarg.0
+      IL_00e1:  call       instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm ComponentFactory.Krypton
+.Ribbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+      IL_00e6:  ldarg.0
+      IL_00e7:  call       instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm ComponentFactory.Krypton
+.Ribbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+      IL_00ec:  callvirt   instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.For
+ms.Control::get_ClientRectangle()
+      IL_00f1:  callvirt   instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.For
+ms.Control::RectangleToScreen(valuetype [System.Drawing]System.Drawing.Rectangle)
+      IL_00f6:  stloc.s    V_10
+      IL_00f8:  ldloca.s   V_10
+      IL_00fa:  call       instance int32 [System.Drawing]System.Drawing.Rectangle::get_Right()
+      IL_00ff:  stloc.s    V_7
+      IL_0101:  ldloc.s    V_7
+      IL_0103:  stloc.s    V_8
+      IL_0105:  ldloc.2
+      IL_0106:  ldc.i4.0
+      IL_0107:  ble.s      IL_0122
+      IL_0109:  ldloc.2
+      IL_010a:  ldloc.s    V_6
+      IL_010c:  bge.s      IL_0122
+      IL_010e:  ldloc.s    V_8
+      IL_0110:  ldloc.1
+      IL_0111:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcCloseButton
+      IL_0116:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_011b:  call       int32 [mscorlib]System.Math::Min(int32,
+                                                            int32)
+      IL_0120:  stloc.s    V_8
+      IL_0122:  ldloc.3
+      IL_0123:  ldc.i4.0
+      IL_0124:  ble.s      IL_013f
+      IL_0126:  ldloc.3
+      IL_0127:  ldloc.s    V_6
+      IL_0129:  bge.s      IL_013f
+      IL_012b:  ldloc.s    V_8
+      IL_012d:  ldloc.1
+      IL_012e:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcHelpButton
+      IL_0133:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0138:  call       int32 [mscorlib]System.Math::Min(int32,
+                                                            int32)
+      IL_013d:  stloc.s    V_8
+      IL_013f:  ldloc.s    V_4
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+I/TITLEBARINFOEX&)
+      IL_0062:  pop
+      IL_0063:  ldloc.1
+      IL_0064:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcCloseButton
+      IL_0069:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+      IL_006e:  ldloc.1
+      IL_006f:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcCloseButton
+      IL_0074:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0079:  sub
+      IL_007a:  stloc.2
+      IL_007b:  ldloc.1
+      IL_007c:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcHelpButton
+      IL_0081:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+      IL_0086:  ldloc.1
+      IL_0087:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcHelpButton
+      IL_008c:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0091:  sub
+      IL_0092:  stloc.3
+      IL_0093:  ldloc.1
+      IL_0094:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMinimizeButton
+      IL_0099:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+      IL_009e:  ldloc.1
+      IL_009f:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMinimizeButton
+      IL_00a4:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_00a9:  sub
+      IL_00aa:  stloc.s    V_4
+      IL_00ac:  ldloc.1
+      IL_00ad:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMaximizeButton
+      IL_00b2:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+      IL_00b7:  ldloc.1
+      IL_00b8:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMaximizeButton
+      IL_00bd:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_00c2:  sub
+      IL_00c3:  stloc.s    V_5
+      IL_00c5:  ldarg.0
+      IL_00c6:  call       instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm ComponentFactory.Krypton
+.Ribbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+      IL_00cb:  callvirt   instance valuetype [System.Drawing]System.Drawing.Size [System.Windows.Forms]System.Windows.Forms.Fo
+rm::get_ClientSize()
+      IL_00d0:  stloc.s    V_9
+      IL_00d2:  ldloca.s   V_9
+      IL_00d4:  call       instance int32 [System.Drawing]System.Drawing.Size::get_Width()
+      IL_00d9:  stloc.s    V_6
+      IL_00db:  ldarg.0
+      IL_00dc:  call       instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm ComponentFactory.Krypton
+.Ribbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+      IL_00e1:  ldarg.0
+      IL_00e2:  call       instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.VisualForm ComponentFactory.Krypton
+.Ribbon.ViewDrawRibbonCompoRightBorder::get_CompOwnerForm()
+      IL_00e7:  callvirt   instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.For
+ms.Control::get_ClientRectangle()
+      IL_00ec:  callvirt   instance valuetype [System.Drawing]System.Drawing.Rectangle [System.Windows.Forms]System.Windows.For
+ms.Control::RectangleToScreen(valuetype [System.Drawing]System.Drawing.Rectangle)
+      IL_00f1:  stloc.s    V_10
+      IL_00f3:  ldloca.s   V_10
+      IL_00f5:  call       instance int32 [System.Drawing]System.Drawing.Rectangle::get_Right()
+      IL_00fa:  stloc.s    V_7
+      IL_00fc:  ldloc.s    V_7
+      IL_00fe:  stloc.s    V_8
+      IL_0100:  ldloc.2
+      IL_0101:  ldc.i4.0
+      IL_0102:  ble.s      IL_011d
+      IL_0104:  ldloc.2
+      IL_0105:  ldloc.s    V_6
+      IL_0107:  bge.s      IL_011d
+      IL_0109:  ldloc.s    V_8
+      IL_010b:  ldloc.1
+      IL_010c:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcCloseButton
+      IL_0111:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0116:  call       int32 [mscorlib]System.Math::Min(int32,
+                                                            int32)
+      IL_011b:  stloc.s    V_8
+      IL_011d:  ldloc.3
+      IL_011e:  ldc.i4.0
+      IL_011f:  ble.s      IL_013a
+      IL_0121:  ldloc.3
+      IL_0122:  ldloc.s    V_6
+      IL_0124:  bge.s      IL_013a
+      IL_0126:  ldloc.s    V_8
+      IL_0128:  ldloc.1
+      IL_0129:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcHelpButton
+      IL_012e:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0133:  call       int32 [mscorlib]System.Math::Min(int32,
+                                                            int32)
+      IL_0138:  stloc.s    V_8
+      IL_013a:  ldloc.s    V_4
+      IL_013c:  ldc.i4.0
+      IL_013d:  ble.s      IL_0159
+      IL_013f:  ldloc.s    V_4
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+      IL_013f:  ldloc.s    V_4
+      IL_0141:  ldc.i4.0
+      IL_0142:  ble.s      IL_015e
+      IL_0144:  ldloc.s    V_4
+      IL_0146:  ldloc.s    V_6
+      IL_0148:  bge.s      IL_015e
+      IL_014a:  ldloc.s    V_8
+      IL_014c:  ldloc.1
+      IL_014d:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMinimizeButton
+      IL_0152:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0157:  call       int32 [mscorlib]System.Math::Min(int32,
+                                                            int32)
+      IL_015c:  stloc.s    V_8
+      IL_015e:  ldloc.s    V_5
+      IL_0160:  ldc.i4.0
+      IL_0161:  ble.s      IL_017d
+      IL_0163:  ldloc.s    V_5
+      IL_0165:  ldloc.s    V_6
+      IL_0167:  bge.s      IL_017d
+      IL_0169:  ldloc.s    V_8
+      IL_016b:  ldloc.1
+      IL_016c:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMaximizeButton
+      IL_0171:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0176:  call       int32 [mscorlib]System.Math::Min(int32,
+                                                            int32)
+      IL_017b:  stloc.s    V_8
+      IL_017d:  ldarg.0
+      IL_017e:  ldloc.s    V_7
+      IL_0180:  ldloc.s    V_8
+      IL_0182:  sub
+      IL_0183:  ldc.i4.s   10
+      IL_0185:  add
+      IL_0186:  stfld      int32 ComponentFactory.Krypton.Ribbon.ViewDrawRibbonCompoRightBorder::_width
+      IL_018b:  ldloca.s   V_0
+      IL_018d:  ldarg.0
+      IL_018e:  ldfld      int32 ComponentFactory.Krypton.Ribbon.ViewDrawRibbonCompoRightBorder::_width
+      IL_0193:  call       instance void [System.Drawing]System.Drawing.Size::set_Width(int32)
+      IL_0198:  leave.s    IL_019d
+    }  // end .try
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+      IL_013f:  ldloc.s    V_4
+      IL_0141:  ldloc.s    V_6
+      IL_0143:  bge.s      IL_0159
+      IL_0145:  ldloc.s    V_8
+      IL_0147:  ldloc.1
+      IL_0148:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMinimizeButton
+      IL_014d:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0152:  call       int32 [mscorlib]System.Math::Min(int32,
+                                                            int32)
+      IL_0157:  stloc.s    V_8
+      IL_0159:  ldloc.s    V_5
+      IL_015b:  ldc.i4.0
+      IL_015c:  ble.s      IL_0178
+      IL_015e:  ldloc.s    V_5
+      IL_0160:  ldloc.s    V_6
+      IL_0162:  bge.s      IL_0178
+      IL_0164:  ldloc.s    V_8
+      IL_0166:  ldloc.1
+      IL_0167:  ldfld      valuetype ComponentFactory.Krypton.Toolkit.PI/RECT ComponentFactory.Krypton.Toolkit.PI/TITLEBARINFOE
+X::rcMaximizeButton
+      IL_016c:  ldfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+      IL_0171:  call       int32 [mscorlib]System.Math::Min(int32,
+                                                            int32)
+      IL_0176:  stloc.s    V_8
+      IL_0178:  ldarg.0
+      IL_0179:  ldloc.s    V_7
+      IL_017b:  ldloc.s    V_8
+      IL_017d:  sub
+      IL_017e:  ldc.i4.s   10
+      IL_0180:  add
+      IL_0181:  stfld      int32 ComponentFactory.Krypton.Ribbon.ViewDrawRibbonCompoRightBorder::_width
+      IL_0186:  ldloca.s   V_0
+      IL_0188:  ldarg.0
+      IL_0189:  ldfld      int32 ComponentFactory.Krypton.Ribbon.ViewDrawRibbonCompoRightBorder::_width
+      IL_018e:  call       instance void [System.Drawing]System.Drawing.Size::set_Width(int32)
+      IL_0193:  leave.s    IL_0198
+    }  // end .try
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+    {
+      IL_019a:  pop
+      IL_019b:  leave.s    IL_019d
+    }  // end handler
+    IL_019d:  ldloc.0
+    IL_019e:  ret
+  } // end of method ViewDrawRibbonCompoRightBorder::GetPreferredSize
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+    {
+      IL_0195:  pop
+      IL_0196:  leave.s    IL_0198
+    }  // end handler
+    IL_0198:  ldloc.0
+    IL_0199:  ret
+  } // end of method ViewDrawRibbonCompoRightBorder::GetPreferredSize
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+  {
+    // Code size       643 (0x283)
+    .maxstack  9
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+  {
+    // Code size       638 (0x27e)
+    .maxstack  9
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+m.Drawing.Rectangle)
+    IL_0040:  brfalse    IL_0282
+    IL_0045:  ldarg.1
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+m.Drawing.Rectangle)
+    IL_0040:  brfalse    IL_027d
+    IL_0045:  ldarg.1
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+    IL_0062:  ldloc.s    V_4
+    IL_0064:  box        ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO
+    IL_0069:  call       int32 [mscorlib]System.Runtime.InteropServices.Marshal::SizeOf(object)
+    IL_006e:  stfld      uint32 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biSize
+    IL_0073:  ldloca.s   V_4
+    IL_0075:  ldarg.0
+    IL_0076:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientWidth()
+    IL_007b:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biWidth
+    IL_0080:  ldloca.s   V_4
+    IL_0082:  ldarg.0
+    IL_0083:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientHeight()
+    IL_0088:  neg
+    IL_0089:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biHeight
+    IL_008e:  ldloca.s   V_4
+    IL_0090:  ldc.i4.0
+    IL_0091:  stfld      uint32 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biCompression
+    IL_0096:  ldloca.s   V_4
+    IL_0098:  ldc.i4.s   32
+    IL_009a:  stfld      uint16 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biBitCount
+    IL_009f:  ldloca.s   V_4
+    IL_00a1:  ldc.i4.1
+    IL_00a2:  stfld      uint16 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biPlanes
+    IL_00a7:  ldloc.2
+    IL_00a8:  ldloca.s   V_4
+    IL_00aa:  ldc.i4.0
+    IL_00ab:  ldloca.s   V_9
+    IL_00ad:  ldsfld     native int [mscorlib]System.IntPtr::Zero
+    IL_00b2:  ldc.i4.0
+    IL_00b3:  call       native int ComponentFactory.Krypton.Toolkit.PI::CreateDIBSection(native int,
+                                                                                          valuetype ComponentFactory.Krypton.To
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+    IL_0062:  ldloc.s    V_4
+    IL_0064:  call       int32 [mscorlib]System.Runtime.InteropServices.Marshal::SizeOf<valuetype ComponentFactory.Krypton.Tool
+kit.PI/BITMAPINFO>(!!0)
+    IL_0069:  stfld      uint32 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biSize
+    IL_006e:  ldloca.s   V_4
+    IL_0070:  ldarg.0
+    IL_0071:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientWidth()
+    IL_0076:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biWidth
+    IL_007b:  ldloca.s   V_4
+    IL_007d:  ldarg.0
+    IL_007e:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientHeight()
+    IL_0083:  neg
+    IL_0084:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biHeight
+    IL_0089:  ldloca.s   V_4
+    IL_008b:  ldc.i4.0
+    IL_008c:  stfld      uint32 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biCompression
+    IL_0091:  ldloca.s   V_4
+    IL_0093:  ldc.i4.s   32
+    IL_0095:  stfld      uint16 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biBitCount
+    IL_009a:  ldloca.s   V_4
+    IL_009c:  ldc.i4.1
+    IL_009d:  stfld      uint16 ComponentFactory.Krypton.Toolkit.PI/BITMAPINFO::biPlanes
+    IL_00a2:  ldloc.2
+    IL_00a3:  ldloca.s   V_4
+    IL_00a5:  ldc.i4.0
+    IL_00a6:  ldloca.s   V_9
+    IL_00a8:  ldsfld     native int [mscorlib]System.IntPtr::Zero
+    IL_00ad:  ldc.i4.0
+    IL_00ae:  call       native int ComponentFactory.Krypton.Toolkit.PI::CreateDIBSection(native int,
+                                                                                          valuetype ComponentFactory.Krypton.To
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+                                                                                          uint32)
+    IL_00b8:  stloc.s    V_5
+    IL_00ba:  ldloc.3
+    IL_00bb:  ldloc.s    V_5
+    IL_00bd:  call       native int ComponentFactory.Krypton.Toolkit.PI::SelectObject(native int,
+                                                                                      native int)
+    IL_00c2:  pop
+    IL_00c3:  ldloc.3
+    IL_00c4:  call       class [System.Drawing]System.Drawing.Graphics [System.Drawing]System.Drawing.Graphics::FromHdc(native 
+int)
+    IL_00c9:  stloc.s    V_10
+    .try
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+                                                                                          uint32)
+    IL_00b3:  stloc.s    V_5
+    IL_00b5:  ldloc.3
+    IL_00b6:  ldloc.s    V_5
+    IL_00b8:  call       native int ComponentFactory.Krypton.Toolkit.PI::SelectObject(native int,
+                                                                                      native int)
+    IL_00bd:  pop
+    IL_00be:  ldloc.3
+    IL_00bf:  call       class [System.Drawing]System.Drawing.Graphics [System.Drawing]System.Drawing.Graphics::FromHdc(native 
+int)
+    IL_00c4:  stloc.s    V_10
+    .try
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+    {
+      IL_00cb:  ldloca.s   V_11
+      IL_00cd:  ldc.i4.0
+      IL_00ce:  ldc.i4.0
+      IL_00cf:  ldarg.0
+      IL_00d0:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientWidth()
+      IL_00d5:  ldarg.0
+      IL_00d6:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientHeight()
+      IL_00db:  call       instance void [System.Drawing]System.Drawing.Rectangle::.ctor(int32,
+                                                                                         int32,
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+    {
+      IL_00c6:  ldloca.s   V_11
+      IL_00c8:  ldc.i4.0
+      IL_00c9:  ldc.i4.0
+      IL_00ca:  ldarg.0
+      IL_00cb:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientWidth()
+      IL_00d0:  ldarg.0
+      IL_00d1:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientHeight()
+      IL_00d6:  call       instance void [System.Drawing]System.Drawing.Rectangle::.ctor(int32,
+                                                                                         int32,
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+                                                                                         int32)
+      IL_00e0:  ldarg.1
+      IL_00e1:  callvirt   instance class [System.Windows.Forms]System.Windows.Forms.Control [Krypton.Toolkit]ComponentFactory.
+Krypton.Toolkit.ViewContext::get_Control()
+      IL_00e6:  ldloc.s    V_10
+      IL_00e8:  ldloc.s    V_11
+      IL_00ea:  ldarg.1
+      IL_00eb:  callvirt   instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.IRenderer [Krypton.Toolkit]Componen
+tFactory.Krypton.Toolkit.ViewContext::get_Renderer()
+      IL_00f0:  newobj     instance void [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.RenderContext::.ctor(class [System.W
+indows.Forms]System.Windows.Forms.Control,
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+                                                                                         int32)
+      IL_00db:  ldarg.1
+      IL_00dc:  callvirt   instance class [System.Windows.Forms]System.Windows.Forms.Control [Krypton.Toolkit]ComponentFactory.
+Krypton.Toolkit.ViewContext::get_Control()
+      IL_00e1:  ldloc.s    V_10
+      IL_00e3:  ldloc.s    V_11
+      IL_00e5:  ldarg.1
+      IL_00e6:  callvirt   instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.IRenderer [Krypton.Toolkit]Componen
+tFactory.Krypton.Toolkit.ViewContext::get_Renderer()
+      IL_00eb:  newobj     instance void [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.RenderContext::.ctor(class [System.W
+indows.Forms]System.Windows.Forms.Control,
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+Toolkit]ComponentFactory.Krypton.Toolkit.IRenderer)
+      IL_00f5:  stloc.s    V_12
+      .try
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+Toolkit]ComponentFactory.Krypton.Toolkit.IRenderer)
+      IL_00f0:  stloc.s    V_12
+      .try
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+      {
+        IL_00f7:  ldarg.0
+        IL_00f8:  ldarg.1
+        IL_00f9:  callvirt   instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.IRenderer [Krypton.Toolkit]Compon
+entFactory.Krypton.Toolkit.ViewContext::get_Renderer()
+        IL_00fe:  callvirt   instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.IRenderRibbon [Krypton.Toolkit]Co
+mponentFactory.Krypton.Toolkit.IRenderer::get_RenderRibbon()
+        IL_0103:  ldarg.0
+        IL_0104:  ldfld      class ComponentFactory.Krypton.Ribbon.KryptonRibbon ComponentFactory.Krypton.Ribbon.ViewDrawRibbon
+ContextTitle::_ribbon
+        IL_0109:  callvirt   instance valuetype [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteRibbonShape ComponentF
+actory.Krypton.Ribbon.KryptonRibbon::get_RibbonShape()
+        IL_010e:  ldloc.s    V_12
+        IL_0110:  ldloc.s    V_11
+        IL_0112:  ldarg.0
+        IL_0113:  ldfld      class ComponentFactory.Krypton.Ribbon.KryptonRibbon ComponentFactory.Krypton.Ribbon.ViewDrawRibbon
+ContextTitle::_ribbon
+        IL_0118:  callvirt   instance class ComponentFactory.Krypton.Ribbon.PaletteRibbonRedirect ComponentFactory.Krypton.Ribb
+on.KryptonRibbon::get_StateCommon()
+        IL_011d:  callvirt   instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteRibbonGeneral ComponentFac
+tory.Krypton.Ribbon.PaletteRibbonRedirect::get_RibbonGeneral()
+        IL_0122:  ldarg.0
+        IL_0123:  ldarg.0
+        IL_0124:  ldfld      class [mscorlib]System.IDisposable ComponentFactory.Krypton.Ribbon.ViewDrawRibbonContextTitle::_me
+mentoBack
+        IL_0129:  callvirt   instance class [mscorlib]System.IDisposable [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.IRen
+derRibbon::DrawRibbonTabContextTitle(valuetype [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteRibbonShape,
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+      {
+        IL_00f2:  ldarg.0
+        IL_00f3:  ldarg.1
+        IL_00f4:  callvirt   instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.IRenderer [Krypton.Toolkit]Compon
+entFactory.Krypton.Toolkit.ViewContext::get_Renderer()
+        IL_00f9:  callvirt   instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.IRenderRibbon [Krypton.Toolkit]Co
+mponentFactory.Krypton.Toolkit.IRenderer::get_RenderRibbon()
+        IL_00fe:  ldarg.0
+        IL_00ff:  ldfld      class ComponentFactory.Krypton.Ribbon.KryptonRibbon ComponentFactory.Krypton.Ribbon.ViewDrawRibbon
+ContextTitle::_ribbon
+        IL_0104:  callvirt   instance valuetype [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteRibbonShape ComponentF
+actory.Krypton.Ribbon.KryptonRibbon::get_RibbonShape()
+        IL_0109:  ldloc.s    V_12
+        IL_010b:  ldloc.s    V_11
+        IL_010d:  ldarg.0
+        IL_010e:  ldfld      class ComponentFactory.Krypton.Ribbon.KryptonRibbon ComponentFactory.Krypton.Ribbon.ViewDrawRibbon
+ContextTitle::_ribbon
+        IL_0113:  callvirt   instance class ComponentFactory.Krypton.Ribbon.PaletteRibbonRedirect ComponentFactory.Krypton.Ribb
+on.KryptonRibbon::get_StateCommon()
+        IL_0118:  callvirt   instance class [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteRibbonGeneral ComponentFac
+tory.Krypton.Ribbon.PaletteRibbonRedirect::get_RibbonGeneral()
+        IL_011d:  ldarg.0
+        IL_011e:  ldarg.0
+        IL_011f:  ldfld      class [mscorlib]System.IDisposable ComponentFactory.Krypton.Ribbon.ViewDrawRibbonContextTitle::_me
+mentoBack
+        IL_0124:  callvirt   instance class [mscorlib]System.IDisposable [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.IRen
+derRibbon::DrawRibbonTabContextTitle(valuetype [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteRibbonShape,
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+                                     class [mscorlib]System.IDisposable)
+        IL_012e:  stfld      class [mscorlib]System.IDisposable ComponentFactory.Krypton.Ribbon.ViewDrawRibbonContextTitle::_me
+mentoBack
+        IL_0133:  leave.s    IL_014d
+      }  // end .try
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+                                     class [mscorlib]System.IDisposable)
+        IL_0129:  stfld      class [mscorlib]System.IDisposable ComponentFactory.Krypton.Ribbon.ViewDrawRibbonContextTitle::_me
+mentoBack
+        IL_012e:  leave.s    IL_0148
+      }  // end .try
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+      {
+        IL_0135:  ldloc.s    V_12
+        IL_0137:  brfalse.s  IL_0140
+        IL_0139:  ldloc.s    V_12
+        IL_013b:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+        IL_0140:  endfinally
+      }  // end handler
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+      {
+        IL_0130:  ldloc.s    V_12
+        IL_0132:  brfalse.s  IL_013b
+        IL_0134:  ldloc.s    V_12
+        IL_0136:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+        IL_013b:  endfinally
+      }  // end handler
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+    {
+      IL_0141:  ldloc.s    V_10
+      IL_0143:  brfalse.s  IL_014c
+      IL_0145:  ldloc.s    V_10
+      IL_0147:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+      IL_014c:  endfinally
+    }  // end handler
+    IL_014d:  ldarg.0
+    IL_014e:  ldfld      class ComponentFactory.Krypton.Ribbon.ContextToContent ComponentFactory.Krypton.Ribbon.ViewDrawRibbonC
+ontextTitle::_contentProvider
+    IL_0153:  ldarg.0
+    IL_0154:  callvirt   instance valuetype [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteState [Krypton.Toolkit]Com
+ponentFactory.Krypton.Toolkit.ViewBase::get_State()
+    IL_0159:  callvirt   instance class [System.Drawing]System.Drawing.Font ComponentFactory.Krypton.Ribbon.RibbonToContent::Ge
+tContentShortTextFont(valuetype [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteState)
+    IL_015e:  callvirt   instance native int [System.Drawing]System.Drawing.Font::ToHfont()
+    IL_0163:  stloc.s    V_6
+    IL_0165:  ldloc.3
+    IL_0166:  ldloc.s    V_6
+    IL_0168:  call       native int ComponentFactory.Krypton.Toolkit.PI::SelectObject(native int,
+                                                                                      native int)
+    IL_016d:  pop
+    IL_016e:  call       class [System.Windows.Forms]System.Windows.Forms.VisualStyles.VisualStyleElement [System.Windows.Forms
+]System.Windows.Forms.VisualStyles.VisualStyleElement/Window/Caption::get_Active()
+    IL_0173:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.VisualStyles.VisualStyleRenderer::.ctor(class
+ [System.Windows.Forms]System.Windows.Forms.VisualStyles.VisualStyleElement)
+    IL_0178:  ldloca.s   V_13
+    IL_017a:  initobj    ComponentFactory.Krypton.Toolkit.PI/RECT
+    IL_0180:  ldloca.s   V_13
+    IL_0182:  ldc.i4.2
+    IL_0183:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+    IL_0188:  ldloca.s   V_13
+    IL_018a:  ldc.i4.0
+    IL_018b:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::top
+    IL_0190:  ldloca.s   V_13
+    IL_0192:  ldarg.0
+    IL_0193:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientWidth()
+    IL_0198:  ldc.i4.4
+    IL_0199:  sub
+    IL_019a:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+    IL_019f:  ldloca.s   V_13
+    IL_01a1:  ldarg.0
+    IL_01a2:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientHeight()
+    IL_01a7:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::bottom
+    IL_01ac:  ldloc.s    V_13
+    IL_01ae:  stloc.s    V_7
+    IL_01b0:  ldloca.s   V_14
+    IL_01b2:  initobj    ComponentFactory.Krypton.Toolkit.PI/DTTOPTS
+    IL_01b8:  ldloca.s   V_14
+    IL_01ba:  ldtoken    ComponentFactory.Krypton.Toolkit.PI/DTTOPTS
+    IL_01bf:  call       class [mscorlib]System.Type [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.Runtim
+eTypeHandle)
+    IL_01c4:  call       int32 [mscorlib]System.Runtime.InteropServices.Marshal::SizeOf(class [mscorlib]System.Type)
+    IL_01c9:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/DTTOPTS::dwSize
+    IL_01ce:  ldloca.s   V_14
+    IL_01d0:  ldc.i4     0x2801
+    IL_01d5:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/DTTOPTS::dwFlags
+    IL_01da:  ldloca.s   V_14
+    IL_01dc:  call       valuetype [System.Drawing]System.Drawing.Color [System.Drawing]System.Drawing.SystemColors::get_Active
+CaptionText()
+    IL_01e1:  call       int32 [System.Drawing]System.Drawing.ColorTranslator::ToWin32(valuetype [System.Drawing]System.Drawing
+.Color)
+    IL_01e6:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/DTTOPTS::crText
+    IL_01eb:  ldloca.s   V_14
+    IL_01ed:  ldarg.0
+    IL_01ee:  ldfld      class ComponentFactory.Krypton.Ribbon.KryptonRibbon ComponentFactory.Krypton.Ribbon.ViewDrawRibbonCont
+extTitle::_ribbon
+    IL_01f3:  callvirt   instance bool [System.Windows.Forms]System.Windows.Forms.Control::get_Enabled()
+    IL_01f8:  brtrue.s   IL_01fd
+    IL_01fa:  ldc.i4.2
+    IL_01fb:  br.s       IL_01ff
+    IL_01fd:  ldc.i4.s   12
+    IL_01ff:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/DTTOPTS::iGlowSize
+    IL_0204:  ldloc.s    V_14
+    IL_0206:  stloc.s    V_8
+    IL_0208:  callvirt   instance native int [System.Windows.Forms]System.Windows.Forms.VisualStyles.VisualStyleRenderer::get_H
+andle()
+    IL_020d:  ldloc.3
+    IL_020e:  ldc.i4.0
+    IL_020f:  ldc.i4.0
+    IL_0210:  ldarg.0
+    IL_0211:  call       instance string ComponentFactory.Krypton.Ribbon.ViewDrawRibbonContextTitle::GetShortText()
+    IL_0216:  ldc.i4.m1
+    IL_0217:  ldc.i4     0x8025
+    IL_021c:  ldloca.s   V_7
+    IL_021e:  ldloca.s   V_8
+    IL_0220:  call       int32 ComponentFactory.Krypton.Toolkit.PI::DrawThemeTextEx(native int,
+                                                                                    native int,
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+    {
+      IL_013c:  ldloc.s    V_10
+      IL_013e:  brfalse.s  IL_0147
+      IL_0140:  ldloc.s    V_10
+      IL_0142:  callvirt   instance void [mscorlib]System.IDisposable::Dispose()
+      IL_0147:  endfinally
+    }  // end handler
+    IL_0148:  ldarg.0
+    IL_0149:  ldfld      class ComponentFactory.Krypton.Ribbon.ContextToContent ComponentFactory.Krypton.Ribbon.ViewDrawRibbonC
+ontextTitle::_contentProvider
+    IL_014e:  ldarg.0
+    IL_014f:  callvirt   instance valuetype [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteState [Krypton.Toolkit]Com
+ponentFactory.Krypton.Toolkit.ViewBase::get_State()
+    IL_0154:  callvirt   instance class [System.Drawing]System.Drawing.Font ComponentFactory.Krypton.Ribbon.RibbonToContent::Ge
+tContentShortTextFont(valuetype [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.PaletteState)
+    IL_0159:  callvirt   instance native int [System.Drawing]System.Drawing.Font::ToHfont()
+    IL_015e:  stloc.s    V_6
+    IL_0160:  ldloc.3
+    IL_0161:  ldloc.s    V_6
+    IL_0163:  call       native int ComponentFactory.Krypton.Toolkit.PI::SelectObject(native int,
+                                                                                      native int)
+    IL_0168:  pop
+    IL_0169:  call       class [System.Windows.Forms]System.Windows.Forms.VisualStyles.VisualStyleElement [System.Windows.Forms
+]System.Windows.Forms.VisualStyles.VisualStyleElement/Window/Caption::get_Active()
+    IL_016e:  newobj     instance void [System.Windows.Forms]System.Windows.Forms.VisualStyles.VisualStyleRenderer::.ctor(class
+ [System.Windows.Forms]System.Windows.Forms.VisualStyles.VisualStyleElement)
+    IL_0173:  ldloca.s   V_13
+    IL_0175:  initobj    ComponentFactory.Krypton.Toolkit.PI/RECT
+    IL_017b:  ldloca.s   V_13
+    IL_017d:  ldc.i4.2
+    IL_017e:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::left
+    IL_0183:  ldloca.s   V_13
+    IL_0185:  ldc.i4.0
+    IL_0186:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::top
+    IL_018b:  ldloca.s   V_13
+    IL_018d:  ldarg.0
+    IL_018e:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientWidth()
+    IL_0193:  ldc.i4.4
+    IL_0194:  sub
+    IL_0195:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::right
+    IL_019a:  ldloca.s   V_13
+    IL_019c:  ldarg.0
+    IL_019d:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientHeight()
+    IL_01a2:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/RECT::bottom
+    IL_01a7:  ldloc.s    V_13
+    IL_01a9:  stloc.s    V_7
+    IL_01ab:  ldloca.s   V_14
+    IL_01ad:  initobj    ComponentFactory.Krypton.Toolkit.PI/DTTOPTS
+    IL_01b3:  ldloca.s   V_14
+    IL_01b5:  ldtoken    ComponentFactory.Krypton.Toolkit.PI/DTTOPTS
+    IL_01ba:  call       class [mscorlib]System.Type [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.Runtim
+eTypeHandle)
+    IL_01bf:  call       int32 [mscorlib]System.Runtime.InteropServices.Marshal::SizeOf(class [mscorlib]System.Type)
+    IL_01c4:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/DTTOPTS::dwSize
+    IL_01c9:  ldloca.s   V_14
+    IL_01cb:  ldc.i4     0x2801
+    IL_01d0:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/DTTOPTS::dwFlags
+    IL_01d5:  ldloca.s   V_14
+    IL_01d7:  call       valuetype [System.Drawing]System.Drawing.Color [System.Drawing]System.Drawing.SystemColors::get_Active
+CaptionText()
+    IL_01dc:  call       int32 [System.Drawing]System.Drawing.ColorTranslator::ToWin32(valuetype [System.Drawing]System.Drawing
+.Color)
+    IL_01e1:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/DTTOPTS::crText
+    IL_01e6:  ldloca.s   V_14
+    IL_01e8:  ldarg.0
+    IL_01e9:  ldfld      class ComponentFactory.Krypton.Ribbon.KryptonRibbon ComponentFactory.Krypton.Ribbon.ViewDrawRibbonCont
+extTitle::_ribbon
+    IL_01ee:  callvirt   instance bool [System.Windows.Forms]System.Windows.Forms.Control::get_Enabled()
+    IL_01f3:  brtrue.s   IL_01f8
+    IL_01f5:  ldc.i4.2
+    IL_01f6:  br.s       IL_01fa
+    IL_01f8:  ldc.i4.s   12
+    IL_01fa:  stfld      int32 ComponentFactory.Krypton.Toolkit.PI/DTTOPTS::iGlowSize
+    IL_01ff:  ldloc.s    V_14
+    IL_0201:  stloc.s    V_8
+    IL_0203:  callvirt   instance native int [System.Windows.Forms]System.Windows.Forms.VisualStyles.VisualStyleRenderer::get_H
+andle()
+    IL_0208:  ldloc.3
+    IL_0209:  ldc.i4.0
+    IL_020a:  ldc.i4.0
+    IL_020b:  ldarg.0
+    IL_020c:  call       instance string ComponentFactory.Krypton.Ribbon.ViewDrawRibbonContextTitle::GetShortText()
+    IL_0211:  ldc.i4.m1
+    IL_0212:  ldc.i4     0x8025
+    IL_0217:  ldloca.s   V_7
+    IL_0219:  ldloca.s   V_8
+    IL_021b:  call       int32 ComponentFactory.Krypton.Toolkit.PI::DrawThemeTextEx(native int,
+                                                                                    native int,
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+PI/DTTOPTS&)
+    IL_0225:  pop
+    IL_0226:  ldloc.2
+    IL_0227:  ldarg.0
+    IL_0228:  callvirt   instance valuetype [System.Drawing]System.Drawing.Point [Krypton.Toolkit]ComponentFactory.Krypton.Tool
+kit.ViewBase::get_ClientLocation()
+    IL_022d:  stloc.s    V_15
+    IL_022f:  ldloca.s   V_15
+    IL_0231:  call       instance int32 [System.Drawing]System.Drawing.Point::get_X()
+    IL_0236:  ldarg.0
+    IL_0237:  callvirt   instance valuetype [System.Drawing]System.Drawing.Point [Krypton.Toolkit]ComponentFactory.Krypton.Tool
+kit.ViewBase::get_ClientLocation()
+    IL_023c:  stloc.s    V_15
+    IL_023e:  ldloca.s   V_15
+    IL_0240:  call       instance int32 [System.Drawing]System.Drawing.Point::get_Y()
+    IL_0245:  ldarg.0
+    IL_0246:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientWidth()
+    IL_024b:  ldarg.0
+    IL_024c:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientHeight()
+    IL_0251:  ldloc.3
+    IL_0252:  ldc.i4.0
+    IL_0253:  ldc.i4.0
+    IL_0254:  ldc.i4     0xcc0020
+    IL_0259:  call       int32 ComponentFactory.Krypton.Toolkit.PI::BitBlt(native int,
+                                                                           int32,
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+PI/DTTOPTS&)
+    IL_0220:  pop
+    IL_0221:  ldloc.2
+    IL_0222:  ldarg.0
+    IL_0223:  callvirt   instance valuetype [System.Drawing]System.Drawing.Point [Krypton.Toolkit]ComponentFactory.Krypton.Tool
+kit.ViewBase::get_ClientLocation()
+    IL_0228:  stloc.s    V_15
+    IL_022a:  ldloca.s   V_15
+    IL_022c:  call       instance int32 [System.Drawing]System.Drawing.Point::get_X()
+    IL_0231:  ldarg.0
+    IL_0232:  callvirt   instance valuetype [System.Drawing]System.Drawing.Point [Krypton.Toolkit]ComponentFactory.Krypton.Tool
+kit.ViewBase::get_ClientLocation()
+    IL_0237:  stloc.s    V_15
+    IL_0239:  ldloca.s   V_15
+    IL_023b:  call       instance int32 [System.Drawing]System.Drawing.Point::get_Y()
+    IL_0240:  ldarg.0
+    IL_0241:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientWidth()
+    IL_0246:  ldarg.0
+    IL_0247:  callvirt   instance int32 [Krypton.Toolkit]ComponentFactory.Krypton.Toolkit.ViewBase::get_ClientHeight()
+    IL_024c:  ldloc.3
+    IL_024d:  ldc.i4.0
+    IL_024e:  ldc.i4.0
+    IL_024f:  ldc.i4     0xcc0020
+    IL_0254:  call       int32 ComponentFactory.Krypton.Toolkit.PI::BitBlt(native int,
+                                                                           int32,
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+                                                                           int32)
+    IL_025e:  pop
+    IL_025f:  ldloc.s    V_6
+    IL_0261:  call       native int ComponentFactory.Krypton.Toolkit.PI::DeleteObject(native int)
+    IL_0266:  pop
+    IL_0267:  ldloc.s    V_5
+    IL_0269:  call       native int ComponentFactory.Krypton.Toolkit.PI::DeleteObject(native int)
+    IL_026e:  pop
+    IL_026f:  ldloc.3
+    IL_0270:  call       bool ComponentFactory.Krypton.Toolkit.PI::DeleteDC(native int)
+    IL_0275:  pop
+    IL_0276:  ldarg.1
+    IL_0277:  callvirt   instance class [System.Drawing]System.Drawing.Graphics [Krypton.Toolkit]ComponentFactory.Krypton.Toolk
+it.ViewContext::get_Graphics()
+    IL_027c:  ldloc.2
+    IL_027d:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::ReleaseHdc(native int)
+    IL_0282:  ret
+  } // end of method ViewDrawRibbonContextTitle::RenderOnComposition
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+                                                                           int32)
+    IL_0259:  pop
+    IL_025a:  ldloc.s    V_6
+    IL_025c:  call       native int ComponentFactory.Krypton.Toolkit.PI::DeleteObject(native int)
+    IL_0261:  pop
+    IL_0262:  ldloc.s    V_5
+    IL_0264:  call       native int ComponentFactory.Krypton.Toolkit.PI::DeleteObject(native int)
+    IL_0269:  pop
+    IL_026a:  ldloc.3
+    IL_026b:  call       bool ComponentFactory.Krypton.Toolkit.PI::DeleteDC(native int)
+    IL_0270:  pop
+    IL_0271:  ldarg.1
+    IL_0272:  callvirt   instance class [System.Drawing]System.Drawing.Graphics [Krypton.Toolkit]ComponentFactory.Krypton.Toolk
+it.ViewContext::get_Graphics()
+    IL_0277:  ldloc.2
+    IL_0278:  callvirt   instance void [System.Drawing]System.Drawing.Graphics::ReleaseHdc(native int)
+    IL_027d:  ret
+  } // end of method ViewDrawRibbonContextTitle::RenderOnComposition
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '1C752E7890F4129FDC
+8C67C227AB918C525174AEE2CFA16D63A47E9B1B5F3331' at I_00103828
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '2DB3AB17EFC74645AC
+69F01B4615DF56660923F90CC5474B56D4BB86307AD34E' at I_00103840
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' B74DC518100204FF53D
+82CF8EAF90FC7C0C8AB6A1900962FDB73BE9863366985 at I_00103858
+  .method assembly hidebysig static uint32 
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '1C752E7890F4129FDC
+8C67C227AB918C525174AEE2CFA16D63A47E9B1B5F3331' at I_00103844
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=24' '2DB3AB17EFC74645AC
+69F01B4615DF56660923F90CC5474B56D4BB86307AD34E' at I_0010385C
+  .field static assembly initonly valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=16' B74DC518100204FF53D
+82CF8EAF90FC7C0C8AB6A1900962FDB73BE9863366985 at I_00103874
+  .method assembly hidebysig static uint32 
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+// =============================================================
+.data cil I_00103828 = bytearray (
+                 00 00 00 00 CD CC CC 3D 00 00 80 3E 00 00 00 3F  // .......=...>...?
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+// =============================================================
+.data cil I_00103844 = bytearray (
+                 00 00 00 00 CD CC CC 3D 00 00 80 3E 00 00 00 3F  // .......=...>...?
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+                 33 33 33 3F CD CC 4C 3F)                         // 333?..L?
+.data cil I_00103840 = bytearray (
+                 00 00 00 00 CD CC 4C 3E CD CC CC 3E 9A 99 19 3F  // ......L>...>...?
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+                 33 33 33 3F CD CC 4C 3F)                         // 333?..L?
+.data cil I_0010385C = bytearray (
+                 00 00 00 00 CD CC 4C 3E CD CC CC 3E 9A 99 19 3F  // ......L>...>...?
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+                 CD CC 4C 3F 00 00 80 3F)                         // ..L?...?
+.data cil I_00103858 = bytearray (
+                 00 00 00 00 85 EB D1 3E 33 33 33 3F 00 00 80 3F) // .......>333?...?
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+                 CD CC 4C 3F 00 00 80 3F)                         // ..L?...?
+.data cil I_00103874 = bytearray (
+                 00 00 00 00 85 EB D1 3E 33 33 33 3F 00 00 80 3F) // .......>333?...?
+*****
+
+***** BIN\RELEASE\NET45\Krypton.Ribbon.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net45\Krypton.Ribbon.res
+***** BIN\RELEASE\NET451\KRYPTON.RIBBON.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net451\Krypton.Ribbon.res
+*****
+

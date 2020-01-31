@@ -1,0 +1,361 @@
+Comparing files BIN\RELEASE\NET35\Krypton.Workspace.il and BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+// Metadata version: v2.0.50727
+.assembly extern mscorlib
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+//  Copyright (c) Microsoft Corporation.  All rights reserved.
+// Metadata version: v4.0.30319
+.assembly extern mscorlib
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+  .publickeytoken = (B7 7A 5C 56 19 34 E0 89 )                         // .z\V.4..
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 2:0:0:0
+}
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+  .publickeytoken = (B0 3F 5F 7F 11 D5 0A 3A )                         // .?_....:
+  .ver 4:0:0:0
+}
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+                                67 61 74 6F 72 01 00 00 00 00 00 )                // gator......
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+                                67 61 74 6F 72 01 00 00 00 00 00 )                // gator......
+  .custom instance void [mscorlib]System.Security.SecurityRulesAttribute::.ctor(valuetype [mscorlib]System.Security.SecurityRul
+eSet) = ( 01 00 01 00 00 ) 
+  .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1A 2E 4E 45 54 46
+ 72 61 6D 65 77 6F 72 6B   // ....NETFramework
+                                                                                                        2C 56 65 72 73 69 6F 6E
+ 3D 76 34 2E 30 01 00 54   // ,Version=v4.0..T
+                                                                                                        0E 14 46 72 61 6D 65 77
+ 6F 72 6B 44 69 73 70 6C   // ..FrameworkDispl
+                                                                                                        61 79 4E 61 6D 65 10 2E
+ 4E 45 54 20 46 72 61 6D   // ayName..NET Fram
+                                                                                                        65 77 6F 72 6B 20 34 ) 
+                           // ework 4
+  .custom instance void [mscorlib]System.Reflection.AssemblyCompanyAttribute::.ctor(string) = ( 01 00 24 50 65 74 65 72 20 57 6
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+.module Krypton.Workspace.dll
+// MVID: {3137F2FA-EB22-424D-A742-316ED5F9556B}
+.imagebase 0x10000000
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+.module Krypton.Workspace.dll
+// MVID: {9189CD44-D08E-4EE1-85C5-25AD07B986D7}
+.imagebase 0x10000000
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x07320000
+// =============== CLASS MEMBERS DECLARATION ===================
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+.corflags 0x00000009    //  ILONLY
+// Image base: 0x06CE0000
+// =============== CLASS MEMBERS DECLARATION ===================
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+20 56 65 72 73 69   //  mscorlib, Versi
+                                                                                                 6F 6E 3D 32 2E 30 2E 30 2E 30 
+2C 20 43 75 6C 74   // on=2.0.0.0, Cult
+                                                                                                 75 72 65 3D 6E 65 75 74 72 61 
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+20 56 65 72 73 69   //  mscorlib, Versi
+                                                                                                 6F 6E 3D 34 2E 30 2E 30 2E 30 
+2C 20 43 75 6C 74   // on=4.0.0.0, Cult
+                                                                                                 75 72 65 3D 6E 65 75 74 72 61 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+77 69 6E 67 2C 20 56 65 72 73 69   // m.Drawing, Versi
+                                                                                                                6F 6E 3D 32 2E 
+30 2E 30 2E 30 2C 20 43 75 6C 74   // on=2.0.0.0, Cult
+                                                                                                                75 72 65 3D 6E 
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+77 69 6E 67 2C 20 56 65 72 73 69   // m.Drawing, Versi
+                                                                                                                6F 6E 3D 34 2E 
+30 2E 30 2E 30 2C 20 43 75 6C 74   // on=4.0.0.0, Cult
+                                                                                                                75 72 65 3D 6E 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+20 56 65 72 73 69   // ows.Forms, Versi
+                                                                                                 6F 6E 3D 32 2E 30 2E 30 2E 30 
+2C 20 43 75 6C 74   // on=2.0.0.0, Cult
+                                                                                                 75 72 65 3D 6E 65 75 74 72 61 
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+20 56 65 72 73 69   // ows.Forms, Versi
+                                                                                                 6F 6E 3D 34 2E 30 2E 30 2E 30 
+2C 20 43 75 6C 74   // on=4.0.0.0, Cult
+                                                                                                 75 72 65 3D 6E 65 75 74 72 61 
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+  {
+    // Code size       24 (0x18)
+    .maxstack  8
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+  {
+    // Code size       29 (0x1d)
+    .maxstack  8
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+eTypeHandle)
+    IL_000b:  bne.un.s   IL_000f
+    IL_000d:  ldc.i4.1
+    IL_000e:  ret
+    IL_000f:  ldarg.0
+    IL_0010:  ldarg.1
+    IL_0011:  ldarg.2
+    IL_0012:  call       instance bool [System]System.ComponentModel.TypeConverter::CanConvertTo(class [System]System.Component
+Model.ITypeDescriptorContext,
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+eTypeHandle)
+    IL_000b:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                 class [mscorlib]System.Type)
+    IL_0010:  brfalse.s  IL_0014
+    IL_0012:  ldc.i4.1
+    IL_0013:  ret
+    IL_0014:  ldarg.0
+    IL_0015:  ldarg.1
+    IL_0016:  ldarg.2
+    IL_0017:  call       instance bool [System]System.ComponentModel.TypeConverter::CanConvertTo(class [System]System.Component
+Model.ITypeDescriptorContext,
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+                                                                                                 class [mscorlib]System.Type)
+    IL_0017:  ret
+  } // end of method KryptonWorkspaceSequenceConverter::CanConvertTo
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+                                                                                                 class [mscorlib]System.Type)
+    IL_001c:  ret
+  } // end of method KryptonWorkspaceSequenceConverter::CanConvertTo
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+  {
+    // Code size       38 (0x26)
+    .maxstack  8
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+  {
+    // Code size       43 (0x2b)
+    .maxstack  8
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+eTypeHandle)
+    IL_000c:  bne.un.s   IL_001a
+    IL_000e:  ldarg.3
+    IL_000f:  castclass  ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence
+    IL_0014:  callvirt   instance string [mscorlib]System.Object::ToString()
+    IL_0019:  ret
+    IL_001a:  ldarg.0
+    IL_001b:  ldarg.1
+    IL_001c:  ldarg.2
+    IL_001d:  ldarg.3
+    IL_001e:  ldarg.s    destinationType
+    IL_0020:  call       instance object [System]System.ComponentModel.TypeConverter::ConvertTo(class [System]System.ComponentM
+odel.ITypeDescriptorContext,
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+eTypeHandle)
+    IL_000c:  call       bool [mscorlib]System.Type::op_Equality(class [mscorlib]System.Type,
+                                                                 class [mscorlib]System.Type)
+    IL_0011:  brfalse.s  IL_001f
+    IL_0013:  ldarg.3
+    IL_0014:  castclass  ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence
+    IL_0019:  callvirt   instance string [mscorlib]System.Object::ToString()
+    IL_001e:  ret
+    IL_001f:  ldarg.0
+    IL_0020:  ldarg.1
+    IL_0021:  ldarg.2
+    IL_0022:  ldarg.3
+    IL_0023:  ldarg.s    destinationType
+    IL_0025:  call       instance object [System]System.ComponentModel.TypeConverter::ConvertTo(class [System]System.ComponentM
+odel.ITypeDescriptorContext,
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+                                                                                                class [mscorlib]System.Type)
+    IL_0025:  ret
+  } // end of method KryptonWorkspaceSequenceConverter::ConvertTo
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+                                                                                                class [mscorlib]System.Type)
+    IL_002a:  ret
+  } // end of method KryptonWorkspaceSequenceConverter::ConvertTo
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+                                                                                                                    73 69 6F 6E
+ 3D 32 2E 30 2E 30 2E 30 2C 20 43 75   // sion=2.0.0.0, Cu
+                                                                                                                    6C 74 75 72
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+                                                                                                                    73 69 6F 6E
+ 3D 34 2E 30 2E 30 2E 30 2C 20 43 75   // sion=4.0.0.0, Cu
+                                                                                                                    6C 74 75 72
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+                                                                                                                    73 69 6F 6E
+ 3D 32 2E 30 2E 30 2E 30 2C 20 43 75   // sion=2.0.0.0, Cu
+                                                                                                                    6C 74 75 72
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+                                                                                                                    73 69 6F 6E
+ 3D 34 2E 30 2E 30 2E 30 2C 20 43 75   // sion=4.0.0.0, Cu
+                                                                                                                    6C 74 75 72
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+ 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                     32 2E 30 2E 30 2E 30 2C 20
+ 43 75 6C 74 75 72 65   // 2.0.0.0, Culture
+                                                                                                     3D 6E 65 75 74 72 61 6C 2C
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+ 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                     34 2E 30 2E 30 2E 30 2C 20
+ 43 75 6C 74 75 72 65   // 4.0.0.0, Culture
+                                                                                                     3D 6E 65 75 74 72 61 6C 2C
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+ 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                     32 2E 30 2E 30 2E 30 2C 20
+ 43 75 6C 74 75 72 65   // 2.0.0.0, Culture
+                                                                                                     3D 6E 65 75 74 72 61 6C 2C
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+ 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                     34 2E 30 2E 30 2E 30 2C 20
+ 43 75 6C 74 75 72 65   // 4.0.0.0, Culture
+                                                                                                     3D 6E 65 75 74 72 61 6C 2C
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+                                                                                                     46 6F 72 6D 73 2C 20 56 65
+ 72 73 69 6F 6E 3D 32   // Forms, Version=2
+                                                                                                     2E 30 2E 30 2E 30 2C 20 43
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+                                                                                                     46 6F 72 6D 73 2C 20 56 65
+ 72 73 69 6F 6E 3D 34   // Forms, Version=4
+                                                                                                     2E 30 2E 30 2E 30 2C 20 43
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+                                                                                                                           2C 2
+0 56 65 72 73 69 6F 6E 3D 32 2E 30 2E 30 2E   // , Version=2.0.0.
+                                                                                                                           30 2
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+                                                                                                                           2C 2
+0 56 65 72 73 69 6F 6E 3D 34 2E 30 2E 30 2E   // , Version=4.0.0.
+                                                                                                                           30 2
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+ 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                     32 2E 30 2E 30 2E 30 2C 20
+ 43 75 6C 74 75 72 65   // 2.0.0.0, Culture
+                                                                                                     3D 6E 65 75 74 72 61 6C 2C
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+ 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                     34 2E 30 2E 30 2E 30 2C 20
+ 43 75 6C 74 75 72 65   // 4.0.0.0, Culture
+                                                                                                     3D 6E 65 75 74 72 61 6C 2C
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+ 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                     32 2E 30 2E 30 2E 30 2C 20
+ 43 75 6C 74 75 72 65   // 2.0.0.0, Culture
+                                                                                                     3D 6E 65 75 74 72 61 6C 2C
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+ 65 72 73 69 6F 6E 3D   // rawing, Version=
+                                                                                                     34 2E 30 2E 30 2E 30 2C 20
+ 43 75 6C 74 75 72 65   // 4.0.0.0, Culture
+                                                                                                     3D 6E 65 75 74 72 61 6C 2C
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+                                                                                                                           2C 2
+0 56 65 72 73 69 6F 6E 3D 32 2E 30 2E 30 2E   // , Version=2.0.0.
+                                                                                                                           30 2
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+                                                                                                                           2C 2
+0 56 65 72 73 69 6F 6E 3D 34 2E 30 2E 30 2E   // , Version=4.0.0.
+                                                                                                                           30 2
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+ 2C 20 56 65 72 73 69   // ows.Forms, Versi
+                                                                                                     6F 6E 3D 32 2E 30 2E 30 2E
+ 30 2C 20 43 75 6C 74   // on=2.0.0.0, Cult
+                                                                                                     75 72 65 3D 6E 65 75 74 72
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+ 2C 20 56 65 72 73 69   // ows.Forms, Versi
+                                                                                                     6F 6E 3D 34 2E 30 2E 30 2E
+ 30 2C 20 43 75 6C 74   // on=4.0.0.0, Cult
+                                                                                                     75 72 65 3D 6E 65 75 74 72
+*****
+
+***** BIN\RELEASE\NET35\Krypton.Workspace.il
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net35\Krypton.Workspace.res
+***** BIN\RELEASE\NET40\KRYPTON.WORKSPACE.IL
+// *********** DISASSEMBLY COMPLETE ***********************
+// WARNING: Created Win32 resource file Bin\Release\net40\Krypton.Workspace.res
+*****
+
