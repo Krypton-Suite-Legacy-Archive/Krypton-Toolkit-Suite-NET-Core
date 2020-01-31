@@ -9,6 +9,8 @@ If /I "%INPUT%"=="y" goto updateself
 ::If /I "%INPUT%"=="n" goto no
 
 :yes
+cd Bin\Release
+
 nuget push Krypton.Docking.5.500.2002.nupkg
 
 nuget push Krypton.Docking.Lite.5.500.2002.nupkg
@@ -30,13 +32,9 @@ nuget push Krypton.Workspace.5.500.2002.nupkg
 nuget push Krypton.Workspace.Lite.5.500.2002.nupkg
 
 :no
+echo You have chosen to abandon the upload process. Please run upload.cmd from a command line promt when ready!
 
-
-:copypackages
-
-
-:deletepackages
-
+pause
 
 :updateself
 nuget update -self
