@@ -46,7 +46,6 @@ set targets=Build
 if not "%~1" == "" set targets=%~1
 "%msbuildpath%\msbuild.exe" /t:%targets% build.proj /fl /flp:logfile=build.log
 
-::no
-::echo Plese alter file '{Path}\filename' before executing script.
+echo Plese alter file '{Path}\Directory.Build.props' before executing 'publish.cmd' script!
 
 pause

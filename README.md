@@ -1,4 +1,4 @@
-# <img src="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core/blob/master/Krypton.png"> .NET 5.490  (Core)
+# <img src="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core/blob/master/Krypton.png"> .NET 5.500  (Core)
 
 =======
 
@@ -34,5 +34,7 @@
 
 * Support for all frameworks .NET 3.5 to 4.8 inclusive
 * Support for .NET Core LTS (currently 3.1)
+* Changed `490` to `500`
+* Builds from now on will be labelled as `YYMM`
 
 -->
