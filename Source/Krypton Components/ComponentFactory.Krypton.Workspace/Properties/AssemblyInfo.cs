@@ -29,4 +29,6 @@ using System.Security;
 [assembly: Dependency("System.XML", LoadHint.Always)]
 [assembly: Dependency("ComponentFactory.Krypton.Toolkit", LoadHint.Always)]
 [assembly: Dependency("ComponentFactory.Krypton.Navigator", LoadHint.Always)]
+#if !NET35
 [assembly: SecurityRules(SecurityRuleSet.Level1)]
+#endif

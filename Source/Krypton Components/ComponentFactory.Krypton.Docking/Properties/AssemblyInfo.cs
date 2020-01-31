@@ -30,4 +30,6 @@ using System.Security;
 [assembly: Dependency("ComponentFactory.Krypton.Toolkit", LoadHint.Always)]
 [assembly: Dependency("ComponentFactory.Krypton.Navigator", LoadHint.Always)]
 [assembly: Dependency("ComponentFactory.Krypton.Workspace", LoadHint.Always)]
+#if !NET35
 [assembly: SecurityRules(SecurityRuleSet.Level1)]
+#endif

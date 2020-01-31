@@ -28,4 +28,6 @@ using System.Security;
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
 [assembly: Dependency("ComponentFactory.Krypton.Toolkit", LoadHint.Always)]
+#if !NET35
 [assembly: SecurityRules(SecurityRuleSet.Level1)]
+#endif

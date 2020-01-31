@@ -49,7 +49,11 @@ namespace ComponentFactory.Krypton.Toolkit
             /// <param name="helpFilePath">Value for HelpFilePath.</param>
             /// <param name="keyword">Value for Keyword</param>
             public HelpInfo(string helpFilePath = null, string keyword = null)
+#if NET35
+            : this(helpFilePath, keyword, (!string.IsNullOrEmpty(keyword) && keyword.Trim() != string.Empty) ? HelpNavigator.Topic : HelpNavigator.TableOfContents, null)
+#else
             : this(helpFilePath, keyword, !string.IsNullOrWhiteSpace(keyword) ? HelpNavigator.Topic : HelpNavigator.TableOfContents, null)
+#endif
             {
 
             }
@@ -80,9 +84,9 @@ namespace ComponentFactory.Krypton.Toolkit
                 Navigator = navigator;
                 Param = param;
             }
-            #endregion
+#endregion
 
-            #region Properties
+#region Properties
             /// <summary>
             /// Gets the HelpFilePath property.
             /// </summary>
@@ -103,17 +107,17 @@ namespace ComponentFactory.Krypton.Toolkit
             /// </summary>
             public object Param { get; }
 
-            #endregion
+#endregion
         }
 
         [ToolboxItem(false)]
         internal class MessageButton : KryptonButton
         {
-            #region Instance Fields
+#region Instance Fields
 
-            #endregion
+#endregion
 
-            #region Identity
+#region Identity
             public MessageButton()
             {
                 IgnoreAltF4 = false;
@@ -126,9 +130,9 @@ namespace ComponentFactory.Krypton.Toolkit
             /// </summary>
             public bool IgnoreAltF4 { get; set; }
 
-            #endregion
+#endregion
 
-            #region Protected
+#region Protected
             /// <summary>
             /// Processes Windows messages.
             /// </summary>
@@ -156,17 +160,17 @@ namespace ComponentFactory.Krypton.Toolkit
 
                 base.WndProc(ref m);
             }
-            #endregion
+#endregion
         }
-        #endregion
+#endregion
 
-        #region Static Fields
+#region Static Fields
 
         private const int GAP = 10;
         private static readonly int _osMajorVersion;
-        #endregion
+#endregion
 
-        #region Instance Fields
+#region Instance Fields
         private readonly string _text;
         private readonly string _caption;
         private readonly MessageBoxButtons _buttons;
@@ -187,9 +191,9 @@ namespace ComponentFactory.Krypton.Toolkit
         private readonly HelpInfo _helpInfo;
         // If help information provided or we are not a service/default desktop application then grab an owner for showing the message box
         private IWin32Window _showOwner;
-        #endregion
+#endregion
 
-        #region Identity
+#region Identity
         static KryptonMessageBox()
         {
             _osMajorVersion = Environment.OSVersion.Version.Major;
@@ -236,9 +240,9 @@ namespace ComponentFactory.Krypton.Toolkit
 
             base.Dispose(disposing);
         }
-        #endregion
+#endregion
 
-        #region Public
+#region Public
 
         /// <summary>
         /// Displays a message box with specified text.
@@ -621,9 +625,9 @@ namespace ComponentFactory.Krypton.Toolkit
         {
             return InternalShow(owner, text, caption, buttons, icon, defaultButton, options, new HelpInfo(helpFilePath, navigator, param), showCtrlCopy);
         }
-        #endregion
+#endregion
 
-        #region Implementation
+#region Implementation
         private static DialogResult InternalShow(IWin32Window owner,
                                                  string text, string caption,
                                                  MessageBoxButtons buttons,
@@ -873,12 +877,20 @@ namespace ComponentFactory.Krypton.Toolkit
                 {
                     mInfoMethod.Invoke(control, new object[] { new HelpEventArgs(MousePosition) });
                 }
+#if NET35
+                if (string.IsNullOrEmpty(_helpInfo.HelpFilePath) || _helpInfo.HelpFilePath.Trim() == string.Empty)
+#else
                 if (string.IsNullOrWhiteSpace(_helpInfo.HelpFilePath))
+#endif
                 {
                     return;
                 }
 
+#if NET35
+                if (string.IsNullOrEmpty(_helpInfo.Keyword) || _helpInfo.Keyword.Trim() == string.Empty)
+#else
                 if (!string.IsNullOrWhiteSpace(_helpInfo.Keyword))
+#endif
                 {
                     Help.ShowHelp(control, _helpInfo.HelpFilePath, _helpInfo.Keyword);
                 }
@@ -1264,6 +1276,6 @@ namespace ComponentFactory.Krypton.Toolkit
             PerformLayout();
 
         }
-        #endregion
+#endregion
     }
 }

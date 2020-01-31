@@ -50,7 +50,11 @@ namespace ComponentFactory.Krypton.Toolkit
                 {
                     _hint = value;
 
+#if NET35
+                    if (string.IsNullOrEmpty(Text) && Hint.Trim() != string.Empty)
+#else
                     if (string.IsNullOrEmpty(Text) && !string.IsNullOrWhiteSpace(Hint))
+#endif
                     {
                         PI.SendMessage(Handle, PI.EM_SETCUEBANNER, (IntPtr)1, Hint);
                     }
@@ -58,9 +62,9 @@ namespace ComponentFactory.Krypton.Toolkit
                     Refresh();
                 }
             }
-            #endregion
+#endregion
 
-            #region Events
+#region Events
             /// <summary>
             /// Occurs when the mouse enters the InternalMaskedTextBox.
             /// </summary>
@@ -70,9 +74,9 @@ namespace ComponentFactory.Krypton.Toolkit
             /// Occurs when the mouse leaves the InternalMaskedTextBox.
             /// </summary>
             public event EventHandler TrackMouseLeave;
-            #endregion
+#endregion
 
-            #region Identity
+#region Identity
             /// <summary>
             /// Initialize a new instance of the InternalMaskedTextBox class.
             /// </summary>
@@ -87,9 +91,9 @@ namespace ComponentFactory.Krypton.Toolkit
                 // We provide the border manually
                 BorderStyle = BorderStyle.None;
             }
-            #endregion
+#endregion
 
-            #region MouseOver
+#region MouseOver
             /// <summary>
             /// Gets and sets if the mouse is currently over the combo box.
             /// </summary>
@@ -116,9 +120,9 @@ namespace ComponentFactory.Krypton.Toolkit
                     }
                 }
             }
-            #endregion
+#endregion
 
-            #region Protected
+#region Protected
             /// <summary>
             /// Process Windows-based messages.
             /// </summary>
@@ -308,17 +312,17 @@ namespace ComponentFactory.Krypton.Toolkit
             {
                 TrackMouseLeave?.Invoke(this, e);
             }
-            #endregion
+#endregion
         }
-        #endregion
+#endregion
 
-        #region Type Definitions
+#region Type Definitions
         /// <summary>
         /// Collection for managing ButtonSpecAny instances.
         /// </summary>
         public class MaskedTextBoxButtonSpecCollection : ButtonSpecCollection<ButtonSpecAny>
         {
-            #region Identity
+#region Identity
             /// <summary>
             /// Initialize a new instance of the MaskedTextBoxButtonSpecCollection class.
             /// </summary>
@@ -327,11 +331,11 @@ namespace ComponentFactory.Krypton.Toolkit
                 : base(owner)
             {
             }
-            #endregion
+#endregion
         }
-        #endregion
+#endregion
 
-        #region Instance Fields
+#region Instance Fields
 
         private VisualPopupToolTip _visualPopupToolTip;
         private readonly ButtonSpecManagerLayout _buttonManager;
@@ -347,9 +351,9 @@ namespace ComponentFactory.Krypton.Toolkit
         private bool _alwaysActive;
         private bool _trackingMouseEnter;
         private int _cachedHeight;
-        #endregion
+#endregion
 
-        #region Events
+#region Events
         /// <summary>
         /// Occurs when the value of the HideSelection property changes.
         /// </summary>
@@ -449,9 +453,9 @@ namespace ComponentFactory.Krypton.Toolkit
         [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Never)]
         public new event EventHandler ForeColorChanged;
-        #endregion
+#endregion
 
-        #region Identity
+#region Identity
         /// <summary>
         /// Initialize a new instance of the KryptonMaskedTextBox class.
         /// </summary>
@@ -558,14 +562,18 @@ namespace ComponentFactory.Krypton.Toolkit
 
             base.Dispose(disposing);
         }
-        #endregion
+#endregion
 
-        #region Public
+#region Public
         public string Hint { get => _maskedTextBox.Hint; set => _maskedTextBox.Hint = value; }
 
         private bool ShouldSerializeHint()
         {
+#if NET35
+            return !string.IsNullOrEmpty(Hint) && Hint.Trim() != string.Empty;
+#else
             return !string.IsNullOrWhiteSpace(Hint);
+#endif
         }
 
 
@@ -1474,9 +1482,9 @@ namespace ComponentFactory.Krypton.Toolkit
             // element that thinks it has the focus is informed it does not
             OnMouseLeave(EventArgs.Empty);
         }
-        #endregion
+#endregion
 
-        #region Protected
+#region Protected
         /// <summary>
         /// Force the layout logic to size and position the controls.
         /// </summary>
@@ -1486,9 +1494,9 @@ namespace ComponentFactory.Krypton.Toolkit
             OnLayout(new LayoutEventArgs(null, null));
             _forcedLayout = false;
         }
-        #endregion
+#endregion
 
-        #region Protected Virtual
+#region Protected Virtual
         // ReSharper disable VirtualMemberNeverOverridden.Global
         /// <summary>
         /// Raises the TextAlignChanged event.
@@ -1580,9 +1588,9 @@ namespace ComponentFactory.Krypton.Toolkit
             TrackMouseLeave?.Invoke(this, e);
         }
         // ReSharper restore VirtualMemberNeverOverridden.Global
-        #endregion
+#endregion
 
-        #region Protected Overrides
+#region Protected Overrides
         /// <summary>
         /// Creates a new instance of the control collection for the KryptonTextBox.
         /// </summary>
@@ -1881,14 +1889,14 @@ namespace ComponentFactory.Krypton.Toolkit
                     break;
             }
         }
-        #endregion
+#endregion
 
-        #region Internal
+#region Internal
         internal bool InTransparentDesignMode => InRibbonDesignMode;
 
-        #endregion
+#endregion
 
-        #region Implementation
+#region Implementation
         private void UpdateStateAndPalettes()
         {
             // Get the correct palette settings to use
@@ -2110,6 +2118,6 @@ namespace ComponentFactory.Krypton.Toolkit
                 }
             }
         }
-        #endregion
+#endregion
     }
 }
