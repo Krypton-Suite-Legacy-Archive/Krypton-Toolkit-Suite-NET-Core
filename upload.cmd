@@ -2,6 +2,11 @@
 
 :: This script is designed to upload new versions to NuGet. This will not work without the API key (UNDER CONSTRUCTION)
 
+echo Before uploading packages, it is suggested that you are using the latest NuGet packager. Do you want to check for updates now? (Y/N)
+set INPUT=
+set /P INPUT=Type input: %=%
+If /I "%INPUT%"=="y" goto updateself
+::If /I "%INPUT%"=="n" goto no
 
 :yes
 nuget push Krypton.Docking.5.500.2002.nupkg

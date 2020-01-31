@@ -12,7 +12,7 @@
         </Description>
         <Description Condition="'$(TFMs)' == 'all'">
             $(Description)
-            This package supports all .NET Framework versions starting .NET 4.0 and .NET Core 3.1.
+            This package supports all .NET Framework versions starting .NET 3.5 and .NET Core 3.1.
             Also, all libraries are included targeting each specific framework version for performance purposes.
             If you target only .NET Framework >= 4.5 and are not interested in specific framework version, consider using the lite package.
         </Description>
