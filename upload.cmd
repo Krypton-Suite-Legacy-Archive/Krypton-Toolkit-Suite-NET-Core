@@ -27,6 +27,9 @@ nuget push Krypton.Workspace.Lite.5.500.2002.nupkg
 :no
 
 
+:copypackages
+
+
 :deletepackages
 
 
