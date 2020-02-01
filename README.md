@@ -29,7 +29,6 @@
 
 =======
 
-<!--
 ## 2020-02-01 - Build 2002
 
 * Support for all frameworks .NET 3.5 to 4.8 inclusive
@@ -37,4 +36,3 @@
 * Changed `490` to `500`
 * Builds from now on will be labelled as `YYMM`
 
--->
