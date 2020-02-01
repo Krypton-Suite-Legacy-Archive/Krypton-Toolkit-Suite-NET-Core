@@ -29,7 +29,7 @@
 
 =======
 
-## 2020-02-01 - Build 2002
+## 2020-02-01 - Build 2002 - February 2020
 
 * Support for all frameworks .NET 3.5 to 4.8 inclusive
 * Support for .NET Core LTS (currently 3.1)
