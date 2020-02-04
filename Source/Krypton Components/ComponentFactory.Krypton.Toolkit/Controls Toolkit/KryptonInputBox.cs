@@ -3,6 +3,10 @@ using System.Windows.Forms;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
+    /// <summary>
+    /// The <see cref="KryptonInputBox"/> class.
+    /// </summary>
+    /// <seealso cref="ComponentFactory.Krypton.Toolkit.KryptonForm" />
     public class KryptonInputBox : KryptonForm
     {
         #region Design Code
@@ -128,7 +132,7 @@ namespace ComponentFactory.Krypton.Toolkit
         #endregion
 
         #region Constructor
-        /// <summary>Initializes a new instance of the <see cref="KryptonInputBoxOld"/> class.</summary>
+        /// <summary>Initializes a new instance of the <see cref="KryptonInputBox"/> class.</summary>
         /// <param name="title">The title.</param>
         /// <param name="message">The message.</param>
         /// <param name="prompt">The prompt.</param>
@@ -136,7 +140,8 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <param name="cancelText">The cancel text.</param>
         /// <param name="passwordEnabled">if set to <c>true</c> [password enabled].</param>
         /// <param name="startPosition">The start position.</param>
-        public KryptonInputBox(string title, string message, string prompt = "", string okText = "O&k", string cancelText = "&Cancel", bool passwordEnabled = false, FormStartPosition startPosition = FormStartPosition.Manual)
+        /// <param name="inputTextAlignment">The input text alignment.</param>
+        public KryptonInputBox(string title, string message, string prompt = "", string okText = "O&k", string cancelText = "&Cancel", bool passwordEnabled = false, FormStartPosition startPosition = FormStartPosition.Manual, HorizontalAlignment inputTextAlignment = HorizontalAlignment.Left)        
         {
             InitializeComponent();
 
@@ -153,6 +158,8 @@ namespace ComponentFactory.Krypton.Toolkit
             SetTitle(title);
 
             SetStartPosition(startPosition);
+
+            SetPromptTextAlignment(inputTextAlignment);
         }
         #endregion
 
@@ -166,14 +173,11 @@ namespace ComponentFactory.Krypton.Toolkit
 
         }
 
-        private void ktxtPrompt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void ktxtPrompt_TextChanged(object sender, EventArgs e) => EnableOkButton(ktxtPrompt.Text != "");
 
         private void ktxtPrompt_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter) kbtnOk.PerformClick();
         }
 
         private void kbtnCancel_Click(object sender, EventArgs e)
@@ -181,10 +185,7 @@ namespace ComponentFactory.Krypton.Toolkit
 
         }
 
-        private void kbtnOk_Click(object sender, EventArgs e)
-        {
-            DialogResult = DialogResult.OK;
-        }
+        private void kbtnOk_Click(object sender, EventArgs e) => DialogResult = DialogResult.OK;
 
         #region Methods
         private void SetPasswordEnabled(bool passwordEnabled) => ktxtPrompt.UseSystemPasswordChar = passwordEnabled;
@@ -201,8 +202,12 @@ namespace ComponentFactory.Krypton.Toolkit
 
         private void SetTitle(string title) => Text = title;
 
+        /// <summary>Retrieves the user response.</summary>
+        /// <returns>The user's response.</returns>
         public string RetrieveUserResponse() => ktxtPrompt.Text;
 
+        /// <summary>Enables the ok button.</summary>
+        /// <param name="value">if set to <c>true</c> [value].</param>
         private void EnableOkButton(bool value)
         {
             if (value)
@@ -215,11 +220,22 @@ namespace ComponentFactory.Krypton.Toolkit
             }
         }
 
-        private static string InternalShow(IWin32Window owner, string title, string message, string prompt = "", string okText = "O&k", string cancelText = "&Cancel", bool passwordEnabled = false, FormStartPosition startPosition = FormStartPosition.WindowsDefaultLocation)
+        /// <summary>Internals the show.</summary>
+        /// <param name="owner">The owner.</param>
+        /// <param name="title">The title.</param>
+        /// <param name="message">The message.</param>
+        /// <param name="prompt">The prompt.</param>
+        /// <param name="okText">The ok text.</param>
+        /// <param name="cancelText">The cancel text.</param>
+        /// <param name="passwordEnabled">if set to <c>true</c> [password enabled].</param>
+        /// <param name="startPosition">The start position.</param>
+        /// <param name="inputTextAlignment">The input text alignment.</param>
+        /// <returns></returns>
+        private static string InternalShow(IWin32Window owner, string title, string message, string prompt = "", string okText = "O&k", string cancelText = "&Cancel", bool passwordEnabled = false, FormStartPosition startPosition = FormStartPosition.WindowsDefaultLocation, HorizontalAlignment inputTextAlignment = HorizontalAlignment.Left)
         {
             IWin32Window showOwner = owner ?? FromHandle(PI.GetActiveWindow());
 
-            using (KryptonInputBox kib = new KryptonInputBox(title, message, prompt, okText, cancelText, passwordEnabled, startPosition))
+            using (KryptonInputBox kib = new KryptonInputBox(title, message, prompt, okText, cancelText, passwordEnabled, startPosition, inputTextAlignment))
             {
                 kib.StartPosition = showOwner == null ? startPosition : startPosition;
 
@@ -239,8 +255,11 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <param name="cancelText">The cancel text.</param>
         /// <param name="passwordEnabled">if set to <c>true</c> [password enabled].</param>
         /// <param name="startPosition">The start position.</param>
-        /// <returns></returns>
-        public static string Show(IWin32Window owner, string title, string message, string prompt = "", string okText = "O&k", string cancelText = "&Cancel", bool passwordEnabled = false, FormStartPosition startPosition = FormStartPosition.WindowsDefaultLocation) => InternalShow(owner, title, message, prompt, okText, cancelText, passwordEnabled, startPosition);
+        /// <param name="inputTextAlignment">The input text alignment.</param>
+        /// <returns>A new KryptonInputBox</returns>
+        public static string Show(IWin32Window owner, string title, string message, string prompt = "", string okText = "O&k", string cancelText = "&Cancel", bool passwordEnabled = false, FormStartPosition startPosition = FormStartPosition.WindowsDefaultLocation, HorizontalAlignment inputTextAlignment = HorizontalAlignment.Left) => InternalShow(owner, title, message, prompt, okText, cancelText, passwordEnabled, startPosition, inputTextAlignment);
+
+        private void SetPromptTextAlignment(HorizontalAlignment alignment) => ktxtPrompt.TextAlign = alignment;
         #endregion
     }
 }

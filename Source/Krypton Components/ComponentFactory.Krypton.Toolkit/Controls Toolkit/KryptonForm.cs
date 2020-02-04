@@ -26,9 +26,13 @@ namespace ComponentFactory.Krypton.Toolkit
     // ReSharper disable IdentifierTypo
     public enum BracketType
     {
+        /// <summary>A curved bracket.</summary>
         CURVEDBRACKET,
+        /// <summary>A curly bracket.</summary>
         CURLYBRACKET,
+        /// <summary>A square bracket.</summary>
         SQUAREBRACKET,
+        /// <summary>No bracket.</summary>
         NOBRACKET
     }
     // ReSharper restore IdentifierTypo
