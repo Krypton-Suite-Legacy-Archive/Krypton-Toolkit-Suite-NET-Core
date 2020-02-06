@@ -1798,7 +1798,6 @@ namespace ComponentFactory.Krypton.Toolkit
         #endregion
 
         #region Admin Code
-        /*
         /// <summary>
         /// Gets the has current instance got administrative rights.
         /// </summary>
@@ -1882,7 +1881,6 @@ namespace ComponentFactory.Krypton.Toolkit
                 Text = Text;
             }
         }
-        */
         #endregion
     }
 }
