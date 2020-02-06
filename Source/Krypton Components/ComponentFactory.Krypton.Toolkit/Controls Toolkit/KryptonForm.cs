@@ -229,6 +229,10 @@ namespace ComponentFactory.Krypton.Toolkit
 
             // Set the CornerRoundingRadius to '-1', default value
             CornerRoundingRadius = -1;
+			
+			IsInAdministratorMode = GetHasCurrentInstanceGotAdministrativeRights();
+			
+			UpdateTitle(IsInAdministratorMode, BracketType);
         }
 
         /// <summary>
