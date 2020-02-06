@@ -1,15 +1,8 @@
-﻿using ComponentFactory.Krypton.Toolkit;
-using Microsoft.WindowsAPICodePack.Dialogs;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjectMigrationUtility
@@ -98,6 +91,8 @@ namespace ProjectMigrationUtility
 
         private static void Backup(string sourcePath, string targetPath)
         {
+            MainWindow window = new MainWindow();
+
             DirectoryInfo source = new DirectoryInfo(sourcePath), target = new DirectoryInfo(targetPath);
 
             if (!source.Exists) return;
@@ -117,6 +112,8 @@ namespace ProjectMigrationUtility
             {
                 Backup(sourceDirectories[j].FullName, target.FullName + "\\" + sourceDirectories[j].Name);
             }
+
+            //? if (window.chkCompressFiles.Checked) ZipFile.CreateFromDirectory(sourcePath, targetPath + ".zip");
         }
 
         private void btnBrowseBackupDirectory_Click(object sender, EventArgs e)

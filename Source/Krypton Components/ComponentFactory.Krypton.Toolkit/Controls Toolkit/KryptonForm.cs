@@ -14,7 +14,6 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Security.Principal;
 using System.Windows.Forms;
 
 namespace ComponentFactory.Krypton.Toolkit
@@ -26,10 +25,10 @@ namespace ComponentFactory.Krypton.Toolkit
     // ReSharper disable IdentifierTypo
     public enum BracketType
     {
-        /// <summary>A curved bracket.</summary>
-        CURVEDBRACKET,
         /// <summary>A curly bracket.</summary>
         CURLYBRACKET,
+        /// <summary>A curved bracket.</summary>
+        CURVEDBRACKET,
         /// <summary>A square bracket.</summary>
         SQUAREBRACKET,
         /// <summary>No bracket.</summary>
@@ -109,7 +108,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private string _textExtra;
         private string _oldText;
         private string _administratorText;
-        private bool _isInAdministratorMode;
+        private static bool _isInAdministratorMode;
         private bool _allowFormChrome;
         private bool _allowStatusStripMerge;
         private bool _recreateButtons;
@@ -117,6 +116,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private bool _lastNotNormal;
         private bool _useDropShadow;
         private bool _disableCloseButton;
+        private bool _appendAdministratorText;
         private StatusStrip _statusStrip;
         private Bitmap _cacheBitmap;
         private Icon _cacheIcon;
@@ -229,17 +229,6 @@ namespace ComponentFactory.Krypton.Toolkit
 
             // Set the CornerRoundingRadius to '-1', default value
             CornerRoundingRadius = -1;
-
-            // TODO: Please review this!!!
-            if (!GetIsInAdministratorMode())
-            {
-                // Hide window
-                Hide();
-            }
-            else
-            {
-                Show();
-            }
         }
 
         /// <summary>
@@ -462,11 +451,17 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <value>
         ///   <c>true</c> if this instance is in administrator mode; otherwise, <c>false</c>.
         /// </value>
-        [Category("Appearance"), Description("Is the user currently an administrator."), DefaultValue(false)]
-        public bool IsInAdministratorMode
+        [Category("Appearance"), Description("Is the user currently an administrator.")]
+        public bool IsInAdministratorMode { get => _isInAdministratorMode; private set => _isInAdministratorMode = value; }
+
+        public bool AppendAdministratorText
         {
-            get => _isInAdministratorMode;
-            set => _isInAdministratorMode = value;
+            get => _appendAdministratorText;
+
+            set
+            {
+                _appendAdministratorText = value;
+            }
         }
 
         /// <summary>
@@ -920,8 +915,6 @@ namespace ComponentFactory.Krypton.Toolkit
 
             // We only apply custom chrome when control is already created and positioned
             UpdateCustomChromeDecision();
-
-            UpdateTitle(GetHasCurrentInstanceGotAdministrativeRights(), BracketType);
         }
 
         /// <summary>
@@ -1804,7 +1797,8 @@ namespace ComponentFactory.Krypton.Toolkit
         }
         #endregion
 
-        #region Admin Code        
+        #region Admin Code
+        /*
         /// <summary>
         /// Gets the has current instance got administrative rights.
         /// </summary>
@@ -1844,7 +1838,7 @@ namespace ComponentFactory.Krypton.Toolkit
         {
             KryptonForm form = new KryptonForm();
 
-            form.IsInAdministratorMode = value;
+            //form.IsInAdministratorMode = value;
         }
 
         /// <summary>Gets the is in administrator mode.</summary>
@@ -1883,7 +1877,12 @@ namespace ComponentFactory.Krypton.Toolkit
                         break;
                 }
             }
+            else
+            {
+                Text = Text;
+            }
         }
+        */
         #endregion
     }
 }
