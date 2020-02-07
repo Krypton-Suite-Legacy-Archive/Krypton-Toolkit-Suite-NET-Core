@@ -7,7 +7,9 @@ if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\MSBuild\Cur
 if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin" goto vs16build
 
 echo "Unable to detect suitable environment. Check if VS 2019 is installed."
-exit 1
+pause
+
+::exit 1
 
 ::goto CheckVersionChange
 
