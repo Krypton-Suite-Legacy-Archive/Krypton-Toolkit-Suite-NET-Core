@@ -29,6 +29,12 @@
 
 =======
 
+## 2020-02-07 - Build 2002.1 - February 2020 (Patch 1)
+* Fix [#28](https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core/issues/28), KryptonForm crashing Visual Studio
+* Added support for `KryptonInputBox` textbox text alignment
+
+=======
+
 ## 2020-02-01 - Build 2002 - February 2020
 
 * Support for all frameworks .NET 3.5 to 4.8 inclusive
