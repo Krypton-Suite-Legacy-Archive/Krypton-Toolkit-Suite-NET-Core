@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
+using System.Windows.Forms;
 
 namespace ProjectMigrationUtility
 {
@@ -19,7 +20,7 @@ namespace ProjectMigrationUtility
         private KryptonTextBox ktxtBackupDirectory;
         private KryptonLabel kryptonLabel2;
         private KryptonGroupBox kgbStageThree;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel tsslCurrentStatus;
         private KryptonButton kbtnVarifyBackup;
         private KryptonButton kbtnBackupProject;
         private KryptonCheckBox kchkCompressBackup;
@@ -33,7 +34,7 @@ namespace ProjectMigrationUtility
         private void InitializeComponent()
         {
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslCurrentStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.tspCopyProgress = new System.Windows.Forms.ToolStripProgressBar();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
@@ -70,7 +71,7 @@ namespace ProjectMigrationUtility
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
+            this.tsslCurrentStatus,
             this.tspCopyProgress});
             this.statusStrip1.Location = new System.Drawing.Point(0, 453);
             this.statusStrip1.Name = "statusStrip1";
@@ -79,13 +80,13 @@ namespace ProjectMigrationUtility
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // tsslCurrentStatus
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(1118, 17);
-            this.toolStripStatusLabel1.Spring = true;
-            this.toolStripStatusLabel1.Text = "Ready";
-            this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tsslCurrentStatus.Name = "tsslCurrentStatus";
+            this.tsslCurrentStatus.Size = new System.Drawing.Size(985, 17);
+            this.tsslCurrentStatus.Spring = true;
+            this.tsslCurrentStatus.Text = "Ready";
+            this.tsslCurrentStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tspCopyProgress
             // 
@@ -138,6 +139,8 @@ namespace ProjectMigrationUtility
             this.klbProjectFiles.Size = new System.Drawing.Size(378, 306);
             this.klbProjectFiles.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.klbProjectFiles.TabIndex = 5;
+            this.klbProjectFiles.MouseEnter += new System.EventHandler(this.klbProjectFiles_MouseEnter);
+            this.klbProjectFiles.MouseHover += new System.EventHandler(this.klbProjectFiles_MouseHover);
             // 
             // kryptonLabel1
             // 
@@ -335,7 +338,7 @@ namespace ProjectMigrationUtility
             }
         }
 
-        private void SetCurrentStatus(string text) => toolStripStatusLabel1.Text = text;
+        private void SetCurrentStatus(string text) => tsslCurrentStatus.Text = text;
 
         private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
@@ -437,9 +440,32 @@ namespace ProjectMigrationUtility
         {
             if (Directory.Exists(ktxtProjectPath.Text))
             {
-                _populateFiles.RunWorkerAsync();
+                //_populateFiles.RunWorkerAsync();
+
+                Utilities.PopulateFileList(_fileList, ktxtProjectPath.Text);
+
+                Utilities.PopulateListBox(klbProjectFiles, _fileList);
 
                 kgbStageTwo.Enabled = true;
+            }
+        }
+
+        private void klbProjectFiles_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+
+            tt.SetToolTip(klbProjectFiles, klbProjectFiles.SelectedItem.ToString());
+        }
+
+        private void klbProjectFiles_MouseEnter(object sender, EventArgs e)
+        {
+            if (klbProjectFiles.SelectedItem == null)
+            {
+                return;
+            }
+            else
+            {
+                klbProjectFiles.ToolTipValues.Description = klbProjectFiles.SelectedItem.ToString();
             }
         }
 
