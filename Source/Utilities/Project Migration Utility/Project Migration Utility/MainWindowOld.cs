@@ -7,11 +7,11 @@ using System.Windows.Forms;
 
 namespace ProjectMigrationUtility
 {
-    public partial class MainWindow : Form
+    public partial class MainWindowOld : Form
     {
         BackgroundWorker worker = new BackgroundWorker();
 
-        public MainWindow()
+        public MainWindowOld()
         {
             InitializeComponent();
 
@@ -91,7 +91,7 @@ namespace ProjectMigrationUtility
 
         private static void Backup(string sourcePath, string targetPath)
         {
-            MainWindow window = new MainWindow();
+            MainWindowOld window = new MainWindowOld();
 
             DirectoryInfo source = new DirectoryInfo(sourcePath), target = new DirectoryInfo(targetPath);
 

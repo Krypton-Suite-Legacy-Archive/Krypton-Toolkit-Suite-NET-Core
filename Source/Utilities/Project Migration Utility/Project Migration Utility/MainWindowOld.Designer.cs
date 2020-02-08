@@ -1,6 +1,6 @@
 ﻿namespace ProjectMigrationUtility
 {
-    partial class MainWindow
+    partial class MainWindowOld
     {
         /// <summary>
         ///  Required designer variable.
