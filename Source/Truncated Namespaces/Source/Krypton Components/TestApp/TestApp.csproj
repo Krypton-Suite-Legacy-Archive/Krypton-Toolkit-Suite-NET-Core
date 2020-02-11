@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFrameworks>net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
+      <LangVersion>8.0</LangVersion>
+    <OutputType>WinExe</OutputType>
+    <AssemblyVersion>19.4.168.9</AssemblyVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Square Design 48 x 48 Green.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Krypton.Docking\Krypton.Docking 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Navigator\Krypton.Navigator 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Ribbon\Krypton.Ribbon 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Workspace\Krypton.Workspace 2019.csproj" />
+  </ItemGroup>
+</Project>
