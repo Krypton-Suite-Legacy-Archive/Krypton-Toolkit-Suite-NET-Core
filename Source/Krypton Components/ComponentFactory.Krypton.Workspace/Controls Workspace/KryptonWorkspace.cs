@@ -20,10 +20,10 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Navigator;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Layout a hierarchy of KryptonNavigator instances.

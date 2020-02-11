@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006 - 2016. Then modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2020. All rights reserved.")]
-[assembly: AssemblyDefaultAlias("ComponentFactory.Krypton.Navigator.dll")]
+[assembly: AssemblyDefaultAlias("Krypton.Navigator.dll")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: StringFreezing]
 [assembly: ComVisible(true)]
@@ -27,7 +27,7 @@ using System.Security;
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
 [assembly: Dependency("System.Xml", LoadHint.Always)]
-[assembly: Dependency("ComponentFactory.Krypton.Toolkit", LoadHint.Always)]
+[assembly: Dependency("Krypton.Toolkit", LoadHint.Always)]
 #if !NET35
 [assembly: SecurityRules(SecurityRuleSet.Level1)]
 #endif

@@ -12,10 +12,10 @@
 using System.Xml;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Workspace;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     #region Interface IDockingElement
     /// <summary>

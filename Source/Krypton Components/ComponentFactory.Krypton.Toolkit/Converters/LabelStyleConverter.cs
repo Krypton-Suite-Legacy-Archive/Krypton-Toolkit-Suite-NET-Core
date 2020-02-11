@@ -9,7 +9,7 @@
 //  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Custom type converter so that LabelStyle values appear as neat text at design time.

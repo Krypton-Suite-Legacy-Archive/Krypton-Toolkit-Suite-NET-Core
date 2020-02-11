@@ -15,10 +15,10 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Navigator;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Target one of the four sides of the workspace control.

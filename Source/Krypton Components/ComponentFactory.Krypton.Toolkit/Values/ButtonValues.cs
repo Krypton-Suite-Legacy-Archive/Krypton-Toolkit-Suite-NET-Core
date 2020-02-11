@@ -14,7 +14,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Design;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Storage for button content value information.

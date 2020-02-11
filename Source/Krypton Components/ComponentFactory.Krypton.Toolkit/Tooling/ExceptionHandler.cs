@@ -8,7 +8,7 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// This class is designed to handle thrown exceptions. (FOR INTERNAL USE ONLY!)

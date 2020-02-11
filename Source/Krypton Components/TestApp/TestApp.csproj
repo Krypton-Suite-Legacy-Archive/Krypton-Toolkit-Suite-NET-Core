@@ -11,10 +11,10 @@
     <ApplicationIcon>Resources\Square Design 48 x 48 Green.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ComponentFactory.Krypton.Docking\Krypton.Docking 2019.csproj" />
-    <ProjectReference Include="..\ComponentFactory.Krypton.Navigator\Krypton.Navigator 2019.csproj" />
-    <ProjectReference Include="..\ComponentFactory.Krypton.Ribbon\Krypton.Ribbon 2019.csproj" />
-    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
-    <ProjectReference Include="..\ComponentFactory.Krypton.Workspace\Krypton.Workspace 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Docking\Krypton.Docking 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Navigator\Krypton.Navigator 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Ribbon\Krypton.Ribbon 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+    <ProjectReference Include="..\Krypton.Workspace\Krypton.Workspace 2019.csproj" />
   </ItemGroup>
 </Project>

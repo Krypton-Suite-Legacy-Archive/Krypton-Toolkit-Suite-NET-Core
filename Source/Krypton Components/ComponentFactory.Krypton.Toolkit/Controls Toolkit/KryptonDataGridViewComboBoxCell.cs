@@ -16,7 +16,7 @@ using System.Globalization;
 using System.Windows.Forms;
 // ReSharper disable MemberCanBeInternal
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Defines a KryptonComboBox cell type for the KryptonDataGridView control

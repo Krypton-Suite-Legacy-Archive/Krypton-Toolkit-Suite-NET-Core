@@ -17,13 +17,13 @@ using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Toolkit.Properties;
+using Krypton.Toolkit.Properties;
 // ReSharper disable UnusedAutoPropertyAccessor.Global
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable UnusedMethodReturnValue.Global
 // ReSharper disable UnusedMember.Global
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Displays a message box that can contain text, buttons, and symbols that inform and instruct the user.

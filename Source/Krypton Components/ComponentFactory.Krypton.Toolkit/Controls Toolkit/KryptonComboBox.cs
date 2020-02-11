@@ -18,7 +18,7 @@ using System.Windows.Forms;
 
 using Microsoft.Win32;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provide a ComboBox with Krypton styling applied.

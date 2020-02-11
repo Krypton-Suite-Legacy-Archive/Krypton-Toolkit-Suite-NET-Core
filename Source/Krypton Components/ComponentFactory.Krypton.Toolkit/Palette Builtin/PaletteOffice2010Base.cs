@@ -16,7 +16,7 @@ using System.Windows.Forms;
 
 using Microsoft.Win32;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provides a base for Office 2010 palettes.

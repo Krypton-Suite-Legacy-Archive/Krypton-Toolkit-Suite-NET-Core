@@ -17,7 +17,7 @@ using System.Windows.Forms;
 // ReSharper disable UnusedMemberInSuper.Global
 #pragma warning disable 1591
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     #region IPalette
     /// <summary>

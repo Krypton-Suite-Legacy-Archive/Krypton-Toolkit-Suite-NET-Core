@@ -16,7 +16,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Design;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Enforce mutual exclusive for a group of KryptonCheckButton controls.

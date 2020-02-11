@@ -13,16 +13,16 @@ using System;
 using System.Drawing;
 using System.ComponentModel;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Represents a ribbon group numeric up-down.
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonRibbonGroupNumericUpDown), "ToolboxBitmaps.KryptonRibbonGroupNumericUpDown.bmp")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupNumericUpDownDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonRibbonGroupNumericUpDownDesigner))]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultEvent("ValueChanged")]

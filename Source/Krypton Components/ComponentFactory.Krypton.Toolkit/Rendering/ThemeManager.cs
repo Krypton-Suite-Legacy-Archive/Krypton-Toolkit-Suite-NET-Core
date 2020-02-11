@@ -12,7 +12,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Allows the developer to easily access the entire array of supported themes for custom controls.

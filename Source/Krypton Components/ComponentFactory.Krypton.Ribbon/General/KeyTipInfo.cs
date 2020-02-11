@@ -12,7 +12,7 @@
 using System.Drawing;
 using System.Collections.Generic;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     internal class KeyTipInfoList : List<KeyTipInfo> {};
 

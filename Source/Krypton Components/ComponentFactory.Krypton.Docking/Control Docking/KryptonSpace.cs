@@ -16,11 +16,11 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Toolkit;
+using Krypton.Workspace;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Extends the KryptonWorkspace with common functionality shared by various docking implementations.

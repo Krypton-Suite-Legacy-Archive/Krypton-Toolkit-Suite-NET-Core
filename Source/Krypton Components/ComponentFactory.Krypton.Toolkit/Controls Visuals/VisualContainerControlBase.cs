@@ -18,7 +18,7 @@ using System.Windows.Forms;
 
 using Microsoft.Win32;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Base class used for implementation of actual container controls.

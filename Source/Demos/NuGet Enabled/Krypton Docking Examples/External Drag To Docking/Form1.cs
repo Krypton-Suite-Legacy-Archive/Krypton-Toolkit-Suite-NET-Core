@@ -13,9 +13,9 @@
 using System;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Docking;
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Docking;
+using Krypton.Navigator;
+using Krypton.Toolkit;
 
 namespace ExternalDragToDocking
 {

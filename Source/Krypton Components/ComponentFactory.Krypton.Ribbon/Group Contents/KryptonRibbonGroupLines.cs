@@ -15,16 +15,16 @@ using System.Drawing.Design;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Diagnostics;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Represents a ribbon group container that displays as lines of items.
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonRibbonGroupLines), "ToolboxBitmaps.KryptonRibbonGroupLines.bmp")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLinesDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonRibbonGroupLinesDesigner))]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultProperty("Visible")]
@@ -448,7 +448,7 @@ namespace ComponentFactory.Krypton.Ribbon
         [Category("Visuals")]
         [Description("Collection of ribbon group line items.")]
         [MergableProperty(false)]
-        [Editor(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLinesCollectionEditor), typeof(UITypeEditor))]
+        [Editor(typeof(Krypton.Ribbon.KryptonRibbonGroupLinesCollectionEditor), typeof(UITypeEditor))]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public KryptonRibbonGroupLinesCollection Items { get; }
 

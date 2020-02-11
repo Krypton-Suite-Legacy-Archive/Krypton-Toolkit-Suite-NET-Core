@@ -10,9 +10,9 @@
 // *****************************************************************************
 
 using System.ComponentModel.Design;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     internal class KryptonWorkspaceActionList : DesignerActionList
     {

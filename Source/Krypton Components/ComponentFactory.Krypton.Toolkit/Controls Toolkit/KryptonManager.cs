@@ -18,7 +18,7 @@ using System.Windows.Forms;
 
 using Microsoft.Win32;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Exposes global settings that affect all the Krypton controls.

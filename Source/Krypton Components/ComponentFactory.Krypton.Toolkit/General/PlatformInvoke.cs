@@ -29,7 +29,7 @@ using System.Windows.Forms;
 #pragma warning disable 649
 
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     internal class PI
     {

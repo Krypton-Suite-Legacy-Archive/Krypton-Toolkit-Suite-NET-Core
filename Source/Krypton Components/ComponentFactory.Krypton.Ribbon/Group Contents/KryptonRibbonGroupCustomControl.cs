@@ -13,16 +13,16 @@ using System;
 using System.Drawing;
 using System.ComponentModel;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Represents a ribbon group custom control.
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonRibbonGroupCustomControl), "ToolboxBitmaps.KryptonRibbonGroupCustomControl.bmp")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCustomControlDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonRibbonGroupCustomControlDesigner))]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultProperty("Visible")]

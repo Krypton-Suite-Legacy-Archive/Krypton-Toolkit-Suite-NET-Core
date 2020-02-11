@@ -12,7 +12,7 @@
 using System;
 using System.ComponentModel;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Add conversion to a string for display in properties window at design time.

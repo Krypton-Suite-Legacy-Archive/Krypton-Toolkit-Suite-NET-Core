@@ -14,7 +14,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Displays an input box for the user.
@@ -198,11 +198,11 @@ namespace ComponentFactory.Krypton.Toolkit
 
         private void InitializeComponent()
         {
-            this._panelMessage = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this._labelPrompt = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
-            this._buttonCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this._buttonOK = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.ktxtResponse = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this._panelMessage = new Krypton.Toolkit.KryptonPanel();
+            this._labelPrompt = new Krypton.Toolkit.KryptonWrapLabel();
+            this._buttonCancel = new Krypton.Toolkit.KryptonButton();
+            this._buttonOK = new Krypton.Toolkit.KryptonButton();
+            this.ktxtResponse = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this._panelMessage)).BeginInit();
             this._panelMessage.SuspendLayout();
             this.SuspendLayout();
@@ -224,7 +224,7 @@ namespace ComponentFactory.Krypton.Toolkit
             this._labelPrompt.AutoSize = false;
             this._labelPrompt.Font = new System.Drawing.Font("Segoe UI", 9F);
             this._labelPrompt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            this._labelPrompt.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalPanel;
+            this._labelPrompt.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this._labelPrompt.Location = new System.Drawing.Point(12, 12);
             this._labelPrompt.Margin = new System.Windows.Forms.Padding(0);
             this._labelPrompt.Name = "_labelPrompt";

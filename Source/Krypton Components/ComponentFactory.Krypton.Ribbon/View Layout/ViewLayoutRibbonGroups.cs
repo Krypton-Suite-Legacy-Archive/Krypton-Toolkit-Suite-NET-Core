@@ -13,9 +13,9 @@ using System;
 using System.Drawing;
 using System.Collections.Generic;
 using System.Diagnostics;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Extends the ViewComposite by creating and laying out elements to represent ribbon groups.

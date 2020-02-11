@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     internal class WindowStylesHelper
     {

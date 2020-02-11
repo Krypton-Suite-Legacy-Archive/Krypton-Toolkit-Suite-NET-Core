@@ -16,7 +16,7 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Combines the benefits of the KryptonHeader and the KryptonGroup into one.

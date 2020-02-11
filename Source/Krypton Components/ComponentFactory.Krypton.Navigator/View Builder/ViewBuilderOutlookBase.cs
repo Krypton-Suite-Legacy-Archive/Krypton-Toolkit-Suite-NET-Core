@@ -17,9 +17,9 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.Reflection;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Navigator
+namespace Krypton.Navigator
 {
     /// <summary>
     /// Implements base functionality for NavigatorMode.Outlook modes.
@@ -87,8 +87,8 @@ namespace ComponentFactory.Krypton.Navigator
             Assembly myAssembly = Assembly.GetAssembly(typeof(ViewBuilderOutlookBase));
 
             // Get the resource streams containing the images
-            Stream streamBlueUp = myAssembly.GetManifestResourceStream("ComponentFactory.Krypton.Navigator.Resources.BlueUp.bmp");
-            Stream streamBlueDown= myAssembly.GetManifestResourceStream("ComponentFactory.Krypton.Navigator.Resources.BlueDown.bmp");
+            Stream streamBlueUp = myAssembly.GetManifestResourceStream("Krypton.Navigator.Resources.BlueUp.bmp");
+            Stream streamBlueDown= myAssembly.GetManifestResourceStream("Krypton.Navigator.Resources.BlueDown.bmp");
 
             // Load the bitmap from stream
             _moreButtons = new Bitmap(streamBlueUp, true);

@@ -13,7 +13,7 @@
 using System;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
 namespace DockingFlags
 {

@@ -26,7 +26,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     #region Delegates
     /// <summary>

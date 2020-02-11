@@ -13,7 +13,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Displays a check box user interface (UI) to use in a DataGridView control.

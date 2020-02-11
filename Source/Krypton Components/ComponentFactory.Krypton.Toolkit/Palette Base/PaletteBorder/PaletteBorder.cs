@@ -14,7 +14,7 @@ using System.Drawing.Design;
 using System.ComponentModel;
 using System.Diagnostics;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Implement storage for palette border details.

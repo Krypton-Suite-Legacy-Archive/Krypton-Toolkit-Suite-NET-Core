@@ -15,10 +15,10 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Navigator;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Provides auto hidden docking functionality against a specific control edge.

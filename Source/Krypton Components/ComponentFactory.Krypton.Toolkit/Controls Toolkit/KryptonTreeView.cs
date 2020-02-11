@@ -18,7 +18,7 @@ using System.Drawing.Drawing2D;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provide a TreeView with Krypton styling applied.
@@ -852,7 +852,7 @@ namespace ComponentFactory.Krypton.Toolkit
         [Category("Behavior")]
         [Description("The default image index for nodes.")]
         [Localizable(true)]
-        [TypeConverter("ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+        [TypeConverter("Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
         [Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
         [RefreshProperties(RefreshProperties.Repaint)]
         [RelatedImageList("ImageList")]
@@ -935,7 +935,7 @@ namespace ComponentFactory.Krypton.Toolkit
         [Category("Behavior")]
         [Description("The default image index for selected nodes.")]
         [Localizable(true)]
-        [TypeConverter("ComponentFactory.Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+        [TypeConverter("Krypton.Toolkit.NoneExcludedImageIndexConverter, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
         [Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(UITypeEditor))]
         [RelatedImageList("ImageList")]
         [DefaultValue(-1)]

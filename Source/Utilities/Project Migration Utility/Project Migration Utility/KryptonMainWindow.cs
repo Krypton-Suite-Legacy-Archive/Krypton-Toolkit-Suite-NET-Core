@@ -1,4 +1,4 @@
-﻿using ComponentFactory.Krypton.Toolkit;
+﻿using Krypton.Toolkit;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using Microsoft.WindowsAPICodePack.Taskbar;
 using System;
@@ -36,21 +36,21 @@ namespace ProjectMigrationUtility
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslCurrentStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.tspCopyProgress = new System.Windows.Forms.ToolStripProgressBar();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.ktxtProjectPath = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.klbProjectFiles = new ComponentFactory.Krypton.Toolkit.KryptonListBox();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kbtnBrowseProjectDirectory = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kbtnClose = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kgbStageThree = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.kgbStageTwo = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.kbtnVarifyBackup = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kbtnBackupProject = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kchkCompressBackup = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
-            this.kbtnBrowseBackupDirectory = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.ktxtBackupDirectory = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonGroupBox1 = new Krypton.Toolkit.KryptonGroupBox();
+            this.ktxtProjectPath = new Krypton.Toolkit.KryptonTextBox();
+            this.klbProjectFiles = new Krypton.Toolkit.KryptonListBox();
+            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kbtnBrowseProjectDirectory = new Krypton.Toolkit.KryptonButton();
+            this.kbtnClose = new Krypton.Toolkit.KryptonButton();
+            this.kgbStageThree = new Krypton.Toolkit.KryptonGroupBox();
+            this.kgbStageTwo = new Krypton.Toolkit.KryptonGroupBox();
+            this.kbtnVarifyBackup = new Krypton.Toolkit.KryptonButton();
+            this.kbtnBackupProject = new Krypton.Toolkit.KryptonButton();
+            this.kchkCompressBackup = new Krypton.Toolkit.KryptonCheckBox();
+            this.kbtnBrowseBackupDirectory = new Krypton.Toolkit.KryptonButton();
+            this.ktxtBackupDirectory = new Krypton.Toolkit.KryptonTextBox();
+            this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -128,7 +128,7 @@ namespace ProjectMigrationUtility
             this.ktxtProjectPath.Name = "ktxtProjectPath";
             this.ktxtProjectPath.Size = new System.Drawing.Size(341, 26);
             this.ktxtProjectPath.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktxtProjectPath.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.ktxtProjectPath.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.ktxtProjectPath.TabIndex = 7;
             this.ktxtProjectPath.TextChanged += new System.EventHandler(this.ktxtProjectPath_TextChanged);
             // 
@@ -246,7 +246,7 @@ namespace ProjectMigrationUtility
             this.ktxtBackupDirectory.Name = "ktxtBackupDirectory";
             this.ktxtBackupDirectory.Size = new System.Drawing.Size(442, 26);
             this.ktxtBackupDirectory.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktxtBackupDirectory.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.ktxtBackupDirectory.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.ktxtBackupDirectory.TabIndex = 6;
             this.ktxtBackupDirectory.TextChanged += new System.EventHandler(this.ktxtBackupDirectory_TextChanged);
             // 

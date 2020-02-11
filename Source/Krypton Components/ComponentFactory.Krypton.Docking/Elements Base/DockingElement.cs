@@ -9,8 +9,8 @@
 //  Version 5.490.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Workspace;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,7 +20,7 @@ using System.Text;
 using System.Xml;
 // ReSharper disable MemberCanBeInternal
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Implements base docking element functionality.

@@ -12,7 +12,7 @@ using System.Xml;
 using System.Xml.XPath;
 using System.Xml.Xsl;
 
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
 using PaletteUpgradeTool.Properties;
 

@@ -16,17 +16,17 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Navigator;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Represents an individual workspace cell.
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonWorkspaceCell), "ToolboxBitmaps.KryptonWorkspaceCell.bmp")]
-    [Designer(typeof(ComponentFactory.Krypton.Workspace.KryptonWorkspaceCellDesigner))]
+    [Designer(typeof(Krypton.Workspace.KryptonWorkspaceCellDesigner))]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultProperty("Pages")]

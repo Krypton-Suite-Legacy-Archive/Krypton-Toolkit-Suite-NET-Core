@@ -13,8 +13,8 @@
 
 using System;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Navigator;
+using Krypton.Toolkit;
 
 namespace PaletteDesigner
 {

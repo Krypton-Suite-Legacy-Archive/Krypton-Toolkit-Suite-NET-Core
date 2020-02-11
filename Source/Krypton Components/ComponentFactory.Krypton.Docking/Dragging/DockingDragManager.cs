@@ -13,10 +13,10 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Security.Permissions;
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Navigator;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Manage a docking dragging operation.

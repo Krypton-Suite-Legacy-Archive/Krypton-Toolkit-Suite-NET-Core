@@ -18,7 +18,7 @@ using System.Windows.Forms;
 // ReSharper disable UnusedMember.Local
 // ReSharper disable UnusedMember.Global
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Hosts a collection of KryptonDataGridViewCheckBoxCell cells.

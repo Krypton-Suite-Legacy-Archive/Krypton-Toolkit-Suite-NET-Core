@@ -12,9 +12,9 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
-namespace ComponentFactory.Krypton.Workspace
+namespace Krypton.Workspace
 {
     /// <summary>
     /// Target a transfer to the target workspace cell.

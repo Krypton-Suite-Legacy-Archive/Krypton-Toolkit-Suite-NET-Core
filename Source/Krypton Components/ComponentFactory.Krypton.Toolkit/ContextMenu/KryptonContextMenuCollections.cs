@@ -14,7 +14,7 @@ using System.Drawing.Design;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Manage the items that can be added to a top level context menu collection.

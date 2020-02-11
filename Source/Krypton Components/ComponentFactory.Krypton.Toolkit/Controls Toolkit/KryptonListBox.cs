@@ -16,7 +16,7 @@ using System.Drawing.Design;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provide a ListBox with Krypton styling applied.

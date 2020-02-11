@@ -14,16 +14,16 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.ComponentModel;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Represents a ribbon group combo box.
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonRibbonGroupComboBox), "ToolboxBitmaps.KryptonRibbonGroupComboBox.bmp")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBoxDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonRibbonGroupComboBoxDesigner))]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultEvent("SelectedTextChanged")]

@@ -17,7 +17,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 // ReSharper disable UnusedMember.Local
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Multiline String Editor Window.

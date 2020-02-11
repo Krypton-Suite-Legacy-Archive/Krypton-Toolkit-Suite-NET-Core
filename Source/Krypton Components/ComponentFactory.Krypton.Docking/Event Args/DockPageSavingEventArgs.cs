@@ -10,9 +10,9 @@
 // *****************************************************************************
 
 using System.Xml;
-using ComponentFactory.Krypton.Navigator;
+using Krypton.Navigator;
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Event data for saving docking page configuration.

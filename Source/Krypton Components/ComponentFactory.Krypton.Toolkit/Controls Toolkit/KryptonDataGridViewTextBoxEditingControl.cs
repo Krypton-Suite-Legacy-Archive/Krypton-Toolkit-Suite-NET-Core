@@ -13,7 +13,7 @@ using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Defines the editing control for the DataGridViewTextBoxCell custom cell type.

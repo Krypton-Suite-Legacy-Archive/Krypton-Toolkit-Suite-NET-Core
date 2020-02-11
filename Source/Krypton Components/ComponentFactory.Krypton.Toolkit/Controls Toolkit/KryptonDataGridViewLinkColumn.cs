@@ -17,7 +17,7 @@ using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Hosts a collection of KryptonDataGridViewLinkColumn cells.

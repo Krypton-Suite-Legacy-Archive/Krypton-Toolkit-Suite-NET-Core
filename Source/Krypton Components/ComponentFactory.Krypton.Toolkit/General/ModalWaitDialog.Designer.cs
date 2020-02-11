@@ -1,6 +1,6 @@
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     partial class ModalWaitDialog
     {
@@ -32,8 +32,8 @@ namespace ComponentFactory.Krypton.Toolkit
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelMessage = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.labelMessage = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();

@@ -17,7 +17,7 @@ using System.ComponentModel.Design;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     public partial class KryptonContextMenuCollectionEditor
     {

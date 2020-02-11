@@ -17,11 +17,11 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-using ComponentFactory.Krypton.Toolkit.Values;
+using Krypton.Toolkit.Values;
 
 using Microsoft.Win32;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Base class used for implementation of actual controls.

@@ -13,7 +13,7 @@ using System;
 using System.Drawing;
 using System.ComponentModel;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Represents a single recent document entry in the ribbon application button menu.

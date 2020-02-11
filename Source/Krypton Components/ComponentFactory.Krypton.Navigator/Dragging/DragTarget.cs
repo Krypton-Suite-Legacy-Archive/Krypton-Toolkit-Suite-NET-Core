@@ -13,7 +13,7 @@ using System;
 using System.Drawing;
 using System.Collections.Generic;
 
-namespace ComponentFactory.Krypton.Navigator
+namespace Krypton.Navigator
 {
     /// <summary>
     /// Manage a list of drag targets.

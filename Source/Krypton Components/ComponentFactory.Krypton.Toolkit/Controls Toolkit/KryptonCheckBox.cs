@@ -15,7 +15,7 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Display check box with text and images with the styling features of the Krypton Toolkit

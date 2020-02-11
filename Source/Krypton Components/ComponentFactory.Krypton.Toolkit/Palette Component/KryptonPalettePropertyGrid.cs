@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// 

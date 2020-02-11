@@ -13,7 +13,7 @@ using System;
 using System.Diagnostics;
 using System.Drawing;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Draw the tick marks for the track bar.

@@ -14,16 +14,16 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.ComponentModel;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Represents a ribbon group triple container.
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonRibbonGroupTriple), "ToolboxBitmaps.KryptonRibbonGroupTriple.bmp")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTripleDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonRibbonGroupTripleDesigner))]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultProperty("Visible")]
@@ -465,7 +465,7 @@ namespace ComponentFactory.Krypton.Ribbon
         [Category("Visuals")]
         [Description("Collection of ribbon group triple items.")]
         [MergableProperty(false)]
-        [Editor(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTripleCollectionEditor), typeof(UITypeEditor))]
+        [Editor(typeof(Krypton.Ribbon.KryptonRibbonGroupTripleCollectionEditor), typeof(UITypeEditor))]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public KryptonRibbonGroupTripleCollection Items { get; }
 

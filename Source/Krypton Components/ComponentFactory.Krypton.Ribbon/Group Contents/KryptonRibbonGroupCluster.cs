@@ -14,16 +14,16 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.ComponentModel;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Represents a ribbon group container that displays a cluster of buttons.
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonRibbonGroupCluster), "ToolboxBitmaps.KryptonRibbonGroupCluster.bmp")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonRibbonGroupClusterDesigner))]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultProperty("Visible")]
@@ -302,7 +302,7 @@ namespace ComponentFactory.Krypton.Ribbon
         [Category("Visuals")]
         [Description("Collection of ribbon group button cluster items.")]
         [MergableProperty(false)]
-        [Editor(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterCollectionEditor), typeof(UITypeEditor))]
+        [Editor(typeof(Krypton.Ribbon.KryptonRibbonGroupClusterCollectionEditor), typeof(UITypeEditor))]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public KryptonRibbonGroupClusterCollection Items { get; }
 

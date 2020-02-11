@@ -6,12 +6,12 @@ using System.Drawing.Imaging;
 using System.Drawing.Text;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="ComponentFactory.Krypton.Toolkit.KryptonProfessionalRenderer" />
+    /// <seealso cref="Krypton.Toolkit.KryptonProfessionalRenderer" />
     public class KryptonOffice365Renderer : KryptonProfessionalRenderer
     {
         #region GradientItemColors

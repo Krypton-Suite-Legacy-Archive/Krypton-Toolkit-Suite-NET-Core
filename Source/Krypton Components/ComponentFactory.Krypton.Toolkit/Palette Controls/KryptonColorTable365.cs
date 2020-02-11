@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Security;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provide KryptonColorTable365 values using an array of Color values as the source.

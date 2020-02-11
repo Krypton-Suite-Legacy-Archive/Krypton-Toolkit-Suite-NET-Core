@@ -14,16 +14,16 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.ComponentModel;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 
-namespace ComponentFactory.Krypton.Ribbon
+namespace Krypton.Ribbon
 {
     /// <summary>
     /// Represents a ribbon group check box.
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonRibbonGroupCheckBox), "ToolboxBitmaps.KryptonRibbonGroupCheckBox.bmp")]
-    [Designer(typeof(ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCheckBoxDesigner))]
+    [Designer(typeof(Krypton.Ribbon.KryptonRibbonGroupCheckBoxDesigner))]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultEvent("CheckedChanged")]

@@ -16,7 +16,7 @@ using System.Drawing.Design;
 using System.Globalization;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>
     /// Provide a MaskedTextBox with Krypton styling applied.

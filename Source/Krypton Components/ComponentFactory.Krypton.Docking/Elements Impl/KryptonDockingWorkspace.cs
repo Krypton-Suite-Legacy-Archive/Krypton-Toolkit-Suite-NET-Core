@@ -13,11 +13,11 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-using ComponentFactory.Krypton.Navigator;
-using ComponentFactory.Krypton.Workspace;
+using Krypton.Navigator;
+using Krypton.Workspace;
 // ReSharper disable MemberCanBeInternal
 
-namespace ComponentFactory.Krypton.Docking
+namespace Krypton.Docking
 {
     /// <summary>
     /// Provides docking functionality by attaching to an existing KryptonDockableWorkspace

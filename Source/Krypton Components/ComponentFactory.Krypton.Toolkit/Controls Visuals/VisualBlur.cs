@@ -10,7 +10,7 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace ComponentFactory.Krypton.Toolkit
+namespace Krypton.Toolkit
 {
     /// <summary>Creates the blur effect for windows.</summary>
     /// <seealso cref="System.Windows.Forms.NativeWindow" />
@@ -112,7 +112,7 @@ namespace ComponentFactory.Krypton.Toolkit
         internal void UpdateShadowLayer()
         {
             // The Following is also in
-            // $:\Krypton-NET-4.7\Source\Krypton Components\ComponentFactory.Krypton.Navigator\Dragging\DropDockingIndicatorsRounded.cs
+            // $:\Krypton-NET-4.7\Source\Krypton Components\Krypton.Navigator\Dragging\DropDockingIndicatorsRounded.cs
             // Does this bitmap contain an alpha channel?
             if (_blurredForm.PixelFormat != PixelFormat.Format32bppArgb)
             {
