@@ -13,7 +13,7 @@ using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     internal class KryptonCheckButtonActionList : KryptonButtonActionList
     {

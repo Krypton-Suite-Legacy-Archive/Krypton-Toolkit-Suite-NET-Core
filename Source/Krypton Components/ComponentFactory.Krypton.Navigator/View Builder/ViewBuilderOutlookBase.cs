@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
+//  © Component Factory Pty Ltd, 2006 - 2016, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
@@ -17,9 +17,9 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.Reflection;
-using Krypton.Toolkit;
+using ComponentFactory.Krypton.Toolkit;
 
-namespace Krypton.Navigator
+namespace ComponentFactory.Krypton.Navigator
 {
     /// <summary>
     /// Implements base functionality for NavigatorMode.Outlook modes.
@@ -87,8 +87,8 @@ namespace Krypton.Navigator
             Assembly myAssembly = Assembly.GetAssembly(typeof(ViewBuilderOutlookBase));
 
             // Get the resource streams containing the images
-            Stream streamBlueUp = myAssembly.GetManifestResourceStream("Krypton.Navigator.Resources.BlueUp.bmp");
-            Stream streamBlueDown= myAssembly.GetManifestResourceStream("Krypton.Navigator.Resources.BlueDown.bmp");
+            Stream streamBlueUp = myAssembly.GetManifestResourceStream("ComponentFactory.Krypton.Navigator.Resources.BlueUp.bmp");
+            Stream streamBlueDown= myAssembly.GetManifestResourceStream("ComponentFactory.Krypton.Navigator.Resources.BlueDown.bmp");
 
             // Load the bitmap from stream
             _moreButtons = new Bitmap(streamBlueUp, true);

@@ -5,12 +5,12 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Security;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// Provide KryptonColorTableVisualStudio2020 values using an array of Color values as the source.
     /// </summary>
-    /// <seealso cref="Krypton.Toolkit.KryptonColorTable" />
+    /// <seealso cref="ComponentFactory.Krypton.Toolkit.KryptonColorTable" />
     public class KryptonColorTableVisualStudio2020 : KryptonColorTable
     {
         #region Static Fields

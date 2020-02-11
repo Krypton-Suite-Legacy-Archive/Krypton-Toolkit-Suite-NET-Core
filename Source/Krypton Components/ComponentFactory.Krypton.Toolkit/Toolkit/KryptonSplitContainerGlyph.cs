@@ -16,7 +16,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design.Behavior;
 using System.Diagnostics;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     internal class KryptonSplitContainerGlyph : Glyph
     {

@@ -2,7 +2,7 @@
 
 //Seb add
 //https://github.com/File-New-Project/EarTrumpet/blob/master/EarTrumpet/Services/UserSystemPreferencesService.cs
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// 
@@ -14,12 +14,16 @@ namespace Krypton.Toolkit
         /// </summary>
         public static bool IsTransparencyEnabled
         { 
-            get 
+            get
             {
+#if NET35
+                return false;
+#else
                 using (RegistryKey baseKey = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry64))
                 {
                     return (int)baseKey.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize").GetValue("EnableTransparency", 0) > 0;
                 }
+#endif
             }
         }
 
@@ -30,10 +34,14 @@ namespace Krypton.Toolkit
         {
             get
             {
+#if NET35
+                return false;
+#else
                 using (RegistryKey baseKey = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry64))
                 {
                     return (int)baseKey.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize").GetValue("ColorPrevalence", 0) > 0;
                 }
+#endif
             }
         }
     }

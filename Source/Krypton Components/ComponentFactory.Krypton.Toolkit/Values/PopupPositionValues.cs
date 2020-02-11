@@ -7,7 +7,7 @@
 using System.ComponentModel;
 using System.Drawing;
 
-namespace Krypton.Toolkit.Values
+namespace ComponentFactory.Krypton.Toolkit.Values
 {
     /// <summary>
     ///Be More WPF like...

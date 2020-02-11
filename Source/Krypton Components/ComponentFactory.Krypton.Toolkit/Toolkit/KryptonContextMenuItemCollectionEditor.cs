@@ -12,7 +12,7 @@
 using System;
 using System.ComponentModel.Design;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// CollectionEditor used for a KryptonContextMenuItemCollection instance.

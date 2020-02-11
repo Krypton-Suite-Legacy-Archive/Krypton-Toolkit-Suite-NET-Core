@@ -3,12 +3,12 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Security;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// Provide KryptonColorTableOffice365 values using an array of Color values as the source.
     /// </summary>
-    /// <seealso cref="Krypton.Toolkit.KryptonColorTable" />
+    /// <seealso cref="ComponentFactory.Krypton.Toolkit.KryptonColorTable" />
     public class KryptonColorTableOffice365 : KryptonColorTable
     {
         #region Static Fields

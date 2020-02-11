@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Krypton.Toolkit.General
+namespace ComponentFactory.Krypton.Toolkit.General
 {
     /// <summary>
     /// Manages the drawing of Shadows

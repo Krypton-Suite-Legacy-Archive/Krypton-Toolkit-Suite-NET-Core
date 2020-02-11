@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
+//  © Component Factory Pty Ltd, 2006 - 2016, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
@@ -23,7 +23,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     #region Old Code
     /// <summary>
@@ -34,7 +34,7 @@ namespace Krypton.Toolkit
     //[DefaultEvent("PalettePaint")]
     //[DefaultProperty("BasePaletteMode")]
     //[DesignerCategory("code")]
-    //[Designer("Krypton.Toolkit.KryptonPaletteDesigner, Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    //[Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Design, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     //[Description("Customisable palette component.")]
     //[ClassInterface(ClassInterfaceType.AutoDispatch)]
     //[ComVisible(true)]
@@ -6107,7 +6107,7 @@ namespace Krypton.Toolkit
     [DefaultEvent("PalettePaint")]
     [DefaultProperty("BasePaletteMode")]
     [DesignerCategory("code")]
-    [Designer("Krypton.Toolkit.KryptonPaletteDesigner, Krypton.Toolkit, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner, ComponentFactory.Krypton.Toolkit, Version=5.490.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [Description("Customisable palette component.")]
     public class KryptonPalette : Component, IPalette
     {
@@ -9143,7 +9143,11 @@ namespace Krypton.Toolkit
 
         private bool ShouldSerializeCustomisedKryptonPaletteFilePath()
         {
+#if NET35
+            return !string.IsNullOrEmpty(_customisedKryptonPaletteFilePath) &&  _customisedKryptonPaletteFilePath.Trim() != string.Empty;
+#else
             return !string.IsNullOrWhiteSpace(_customisedKryptonPaletteFilePath);
+#endif
         }
 
         /// <summary>
@@ -9386,9 +9390,9 @@ namespace Krypton.Toolkit
         [Browsable(false)]
         public KryptonColorTable ColorTable => _toolMenuStatus.InternalKCT;
 
-        #endregion
+#endregion
 
-        #region Protected
+#region Protected
         /// <summary>
         /// Gets access to the need paint delegate.
         /// </summary>
@@ -9478,9 +9482,9 @@ namespace Krypton.Toolkit
                 }
             }
         }
-        #endregion
+#endregion
 
-        #region Internal
+#region Internal
         internal bool HasCircularReference()
         {
             // Use a dictionary as a set to check for existence
@@ -9533,9 +9537,9 @@ namespace Krypton.Toolkit
             // No circular reference encountered
             return false;
         }
-        #endregion
+#endregion
 
-        #region Implementation Persistence
+#region Implementation Persistence
         private object ResetOperation(object parameter)
         {
             // Use reflection to reset the palette hierarchy
@@ -10425,9 +10429,9 @@ namespace Krypton.Toolkit
                     throw new ApplicationException("Unrecognised type '" + s + "' for import.");
             }
         }
-        #endregion
+#endregion
 
-        #region Implementation GetPalette
+#region Implementation GetPalette
         private PaletteElementColor GetTrackBar(PaletteElement element, PaletteState state)
         {
             switch (element)
@@ -12391,9 +12395,9 @@ namespace Krypton.Toolkit
                     return null;
             }
         }
-        #endregion
+#endregion
 
-        #region Implementation
+#region Implementation
         private void OnMenuToolStatusPaint(object sender, NeedLayoutEventArgs e)
         {
             // Only raise the need to paint if painting has not been suspended
@@ -12450,9 +12454,9 @@ namespace Krypton.Toolkit
             }
         }
 
-        #endregion
+#endregion
 
-        #region Setters and Getters
+#region Setters and Getters
         /// <summary>
         /// Sets the CustomisedKryptonPaletteFilePath to the value of customisedKryptonPaletteFilePathValue.
         /// </summary>
@@ -12470,7 +12474,7 @@ namespace Krypton.Toolkit
         {
             return CustomisedKryptonPaletteFilePath;
         }
-        #endregion
+#endregion
     }
-    #endregion
+#endregion
 }

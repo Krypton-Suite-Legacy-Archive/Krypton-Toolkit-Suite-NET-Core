@@ -10,7 +10,7 @@ using System.Drawing.Design;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     internal class OverrideComboBoxStyleDropDownStyle : UITypeEditor
     {

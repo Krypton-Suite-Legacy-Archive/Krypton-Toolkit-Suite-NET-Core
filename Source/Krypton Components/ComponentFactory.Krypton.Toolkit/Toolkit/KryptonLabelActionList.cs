@@ -12,7 +12,7 @@
 using System.Drawing;
 using System.ComponentModel.Design;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     internal class KryptonLabelActionList : DesignerActionList
     {

@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
+//  © Component Factory Pty Ltd, 2006 - 2016, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
@@ -17,13 +17,13 @@ using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 
-using Krypton.Toolkit.Properties;
+using ComponentFactory.Krypton.Toolkit.Properties;
 // ReSharper disable UnusedAutoPropertyAccessor.Global
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable UnusedMethodReturnValue.Global
 // ReSharper disable UnusedMember.Global
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// Displays a message box that can contain text, buttons, and symbols that inform and instruct the user.
@@ -49,7 +49,11 @@ namespace Krypton.Toolkit
             /// <param name="helpFilePath">Value for HelpFilePath.</param>
             /// <param name="keyword">Value for Keyword</param>
             public HelpInfo(string helpFilePath = null, string keyword = null)
+#if NET35
+            : this(helpFilePath, keyword, (!string.IsNullOrEmpty(keyword) && keyword.Trim() != string.Empty) ? HelpNavigator.Topic : HelpNavigator.TableOfContents, null)
+#else
             : this(helpFilePath, keyword, !string.IsNullOrWhiteSpace(keyword) ? HelpNavigator.Topic : HelpNavigator.TableOfContents, null)
+#endif
             {
 
             }
@@ -80,9 +84,9 @@ namespace Krypton.Toolkit
                 Navigator = navigator;
                 Param = param;
             }
-            #endregion
+#endregion
 
-            #region Properties
+#region Properties
             /// <summary>
             /// Gets the HelpFilePath property.
             /// </summary>
@@ -103,17 +107,17 @@ namespace Krypton.Toolkit
             /// </summary>
             public object Param { get; }
 
-            #endregion
+#endregion
         }
 
         [ToolboxItem(false)]
         internal class MessageButton : KryptonButton
         {
-            #region Instance Fields
+#region Instance Fields
 
-            #endregion
+#endregion
 
-            #region Identity
+#region Identity
             public MessageButton()
             {
                 IgnoreAltF4 = false;
@@ -126,9 +130,9 @@ namespace Krypton.Toolkit
             /// </summary>
             public bool IgnoreAltF4 { get; set; }
 
-            #endregion
+#endregion
 
-            #region Protected
+#region Protected
             /// <summary>
             /// Processes Windows messages.
             /// </summary>
@@ -156,17 +160,17 @@ namespace Krypton.Toolkit
 
                 base.WndProc(ref m);
             }
-            #endregion
+#endregion
         }
-        #endregion
+#endregion
 
-        #region Static Fields
+#region Static Fields
 
         private const int GAP = 10;
         private static readonly int _osMajorVersion;
-        #endregion
+#endregion
 
-        #region Instance Fields
+#region Instance Fields
         private readonly string _text;
         private readonly string _caption;
         private readonly MessageBoxButtons _buttons;
@@ -187,9 +191,9 @@ namespace Krypton.Toolkit
         private readonly HelpInfo _helpInfo;
         // If help information provided or we are not a service/default desktop application then grab an owner for showing the message box
         private IWin32Window _showOwner;
-        #endregion
+#endregion
 
-        #region Identity
+#region Identity
         static KryptonMessageBox()
         {
             _osMajorVersion = Environment.OSVersion.Version.Major;
@@ -236,9 +240,9 @@ namespace Krypton.Toolkit
 
             base.Dispose(disposing);
         }
-        #endregion
+#endregion
 
-        #region Public
+#region Public
 
         /// <summary>
         /// Displays a message box with specified text.
@@ -621,9 +625,9 @@ namespace Krypton.Toolkit
         {
             return InternalShow(owner, text, caption, buttons, icon, defaultButton, options, new HelpInfo(helpFilePath, navigator, param), showCtrlCopy);
         }
-        #endregion
+#endregion
 
-        #region Implementation
+#region Implementation
         private static DialogResult InternalShow(IWin32Window owner,
                                                  string text, string caption,
                                                  MessageBoxButtons buttons,
@@ -873,12 +877,20 @@ namespace Krypton.Toolkit
                 {
                     mInfoMethod.Invoke(control, new object[] { new HelpEventArgs(MousePosition) });
                 }
+#if NET35
+                if (string.IsNullOrEmpty(_helpInfo.HelpFilePath) || _helpInfo.HelpFilePath.Trim() == string.Empty)
+#else
                 if (string.IsNullOrWhiteSpace(_helpInfo.HelpFilePath))
+#endif
                 {
                     return;
                 }
 
+#if NET35
+                if (string.IsNullOrEmpty(_helpInfo.Keyword) || _helpInfo.Keyword.Trim() == string.Empty)
+#else
                 if (!string.IsNullOrWhiteSpace(_helpInfo.Keyword))
+#endif
                 {
                     Help.ShowHelp(control, _helpInfo.HelpFilePath, _helpInfo.Keyword);
                 }
@@ -1264,6 +1276,6 @@ namespace Krypton.Toolkit
             PerformLayout();
 
         }
-        #endregion
+#endregion
     }
 }

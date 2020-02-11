@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
+//  © Component Factory Pty Ltd, 2006 - 2016, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
@@ -14,10 +14,10 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Security.Principal;
 using System.Windows.Forms;
+using System.Security.Principal;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     #region Enumerations
     /// <summary>
@@ -26,9 +26,13 @@ namespace Krypton.Toolkit
     // ReSharper disable IdentifierTypo
     public enum BracketType
     {
-        CURVEDBRACKET,
+        /// <summary>A curly bracket.</summary>
         CURLYBRACKET,
+        /// <summary>A curved bracket.</summary>
+        CURVEDBRACKET,
+        /// <summary>A square bracket.</summary>
         SQUAREBRACKET,
+        /// <summary>No bracket.</summary>
         NOBRACKET
     }
     // ReSharper restore IdentifierTypo
@@ -105,7 +109,7 @@ namespace Krypton.Toolkit
         private string _textExtra;
         private string _oldText;
         private string _administratorText;
-        private bool _isInAdministratorMode;
+        private static bool _isInAdministratorMode;
         private bool _allowFormChrome;
         private bool _allowStatusStripMerge;
         private bool _recreateButtons;
@@ -113,6 +117,7 @@ namespace Krypton.Toolkit
         private bool _lastNotNormal;
         private bool _useDropShadow;
         private bool _disableCloseButton;
+        private bool _appendAdministratorText;
         private StatusStrip _statusStrip;
         private Bitmap _cacheBitmap;
         private Icon _cacheIcon;
@@ -207,7 +212,15 @@ namespace Krypton.Toolkit
             ViewManager = new ViewManager(this, _drawDocker);
 
             // Set the UseDropShadow to true
-            UseDropShadow = true;
+            // Check OS version for compatibility (can be overriden if needed)
+            if (Environment.OSVersion.Version.Major == 10)
+            {
+                UseDropShadow = true;
+            }
+            else if (Environment.OSVersion.Version.Major <= 6)
+            {
+                UseDropShadow = false;
+            }
 
             AdministratorText = "Administrator";
 
@@ -218,16 +231,9 @@ namespace Krypton.Toolkit
             // Set the CornerRoundingRadius to '-1', default value
             CornerRoundingRadius = -1;
 
-            // TODO: Please review this!!!
-            if (!GetIsInAdministratorMode())
-            {
-                // Hide window
-                Hide();
-            }
-            else
-            {
-                Show();
-            }
+            //IsInAdministratorMode = GetHasCurrentInstanceGotAdministrativeRights();
+
+            //UpdateTitle(IsInAdministratorMode, BracketType);
         }
 
         /// <summary>
@@ -450,11 +456,17 @@ namespace Krypton.Toolkit
         /// <value>
         ///   <c>true</c> if this instance is in administrator mode; otherwise, <c>false</c>.
         /// </value>
-        [Category("Appearance"), Description("Is the user currently an administrator."), DefaultValue(false)]
-        public bool IsInAdministratorMode
+        [Category("Appearance"), Description("Is the user currently an administrator.")]
+        public bool IsInAdministratorMode { get => _isInAdministratorMode; private set => _isInAdministratorMode = value; }
+
+        public bool AppendAdministratorText
         {
-            get => _isInAdministratorMode;
-            set => _isInAdministratorMode = value;
+            get => _appendAdministratorText;
+
+            set
+            {
+                _appendAdministratorText = value;
+            }
         }
 
         /// <summary>
@@ -908,8 +920,6 @@ namespace Krypton.Toolkit
 
             // We only apply custom chrome when control is already created and positioned
             UpdateCustomChromeDecision();
-
-            UpdateTitle(GetHasCurrentInstanceGotAdministrativeRights(), BracketType);
         }
 
         /// <summary>
@@ -1792,7 +1802,7 @@ namespace Krypton.Toolkit
         }
         #endregion
 
-        #region Admin Code        
+        #region Admin Code
         /// <summary>
         /// Gets the has current instance got administrative rights.
         /// </summary>
@@ -1832,7 +1842,7 @@ namespace Krypton.Toolkit
         {
             KryptonForm form = new KryptonForm();
 
-            form.IsInAdministratorMode = value;
+            //form.IsInAdministratorMode = value;
         }
 
         /// <summary>Gets the is in administrator mode.</summary>
@@ -1870,6 +1880,10 @@ namespace Krypton.Toolkit
                     default:
                         break;
                 }
+            }
+            else
+            {
+                Text = Text;
             }
         }
         #endregion

@@ -1,21 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27413.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29521.150
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi Control Docking 2019", "Multi Control Docking\Multi Control Docking 2019.csproj", "{14D102AA-67A2-40B6-8B88-A97D955310F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multi Control Docking 2019", "Multi Control Docking\Multi Control Docking 2019.csproj", "{14D102AA-67A2-40B6-8B88-A97D955310F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Persistence 2019", "Docking Persistence\Docking Persistence 2019.csproj", "{395F4ABA-4D19-453C-B183-7FB625616A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docking Persistence 2019", "Docking Persistence\Docking Persistence 2019.csproj", "{395F4ABA-4D19-453C-B183-7FB625616A56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Flags 2019", "Docking Flags\Docking Flags 2019.csproj", "{B838F655-F800-444C-9FDE-7CF779E8F3E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docking Flags 2019", "Docking Flags\Docking Flags 2019.csproj", "{B838F655-F800-444C-9FDE-7CF779E8F3E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Customized 2019", "Docking Customized\Docking Customized 2019.csproj", "{4715FA62-377A-4BF8-952B-EA9E96927E8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docking Customized 2019", "Docking Customized\Docking Customized 2019.csproj", "{4715FA62-377A-4BF8-952B-EA9E96927E8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard Docking 2019", "Standard Docking\Standard Docking 2019.csproj", "{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Standard Docking 2019", "Standard Docking\Standard Docking 2019.csproj", "{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator + FloatingWindows 2019", "Navigator + FloatingWindows\Navigator + FloatingWindows 2019.csproj", "{78DB3787-3CE3-4633-82DA-139219B698E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Navigator + FloatingWindows 2019", "Navigator + FloatingWindows\Navigator + FloatingWindows 2019.csproj", "{78DB3787-3CE3-4633-82DA-139219B698E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "External Drag To Docking 2019", "External Drag To Docking\External Drag To Docking 2019.csproj", "{7BE1440A-6144-4B4C-90D7-E101E99478EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "External Drag To Docking 2019", "External Drag To Docking\External Drag To Docking 2019.csproj", "{7BE1440A-6144-4B4C-90D7-E101E99478EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,17 +57,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {676C8E6D-2EA1-4941-BC3E-3742A40FBF74}
-	EndGlobalSection
-	GlobalSection(AutomaticVersions) = postSolution
-		UpdateAssemblyVersion = True
-		UpdateAssemblyFileVersion = True
-		UpdateAssemblyInfoVersion = True
-		AdvancedSettingsExpanded = True
-		AssemblyVersionSettings = None.None.IncrementOnDemand.None
-		AssemblyFileVersionSettings = None.None.IncrementOnDemand.None
-		AssemblyInfoVersionSettings = None.None.IncrementOnDemand.None
-		UpdatePackageVersion = False
-		AssemblyInfoVersionType = SettingsVersion
-		InheritWinAppVersionFrom = None
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
+//  © Component Factory Pty Ltd, 2006 - 2016, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
@@ -18,7 +18,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using System.Diagnostics;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// Provides the standard renderer that honors all palette properties.
@@ -5888,11 +5888,17 @@ namespace Krypton.Toolkit
                 Size requiredSpace = memento.ShortTextMemento.Size;
 
                 // Find the space available given our required alignment
+
+#if NET35
+                var noClipIsSet = (memento.ShortTextMemento.Format.FormatFlags & StringFormatFlags.NoClip) == StringFormatFlags.NoClip;
+#else
+                var noClipIsSet = memento.ShortTextMemento.Format.FormatFlags.HasFlag(StringFormatFlags.NoClip);
+#endif
                 if (AllocateAlignmentSpace(alignHIndex, alignVIndex,
                                            allocation, displayRect,
                                            spacingGap, memento.ShortTextTrimming,
                                            ref requiredSpace,
-                    memento.ShortTextMemento.Format.FormatFlags.HasFlag(StringFormatFlags.NoClip))
+                                           noClipIsSet)
                     )
                 {
                     // Allocate the actual space used up
@@ -5972,11 +5978,16 @@ namespace Krypton.Toolkit
                 Size requiredSpace = memento.LongTextMemento.Size;
 
                 // Find the space available given our required alignment
+#if NET35
+                var noClipIsSet = (memento.ShortTextMemento != null) ? (memento.ShortTextMemento.Format.FormatFlags & StringFormatFlags.NoClip) == StringFormatFlags.NoClip : true;
+#else
+                var noClipIsSet = (memento.ShortTextMemento != null) ? memento.ShortTextMemento.Format.FormatFlags.HasFlag(StringFormatFlags.NoClip) : true;
+#endif
                 if (AllocateAlignmentSpace(alignHIndex, alignVIndex,
                                            allocation, displayRect,
                                            spacingGap, memento.LongTextTrimming,
                                            ref requiredSpace,
-                    (memento.ShortTextMemento!=null)?memento.ShortTextMemento.Format.FormatFlags.HasFlag(StringFormatFlags.NoClip): true)
+                                           noClipIsSet)
                 )
                 {
                     // Cache the actual draw size of the text
@@ -6365,9 +6376,9 @@ namespace Krypton.Toolkit
 
             return location;
         }
-        #endregion
+#endregion
 
-        #region Implementation Glyph
+#region Implementation Glyph
         private static CheckBoxState DiscoverCheckBoxState(bool enabled,
                                                            CheckState checkState,
                                                            bool tracking,
@@ -7237,9 +7248,9 @@ namespace Krypton.Toolkit
                 }
             }
         }
-        #endregion
+#endregion
 
-        #region Implementation Ribbon
+#region Implementation Ribbon
         /// <summary>
         /// Internal rendering method.
         /// </summary>
@@ -11964,9 +11975,9 @@ namespace Krypton.Toolkit
 
             return memento;
         }
-        #endregion
+#endregion
 
-        #region StandardContentMemento
+#region StandardContentMemento
         /// <summary>
         /// Internal help class used to store content rendering details.
         /// </summary>
@@ -12122,6 +12133,6 @@ namespace Krypton.Toolkit
                 rect.Height = temp;
             }
         }
-        #endregion
+#endregion
     }
 }

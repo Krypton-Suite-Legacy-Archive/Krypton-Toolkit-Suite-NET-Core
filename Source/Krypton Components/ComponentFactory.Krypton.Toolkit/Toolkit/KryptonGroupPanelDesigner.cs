@@ -15,7 +15,7 @@ using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Windows.Forms.Design;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     internal class KryptonGroupPanelDesigner : KryptonPanelDesigner,
                                                IKryptonDesignerSelect

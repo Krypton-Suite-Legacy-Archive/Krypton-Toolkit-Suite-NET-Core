@@ -1,48 +1,48 @@
-﻿using Krypton.Ribbon;
-using Krypton.Toolkit;
+﻿using ComponentFactory.Krypton.Ribbon;
+using ComponentFactory.Krypton.Toolkit;
 using System;
 
 namespace TestApp
 {
     public class RibbonApp : KryptonForm
     {
-        private Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab1;
-        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
-        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
-        private Krypton.Ribbon.KryptonRibbonGroupButton kgbtnDropShadowOn;
-        private Krypton.Ribbon.KryptonRibbonGroupButton kgbtnDropShadowOff;
-        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
-        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
-        private Krypton.Ribbon.KryptonRibbonGroupComboBox krgcmbThemeChooser;
-        private Krypton.Ribbon.KryptonRibbonGroupDomainUpDown krgdThemeSelector;
-        private Krypton.Ribbon.KryptonRibbonGroupButton krgbApplyTheme;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kgbtnDropShadowOn;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kgbtnDropShadowOff;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBox krgcmbThemeChooser;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDomainUpDown krgdThemeSelector;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton krgbApplyTheme;
         private KryptonPanel kryptonPanel1;
         private KryptonPanel kryptonPanel2;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private KryptonManager kryptonManager1;
         private System.ComponentModel.IContainer components;
-        private Krypton.Ribbon.KryptonRibbon kryptonRibbon1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbon kryptonRibbon1;
 
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonRibbon1 = new Krypton.Ribbon.KryptonRibbon();
-            this.kryptonRibbonTab1 = new Krypton.Ribbon.KryptonRibbonTab();
-            this.kryptonRibbonGroup1 = new Krypton.Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple1 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
-            this.kgbtnDropShadowOn = new Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kgbtnDropShadowOff = new Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroup2 = new Krypton.Ribbon.KryptonRibbonGroup();
-            this.kryptonRibbonGroupTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
-            this.krgcmbThemeChooser = new Krypton.Ribbon.KryptonRibbonGroupComboBox();
-            this.krgdThemeSelector = new Krypton.Ribbon.KryptonRibbonGroupDomainUpDown();
-            this.krgbApplyTheme = new Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
+            this.kryptonRibbon1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
+            this.kryptonRibbonTab1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kgbtnDropShadowOn = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kgbtnDropShadowOff = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.krgcmbThemeChooser = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBox();
+            this.krgdThemeSelector = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDomainUpDown();
+            this.krgbApplyTheme = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.kryptonManager1 = new Krypton.Toolkit.KryptonManager(this.components);
+            this.kryptonManager1 = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
@@ -55,7 +55,7 @@ namespace TestApp
             this.kryptonRibbon1.AllowFormIntegrate = true;
             this.kryptonRibbon1.InDesignHelperMode = true;
             this.kryptonRibbon1.Name = "kryptonRibbon1";
-            this.kryptonRibbon1.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
+            this.kryptonRibbon1.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
             this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;
             this.kryptonRibbon1.Size = new System.Drawing.Size(1347, 115);
@@ -63,43 +63,43 @@ namespace TestApp
             // 
             // kryptonRibbonTab1
             // 
-            this.kryptonRibbonTab1.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonTab1.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
             this.kryptonRibbonGroup1,
             this.kryptonRibbonGroup2});
             // 
             // kryptonRibbonGroup1
             // 
-            this.kryptonRibbonGroup1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup1.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple1});
             // 
             // kryptonRibbonGroupTriple1
             // 
-            this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple1.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.kgbtnDropShadowOn,
             this.kgbtnDropShadowOff});
             // 
             // kgbtnDropShadowOn
             // 
-            this.kgbtnDropShadowOn.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
+            this.kgbtnDropShadowOn.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
             this.kgbtnDropShadowOn.TextLine1 = "Turn Drop Shadow";
             this.kgbtnDropShadowOn.TextLine2 = "On";
             this.kgbtnDropShadowOn.Click += new System.EventHandler(this.kgbtnDropShadowOn_Click);
             // 
             // kgbtnDropShadowOff
             // 
-            this.kgbtnDropShadowOff.ButtonType = Krypton.Ribbon.GroupButtonType.Check;
+            this.kgbtnDropShadowOff.ButtonType = ComponentFactory.Krypton.Ribbon.GroupButtonType.Check;
             this.kgbtnDropShadowOff.TextLine1 = "Turn Drop Shadow";
             this.kgbtnDropShadowOff.TextLine2 = "Off";
             this.kgbtnDropShadowOff.Click += new System.EventHandler(this.kgbtnDropShadowOff_Click);
             // 
             // kryptonRibbonGroup2
             // 
-            this.kryptonRibbonGroup2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroup2.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
             this.kryptonRibbonGroupTriple2});
             // 
             // kryptonRibbonGroupTriple2
             // 
-            this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupTriple2.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
             this.krgcmbThemeChooser,
             this.krgdThemeSelector,
             this.krgbApplyTheme});

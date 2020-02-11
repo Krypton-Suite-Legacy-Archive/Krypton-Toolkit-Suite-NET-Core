@@ -1,33 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
-      <LangVersion>8.0</LangVersion>
+    <TargetFrameworks>net45;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks Condition="'$(TFMs)' == 'all'">net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp3.1</TargetFrameworks>
+    <LangVersion>8.0</LangVersion>
     <OutputType>Library</OutputType>
-    <RootNamespace>Krypton.Ribbon</RootNamespace>
+    <RootNamespace>ComponentFactory.Krypton.Ribbon</RootNamespace>
     <AssemblyName>Krypton.Ribbon</AssemblyName>
     <ApplicationIcon>Krypton.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>KryptonToolkitSuiteRibbonModule</PackageId>
+    <PackageId>Krypton.Ribbon</PackageId>
     <Description>A update to Component factory's krypton toolkit to support .NET Core and the latest .NET 4.x framework. This is the ribbon module.</Description>
   </PropertyGroup>
 
@@ -35,8 +21,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\Krypton.Toolkit\General\GlobalSuppressions.cs" Link="General\GlobalSuppressions.cs" />
-    <Compile Include="..\Krypton.Toolkit\General\PlatformInvoke.cs">
+    <Compile Include="..\ComponentFactory.Krypton.Toolkit\General\GlobalSuppressions.cs" Link="General\GlobalSuppressions.cs" />
+    <Compile Include="..\ComponentFactory.Krypton.Toolkit\General\PlatformInvoke.cs">
       <Link>General\PlatformInvoke.cs</Link>
     </Compile>
     <Compile Update="ButtonSpec\ButtonSpecAppMenu.cs">
@@ -63,7 +49,7 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Krypton.ico" />
+    <Content Include="Krypton.ico" Pack="false" />
     <EmbeddedResource Include="ToolboxBitmaps\KryptonRibbonGroupDateTimePicker.bmp" />
     <EmbeddedResource Include="ToolboxBitmaps\KryptonRibbonGroupDomainUpDown.bmp" />
     <EmbeddedResource Include="ToolboxBitmaps\KryptonRibbonGroupNumericUpDown.bmp" />
@@ -100,13 +86,13 @@
     <Compile Remove="View Layout Install\ViewLayoutRibbonAppTab.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
+    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\Krypton.Toolkit 2019.csproj" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' != 'netcoreapp3.1'">
     <Reference Include="System.Design" />
   </ItemGroup>
   <PropertyGroup>
-      <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton Ribbon.xml</DocumentationFile>
+      <DocumentationFile>..\..\..\Bin\$(Configuration)\Krypton.Ribbon.xml</DocumentationFile>
       <OutputPath>..\..\..\Bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
@@ -125,8 +111,8 @@
     <UpdatePackageVersion>False</UpdatePackageVersion>
     <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
-    <AssemblyVersion>5.490.2202.0</AssemblyVersion>
-    <FileVersion>5.490.2202.0</FileVersion>
+    <AssemblyVersion>5.500.2002.1</AssemblyVersion>
+    <FileVersion>5.500.2002.1</FileVersion>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

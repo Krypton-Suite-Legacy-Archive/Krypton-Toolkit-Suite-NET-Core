@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms.Design;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     internal class KryptonDataGridViewDesigner : ControlDesigner
     {

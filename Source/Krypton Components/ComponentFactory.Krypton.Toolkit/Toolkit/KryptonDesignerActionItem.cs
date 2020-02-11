@@ -13,7 +13,7 @@ using System;
 using System.ComponentModel.Design;
 using System.Diagnostics;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// Action item that presents as a method call but calls a property.

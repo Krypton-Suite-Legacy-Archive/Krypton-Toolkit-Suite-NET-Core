@@ -1,5 +1,5 @@
 ﻿using System.Drawing;
-using Krypton.Toolkit;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace TestApp
 {

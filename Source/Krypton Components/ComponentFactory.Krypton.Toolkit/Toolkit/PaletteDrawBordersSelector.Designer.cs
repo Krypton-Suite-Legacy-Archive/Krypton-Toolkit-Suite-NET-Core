@@ -1,4 +1,4 @@
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     partial class PaletteDrawBordersSelector
     {

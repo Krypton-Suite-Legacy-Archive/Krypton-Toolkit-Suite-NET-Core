@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 //Seb add
 //https://github.com/File-New-Project/EarTrumpet/blob/master/EarTrumpet/Services/ThemeService.cs
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// 

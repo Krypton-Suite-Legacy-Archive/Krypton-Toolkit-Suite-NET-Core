@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
+//  © Component Factory Pty Ltd, 2006 - 2016, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
@@ -16,13 +16,8 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 
-[assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006-2020. Then modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017-2020. All rights reserved.")]
-[assembly: AssemblyProduct("Krypton Workspace")]
-[assembly: AssemblyDefaultAlias("Krypton.Workspace.dll")]
-[assembly: AssemblyTitle("Krypton.Workspace")]
-[assembly: AssemblyCompany("Component Factory Pty Ltd, Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV)")]
-[assembly: AssemblyDescription("Krypton.Workspace")]
-[assembly: AssemblyConfiguration("Production")]
+[assembly: AssemblyCopyright("© Component Factory Pty Ltd, 2006 - 2016. Then modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV) 2017 - 2020. All rights reserved.")]
+[assembly: AssemblyDefaultAlias("ComponentFactory.Krypton.Workspace.dll")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: StringFreezing]
 [assembly: ComVisible(true)]
@@ -32,6 +27,8 @@ using System.Security;
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
 [assembly: Dependency("System.XML", LoadHint.Always)]
-[assembly: Dependency("Krypton.Toolkit", LoadHint.Always)]
-[assembly: Dependency("Krypton.Navigator", LoadHint.Always)]
+[assembly: Dependency("ComponentFactory.Krypton.Toolkit", LoadHint.Always)]
+[assembly: Dependency("ComponentFactory.Krypton.Navigator", LoadHint.Always)]
+#if !NET35
 [assembly: SecurityRules(SecurityRuleSet.Level1)]
+#endif

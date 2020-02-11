@@ -9,7 +9,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonInputBox), "ToolboxBitmaps.KryptonInputBox.bmp")]
@@ -28,12 +28,12 @@ namespace Krypton.Toolkit
 
         private void InitializeComponent()
         {
-            this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
-            this.kbtnOK = new Krypton.Toolkit.KryptonButton();
-            this.kbtnCancel = new Krypton.Toolkit.KryptonButton();
-            this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-            this.ktxtPrompt = new Krypton.Toolkit.KryptonTextBox();
-            this.kwlMessage = new Krypton.Toolkit.KryptonWrapLabel();
+            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kbtnOK = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kbtnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.ktxtPrompt = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kwlMessage = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -86,7 +86,7 @@ namespace Krypton.Toolkit
             this.ktxtPrompt.Name = "ktxtPrompt";
             this.ktxtPrompt.Size = new System.Drawing.Size(598, 24);
             this.ktxtPrompt.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ktxtPrompt.StateCommon.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.ktxtPrompt.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Inherit;
             this.ktxtPrompt.TabIndex = 3;
             this.ktxtPrompt.TextChanged += new System.EventHandler(ktxtPrompt_TextChanged);
             // 

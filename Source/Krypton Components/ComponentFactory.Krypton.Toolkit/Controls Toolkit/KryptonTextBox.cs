@@ -1,6 +1,6 @@
 ﻿// *****************************************************************************
 // BSD 3-Clause License (https://github.com/ComponentFactory/Krypton/blob/master/LICENSE)
-//  © Component Factory Pty Ltd, 2006-2020, All rights reserved.
+//  © Component Factory Pty Ltd, 2006 - 2016, All rights reserved.
 // The software and associated documentation supplied hereunder are the 
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
@@ -15,7 +15,7 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Windows.Forms;
 
-namespace Krypton.Toolkit
+namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
     /// Provide a TextBox with Krypton styling applied.
@@ -305,7 +305,11 @@ namespace Krypton.Toolkit
                 set
                 {
                     _hint = value;
+#if NET35
+                    if (string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(Hint) && Hint.Trim() != string.Empty)
+#else
                     if (string.IsNullOrEmpty(Text) && !string.IsNullOrWhiteSpace(Hint))
+#endif
                     {
                         PI.SendMessage(Handle, PI.EM_SETCUEBANNER, (IntPtr)1, Hint);
                     }
@@ -314,15 +318,15 @@ namespace Krypton.Toolkit
             }
         }
 
-        #endregion
+#endregion
 
-        #region Type Definitions
+#region Type Definitions
         /// <summary>
         /// Collection for managing ButtonSpecAny instances.
         /// </summary>
         public class TextBoxButtonSpecCollection : ButtonSpecCollection<ButtonSpecAny>
         {
-            #region Identity
+#region Identity
             /// <summary>
             /// Initialize a new instance of the TextBoxButtonSpecCollection class.
             /// </summary>
@@ -331,11 +335,11 @@ namespace Krypton.Toolkit
                 : base(owner)
             {
             }
-            #endregion
+#endregion
         }
-        #endregion
+#endregion
 
-        #region Instance Fields
+#region Instance Fields
 
         private VisualPopupToolTip _visualPopupToolTip;
         private readonly ButtonSpecManagerLayout _buttonManager;
@@ -353,9 +357,9 @@ namespace Krypton.Toolkit
         private int _cachedHeight;
         private bool _multilineStringEditor;
         private ButtonSpecAny _editorButton;
-        #endregion
+#endregion
 
-        #region Events
+#region Events
         /// <summary>
         /// Occurs when the value of the AcceptsTab property changes.
         /// </summary>
@@ -441,9 +445,9 @@ namespace Krypton.Toolkit
         [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Never)]
         public new event EventHandler ForeColorChanged;
-        #endregion
+#endregion
 
-        #region Identity
+#region Identity
         /// <summary>
         /// Initialize a new instance of the KryptonTextBox class.
         /// </summary>
@@ -565,9 +569,9 @@ namespace Krypton.Toolkit
 
             base.Dispose(disposing);
         }
-        #endregion
+#endregion
 
-        #region Public
+#region Public
         /// <summary>
         /// Gets and sets control watermark.
         /// </summary>
@@ -579,7 +583,11 @@ namespace Krypton.Toolkit
 
         private bool ShouldSerializeHint()
         {
+#if NET35
+            return !string.IsNullOrEmpty(Hint) && Hint.Trim() != string.Empty;
+#else
             return !string.IsNullOrWhiteSpace(Hint);
+#endif
         }
 
 
@@ -1394,9 +1402,9 @@ namespace Krypton.Toolkit
             // element that thinks it has the focus is informed it does not
             OnMouseLeave(EventArgs.Empty);
         }
-        #endregion
+#endregion
 
-        #region Protected
+#region Protected
         /// <summary>
         /// Force the layout logic to size and position the controls.
         /// </summary>
@@ -1435,9 +1443,9 @@ namespace Krypton.Toolkit
                 }
             }
         }
-        #endregion
+#endregion
 
-        #region Protected Virtual
+#region Protected Virtual
         // ReSharper disable VirtualMemberNeverOverridden.Global
         /// <summary>
         /// Raises the AcceptsTabChanged event.
@@ -1489,9 +1497,9 @@ namespace Krypton.Toolkit
         [Description("Raises the TrackMouseLeave event.")]
         protected virtual void OnTrackMouseLeave(EventArgs e) => TrackMouseLeave?.Invoke(this, e);
         // ReSharper restore VirtualMemberNeverOverridden.Global
-        #endregion
+#endregion
 
-        #region Protected Overrides
+#region Protected Overrides
         /// <summary>
         /// Creates a new instance of the control collection for the KryptonTextBox.
         /// </summary>
@@ -1782,14 +1790,14 @@ namespace Krypton.Toolkit
             }
         }
 
-        #endregion
+#endregion
 
-        #region Internal
+#region Internal
         internal bool InTransparentDesignMode => InRibbonDesignMode;
 
-        #endregion
+#endregion
 
-        #region Implementation
+#region Implementation
         private void UpdateStateAndPalettes()
         {
             // Get the correct palette settings to use
@@ -1965,6 +1973,6 @@ namespace Krypton.Toolkit
         {
             new MultilineStringEditor(this).ShowEditor();
         }
-        #endregion
+#endregion
     }
 }
