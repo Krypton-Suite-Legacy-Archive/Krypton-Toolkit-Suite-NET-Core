@@ -79,5 +79,38 @@ namespace ProjectMigrationUtility
         public void SetList(List<string> list) => _tempList = list;
 
         public List<string> GetList() => _tempList;
+
+        public static void FindAndReplaceInFiles(string projectDirectory, string originalString, string replacementString, string fileExtensionMask = "cs")
+        {
+            try
+            {
+                string[] files = Directory.GetFiles(projectDirectory, $"*.{ fileExtensionMask }", SearchOption.AllDirectories);
+
+                foreach (string file in files)
+                {
+                    try
+                    {
+                        string contents = File.ReadAllText(file);
+
+                        contents = contents.Replace(originalString, replacementString);
+
+                        // Make files writable
+                        File.SetAttributes(file, FileAttributes.Normal);
+
+                        File.WriteAllText(file, contents);
+                    }
+                    catch (Exception e1)
+                    {
+                        
+                        throw;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                
+                throw;
+            }
+        }
     }
 }
