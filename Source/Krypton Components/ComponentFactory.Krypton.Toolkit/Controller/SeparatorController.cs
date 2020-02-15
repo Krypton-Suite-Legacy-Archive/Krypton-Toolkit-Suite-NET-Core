@@ -907,8 +907,8 @@ namespace ComponentFactory.Krypton.Toolkit
 
         #region Static Fields
         private static readonly Point _nullPoint = new Point(-1, -1);
-        private static readonly Cursor _cursorHSplit = Properties.Resources.SplitHorizontal;
-        private static readonly Cursor _cursorVSplit = Properties.Resources.SplitVertical;
+        private static readonly Cursor _cursorHSplit = Cursors.HSplit;
+        private static readonly Cursor _cursorVSplit = Cursors.VSplit;
         private static readonly Cursor _cursorHMove = Cursors.SizeNS;
         private static readonly Cursor _cursorVMove = Cursors.SizeWE;
         #endregion
