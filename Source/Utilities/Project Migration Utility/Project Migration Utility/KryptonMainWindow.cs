@@ -4,6 +4,7 @@ using Microsoft.WindowsAPICodePack.Taskbar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -29,6 +30,10 @@ namespace ProjectMigrationUtility
         private KryptonGroupBox kryptonGroupBox1;
         private KryptonListBox klbProjectFiles;
         private KryptonTextBox ktxtProjectPath;
+        private KryptonButton kbtnBrowseCompressedFileDirectory;
+        private KryptonTextBox ktxtCompressedFileDirectoryPath;
+        private KryptonLabel klblCompressedFileDirectory;
+        private KryptonButton kbtnMigrateProject;
         private KryptonLabel kryptonLabel1;
 
         private void InitializeComponent()
@@ -44,7 +49,11 @@ namespace ProjectMigrationUtility
             this.kbtnBrowseProjectDirectory = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kbtnClose = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kgbStageThree = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.kbtnMigrateProject = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kgbStageTwo = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.kbtnBrowseCompressedFileDirectory = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.ktxtCompressedFileDirectoryPath = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.klblCompressedFileDirectory = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kbtnVarifyBackup = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kbtnBackupProject = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kchkCompressBackup = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
@@ -60,6 +69,7 @@ namespace ProjectMigrationUtility
             this.kryptonGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgbStageThree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgbStageThree.Panel)).BeginInit();
+            this.kgbStageThree.Panel.SuspendLayout();
             this.kgbStageThree.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kgbStageTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kgbStageTwo.Panel)).BeginInit();
@@ -83,7 +93,7 @@ namespace ProjectMigrationUtility
             // tsslCurrentStatus
             // 
             this.tsslCurrentStatus.Name = "tsslCurrentStatus";
-            this.tsslCurrentStatus.Size = new System.Drawing.Size(985, 17);
+            this.tsslCurrentStatus.Size = new System.Drawing.Size(1118, 17);
             this.tsslCurrentStatus.Spring = true;
             this.tsslCurrentStatus.Text = "Ready";
             this.tsslCurrentStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -163,23 +173,38 @@ namespace ProjectMigrationUtility
             // 
             // kbtnClose
             // 
-            this.kbtnClose.Enabled = false;
-            this.kbtnClose.Location = new System.Drawing.Point(1025, 308);
+            this.kbtnClose.Location = new System.Drawing.Point(1025, 412);
             this.kbtnClose.Name = "kbtnClose";
             this.kbtnClose.Size = new System.Drawing.Size(96, 26);
             this.kbtnClose.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnClose.TabIndex = 11;
             this.kbtnClose.Values.Text = "&Close";
+            this.kbtnClose.Click += new System.EventHandler(this.kbtnClose_Click);
             // 
             // kgbStageThree
             // 
             this.kgbStageThree.Enabled = false;
-            this.kgbStageThree.Location = new System.Drawing.Point(445, 151);
+            this.kgbStageThree.Location = new System.Drawing.Point(445, 222);
             this.kgbStageThree.Name = "kgbStageThree";
+            // 
+            // kgbStageThree.Panel
+            // 
+            this.kgbStageThree.Panel.Controls.Add(this.kbtnMigrateProject);
             this.kgbStageThree.Size = new System.Drawing.Size(676, 111);
             this.kgbStageThree.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kgbStageThree.TabIndex = 6;
             this.kgbStageThree.Values.Heading = "Step 2: Migrate Project";
+            // 
+            // kbtnMigrateProject
+            // 
+            this.kbtnMigrateProject.Enabled = false;
+            this.kbtnMigrateProject.Location = new System.Drawing.Point(250, 29);
+            this.kbtnMigrateProject.Name = "kbtnMigrateProject";
+            this.kbtnMigrateProject.Size = new System.Drawing.Size(184, 26);
+            this.kbtnMigrateProject.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnMigrateProject.TabIndex = 12;
+            this.kbtnMigrateProject.Values.Text = "Migrate &Project";
+            this.kbtnMigrateProject.Click += new System.EventHandler(this.kbtnMigrateProject_Click);
             // 
             // kgbStageTwo
             // 
@@ -189,31 +214,65 @@ namespace ProjectMigrationUtility
             // 
             // kgbStageTwo.Panel
             // 
+            this.kgbStageTwo.Panel.Controls.Add(this.kbtnBrowseCompressedFileDirectory);
+            this.kgbStageTwo.Panel.Controls.Add(this.ktxtCompressedFileDirectoryPath);
+            this.kgbStageTwo.Panel.Controls.Add(this.klblCompressedFileDirectory);
             this.kgbStageTwo.Panel.Controls.Add(this.kbtnVarifyBackup);
             this.kgbStageTwo.Panel.Controls.Add(this.kbtnBackupProject);
             this.kgbStageTwo.Panel.Controls.Add(this.kchkCompressBackup);
             this.kgbStageTwo.Panel.Controls.Add(this.kbtnBrowseBackupDirectory);
             this.kgbStageTwo.Panel.Controls.Add(this.ktxtBackupDirectory);
             this.kgbStageTwo.Panel.Controls.Add(this.kryptonLabel2);
-            this.kgbStageTwo.Size = new System.Drawing.Size(676, 111);
+            this.kgbStageTwo.Size = new System.Drawing.Size(676, 183);
             this.kgbStageTwo.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kgbStageTwo.TabIndex = 5;
             this.kgbStageTwo.Values.Heading = "Step 2: Backup Project";
             // 
+            // kbtnBrowseCompressedFileDirectory
+            // 
+            this.kbtnBrowseCompressedFileDirectory.Enabled = false;
+            this.kbtnBrowseCompressedFileDirectory.Location = new System.Drawing.Point(630, 59);
+            this.kbtnBrowseCompressedFileDirectory.Name = "kbtnBrowseCompressedFileDirectory";
+            this.kbtnBrowseCompressedFileDirectory.Size = new System.Drawing.Size(31, 26);
+            this.kbtnBrowseCompressedFileDirectory.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kbtnBrowseCompressedFileDirectory.TabIndex = 13;
+            this.kbtnBrowseCompressedFileDirectory.Values.Text = "..&.";
+            // 
+            // ktxtCompressedFileDirectoryPath
+            // 
+            this.ktxtCompressedFileDirectoryPath.Enabled = false;
+            this.ktxtCompressedFileDirectoryPath.Location = new System.Drawing.Point(255, 59);
+            this.ktxtCompressedFileDirectoryPath.Name = "ktxtCompressedFileDirectoryPath";
+            this.ktxtCompressedFileDirectoryPath.Size = new System.Drawing.Size(369, 26);
+            this.ktxtCompressedFileDirectoryPath.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ktxtCompressedFileDirectoryPath.StateCommon.Content.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Inherit;
+            this.ktxtCompressedFileDirectoryPath.TabIndex = 12;
+            // 
+            // klblCompressedFileDirectory
+            // 
+            this.klblCompressedFileDirectory.Enabled = false;
+            this.klblCompressedFileDirectory.Location = new System.Drawing.Point(22, 61);
+            this.klblCompressedFileDirectory.Name = "klblCompressedFileDirectory";
+            this.klblCompressedFileDirectory.Size = new System.Drawing.Size(227, 22);
+            this.klblCompressedFileDirectory.StateCommon.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.klblCompressedFileDirectory.TabIndex = 11;
+            this.klblCompressedFileDirectory.Values.Text = "Compressed File Directory:";
+            // 
             // kbtnVarifyBackup
             // 
             this.kbtnVarifyBackup.Enabled = false;
-            this.kbtnVarifyBackup.Location = new System.Drawing.Point(455, 46);
+            this.kbtnVarifyBackup.Location = new System.Drawing.Point(455, 102);
             this.kbtnVarifyBackup.Name = "kbtnVarifyBackup";
             this.kbtnVarifyBackup.Size = new System.Drawing.Size(184, 26);
             this.kbtnVarifyBackup.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnVarifyBackup.TabIndex = 10;
             this.kbtnVarifyBackup.Values.Text = "V&erify Backup";
+            this.kbtnVarifyBackup.Click += new System.EventHandler(this.kbtnVarifyBackup_Click);
             // 
             // kbtnBackupProject
             // 
             this.kbtnBackupProject.Enabled = false;
-            this.kbtnBackupProject.Location = new System.Drawing.Point(250, 46);
+            this.kbtnBackupProject.Location = new System.Drawing.Point(250, 102);
             this.kbtnBackupProject.Name = "kbtnBackupProject";
             this.kbtnBackupProject.Size = new System.Drawing.Size(184, 26);
             this.kbtnBackupProject.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,12 +282,13 @@ namespace ProjectMigrationUtility
             // 
             // kchkCompressBackup
             // 
-            this.kchkCompressBackup.Location = new System.Drawing.Point(57, 50);
+            this.kchkCompressBackup.Location = new System.Drawing.Point(57, 106);
             this.kchkCompressBackup.Name = "kchkCompressBackup";
             this.kchkCompressBackup.Size = new System.Drawing.Size(159, 22);
             this.kchkCompressBackup.StateCommon.ShortText.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kchkCompressBackup.TabIndex = 8;
             this.kchkCompressBackup.Values.Text = "&Compress Backup";
+            this.kchkCompressBackup.CheckedChanged += new System.EventHandler(this.kchkCompressBackup_CheckedChanged);
             // 
             // kbtnBrowseBackupDirectory
             // 
@@ -279,6 +339,7 @@ namespace ProjectMigrationUtility
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
             this.kryptonGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kgbStageThree.Panel)).EndInit();
+            this.kgbStageThree.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kgbStageThree)).EndInit();
             this.kgbStageThree.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kgbStageTwo.Panel)).EndInit();
@@ -292,7 +353,7 @@ namespace ProjectMigrationUtility
         }
         #endregion
 
-        BackgroundWorker _worker = new BackgroundWorker(), _populateFiles = new BackgroundWorker();
+        BackgroundWorker _worker = new BackgroundWorker(), _populateFiles = new BackgroundWorker(), _findAndReplaceWorker = new BackgroundWorker();
 
         List<string> _fileList = new List<string>();
 
@@ -320,6 +381,16 @@ namespace ProjectMigrationUtility
             _populateFiles.ProgressChanged += populateFiles_ProgressChanged;
 
             _populateFiles.RunWorkerCompleted += populateFiles_RunWorkerCompleted;
+
+            _findAndReplaceWorker.WorkerSupportsCancellation = true;
+
+            _findAndReplaceWorker.WorkerReportsProgress = true;
+
+            _findAndReplaceWorker.DoWork += findAndReplaceWorker_DoWork;
+
+            _findAndReplaceWorker.ProgressChanged += findAndReplaceWorker_ProgressChanged;
+
+            _findAndReplaceWorker.RunWorkerCompleted += findAndReplaceWorker_RunWorkerCompleted;
         }
         #endregion
 
@@ -342,29 +413,56 @@ namespace ProjectMigrationUtility
 
         private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            throw new NotImplementedException();
+            tspCopyProgress.Value = 0;
+
+            tspCopyProgress.Visible = false;
+
+            if (TaskbarManager.IsPlatformSupported)
+            {
+                TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress);
+
+                TaskbarManager.Instance.SetProgressValue(0, 100);
+            }
+
+            _worker.Dispose();
+
+            kgbStageThree.Enabled = true;
         }
 
         private void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            if (tspCopyProgress.Value != 100)
+            tspCopyProgress.Visible = true;
+
+            tspCopyProgress.Value = e.ProgressPercentage;
+
+            if (TaskbarManager.IsPlatformSupported)
             {
-                tspCopyProgress.Visible = true;
+                TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Normal);
 
-                tspCopyProgress.Value = e.ProgressPercentage;
-
-                if (TaskbarManager.IsPlatformSupported)
-                {
-                    TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Normal);
-
-                    TaskbarManager.Instance.SetProgressValue(e.ProgressPercentage, tspCopyProgress.Maximum);
-                }
+                TaskbarManager.Instance.SetProgressValue(e.ProgressPercentage, tspCopyProgress.Maximum);
             }
+
+            _worker.Dispose();
+
+            kbtnBackupProject.Enabled = false;
+
+            kbtnVarifyBackup.Enabled = true;
         }
 
         private void populateFiles_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            throw new NotImplementedException();
+            tspCopyProgress.Value = 0;
+
+            tspCopyProgress.Visible = false;
+
+            if (TaskbarManager.IsPlatformSupported)
+            {
+                TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress);
+
+                TaskbarManager.Instance.SetProgressValue(0, 100);
+            }
+
+            _populateFiles.Dispose();
         }
 
         private void populateFiles_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -434,6 +532,16 @@ namespace ProjectMigrationUtility
         private void kbtnBackupProject_Click(object sender, EventArgs e)
         {
             _worker.RunWorkerAsync();
+
+            //#if !NET40
+            //            if (kchkCompressBackup.Checked)
+            //            {
+            //                if (!string.IsNullOrEmpty(ktxtCompressedFileDirectoryPath.Text))
+            //                {
+            //                    ZipFile.CreateFromDirectory(ktxtBackupDirectory.Text, ktxtCompressedFileDirectoryPath.Text);
+            //                }
+            //            }
+            //#endif
         }
 
         private void ktxtProjectPath_TextChanged(object sender, EventArgs e)
@@ -469,6 +577,16 @@ namespace ProjectMigrationUtility
             }
         }
 
+        private void kbtnClose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kbtnMigrateProject_Click(object sender, EventArgs e)
+        {
+            _findAndReplaceWorker.RunWorkerAsync();
+        }
+
         private void ktxtBackupDirectory_TextChanged(object sender, EventArgs e)
         {
             if (Directory.Exists(ktxtBackupDirectory.Text))
@@ -477,6 +595,73 @@ namespace ProjectMigrationUtility
 
                 kbtnBackupProject.Enabled = true;
             }
+        }
+
+        private void findAndReplaceWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            tspCopyProgress.Value = 0;
+
+            tspCopyProgress.Visible = false;
+
+            if (TaskbarManager.IsPlatformSupported)
+            {
+                TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress);
+
+                TaskbarManager.Instance.SetProgressValue(0, 100);
+            }
+
+            _findAndReplaceWorker.Dispose();
+        }
+
+        private void findAndReplaceWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            if (tspCopyProgress.Value != 100)
+            {
+                tspCopyProgress.Visible = true;
+
+                tspCopyProgress.Value = e.ProgressPercentage;
+
+                if (TaskbarManager.IsPlatformSupported)
+                {
+                    TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Normal);
+
+                    TaskbarManager.Instance.SetProgressValue(e.ProgressPercentage, tspCopyProgress.Maximum);
+                }
+            }
+        }
+
+        private void kchkCompressBackup_CheckedChanged(object sender, EventArgs e)
+        {
+            EnableCompressedFileDirectoryControls(kchkCompressBackup.Checked);
+        }
+
+        private void findAndReplaceWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            Utilities.FindAndReplaceInFiles(ktxtProjectPath.Text, "ComponentFactory.Krypton.Docking", "Krypton.Docking");
+
+            Utilities.FindAndReplaceInFiles(ktxtProjectPath.Text, "ComponentFactory.Krypton.Navigator", "Krypton.Navigator");
+
+            Utilities.FindAndReplaceInFiles(ktxtProjectPath.Text, "ComponentFactory.Krypton.Ribbon", "Krypton.Ribbon");
+
+            Utilities.FindAndReplaceInFiles(ktxtProjectPath.Text, "ComponentFactory.Krypton.Toolkit", "Krypton.Toolkit");
+
+            Utilities.FindAndReplaceInFiles(ktxtProjectPath.Text, "ComponentFactory.Krypton.Workspace", "Krypton.Workspace");
+        }
+
+        private void kbtnVarifyBackup_Click(object sender, EventArgs e)
+        {
+            Process.Start(ktxtBackupDirectory.Text);
+        }
+
+        private void UpdateStatus(string text) => tsslCurrentStatus.Text = text;
+
+        private void EnableCompressedFileDirectoryControls(bool value)
+        {
+            klblCompressedFileDirectory.Enabled = value;
+
+            ktxtCompressedFileDirectoryPath.Enabled = value;
+
+            kbtnBrowseCompressedFileDirectory.Enabled = value;
         }
     }
 }
