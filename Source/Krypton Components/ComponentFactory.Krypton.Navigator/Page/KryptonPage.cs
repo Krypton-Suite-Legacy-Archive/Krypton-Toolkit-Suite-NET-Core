@@ -5,16 +5,16 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
-//  Version 5.490.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core)
+//  Version 5.500.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
+using ComponentFactory.Krypton.Toolkit;
 using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Design;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
 
 namespace ComponentFactory.Krypton.Navigator
 {
@@ -81,7 +81,7 @@ namespace ComponentFactory.Krypton.Navigator
         /// </summary>
         [Category("Page")]
         [Description("Occurs when an appearance specific page property has changed.")]
-        public event PropertyChangedEventHandler AppearancePropertyChanged;
+        public virtual event PropertyChangedEventHandler AppearancePropertyChanged;
 
         /// <summary>
         /// Occurs when the flags have changed.
@@ -203,11 +203,11 @@ namespace ComponentFactory.Krypton.Navigator
             _redirectNavigatorSeparator = new PaletteRedirectDoubleMetric(Redirector);
             _redirectNavigatorTab = new PaletteRedirectTriple(Redirector);
             _redirectNavigatorRibbonTab = new PaletteRedirectRibbonTabContent(Redirector);
-            
+
             // Create the palette storage
-            _stateCommon = new PaletteNavigatorRedirect(null, 
-                                                        _redirectNavigator, 
-                                                        _redirectNavigatorPage, 
+            _stateCommon = new PaletteNavigatorRedirect(null,
+                                                        _redirectNavigator,
+                                                        _redirectNavigatorPage,
                                                         _redirectNavigatorHeaderGroup,
                                                         _redirectNavigatorHeaderPrimary,
                                                         _redirectNavigatorHeaderSecondary,
@@ -229,11 +229,11 @@ namespace ComponentFactory.Krypton.Navigator
             StateTracking = new PaletteNavigatorOtherEx(_stateCommon, _needNormalPaint);
             StatePressed = new PaletteNavigatorOtherEx(_stateCommon, _needNormalPaint);
             StateSelected = new PaletteNavigatorOther(_stateCommon, _needNormalPaint);
-            
+
             OverrideFocus = new PaletteNavigatorOtherRedirect(_redirectNavigatorCheckButton,
                                                             _redirectNavigatorOverflowButton,
-                                                            _redirectNavigatorMiniButton, 
-                                                            _redirectNavigatorTab, 
+                                                            _redirectNavigatorMiniButton,
+                                                            _redirectNavigatorTab,
                                                             _redirectNavigatorRibbonTab, _needNormalPaint);
 
             // Our view contains just a simple canvas that covers entire client area
@@ -423,8 +423,8 @@ namespace ComponentFactory.Krypton.Navigator
         {
             [System.Diagnostics.DebuggerStepThrough]
             get { return base.Text; }
-            
-            set 
+
+            set
             {
                 if (base.Text != value)
                 {
@@ -433,7 +433,7 @@ namespace ComponentFactory.Krypton.Navigator
                 }
             }
         }
- 
+
         /// <summary>
         /// Gets and sets the title text for the page.
         /// </summary>
@@ -597,7 +597,7 @@ namespace ComponentFactory.Krypton.Navigator
         {
             get => _toolTipImage;
 
-            set 
+            set
             {
                 if (_toolTipImage != value)
                 {
@@ -666,7 +666,7 @@ namespace ComponentFactory.Krypton.Navigator
         {
             get => _toolTipTitle;
 
-            set 
+            set
             {
                 if (_toolTipTitle != value)
                 {
@@ -701,7 +701,7 @@ namespace ComponentFactory.Krypton.Navigator
         {
             get => _toolTipBody;
 
-            set 
+            set
             {
                 if (_toolTipBody != value)
                 {
@@ -734,7 +734,7 @@ namespace ComponentFactory.Krypton.Navigator
         {
             get => _toolTipStyle;
 
-            set 
+            set
             {
                 if (_toolTipStyle != value)
                 {
@@ -767,7 +767,7 @@ namespace ComponentFactory.Krypton.Navigator
         {
             get => _kcm;
 
-            set 
+            set
             {
                 if (_kcm != value)
                 {
@@ -865,7 +865,7 @@ namespace ComponentFactory.Krypton.Navigator
             _redirectNavigatorPage.SetRedirectStates(disabled.PalettePage, normal.PalettePage);
             _redirectNavigatorHeaderGroup.SetRedirectStates(disabled.HeaderGroup, disabled.HeaderGroup, normal.HeaderGroup, normal.HeaderGroup);
             _redirectNavigatorHeaderPrimary.SetRedirectStates(disabled.HeaderGroup.HeaderPrimary, disabled.HeaderGroup.HeaderPrimary, normal.HeaderGroup.HeaderPrimary, normal.HeaderGroup.HeaderPrimary);
-            _redirectNavigatorHeaderSecondary.SetRedirectStates(disabled.HeaderGroup.HeaderSecondary, disabled.HeaderGroup.HeaderSecondary,  normal.HeaderGroup.HeaderSecondary, normal.HeaderGroup.HeaderSecondary);
+            _redirectNavigatorHeaderSecondary.SetRedirectStates(disabled.HeaderGroup.HeaderSecondary, disabled.HeaderGroup.HeaderSecondary, normal.HeaderGroup.HeaderSecondary, normal.HeaderGroup.HeaderSecondary);
             _redirectNavigatorHeaderBar.SetRedirectStates(disabled.HeaderGroup.HeaderBar, disabled.HeaderGroup.HeaderBar, normal.HeaderGroup.HeaderBar, normal.HeaderGroup.HeaderBar);
             _redirectNavigatorHeaderOverflow.SetRedirectStates(disabled.HeaderGroup.HeaderOverflow, disabled.HeaderGroup.HeaderOverflow, normal.HeaderGroup.HeaderOverflow, normal.HeaderGroup.HeaderOverflow);
             _redirectNavigatorCheckButton.SetRedirectStates(disabled.CheckButton, normal.CheckButton, pressed.CheckButton, tracking.CheckButton, selected.CheckButton, selected.CheckButton, selected.CheckButton, focus.CheckButton, null);
@@ -956,7 +956,7 @@ namespace ComponentFactory.Krypton.Navigator
             get => base.Size;
             set => base.Size = value;
         }
-        
+
         /// <summary>
         /// Gets or sets a value indicating whether the control is automatically resized to display its entire contents.
         /// </summary>
@@ -1246,7 +1246,7 @@ namespace ComponentFactory.Krypton.Navigator
         {
             get => _setVisible;
 
-            set 
+            set
             {
                 if (value != _setVisible)
                 {

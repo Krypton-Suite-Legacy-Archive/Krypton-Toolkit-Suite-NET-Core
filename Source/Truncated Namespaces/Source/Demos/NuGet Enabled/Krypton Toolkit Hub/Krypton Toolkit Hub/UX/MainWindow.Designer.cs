@@ -1062,7 +1062,7 @@
             this.kryptonPage3.Size = new System.Drawing.Size(1176, 512);
             this.kryptonPage3.Text = "Test Examples";
             this.kryptonPage3.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage3.UniqueName = "C15D615110B4475B11849054B9F3F600";
+            this.kryptonPage3.UniqueName = "C15D615110B4475B11850054B9F3F600";
             // 
             // linkTreeView
             // 
@@ -2108,7 +2108,7 @@
             this.kryptonLabel1.StateCommon.ShortText.Hint = Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.kryptonLabel1.TabIndex = 3;
             this.kryptonLabel1.Values.ExtraText = "Built for .NET Framework 4.7";
-            this.kryptonLabel1.Values.Text = "Krypton Toolkit Hub 5.490";
+            this.kryptonLabel1.Values.Text = "Krypton Toolkit Hub 5.500";
             // 
             // pictureBox1
             // 

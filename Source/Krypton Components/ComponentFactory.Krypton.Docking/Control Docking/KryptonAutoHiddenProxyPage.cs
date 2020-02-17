@@ -5,15 +5,15 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to license terms.
 // 
-//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Wagnerp/Krypton-NET-5.490)
-//  Version 5.490.0.0  www.ComponentFactory.com
+//  Modifications by Peter Wagner(aka Wagnerp) & Simon Coghlan(aka Smurf-IV) 2017 - 2020. All rights reserved. (https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core)
+//  Version 5.500.0.0  www.ComponentFactory.com
 // *****************************************************************************
 
-using System;
-using System.Drawing;
-using System.ComponentModel;
-using ComponentFactory.Krypton.Toolkit;
 using ComponentFactory.Krypton.Navigator;
+using ComponentFactory.Krypton.Toolkit;
+using System;
+using System.ComponentModel;
+using System.Drawing;
 
 namespace ComponentFactory.Krypton.Docking
 {
@@ -68,7 +68,7 @@ namespace ComponentFactory.Krypton.Docking
         {
             get => Page != null ? Page.Text : base.Text;
 
-            set 
+            set
             {
                 base.Text = value;
                 if (Page != null)
@@ -252,6 +252,20 @@ namespace ComponentFactory.Krypton.Docking
         {
             get => Page.LastVisibleSet;
             set => Page.LastVisibleSet = value;
+        }
+
+        /// <summary>Occurs when an appearance specific page property has changed.</summary>
+        public override event PropertyChangedEventHandler AppearancePropertyChanged
+        {
+            add
+            {
+                if (Page != null) Page.AppearancePropertyChanged += value;
+            }
+
+            remove
+            {
+                if (Page != null) Page.AppearancePropertyChanged -= value;
+            }
         }
         #endregion
     }

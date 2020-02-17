@@ -849,7 +849,7 @@
             this.labelKryptonExplorer.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.labelKryptonExplorer.TabIndex = 0;
             this.labelKryptonExplorer.Values.ExtraText = "Built for .Net Core & 4.x";
-            this.labelKryptonExplorer.Values.Text = "Krypton 5.490";
+            this.labelKryptonExplorer.Values.Text = "Krypton 5.500";
             // 
             // kryptonPanelTopBorder
             // 

@@ -308,7 +308,7 @@ namespace ExpandingHeaderGroupsDockStyle
             // buttonSpecHeaderGroup1
             // 
             this.buttonSpecHeaderGroup1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.ArrowUp;
-            this.buttonSpecHeaderGroup1.UniqueName = "4A14906157B94C7D4A14906157B94C7D";
+            this.buttonSpecHeaderGroup1.UniqueName = "4A15006157B94C7D4A15006157B94C7D";
             // 
             // textBox3
             // 

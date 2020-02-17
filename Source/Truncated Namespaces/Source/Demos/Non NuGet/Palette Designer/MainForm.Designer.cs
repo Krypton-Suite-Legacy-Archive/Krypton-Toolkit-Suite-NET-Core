@@ -1929,7 +1929,7 @@ namespace PaletteDesigner
             this.pageButtonsStandalone.LastVisibleSet = true;
             this.pageButtonsStandalone.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsStandalone.Name = "pageButtonsStandalone";
-            this.pageButtonsStandalone.Size = new System.Drawing.Size(50, 490);
+            this.pageButtonsStandalone.Size = new System.Drawing.Size(50, 500);
             this.pageButtonsStandalone.Text = "Standalone";
             this.pageButtonsStandalone.TextDescription = "Standalone is the main button style and intended for individual button instances." +
     "";
@@ -1958,7 +1958,7 @@ namespace PaletteDesigner
             this.pageButtonsLowProfile.LastVisibleSet = true;
             this.pageButtonsLowProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsLowProfile.Name = "pageButtonsLowProfile";
-            this.pageButtonsLowProfile.Size = new System.Drawing.Size(50, 490);
+            this.pageButtonsLowProfile.Size = new System.Drawing.Size(50, 500);
             this.pageButtonsLowProfile.Text = "Low Profile";
             this.pageButtonsLowProfile.TextDescription = "Low Profile style is a less prominent variation for individual button instances.";
             this.pageButtonsLowProfile.ToolTipTitle = "Page ToolTip";
@@ -1999,7 +1999,7 @@ namespace PaletteDesigner
             this.pageButtonsButtonSpec.LastVisibleSet = true;
             this.pageButtonsButtonSpec.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsButtonSpec.Name = "pageButtonsButtonSpec";
-            this.pageButtonsButtonSpec.Size = new System.Drawing.Size(50, 490);
+            this.pageButtonsButtonSpec.Size = new System.Drawing.Size(50, 500);
             this.pageButtonsButtonSpec.Text = "ButtonSpec";
             this.pageButtonsButtonSpec.TextDescription = "ButtonSpec is the default style for buttons created via ButtonSpec collections.";
             this.pageButtonsButtonSpec.ToolTipTitle = "Page ToolTip";
@@ -2147,7 +2147,7 @@ namespace PaletteDesigner
             this.pageButtonsCustom1.LastVisibleSet = true;
             this.pageButtonsCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsCustom1.Name = "pageButtonsCustom1";
-            this.pageButtonsCustom1.Size = new System.Drawing.Size(50, 490);
+            this.pageButtonsCustom1.Size = new System.Drawing.Size(50, 500);
             this.pageButtonsCustom1.Text = "Custom 1";
             this.pageButtonsCustom1.TextDescription = "Custom 1 style inherits from Standalone and is intended for your own custom use.";
             this.pageButtonsCustom1.ToolTipTitle = "Page ToolTip";
@@ -2162,7 +2162,7 @@ namespace PaletteDesigner
             this.pageButtonsCustom2.LastVisibleSet = true;
             this.pageButtonsCustom2.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsCustom2.Name = "pageButtonsCustom2";
-            this.pageButtonsCustom2.Size = new System.Drawing.Size(50, 490);
+            this.pageButtonsCustom2.Size = new System.Drawing.Size(50, 500);
             this.pageButtonsCustom2.Text = "Custom 2";
             this.pageButtonsCustom2.TextDescription = "Custom 2 style inherits from Standalone and is intended for your own custom use.";
             this.pageButtonsCustom2.ToolTipTitle = "Page ToolTip";
@@ -2177,7 +2177,7 @@ namespace PaletteDesigner
             this.pageButtonsCustom3.LastVisibleSet = true;
             this.pageButtonsCustom3.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageButtonsCustom3.Name = "pageButtonsCustom3";
-            this.pageButtonsCustom3.Size = new System.Drawing.Size(50, 490);
+            this.pageButtonsCustom3.Size = new System.Drawing.Size(50, 500);
             this.pageButtonsCustom3.Text = "Custom 3";
             this.pageButtonsCustom3.TextDescription = "Custom 3 style inherits from Standalone and is intended for your own custom use.";
             this.pageButtonsCustom3.ToolTipTitle = "Page ToolTip";
@@ -2584,7 +2584,7 @@ namespace PaletteDesigner
             this.pageControlsClient.LastVisibleSet = true;
             this.pageControlsClient.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageControlsClient.Name = "pageControlsClient";
-            this.pageControlsClient.Size = new System.Drawing.Size(50, 490);
+            this.pageControlsClient.Size = new System.Drawing.Size(50, 500);
             this.pageControlsClient.Text = "Client";
             this.pageControlsClient.TextDescription = "Client is the main style for the client area of Krypton controls.";
             this.pageControlsClient.ToolTipTitle = "Page ToolTip";
@@ -2599,7 +2599,7 @@ namespace PaletteDesigner
             this.pageControlsAlternate.LastVisibleSet = true;
             this.pageControlsAlternate.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageControlsAlternate.Name = "pageControlsAlternate";
-            this.pageControlsAlternate.Size = new System.Drawing.Size(50, 490);
+            this.pageControlsAlternate.Size = new System.Drawing.Size(50, 500);
             this.pageControlsAlternate.Text = "Alternate";
             this.pageControlsAlternate.TextDescription = "Alternate provides a complementary variation on the Client style.";
             this.pageControlsAlternate.ToolTipTitle = "Page ToolTip";
@@ -2653,7 +2653,7 @@ namespace PaletteDesigner
             this.pageControlsCustom1.LastVisibleSet = true;
             this.pageControlsCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageControlsCustom1.Name = "pageControlsCustom1";
-            this.pageControlsCustom1.Size = new System.Drawing.Size(50, 490);
+            this.pageControlsCustom1.Size = new System.Drawing.Size(50, 500);
             this.pageControlsCustom1.Text = "Custom 1";
             this.pageControlsCustom1.TextDescription = "Custom 1 style inherits from Client and is intended for your own custom use.";
             this.pageControlsCustom1.ToolTipTitle = "Page ToolTip";
@@ -2868,7 +2868,7 @@ namespace PaletteDesigner
             this.kryptonGridList.LastVisibleSet = true;
             this.kryptonGridList.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonGridList.Name = "kryptonGridList";
-            this.kryptonGridList.Size = new System.Drawing.Size(50, 490);
+            this.kryptonGridList.Size = new System.Drawing.Size(50, 500);
             this.kryptonGridList.Text = "List";
             this.kryptonGridList.TextDescription = "List is the default grid style.";
             this.kryptonGridList.ToolTipTitle = "Page ToolTip";
@@ -2883,7 +2883,7 @@ namespace PaletteDesigner
             this.kryptonGridSheet.LastVisibleSet = true;
             this.kryptonGridSheet.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonGridSheet.Name = "kryptonGridSheet";
-            this.kryptonGridSheet.Size = new System.Drawing.Size(50, 490);
+            this.kryptonGridSheet.Size = new System.Drawing.Size(50, 500);
             this.kryptonGridSheet.Text = "Sheet";
             this.kryptonGridSheet.TextDescription = "Sheet is used when a worksheet style is required.";
             this.kryptonGridSheet.ToolTipTitle = "Page ToolTip";
@@ -2898,7 +2898,7 @@ namespace PaletteDesigner
             this.kryptonGridCustom1.LastVisibleSet = true;
             this.kryptonGridCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonGridCustom1.Name = "kryptonGridCustom1";
-            this.kryptonGridCustom1.Size = new System.Drawing.Size(50, 490);
+            this.kryptonGridCustom1.Size = new System.Drawing.Size(50, 500);
             this.kryptonGridCustom1.Text = "Custom 1";
             this.kryptonGridCustom1.TextDescription = "Custom 1 style inherits from List and is intended for your own custom use.";
             this.kryptonGridCustom1.ToolTipTitle = "Page ToolTip";
@@ -3070,7 +3070,7 @@ namespace PaletteDesigner
             this.pageHeadersPrimary.LastVisibleSet = true;
             this.pageHeadersPrimary.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageHeadersPrimary.Name = "pageHeadersPrimary";
-            this.pageHeadersPrimary.Size = new System.Drawing.Size(50, 490);
+            this.pageHeadersPrimary.Size = new System.Drawing.Size(50, 500);
             this.pageHeadersPrimary.Text = "Primary";
             this.pageHeadersPrimary.TextDescription = "Primary is intended for main headers that provide section titles.";
             this.pageHeadersPrimary.ToolTipTitle = "Page ToolTip";
@@ -3085,7 +3085,7 @@ namespace PaletteDesigner
             this.pageHeadersSecondary.LastVisibleSet = true;
             this.pageHeadersSecondary.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageHeadersSecondary.Name = "pageHeadersSecondary";
-            this.pageHeadersSecondary.Size = new System.Drawing.Size(50, 490);
+            this.pageHeadersSecondary.Size = new System.Drawing.Size(50, 500);
             this.pageHeadersSecondary.Text = "Secondary";
             this.pageHeadersSecondary.TextDescription = "Secondary is intended for headers that provide subsiduary titles.";
             this.pageHeadersSecondary.ToolTipTitle = "Page ToolTip";
@@ -3150,7 +3150,7 @@ namespace PaletteDesigner
             this.pageHeadersCustom1.LastVisibleSet = true;
             this.pageHeadersCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageHeadersCustom1.Name = "pageHeadersCustom1";
-            this.pageHeadersCustom1.Size = new System.Drawing.Size(50, 490);
+            this.pageHeadersCustom1.Size = new System.Drawing.Size(50, 500);
             this.pageHeadersCustom1.Text = "Custom 1";
             this.pageHeadersCustom1.TextDescription = "Custom 1 style inherits from Primary and is intended for your own custom use.";
             this.pageHeadersCustom1.ToolTipTitle = "Page ToolTip";
@@ -3165,7 +3165,7 @@ namespace PaletteDesigner
             this.pageHeadersCustom2.LastVisibleSet = true;
             this.pageHeadersCustom2.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageHeadersCustom2.Name = "pageHeadersCustom2";
-            this.pageHeadersCustom2.Size = new System.Drawing.Size(50, 490);
+            this.pageHeadersCustom2.Size = new System.Drawing.Size(50, 500);
             this.pageHeadersCustom2.Text = "Custom 2";
             this.pageHeadersCustom2.TextDescription = "Custom 2 style inherits from Primary and is intended for your own custom use.";
             this.pageHeadersCustom2.ToolTipTitle = "Page ToolTip";
@@ -3376,7 +3376,7 @@ namespace PaletteDesigner
             this.kryptonPage2.LastVisibleSet = true;
             this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
-            this.kryptonPage2.Size = new System.Drawing.Size(50, 490);
+            this.kryptonPage2.Size = new System.Drawing.Size(50, 500);
             this.kryptonPage2.Text = "Standalone";
             this.kryptonPage2.TextDescription = "Standalone is appropriate for input controls on a main form.";
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
@@ -3404,7 +3404,7 @@ namespace PaletteDesigner
             this.kryptonPage6.LastVisibleSet = true;
             this.kryptonPage6.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage6.Name = "kryptonPage6";
-            this.kryptonPage6.Size = new System.Drawing.Size(50, 490);
+            this.kryptonPage6.Size = new System.Drawing.Size(50, 500);
             this.kryptonPage6.Text = "Custom 1";
             this.kryptonPage6.TextDescription = "Custom 1 style inherits fromStandalone and is intended for your own custom use.";
             this.kryptonPage6.ToolTipTitle = "Page ToolTip";
@@ -3718,7 +3718,7 @@ namespace PaletteDesigner
             this.pageLabelsNormalControl.LastVisibleSet = true;
             this.pageLabelsNormalControl.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsNormalControl.Name = "pageLabelsNormalControl";
-            this.pageLabelsNormalControl.Size = new System.Drawing.Size(50, 490);
+            this.pageLabelsNormalControl.Size = new System.Drawing.Size(50, 500);
             this.pageLabelsNormalControl.Text = "Normal (Control)";
             this.pageLabelsNormalControl.TextDescription = "Normal is appropriate for standard control labelling on control background.";
             this.pageLabelsNormalControl.ToolTipTitle = "Page ToolTip";
@@ -3759,7 +3759,7 @@ namespace PaletteDesigner
             this.pageLabelsTitleControl.LastVisibleSet = true;
             this.pageLabelsTitleControl.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsTitleControl.Name = "pageLabelsTitleControl";
-            this.pageLabelsTitleControl.Size = new System.Drawing.Size(50, 490);
+            this.pageLabelsTitleControl.Size = new System.Drawing.Size(50, 500);
             this.pageLabelsTitleControl.Text = "Title (Control)";
             this.pageLabelsTitleControl.TextDescription = "Title provides a section level heading label on a control background.";
             this.pageLabelsTitleControl.ToolTipTitle = "Page ToolTip";
@@ -3879,7 +3879,7 @@ namespace PaletteDesigner
             this.pageLabelsCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsCustom1.Name = "pageLabelsCustom1";
             this.pageLabelsCustom1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pageLabelsCustom1.Size = new System.Drawing.Size(50, 490);
+            this.pageLabelsCustom1.Size = new System.Drawing.Size(50, 500);
             this.pageLabelsCustom1.Text = "Custom 1";
             this.pageLabelsCustom1.TextDescription = "Custom 1 style inherits from Normal and is intended for your own custom use.";
             this.pageLabelsCustom1.ToolTipTitle = "Page ToolTip";
@@ -3894,7 +3894,7 @@ namespace PaletteDesigner
             this.pageLabelsCustom2.LastVisibleSet = true;
             this.pageLabelsCustom2.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsCustom2.Name = "pageLabelsCustom2";
-            this.pageLabelsCustom2.Size = new System.Drawing.Size(50, 490);
+            this.pageLabelsCustom2.Size = new System.Drawing.Size(50, 500);
             this.pageLabelsCustom2.Text = "Custom 2";
             this.pageLabelsCustom2.TextDescription = "Custom 2 style inherits from Normal and is intended for your own custom use.";
             this.pageLabelsCustom2.ToolTipTitle = "Page ToolTip";
@@ -3909,7 +3909,7 @@ namespace PaletteDesigner
             this.pageLabelsCustom3.LastVisibleSet = true;
             this.pageLabelsCustom3.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageLabelsCustom3.Name = "pageLabelsCustom3";
-            this.pageLabelsCustom3.Size = new System.Drawing.Size(50, 490);
+            this.pageLabelsCustom3.Size = new System.Drawing.Size(50, 500);
             this.pageLabelsCustom3.Text = "Custom 3";
             this.pageLabelsCustom3.TextDescription = "Custom 3 style inherits from Normal and is intended for your own custom use.";
             this.pageLabelsCustom3.ToolTipTitle = "Page ToolTip";
@@ -3990,7 +3990,7 @@ namespace PaletteDesigner
             this.pageNavigatorBarCheckButtonGroupOutside.LastVisibleSet = true;
             this.pageNavigatorBarCheckButtonGroupOutside.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageNavigatorBarCheckButtonGroupOutside.Name = "pageNavigatorBarCheckButtonGroupOutside";
-            this.pageNavigatorBarCheckButtonGroupOutside.Size = new System.Drawing.Size(50, 490);
+            this.pageNavigatorBarCheckButtonGroupOutside.Size = new System.Drawing.Size(50, 500);
             this.pageNavigatorBarCheckButtonGroupOutside.Text = "Bar Outside";
             this.pageNavigatorBarCheckButtonGroupOutside.TextDescription = "Appearance of when using Bar-CheckButton-Group-Outside mode.";
             this.pageNavigatorBarCheckButtonGroupOutside.ToolTipTitle = "Page ToolTip";
@@ -4005,7 +4005,7 @@ namespace PaletteDesigner
             this.pageNavigatorBarCheckButtonGroupInside.LastVisibleSet = true;
             this.pageNavigatorBarCheckButtonGroupInside.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageNavigatorBarCheckButtonGroupInside.Name = "pageNavigatorBarCheckButtonGroupInside";
-            this.pageNavigatorBarCheckButtonGroupInside.Size = new System.Drawing.Size(50, 490);
+            this.pageNavigatorBarCheckButtonGroupInside.Size = new System.Drawing.Size(50, 500);
             this.pageNavigatorBarCheckButtonGroupInside.Text = "Bar Inside";
             this.pageNavigatorBarCheckButtonGroupInside.TextDescription = "Appearance of when using Bar-CheckButton-Group-Inside mode.";
             this.pageNavigatorBarCheckButtonGroupInside.ToolTipTitle = "Page ToolTip";
@@ -4020,7 +4020,7 @@ namespace PaletteDesigner
             this.pageNavigatorBarCheckButtonGroupOnly.LastVisibleSet = true;
             this.pageNavigatorBarCheckButtonGroupOnly.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageNavigatorBarCheckButtonGroupOnly.Name = "pageNavigatorBarCheckButtonGroupOnly";
-            this.pageNavigatorBarCheckButtonGroupOnly.Size = new System.Drawing.Size(50, 490);
+            this.pageNavigatorBarCheckButtonGroupOnly.Size = new System.Drawing.Size(50, 500);
             this.pageNavigatorBarCheckButtonGroupOnly.Text = "Bar Only";
             this.pageNavigatorBarCheckButtonGroupOnly.TextDescription = "Appearance of when using Bar-CheckButton-Group-Only mode.";
             this.pageNavigatorBarCheckButtonGroupOnly.ToolTipTitle = "Page ToolTip";
@@ -4225,7 +4225,7 @@ namespace PaletteDesigner
             this.pagePanelsClient.LastVisibleSet = true;
             this.pagePanelsClient.MinimumSize = new System.Drawing.Size(50, 50);
             this.pagePanelsClient.Name = "pagePanelsClient";
-            this.pagePanelsClient.Size = new System.Drawing.Size(50, 490);
+            this.pagePanelsClient.Size = new System.Drawing.Size(50, 500);
             this.pagePanelsClient.Text = "Client";
             this.pagePanelsClient.TextDescription = "Client is the main style for client area of Krypton panels.";
             this.pagePanelsClient.ToolTipTitle = "Page ToolTip";
@@ -4240,7 +4240,7 @@ namespace PaletteDesigner
             this.pagePanelsAlternate.LastVisibleSet = true;
             this.pagePanelsAlternate.MinimumSize = new System.Drawing.Size(50, 50);
             this.pagePanelsAlternate.Name = "pagePanelsAlternate";
-            this.pagePanelsAlternate.Size = new System.Drawing.Size(50, 490);
+            this.pagePanelsAlternate.Size = new System.Drawing.Size(50, 500);
             this.pagePanelsAlternate.Text = "Alternate";
             this.pagePanelsAlternate.TextDescription = "Alternate provides a complementary variation on the Client style.";
             this.pagePanelsAlternate.ToolTipTitle = "Page ToolTip";
@@ -4269,7 +4269,7 @@ namespace PaletteDesigner
             this.pagePanelsCustom1.LastVisibleSet = true;
             this.pagePanelsCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pagePanelsCustom1.Name = "pagePanelsCustom1";
-            this.pagePanelsCustom1.Size = new System.Drawing.Size(50, 490);
+            this.pagePanelsCustom1.Size = new System.Drawing.Size(50, 500);
             this.pagePanelsCustom1.Text = "Custom 1";
             this.pagePanelsCustom1.TextDescription = "Custom 1 style inherits from Client and is intended for your own custom use.";
             this.pagePanelsCustom1.ToolTipTitle = "Page ToolTip";
@@ -4295,7 +4295,7 @@ namespace PaletteDesigner
             this.pageDesignRadioButton.LastVisibleSet = true;
             this.pageDesignRadioButton.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignRadioButton.Name = "pageDesignRadioButton";
-            this.pageDesignRadioButton.Size = new System.Drawing.Size(439, 490);
+            this.pageDesignRadioButton.Size = new System.Drawing.Size(439, 500);
             this.pageDesignRadioButton.Text = "Design RadioButton";
             this.pageDesignRadioButton.TextDescription = "Preview appearance of the RadioButton control.";
             this.pageDesignRadioButton.TextTitle = "";
@@ -4421,7 +4421,7 @@ namespace PaletteDesigner
             this.pageDesignRibbon.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignRibbon.Name = "pageDesignRibbon";
             this.pageDesignRibbon.Padding = new System.Windows.Forms.Padding(20);
-            this.pageDesignRibbon.Size = new System.Drawing.Size(439, 490);
+            this.pageDesignRibbon.Size = new System.Drawing.Size(439, 500);
             this.pageDesignRibbon.Text = "Design Ribbon";
             this.pageDesignRibbon.TextDescription = "Preview appearance of the Ribbon control.";
             this.pageDesignRibbon.TextTitle = "";
@@ -4450,7 +4450,7 @@ namespace PaletteDesigner
             this.pageDesignSeparators.LastVisibleSet = true;
             this.pageDesignSeparators.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageDesignSeparators.Name = "pageDesignSeparators";
-            this.pageDesignSeparators.Size = new System.Drawing.Size(439, 490);
+            this.pageDesignSeparators.Size = new System.Drawing.Size(439, 500);
             this.pageDesignSeparators.Text = "Design Separators";
             this.pageDesignSeparators.TextDescription = "Low Profile style is a low visibility display of a separator.";
             this.pageDesignSeparators.TextTitle = "Low Profile";
@@ -4709,7 +4709,7 @@ namespace PaletteDesigner
             this.borderDesignSeparators.Location = new System.Drawing.Point(91, 0);
             this.borderDesignSeparators.Name = "borderDesignSeparators";
             this.borderDesignSeparators.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
-            this.borderDesignSeparators.Size = new System.Drawing.Size(1, 490);
+            this.borderDesignSeparators.Size = new System.Drawing.Size(1, 500);
             this.borderDesignSeparators.TabIndex = 4;
             // 
             // kryptonNavigatorDesignSeparators
@@ -4744,7 +4744,7 @@ namespace PaletteDesigner
             this.pageSeparatorCustom1});
             this.kryptonNavigatorDesignSeparators.Panel.PanelBackStyle = Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
             this.kryptonNavigatorDesignSeparators.SelectedIndex = 0;
-            this.kryptonNavigatorDesignSeparators.Size = new System.Drawing.Size(91, 490);
+            this.kryptonNavigatorDesignSeparators.Size = new System.Drawing.Size(91, 500);
             this.kryptonNavigatorDesignSeparators.StateCommon.Bar.BarPaddingOnly = new System.Windows.Forms.Padding(5);
             this.kryptonNavigatorDesignSeparators.TabIndex = 0;
             this.kryptonNavigatorDesignSeparators.Text = "kryptonNavigator1";
@@ -4759,7 +4759,7 @@ namespace PaletteDesigner
             this.pageSeparatorLowProfile.LastVisibleSet = true;
             this.pageSeparatorLowProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageSeparatorLowProfile.Name = "pageSeparatorLowProfile";
-            this.pageSeparatorLowProfile.Size = new System.Drawing.Size(50, 490);
+            this.pageSeparatorLowProfile.Size = new System.Drawing.Size(50, 500);
             this.pageSeparatorLowProfile.Text = "Low";
             this.pageSeparatorLowProfile.TextDescription = "Low Profile style is a low visibility display of a separator.";
             this.pageSeparatorLowProfile.ToolTipTitle = "Page ToolTip";
@@ -4774,7 +4774,7 @@ namespace PaletteDesigner
             this.pageSeparatorHighProfile.LastVisibleSet = true;
             this.pageSeparatorHighProfile.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageSeparatorHighProfile.Name = "pageSeparatorHighProfile";
-            this.pageSeparatorHighProfile.Size = new System.Drawing.Size(50, 490);
+            this.pageSeparatorHighProfile.Size = new System.Drawing.Size(50, 500);
             this.pageSeparatorHighProfile.Text = "High";
             this.pageSeparatorHighProfile.TextDescription = "High Profile style is a high visibility display of a separator.";
             this.pageSeparatorHighProfile.ToolTipTitle = "Page ToolTip";
@@ -4803,7 +4803,7 @@ namespace PaletteDesigner
             this.pageSeparatorCustom1.LastVisibleSet = true;
             this.pageSeparatorCustom1.MinimumSize = new System.Drawing.Size(50, 50);
             this.pageSeparatorCustom1.Name = "pageSeparatorCustom1";
-            this.pageSeparatorCustom1.Size = new System.Drawing.Size(50, 490);
+            this.pageSeparatorCustom1.Size = new System.Drawing.Size(50, 500);
             this.pageSeparatorCustom1.Text = "Custom 1";
             this.pageSeparatorCustom1.TextDescription = "Custom 1 style inherits from Low Profile and is intended for your own custom use." +
     "";

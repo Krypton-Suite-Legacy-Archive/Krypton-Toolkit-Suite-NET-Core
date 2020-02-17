@@ -40,7 +40,7 @@
             this.richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox.Location = new System.Drawing.Point(5, 5);
             this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(490, 142);
+            this.richTextBox.Size = new System.Drawing.Size(500, 142);
             this.richTextBox.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.richTextBox.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom)
                         | Krypton.Toolkit.PaletteDrawBorders.Left)
