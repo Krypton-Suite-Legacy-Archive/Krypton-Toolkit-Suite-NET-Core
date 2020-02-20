@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net40;netcoreapp3.1</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Krypton.Ribbon" Version="5.500.2002.1" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.500.2002.1" />
+  </ItemGroup>
+
+</Project>

@@ -41,9 +41,13 @@
   <ItemGroup>
     <Content Include="Krypton.ico" />
   </ItemGroup>
-    <ItemGroup>
-      
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krypton.Docking" Version="5.500.2002.1" />
+    <PackageReference Include="Krypton.Navigator" Version="5.500.2002.1" />
+    <PackageReference Include="Krypton.Ribbon" Version="5.500.2002.1" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.500.2002.1" />
+    <PackageReference Include="Krypton.Workspace" Version="5.500.2002.1" />
+  </ItemGroup>
   <PropertyGroup>
     <OutputPath>..\..\..\Binaries\Krypton Toolkit Examples\$(Configuration)\</OutputPath>
   </PropertyGroup>

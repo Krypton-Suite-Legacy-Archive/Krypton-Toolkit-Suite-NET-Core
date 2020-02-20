@@ -881,7 +881,7 @@ namespace KryptonExplorer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo($"{ Path.GetDirectoryName(Application.ExecutablePath) }\\Krypton Toolkit.dll");
+            FileVersionInfo fvi = FileVersionInfo.GetVersionInfo($"{ Path.GetDirectoryName(Application.ExecutablePath) }\\Krypton.Toolkit.dll");
 
             Settings settings = new Settings();
 
