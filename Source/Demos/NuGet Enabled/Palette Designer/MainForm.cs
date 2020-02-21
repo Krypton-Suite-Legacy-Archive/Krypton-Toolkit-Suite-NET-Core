@@ -11,10 +11,12 @@
 // *****************************************************************************
 
 
-using System;
-using System.Windows.Forms;
 using ComponentFactory.Krypton.Navigator;
 using ComponentFactory.Krypton.Toolkit;
+using PaletteDesigner.Classes;
+using System;
+using System.IO;
+using System.Windows.Forms;
 
 namespace PaletteDesigner
 {
@@ -27,6 +29,7 @@ namespace PaletteDesigner
         private KryptonPalette _palette;
         private FormChromeTMS _chromeTMS;
         private FormChromeRibbon _chromeRibbon;
+        private MostRecentlyUsedDocumentsManager _recentlyUsedDocumentsManager;
         #endregion
 
         #region Identity
@@ -36,6 +39,8 @@ namespace PaletteDesigner
         public MainForm()
         {
             InitializeComponent();
+
+            _recentlyUsedDocumentsManager = new MostRecentlyUsedDocumentsManager(recentPalettesToolStripMenuItem, "Krypton Palette Designer", MyOwnRecentPaletteFileGotClicked_Handler, MyOwnRecentPaletteFilesGotCleared_Handler);
         }
         #endregion
 
@@ -113,7 +118,7 @@ namespace PaletteDesigner
                 _palette.PalettePaint += new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
 
                 // Hook up the property grid to the palette
-                labelGridNormal.SelectedObject = _palette;
+                kpgPaletteProperties.SelectedObject = _palette;
 
                 // Use the loaded filename
                 _filename = filename;
@@ -219,7 +224,7 @@ namespace PaletteDesigner
             _palette.PalettePaint += new EventHandler<PaletteLayoutEventArgs>(OnPalettePaint);
 
             // Hook up the property grid to the palette
-            labelGridNormal.SelectedObject = _palette;
+            kpgPaletteProperties.SelectedObject = _palette;
 
             // Does not have a filename as yet
             _filename = "(New Palette)";
@@ -513,7 +518,7 @@ namespace PaletteDesigner
             ButtonStyle bs;
 
             // Work out the button style to be used
-            switch(kryptonNavigatorDesignButtons.SelectedIndex)
+            switch (kryptonNavigatorDesignButtons.SelectedIndex)
             {
                 default:
                 case 0:
@@ -595,7 +600,7 @@ namespace PaletteDesigner
 
             PaletteBackStyle backStyle;
             PaletteBorderStyle borderStyle;
-            
+
             // Work out the group styles to be used
             switch (kryptonNavigatorDesignControls.SelectedIndex)
             {
@@ -973,6 +978,30 @@ namespace PaletteDesigner
             // Update all the displayed controls with the new styles
             dataGridViewDisabled.GridStyles.Style = gridStyle;
             dataGridViewNormal.GridStyles.Style = gridStyle;
+        }
+
+        private void MyOwnRecentPaletteFileGotClicked_Handler(object sender, EventArgs e)
+        {
+            string fileName = (sender as ToolStripItem).Text;
+
+            if (!File.Exists(fileName))
+            {
+                if (KryptonMessageBox.Show($"{ fileName } doesn't exist. Remove from recent workspaces?", "File not found", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    _recentlyUsedDocumentsManager.RemoveRecentFile(fileName);
+                }
+                else
+                {
+                    return;
+                }
+            }
+
+            _palette.Import(fileName);
+        }
+
+        private void MyOwnRecentPaletteFilesGotCleared_Handler(object sender, EventArgs e)
+        {
+
         }
         #endregion
 
