@@ -37,9 +37,9 @@
     <Content Include="Resources\TopTMS.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Krypton Components\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2019.csproj" />
-    <ProjectReference Include="..\Krypton Components\ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon 2019.csproj" />
-    <ProjectReference Include="..\Krypton Components\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2019.csproj" />
+    <PackageReference Include="Krypton.Navigator" Version="5.500.2002.1" />
+    <PackageReference Include="Krypton.Ribbon" Version="5.500.2002.1" />
+    <PackageReference Include="Krypton.Toolkit" Version="5.500.2002.1" />
   </ItemGroup>
   <PropertyGroup>
     <OutputPath>..\..\Bin\$(Configuration)\</OutputPath>
