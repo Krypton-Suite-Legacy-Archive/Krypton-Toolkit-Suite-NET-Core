@@ -1,24 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Import the common properties to support NuGet restore -->
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <!-- A framework version is required for NuGet restore.  This can be any valid version -->
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <!-- The configuration and platform will be used to determine which assemblies to include from solution and
 				 project documentation sources -->
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{18fa58ae-7da1-4e05-89dd-c49452562e50}</ProjectGuid>
+    <ProjectGuid>{eb2e4c1d-47c9-4c19-8b25-e5c67d005a38}</ProjectGuid>
     <SHFBSchemaVersion>2017.9.26.0</SHFBSchemaVersion>
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
     <AssemblyName>Documentation</AssemblyName>
     <RootNamespace>Documentation</RootNamespace>
     <Name>Documentation</Name>
     <!-- SHFB properties -->
-    <FrameworkVersion>.NET Framework 4.7</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.8</FrameworkVersion>
     <OutputPath>.\Help\</OutputPath>
-    <HtmlHelpName>Krypton Toolkit Suite Documentation</HtmlHelpName>
+    <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
-    <HelpFileFormat>HtmlHelp1, MSHelpViewer</HelpFileFormat>
-    <SyntaxFilters>C#</SyntaxFilters>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Docking.dll" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Docking.xml" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Navigator.dll" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Navigator.xml" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Ribbon.dll" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Ribbon.xml" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Toolkit.dll" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Toolkit.xml" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Workspace.dll" />
+<DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\netcoreapp3.1\Krypton.Workspace.xml" /></DocumentationSources>
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <SyntaxFilters>C#, Visual Basic</SyntaxFilters>
     <PresentationStyle>VS2013</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
     <KeepLogFile>True</KeepLogFile>
@@ -26,24 +41,6 @@
     <IndentHtml>False</IndentHtml>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
-    <HelpTitle>Krypton Toolkit Suite</HelpTitle>
-    <HelpFileVersion>5.470.0.0</HelpFileVersion>
-    <RootNamespaceContainer>False</RootNamespaceContainer>
-    <NamespaceGrouping>False</NamespaceGrouping>
-    <MaximumGroupParts>2</MaximumGroupParts>
-    <Preliminary>False</Preliminary>
-    <SdkLinkTarget>Blank</SdkLinkTarget>
-    <DocumentationSources>
-      <DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Docking.dll" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Docking.xml" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Navigator.dll" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Navigator.xml" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Ribbon.dll" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Ribbon.xml" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Toolkit.dll" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Toolkit.xml" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Workspace.dll" />
-<DocumentationSource sourceFile="T:\Development\Krypton\Versions\Standard\Krypton-NET-5.470\Bin\Krypton Workspace.xml" /></DocumentationSources>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
@@ -63,8 +60,17 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
   </PropertyGroup>
-  <!-- Import the SHFB build targets -->
-  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+  <!-- Uncomment this to use the NuGet packages when SHFB is not installed locally, e.g. in the CI build pipeline.
+			Update the package versions to the latest releases.
+	<ItemGroup>
+		<PackageReference Include="EWSoftware.SHFB" Version="2019.9.15" />
+		<PackageReference Include="EWSoftware.SHFB.NETFramework" Version="4.8.0" />
+	</ItemGroup>
+	-->
+  <!-- Import the common build targets during NuGet restore because before the packages are being installed, $(SHFBROOT) is not set yet -->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="'$(MSBuildRestoreSessionId)' != ''" />
+  <!-- Import the SHFB build targets during build -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" Condition="'$(MSBuildRestoreSessionId)' == ''" />
   <!-- The pre-build and post-build event properties must appear *after* the targets file import in order to be
 			 evaluated correctly. -->
   <PropertyGroup>
