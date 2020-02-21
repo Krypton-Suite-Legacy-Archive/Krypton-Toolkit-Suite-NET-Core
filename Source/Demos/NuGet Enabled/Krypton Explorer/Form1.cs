@@ -922,7 +922,7 @@ namespace KryptonExplorer
 
         private void KbtnKryptonToolkitPackage_Click(object sender, EventArgs e)
         {
-            Process.Start("https://www.nuget.org/packages/KryptonToolkitSuite5472/");
+            Process.Start("https://github.com/Wagnerp/Krypton-NET-Version-Dashboard");
         }
 
         private void KbtnKryptonExtendedToolkitPackage_Click(object sender, EventArgs e)
@@ -932,7 +932,7 @@ namespace KryptonExplorer
 
         private void KbtnKryptonDemoApplicationPackage_Click(object sender, EventArgs e)
         {
-            Process.Start("https://www.nuget.org/packages/KryptonToolkitSuite5472Demos/");
+            //Process.Start("https://www.nuget.org/packages/KryptonToolkitSuite5472Demos/");
         }
     }
 }

@@ -251,7 +251,7 @@
             this.kryptonPage4,
             this.kryptonPage5});
             this.kryptonNavigator.Panel.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.PanelAlternate;
-            this.kryptonNavigator.SelectedIndex = 8;
+            this.kryptonNavigator.SelectedIndex = 7;
             this.kryptonNavigator.Size = new System.Drawing.Size(644, 381);
             this.kryptonNavigator.StateCommon.Bar.BarPaddingOutside = new System.Windows.Forms.Padding(0, 0, 0, 10);
             this.kryptonNavigator.StateCommon.Bar.CheckButtonGap = 5;
@@ -1892,7 +1892,7 @@
             this.kryptonPage4.LastVisibleSet = true;
             this.kryptonPage4.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage4.Name = "kryptonPage4";
-            this.kryptonPage4.Size = new System.Drawing.Size(458, 379);
+            this.kryptonPage4.Size = new System.Drawing.Size(529, 379);
             this.kryptonPage4.Text = "Releases";
             this.kryptonPage4.TextDescription = "";
             this.kryptonPage4.TextTitle = "";
@@ -1921,6 +1921,7 @@
             this.kbtnKryptonDemoApplicationPackage.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbtnKryptonDemoApplicationPackage.TabIndex = 7;
             this.kbtnKryptonDemoApplicationPackage.Values.Text = "Krypton Demo Application Package";
+            this.kbtnKryptonDemoApplicationPackage.Visible = false;
             this.kbtnKryptonDemoApplicationPackage.Click += new System.EventHandler(this.KbtnKryptonDemoApplicationPackage_Click);
             // 
             // kbtnKryptonToolkitPackage
