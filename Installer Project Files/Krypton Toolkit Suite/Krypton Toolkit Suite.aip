@@ -26,6 +26,7 @@
     <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
     <ROW Property="ARPURLINFOABOUT" Value="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core/issues"/>
     <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/Wagnerp/Krypton-Toolkit-Suite-NET-Core"/>
+    <ROW Property="AiFeatIcopalx" Value="SquareDesign48x48Green.exe" Type="8"/>
     <ROW Property="AppLogoIcon" Value="applogoicon" MultiBuildValue="DefaultBuild:SquareDesign64x64NewGreen.png" Type="1" MsiKey="AppLogoIcon"/>
     <ROW Property="Manufacturer" Value="Krypton Toolkt Suite Contributors"/>
     <ROW Property="PALX_CHECKBOX" Value="1" Type="4"/>
@@ -56,10 +57,14 @@
     <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
     <ROW Directory="Examples_Dir" Directory_Parent="Binaries_Dir" DefaultDir="Examples"/>
     <ROW Directory="Help_Dir" Directory_Parent="APPDIR" DefaultDir="Help"/>
+    <ROW Directory="ItemTemplates_Dir" Directory_Parent="VISX_Dir" DefaultDir="ITEMTE~1|Item Templates"/>
     <ROW Directory="License_Dir" Directory_Parent="APPDIR" DefaultDir="License"/>
     <ROW Directory="NuGet_Dir" Directory_Parent="WebLinks_Dir" DefaultDir="NuGet"/>
+    <ROW Directory="ProjectTemplates_Dir" Directory_Parent="VISX_Dir" DefaultDir="PROJEC~1|Project Templates"/>
     <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="VISX_Dir" Directory_Parent="VisualStudioItems_Dir" DefaultDir="VISX"/>
+    <ROW Directory="VisualStudioItems_Dir" Directory_Parent="APPDIR" DefaultDir="VISUAL~1|Visual Studio Items"/>
     <ROW Directory="WebLinks_Dir" Directory_Parent="APPDIR" DefaultDir="WebLinks"/>
     <ROW Directory="net35_1_Dir" Directory_Parent="Examples_Dir" DefaultDir="net35"/>
     <ROW Directory="net35_Dir" Directory_Parent="DLLs_Dir" DefaultDir="net35"/>
@@ -90,7 +95,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="AI_CustomARPName" ComponentId="{CB075CE4-49DF-4C91-88E6-3BFDDBBA016E}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
-    <ROW Component="AI_ExePath" ComponentId="{5FDB694E-D620-45EA-9C78-240188CC6652}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="AI_ExePath" ComponentId="{10865992-4D19-41C2-B1A3-E48B70B54781}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
     <ROW Component="APPDIR" ComponentId="{CB189E5D-2254-49C2-9208-892ECE30ABA7}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="AdvancedPageDragandDrop.deps.json" ComponentId="{50138097-15E4-468B-AC8A-F0E294170BCE}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="WorkspacePersistence.deps.json" Type="0"/>
     <ROW Component="AdvancedPageDragandDrop.deps.json_1" ComponentId="{F74230D2-08AF-4778-9414-629EEDA84730}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="AdvancedPageDragandDrop.deps.json"/>
@@ -967,6 +972,7 @@
     <ROW Component="InputFormExamples.pdb_2" ComponentId="{D0E94A22-DCF7-4FC5-B06D-628198AAEE46}" Directory_="net471_1_Dir" Attributes="0" KeyPath="InputFormExamples.pdb_9" Type="4"/>
     <ROW Component="InputFormExamples.runtimeconfig.dev.json" ComponentId="{B288E6DB-30E8-4F98-BF3B-CEF0F492A722}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="InputFormExamples.runtimeconfig.dev.json"/>
     <ROW Component="InputFormExamples.runtimeconfig.json" ComponentId="{CCDAA0F7-4CC6-478E-9C4A-29A9EA70CF81}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="InputFormExamples.runtimeconfig.json"/>
+    <ROW Component="ItemTemplates" ComponentId="{041EBC06-BD32-4EA5-A1EF-CF15C13EEFE6}" Directory_="ItemTemplates_Dir" Attributes="0"/>
     <ROW Component="KeyTipsandKeyboardAccess.deps.json" ComponentId="{659B4678-B0A6-4A80-8024-E905989E0D05}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="KeyTipsandKeyboardAccess.deps.json"/>
     <ROW Component="KeyTipsandKeyboardAccess.dll" ComponentId="{81236BC3-949C-4A50-A486-5099F57B6CD3}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="KeyTipsandKeyboardAccess.dll"/>
     <ROW Component="KeyTipsandKeyboardAccess.dll.config" ComponentId="{E88EAD05-E9E0-4763-9148-E777134A2865}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="KeyTipsandKeyboardAccess.dll.config"/>
@@ -3678,6 +3684,7 @@
     <ROW Component="PopupPages.runtimeconfig.json" ComponentId="{A9098CCB-891E-47A0-9F93-3A836718A109}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="PopupPages.runtimeconfig.json"/>
     <ROW Component="ProductInformation" ComponentId="{49DF1E5D-AEEC-4544-AB1A-F7FF086DD19F}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
     <ROW Component="ProjectHomepage.url" ComponentId="{D4596F6E-2C8C-440A-AB46-50E6DBA5FFF8}" Directory_="WebLinks_Dir" Attributes="0" KeyPath="ProjectHomepage.url"/>
+    <ROW Component="ProjectTemplates" ComponentId="{8C4FF217-E40E-4D30-A02A-DE5CD4425C13}" Directory_="ProjectTemplates_Dir" Attributes="0"/>
     <ROW Component="QuickAccessToolbar.deps.json" ComponentId="{F2F6C98C-5965-4A51-9A7D-71E140D0ED4A}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="QuickAccessToolbar.deps.json"/>
     <ROW Component="QuickAccessToolbar.dll" ComponentId="{52D78EBF-9283-4A8C-8844-2F4881B0A33F}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="QuickAccessToolbar.dll"/>
     <ROW Component="QuickAccessToolbar.dll.config" ComponentId="{601973E9-9708-45D5-A4EB-5040B995F428}" Directory_="netcoreapp3.1_1_Dir" Attributes="0" KeyPath="QuickAccessToolbar.dll.config"/>
@@ -4442,6 +4449,7 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="AiAppXAssets" Title="AiAppXAssets" Description="Description" Display="3" Level="0" Directory_="APPDIR" Attributes="0" Options="271" Builds="Build_MSIX_APPX"/>
     <ROW Feature="FileTypeAssociations" Feature_Parent="MainFeature" Title="File Type Associations" Description="Description" Display="31" Level="1" Directory_="APPDIR" Attributes="0" Options="13"/>
+    <ROW Feature="ItemTemplates" Title="Item Templates" Description="Description" Display="35" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ROW Feature="NET3.5" Title=".NET 3.5" Description="Description" Display="5" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ROW Feature="NET4.0" Title=".NET 4.0" Description="Description" Display="7" Level="1" Directory_="APPDIR" Attributes="0"/>
@@ -8958,7 +8966,7 @@
     <ROW File="PaletteDesigner.pdb_11" Component_="PaletteDesigner.exe_11" FileName="PALETT~2.PDB|Palette Designer.pdb" Attributes="0" SourcePath="P:\Development\Krypton Releases\5.500\Binaries\Examples\netcoreapp3.1\Palette Designer.pdb" SelfReg="false"/>
     <ROW File="PaletteDesigner.runtimeconfig.dev.json" Component_="PaletteDesigner.deps.json" FileName="PALETT~5.JSO|Palette Designer.runtimeconfig.dev.json" Attributes="0" SourcePath="P:\Development\Krypton Releases\5.500\Binaries\Examples\netcoreapp3.1\Palette Designer.runtimeconfig.dev.json" SelfReg="false"/>
     <ROW File="PaletteDesigner.runtimeconfig.json" Component_="PaletteDesigner.deps.json" FileName="PALETT~6.JSO|Palette Designer.runtimeconfig.json" Attributes="0" SourcePath="P:\Development\Krypton Releases\5.500\Binaries\Examples\netcoreapp3.1\Palette Designer.runtimeconfig.json" SelfReg="false"/>
-    <ATTRIBUTE name="IcoToPng" value="KryptonExplorerSquare150x150Logo.scale100.png:0:150 KryptonExplorerSquare44x44Logo.scale100.png:0:44"/>
+    <ATTRIBUTE name="IcoToPng" value="KryptonExplorerSquare44x44Logo.scale100.png:0:44 KryptonExplorerSquare150x150Logo.scale100.png:0:150"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AppXCfgComponent">
     <ROW ID="Configuration" Order="1" ManifestFile="AppxManifest.xml" TargetOs="4"/>
@@ -9133,6 +9141,7 @@
     <ROW Dialog_="FileAssociationsDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="FileAssociationsDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
     <ROW Dialog_="FileAssociationsDlg" Control="CheckBox_1" Type="CheckBox" X="34" Y="173" Width="297" Height="15" Attributes="3" Property="PALX_CHECKBOX" Text=".palx" Order="1100"/>
     <ROW Dialog_="InstallTypeDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="InstallTypeDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="17" Y="122" Width="312" Height="227" Attributes="3" Property="EulaRead" Text="P:\Development\Krypton Releases\5.500\License\License.rtf" Order="600" TextLocId="_2" MsiKey="LicenseAgreementDlg#AgreementText"/>
     <ROW Dialog_="MsiRMFilesInUse" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="MsiRMFilesInUse#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
     <ROW Dialog_="NewSeqDialog" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
     <ROW Dialog_="NewSeqDialog" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="345" Height="400" Attributes="1" Text="[Background]" Order="200"/>
@@ -9252,13 +9261,17 @@
     <ROW Dialog_="FileAssociationsDlg" Control_="FileAssociationsDlgDialogInitializer" Event="[PALX_CHECKBOX]" Argument="{}" Condition="AI_MAINT AND ( ( ( !palx &lt;&gt; 3 ) AND NOT (AI_EXT_SELECTED) ) OR ( ( &amp;palx &lt;&gt; 3 ) AND AI_EXT_SELECTED ) )" Ordering="3"/>
     <ROW Dialog_="FileAssociationsDlg" Control_="FileAssociationsDlgDialogInitializer" Event="[AI_EXT_SELECTED]" Argument="1" Condition="AI_MAINT AND NOT (AI_EXT_SELECTED)" Ordering="4"/>
     <ROW Dialog_="NewSeqDialog_1" Control_="Cancel" Event="SpawnDialog" Argument="CancelDlg" Condition="1" Ordering="100"/>
-    <ROW Dialog_="WelcomePrereqDlg" Control_="Next" Event="NewDialog" Argument="PrerequisitesDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
     <ROW Dialog_="PrerequisitesDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
-    <ROW Dialog_="PrerequisitesDlg" Control_="Back" Event="NewDialog" Argument="WelcomePrereqDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="PrerequisitesDlg" Condition="AI_BOOTSTRAPPER" Ordering="102"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomePrereqDlg" Condition="AI_BOOTSTRAPPER" Ordering="2"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
     <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
     <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+    <ROW Directory_="ItemTemplates_Dir" Component_="ItemTemplates" ManualDelete="false"/>
+    <ROW Directory_="ProjectTemplates_Dir" Component_="ProjectTemplates" ManualDelete="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
@@ -13625,7 +13638,6 @@
     <ROW Feature_="NETCore" Component_="WorkspaceCellModes.runtimeconfig.dev.json"/>
     <ROW Feature_="NETCore" Component_="WorkspaceCellModes.runtimeconfig.json"/>
     <ROW Feature_="NETCore" Component_="WorkspacePersistence.exe_12"/>
-    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
     <ROW Feature_="MainFeature" Component_="PaletteDesigner.exe"/>
     <ROW Feature_="MainFeature" Component_="PaletteDesigner.exe.config"/>
     <ROW Feature_="MainFeature" Component_="PaletteDesigner.exe_1"/>
@@ -13652,6 +13664,9 @@
     <ROW Feature_="MainFeature" Component_="PaletteDesigner.dll"/>
     <ROW Feature_="MainFeature" Component_="PaletteDesigner.exe_11"/>
     <ROW Feature_="palx" Component_="PaletteDesigner.exe_11"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="ItemTemplates" Component_="ItemTemplates"/>
+    <ROW Feature_="ItemTemplates" Component_="ProjectTemplates"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="KryptonExplorer.exe" SourcePath="P:\Development\Krypton Releases\5.500\Binaries\Examples\netcoreapp3.1\Krypton Explorer.exe" Index="0"/>
@@ -13666,8 +13681,12 @@
     <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+    <ROW Action="AI_DetectSoftware" Sequence="103"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
     <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
-    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="103" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
     <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
     <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
     <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
@@ -13676,12 +13695,8 @@
     <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
     <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
     <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
-    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
-    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
     <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
     <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
-    <ROW Action="AI_DetectSoftware" Sequence="102"/>
-    <ROW Action="AI_AppSearchEx" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
@@ -13739,6 +13754,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
     <ROW Shortcut="CheckVersion" Directory_="SHORTCUTDIR" Name="CHECKV~1|Check Version" Component_="CheckVersion.url" Target="[#CheckVersion.url]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="WebLinks_Dir"/>
+    <ROW Shortcut="Examples" Directory_="SHORTCUTDIR" Name="Examples" Component_="PaletteDesigner.exe.config_9" Target="[Examples_Dir]" Description="Browse examples" Hotkey="0" IconIndex="0" ShowCmd="1"/>
     <ROW Shortcut="FileaBugorNewRequest" Directory_="SHORTCUTDIR" Name="FILEAB~1|File a Bug or New Request" Component_="FileaBugorNewRequest.url" Target="[#FileaBugorNewRequest.url]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="WebLinks_Dir"/>
     <ROW Shortcut="KryptonExplorer" Directory_="SHORTCUTDIR" Name="KRYPTO~1|Krypton Explorer" Component_="KryptonExplorer.exe_12" Target="[#KryptonExplorer.exe_12]" Hotkey="0" Icon_="KryptonExplorer.exe" IconIndex="0" ShowCmd="1" WkDir="netcoreapp3.1_1_Dir"/>
     <ROW Shortcut="KryptonExplorer_1" Directory_="DesktopFolder" Name="KRYPTO~1|Krypton Explorer" Component_="KryptonExplorer.exe_12" Target="[#KryptonExplorer.exe_12]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="netcoreapp3.1_1_Dir"/>
