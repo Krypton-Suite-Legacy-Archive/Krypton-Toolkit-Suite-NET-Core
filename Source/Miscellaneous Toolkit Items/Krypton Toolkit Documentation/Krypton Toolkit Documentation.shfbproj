@@ -13,7 +13,7 @@
     <RootNamespace>Krypton_Toolkit_Documentation</RootNamespace>
     <Name>Krypton_Toolkit_Documentation</Name>
     <!-- SHFB properties -->
-    <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.8</FrameworkVersion>
     <OutputPath>.\Help\</OutputPath>
     <HtmlHelpName>Krypton_Toolkit_Documentation</HtmlHelpName>
     <Language>en-US</Language>
@@ -26,6 +26,36 @@
       <Argument Key="logoAlignment" Value="left" xmlns="" />
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <SyntaxFilters>C#, Visual Basic</SyntaxFilters>
+    <PresentationStyle>VS2013</PresentationStyle>
+    <CleanIntermediates>True</CleanIntermediates>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <IndentHtml>False</IndentHtml>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
+    <HelpTitle>Krypton Toolkit Documentation</HelpTitle>
+    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <NamingMethod>Guid</NamingMethod>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <NamespaceGrouping>False</NamespaceGrouping>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <Preliminary>False</Preliminary>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Docking.dll" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Docking.xml" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Navigator.dll" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Navigator.xml" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Ribbon.dll" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Ribbon.xml" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Toolkit.dll" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Toolkit.xml" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Workspace.dll" />
+      <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Workspace.xml" />
+    </DocumentationSources>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
