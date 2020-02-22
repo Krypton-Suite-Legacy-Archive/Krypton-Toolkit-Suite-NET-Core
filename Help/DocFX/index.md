@@ -6,8 +6,8 @@ The `Krypton Suite` consists of five products called `Krypton Toolkit, Krypton R
 ## https://github.com/Wagnerp/Krypton-NET-Core
 * Modifications by Peter Wagner (aka Wagnerp) & Simon Coghlan (aka Smurf-IV)  have been fixing and adding more capabilities to this toolkit.
 * There is also an Extensions project, which takes these base controls and add more useful complete controls (Currently outside the scope of this help). To find out more, please head to [this link](https://github.com/Wagnerp/Krypton-Toolkit-Suite-Extended-NET)
-* All new releases of packages will no longer ship with the '.chm' help file. This is to reduce file size from 70+ MB to 5 - 6 MB.
-* All .Net Versions from 4.50 are catered for with some back-merges for 4.0
+<!--* All new releases of packages will no longer ship with the '.chm' help file. This is to reduce file size from 70+ MB to 5 - 6 MB.-->
+* All .Net Versions from 3.5 are catered for 
 * New versions of Nuget packages can be obtained via [this link](https://www.nuget.org/packages?q=Krypton./), or via your package manager by searching `Krypton.`.
 
 
