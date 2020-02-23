@@ -2,53 +2,55 @@
 <topic id="c69d81dd-55fa-46f6-8269-6ad69acef566" revisionNumber="1">
 	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<introduction>
+      <title>Introduction</title>
 			<para>
-				<title>Introduction</title>
-				The <bold>Krypton Suite</bold> contains user interface components designed to make it quick and easy for developers to create professional looking applications. It provides the essential building blocks needed to create a consistent look and feel across all your products. You can use the built-in palettes to achieve the same appearance as industry standard applications such as Microsoft Office 2007/2010/2013/365. Alternatively you can create your own custom palettes to create a completely unique user interface.
+				The <i>Krypton Suite</i> contains user interface components designed to make it quick and easy for developers to create professional looking applications. It provides the essential building blocks needed to create a consistent look and feel across all your products. You can use the built-in palettes to achieve the same appearance as industry standard applications such as Microsoft Office 2007/2010/2013/365. Alternatively you can create your own custom palettes to create a completely unique user interface.
 				The `Krypton Suite` consists of five products called `Krypton Toolkit, Krypton Ribbon, Krypton Navigator, Krypton Workspace` and `Krypton Docking`.
 			</para>
 		</introduction>
 
 		<section>
-			<title>Getting Started</title>
+			<title>Krypton Toolkit</title>
 			<content>
-				<para>To get started, add a documentation source to the project (a Visual Studio solution, project, or
-assembly and XML comments file).  See the <legacyBold>Getting Started</legacyBold> topics in the Sandcastle Help
-File Builder's help file for more information.  The following default items are included in this project:</para>
-
-				<list class="bullet">
-					<listItem>
-						<para><localUri>ContentLayout.content</localUri> - Use the content layout file to manage the
-conceptual content in the project and define its layout in the table of contents.</para>
-					</listItem>
-
-					<listItem>
-						<para>The <localUri>.\media</localUri> folder - Place images in this folder that you will reference
-from conceptual content using <codeInline>medialLink</codeInline> or <codeInline>mediaLinkInline</codeInline>
-elements.  If you will not have any images in the file, you may remove this folder.</para>
-					</listItem>
-
-					<listItem>
-						<para>The <localUri>.\icons</localUri> folder - This contains a default logo for the help file.  You
-may replace it or remove it and the folder if not wanted.  If removed or if you change the file name, update
-the <ui>Transform Args</ui> project properties page by removing or changing the filename in the
-<codeInline>logoFile</codeInline> transform argument.  Note that unlike images referenced from conceptual topics,
-the logo file should have its <legacyBold>BuildAction</legacyBold> property set to <codeInline>Content</codeInline>.</para>
-					</listItem>
-
-					<listItem>
-						<para>The <localUri>.\Content</localUri> folder - Use this to store your conceptual topics.  You may
-name the files and organize them however you like.  One suggestion is to lay the files out on disk as you have
-them in the content layout file as shown in this project but the choice is yours.  Files can be added via the
-Solution Explorer or from within the content layout file editor.  Files must appear in the content layout file
-in order to be compiled into the help file.</para>
-					</listItem>
-				</list>
-
-				<para>See the <legacyBold>Conceptual Content</legacyBold> topics in the Sandcastle Help File Builder's
-help file for more information.  See the <legacyBold> Sandcastle MAML Guide</legacyBold> for details on Microsoft
-Assistance Markup Language (MAML) which is used to create these topics.</para>
+        <para>The Krypton Toolkit provides a set of basic user interface components for free. You can distribute the signed Krypton Toolkit assembly without charge or royalty with your own products. The Krypton Toolkit is great resource for speeding up 
+        development of professional looking applications. It works in tandem with the MenuStrip, StatusStrip and ToolStrip controls that come with .NET Framework controls. Using the Krypton Toolkit you can create a great looking application in just minutes.</para>
 			</content>
 		</section>
+
+    <section>
+      <title>Krypton Ribbon</title>
+      <content>
+        <para>
+          The Krypton Ribbon is designed to mimic the look, feel and operation of the ribbon control seen in the Microsoft Office 2007/2010/2013/365 applications such as Word and Excel. It provides advanced capabilities including the quick access toolbar,
+          contextual tabs and auto shrinking groups. With rich design time support and sample code you can be up and running with the ribbon in no time at all. It integrates with the Krypton Toolkit architecture to ensure a consistent look and feel.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>Krypton Navigator</title>
+      <content>
+        <para>The Krypton Navigator is a user interface control that provides the user with a variety of ways to navigate around a set of pages. Think of it as a traditional TabControl on steroids. It has many different modes of operation allowing you to achieve 
+        exactly the right operation for your application. It integrates with the Krypton Toolkit architecture to ensure a consistent look and feel.</para>
+      </content>
+    </section>
+
+    <section>
+      <title>Krypton Workspace</title>
+      <content>
+        <para>The Krypton Workspace allows a document area to be created that the user can customize by dragging and dropping pages into new positions. Similar to the Visual Studio document area but with far greater flexibility and functionality. Each cell within 
+        the workspace uses an instance of the Krypton Navigator allowing a wide range of options for organizing and displaying pages. It integrates with the Krypton Toolkit architecture to ensure a consistent look and feel.</para>
+      </content>
+    </section>
+
+    <section>
+      <title>Krypton Docking</title>
+      <content>
+        <para>
+          The Krypton Docking set of components allow the user to drag and drop docking pages into new locations in order to customize the organization of the application content. It allows this in a way similar to that of Visual Studio 2008/2010. Each 
+          docking area uses an instance of the Krypton Workspace allowing a wide range of options for organizing and displaying pages. It integrates with the Krypton Toolkit architecture to ensure a consistent look and feel.
+        </para>
+      </content>
+    </section>
 	</developerConceptualDocument>
 </topic>

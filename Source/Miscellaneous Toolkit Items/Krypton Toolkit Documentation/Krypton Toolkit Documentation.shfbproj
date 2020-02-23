@@ -56,6 +56,8 @@
       <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Workspace.dll" />
       <DocumentationSource sourceFile="P:\Development\Krypton Releases\5.500\Binaries\DLLs\net48\Krypton.Workspace.xml" />
     </DocumentationSources>
+    <FooterText>
+    </FooterText>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
