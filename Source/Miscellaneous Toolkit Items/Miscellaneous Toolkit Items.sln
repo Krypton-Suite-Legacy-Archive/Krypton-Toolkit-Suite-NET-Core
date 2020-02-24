@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Toolkit Installer",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Toolkit Templates Installer", "Templates\VSIX\Combined\Both\Krypton Toolkit Templates Installer\Krypton Toolkit Templates Installer.csproj", "{D731C810-DBDC-4729-B77F-C63148BA0EBA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Both", "Both", "{86B956B2-49D5-468E-97C9-4AB7D4B00A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Toolkit Items Installer", "Templates\VSIX\Items\Both\Krypton Toolkit Items Installer\Krypton Toolkit Items Installer.csproj", "{7FE6A816-EC93-4808-93BE-E4896C6D1DBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +105,10 @@ Global
 		{D731C810-DBDC-4729-B77F-C63148BA0EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D731C810-DBDC-4729-B77F-C63148BA0EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D731C810-DBDC-4729-B77F-C63148BA0EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE6A816-EC93-4808-93BE-E4896C6D1DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE6A816-EC93-4808-93BE-E4896C6D1DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE6A816-EC93-4808-93BE-E4896C6D1DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE6A816-EC93-4808-93BE-E4896C6D1DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +138,8 @@ Global
 		{59136F5D-5BB7-4132-8033-7F5E7F2EC87C} = {78180F3A-15DA-4E57-B7CE-3FD94E8053EF}
 		{5B10E18D-DDF2-4E9E-B1D6-922C9711378B} = {0657A167-7070-45FD-A1F1-E5E46DA81747}
 		{D731C810-DBDC-4729-B77F-C63148BA0EBA} = {4BBADDB0-4FEE-4206-B5CF-071D6453651B}
+		{86B956B2-49D5-468E-97C9-4AB7D4B00A62} = {9E94BC4A-3ABA-45D1-B24A-243EE16D5734}
+		{7FE6A816-EC93-4808-93BE-E4896C6D1DBD} = {86B956B2-49D5-468E-97C9-4AB7D4B00A62}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30580D1B-7EB2-4672-A7D0-F089D2275A78}
