@@ -22,9 +22,11 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.KryptonRibbon = New ComponentFactory.Krypton.Ribbon.KryptonRibbon()
         Me.KryptonPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
+        Me.KryptonManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
         CType(Me.KryptonRibbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KryptonPanel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -57,6 +59,10 @@ Partial Class Form1
         Me.KryptonPanel.Size = New System.Drawing.Size(292, 101)
         Me.KryptonPanel.TabIndex = 2
         '
+        'KryptonManager
+        '
+        Me.KryptonManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -77,4 +83,5 @@ Partial Class Form1
     Friend WithEvents StatusStrip As StatusStrip
     Friend WithEvents KryptonRibbon As ComponentFactory.Krypton.Ribbon.KryptonRibbon
     Friend WithEvents KryptonPanel As ComponentFactory.Krypton.Toolkit.KryptonPanel
+    Friend WithEvents KryptonManager As ComponentFactory.Krypton.Toolkit.KryptonManager
 End Class

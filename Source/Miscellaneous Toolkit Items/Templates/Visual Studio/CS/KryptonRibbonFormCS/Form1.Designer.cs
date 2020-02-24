@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonRibbon1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
+            this.kryptonRibbon = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.kryptonPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonRibbon1
+            // kryptonRibbon
             // 
-            this.kryptonRibbon1.AllowFormIntegrate = true;
-            this.kryptonRibbon1.InDesignHelperMode = true;
-            this.kryptonRibbon1.Name = "kryptonRibbon1";
-            this.kryptonRibbon1.SelectedTab = null;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(292, 142);
-            this.kryptonRibbon1.TabIndex = 0;
+            this.kryptonRibbon.AllowFormIntegrate = true;
+            this.kryptonRibbon.InDesignHelperMode = true;
+            this.kryptonRibbon.Name = "kryptonRibbon";
+            this.kryptonRibbon.SelectedTab = null;
+            this.kryptonRibbon.Size = new System.Drawing.Size(292, 142);
+            this.kryptonRibbon.TabIndex = 0;
             // 
             // statusStrip
             // 
@@ -75,10 +75,10 @@
             this.ClientSize = new System.Drawing.Size(292, 265);
             this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.kryptonRibbon1);
+            this.Controls.Add(this.kryptonRibbon);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,7 +87,7 @@
 
         #endregion
 
-        private ComponentFactory.Krypton.Ribbon.KryptonRibbon kryptonRibbon1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbon kryptonRibbon;
         private System.Windows.Forms.StatusStrip statusStrip;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonManager kryptonManager;
