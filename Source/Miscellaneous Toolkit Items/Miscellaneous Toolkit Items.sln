@@ -51,6 +51,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VB", "VB", "{4897C3AA-9836-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Toolkit Templates Installer", "Templates\VSIX\Combined\Both\Krypton Toolkit Templates Installer\Krypton Toolkit Templates Installer.csproj", "{7BF50669-4E7D-48A1-895E-ACC254FD5A07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krypton Toolkit CSharp Templates Installer", "Templates\VSIX\Combined\CS\Krypton Toolkit Templates Installer\Krypton Toolkit CSharp Templates Installer.csproj", "{59136F5D-5BB7-4132-8033-7F5E7F2EC87C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{7BF50669-4E7D-48A1-895E-ACC254FD5A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BF50669-4E7D-48A1-895E-ACC254FD5A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BF50669-4E7D-48A1-895E-ACC254FD5A07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59136F5D-5BB7-4132-8033-7F5E7F2EC87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59136F5D-5BB7-4132-8033-7F5E7F2EC87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59136F5D-5BB7-4132-8033-7F5E7F2EC87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59136F5D-5BB7-4132-8033-7F5E7F2EC87C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +122,7 @@ Global
 		{C84D7BB1-3F69-43E1-A015-63C45F91C6B7} = {CF6EA37C-52F8-4E2E-BE05-601A17394701}
 		{4897C3AA-9836-4AD0-95E1-053C21C5D85C} = {CF6EA37C-52F8-4E2E-BE05-601A17394701}
 		{7BF50669-4E7D-48A1-895E-ACC254FD5A07} = {4BBADDB0-4FEE-4206-B5CF-071D6453651B}
+		{59136F5D-5BB7-4132-8033-7F5E7F2EC87C} = {78180F3A-15DA-4E57-B7CE-3FD94E8053EF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30580D1B-7EB2-4672-A7D0-F089D2275A78}
