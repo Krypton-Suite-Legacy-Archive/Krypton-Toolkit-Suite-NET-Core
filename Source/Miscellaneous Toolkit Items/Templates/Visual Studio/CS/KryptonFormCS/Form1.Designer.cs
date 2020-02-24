@@ -29,35 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.SuspendLayout();
             // 
-            // kryptonPanel1
+            // kryptonPanel
             // 
-            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(292, 265);
-            this.kryptonPanel1.TabIndex = 0;
+            this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel.Name = "kryptonPanel";
+            this.kryptonPanel.Size = new System.Drawing.Size(292, 265);
+            this.kryptonPanel.TabIndex = 0;
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 265);
-            this.Controls.Add(this.kryptonPanel1);
+            this.Controls.Add(this.kryptonPanel);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonManager kryptonManager;
     }
 }
