@@ -23,6 +23,10 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
+        Me.KryptonRibbon = New ComponentFactory.Krypton.Ribbon.KryptonRibbon()
+        Me.KryptonPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
+        CType(Me.KryptonRibbon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KryptonPanel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StatusStrip
@@ -35,18 +39,42 @@ Partial Class Form1
         Me.StatusStrip.TabIndex = 0
         Me.StatusStrip.Text = "StatusStrip1"
         '
+        'KryptonRibbon
+        '
+        Me.KryptonRibbon.AllowFormIntegrate = True
+        Me.KryptonRibbon.InDesignHelperMode = True
+        Me.KryptonRibbon.Name = "KryptonRibbon"
+        Me.KryptonRibbon.SelectedContext = Nothing
+        Me.KryptonRibbon.SelectedTab = Nothing
+        Me.KryptonRibbon.Size = New System.Drawing.Size(292, 142)
+        Me.KryptonRibbon.TabIndex = 1
+        '
+        'KryptonPanel
+        '
+        Me.KryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.KryptonPanel.Location = New System.Drawing.Point(0, 142)
+        Me.KryptonPanel.Name = "KryptonPanel"
+        Me.KryptonPanel.Size = New System.Drawing.Size(292, 101)
+        Me.KryptonPanel.TabIndex = 2
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(292, 265)
+        Me.Controls.Add(Me.KryptonPanel)
+        Me.Controls.Add(Me.KryptonRibbon)
         Me.Controls.Add(Me.StatusStrip)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.KryptonRibbon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KryptonPanel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents StatusStrip As StatusStrip
+    Friend WithEvents KryptonRibbon As ComponentFactory.Krypton.Ribbon.KryptonRibbon
+    Friend WithEvents KryptonPanel As ComponentFactory.Krypton.Toolkit.KryptonPanel
 End Class

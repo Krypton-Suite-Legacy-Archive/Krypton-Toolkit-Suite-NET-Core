@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonRibbon1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonRibbon1
             // 
+            this.kryptonRibbon1.AllowFormIntegrate = true;
             this.kryptonRibbon1.InDesignHelperMode = true;
             this.kryptonRibbon1.Name = "kryptonRibbon1";
-            this.kryptonRibbon1.SelectedContext = null;
             this.kryptonRibbon1.SelectedTab = null;
-            this.kryptonRibbon1.Size = new System.Drawing.Size(292, 114);
+            this.kryptonRibbon1.Size = new System.Drawing.Size(292, 142);
             this.kryptonRibbon1.TabIndex = 0;
             // 
             // statusStrip
@@ -56,26 +56,30 @@
             this.statusStrip.TabIndex = 1;
             this.statusStrip.Text = "statusStrip1";
             // 
-            // kryptonPanel1
+            // kryptonPanel
             // 
-            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 114);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(292, 129);
-            this.kryptonPanel1.TabIndex = 2;
+            this.kryptonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel.Location = new System.Drawing.Point(0, 142);
+            this.kryptonPanel.Name = "kryptonPanel";
+            this.kryptonPanel.Size = new System.Drawing.Size(292, 101);
+            this.kryptonPanel.TabIndex = 2;
+            // 
+            // kryptonManager
+            // 
+            this.kryptonManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Office2010Blue;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 265);
-            this.Controls.Add(this.kryptonPanel1);
+            this.Controls.Add(this.kryptonPanel);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.kryptonRibbon1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,7 +89,7 @@
 
         private ComponentFactory.Krypton.Ribbon.KryptonRibbon kryptonRibbon1;
         private System.Windows.Forms.StatusStrip statusStrip;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
         private ComponentFactory.Krypton.Toolkit.KryptonManager kryptonManager;
     }
 }
