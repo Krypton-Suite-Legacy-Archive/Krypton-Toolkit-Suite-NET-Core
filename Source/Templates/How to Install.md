@@ -10,7 +10,7 @@ There are two ways to install Krypton toolkit project/item templates into Visual
 
 Step 1: Close Visual Studio
 
-Step 2: Copy both **Item Templates** and **Project Templates** directories into `C:\Users\<User Name>\Documents\Visual Studio <Version>\Templates`
+Step 2: Copy both **ItemTemplates** and **ProjectTemplates** directories into `C:\Users\<User Name>\Documents\Visual Studio <Version>\Templates`
 
 Step 3: Relaunch Visual Studio
 
