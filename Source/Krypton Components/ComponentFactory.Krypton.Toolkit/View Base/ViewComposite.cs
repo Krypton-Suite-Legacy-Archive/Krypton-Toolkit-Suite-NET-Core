@@ -44,14 +44,17 @@ namespace ComponentFactory.Krypton.Toolkit
         protected override void Dispose(bool disposing)
         {
             // Dispose of all child views
-            while (Count > 0)
+            if (disposing)
             {
-                this[0].Dispose();
-                RemoveAt(0);
+                while (Count > 0)
+                {
+                    this[0].Dispose();
+                    RemoveAt(0);
+                }
+
+                _views.Clear();
             }
 
-            _views.Clear();
-            
             // Must call base class to finish disposing
             base.Dispose(disposing);
         }
