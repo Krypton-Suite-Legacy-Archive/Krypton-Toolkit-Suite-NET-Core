@@ -4,7 +4,7 @@ using System.Threading;
 using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
-namespace Krypton_Toolkit_Templates_Installer
+namespace Krypton_Toolkit_Installer
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -24,13 +24,13 @@ namespace Krypton_Toolkit_Templates_Installer
     /// </para>
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [Guid(Krypton_Toolkit_Templates_InstallerPackage.PackageGuidString)]
-    public sealed class Krypton_Toolkit_Templates_InstallerPackage : AsyncPackage
+    [Guid(Krypton_Toolkit_InstallerPackage.PackageGuidString)]
+    public sealed class Krypton_Toolkit_InstallerPackage : AsyncPackage
     {
         /// <summary>
-        /// Krypton_Toolkit_Templates_InstallerPackage GUID string.
+        /// Krypton_Toolkit_InstallerPackage GUID string.
         /// </summary>
-        public const string PackageGuidString = "a65693e9-20b9-4318-b936-682de1304356";
+        public const string PackageGuidString = "6ef54b28-0300-403d-9ea7-04a19ba9cdb7";
 
         #region Package Members
 
