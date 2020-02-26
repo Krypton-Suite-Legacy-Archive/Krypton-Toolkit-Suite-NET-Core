@@ -1,0 +1,56 @@
+<Project>
+	<Import Project="Directory.Build.props" />
+	
+	<PropertyGroup>
+		<RootFolder>$(MSBuildProjectDirectory)</RootFolder>
+		<Configuration>Release</Configuration>
+	</PropertyGroup>
+
+	<Target Name="Clean">
+		<ItemGroup>
+			<Projects Include="$(RootFolder)\Source\Truncated Namespaces\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
+		</ItemGroup>
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" Targets="Clean" />
+	</Target>	
+
+	<Target Name="Restore">
+		<ItemGroup>
+			<Projects Include="$(RootFolder)\Source\Truncated Namespaces\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
+		</ItemGroup>
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" Targets="Restore" />
+	</Target>
+	
+	<Target Name="Build" DependsOnTargets="Restore">
+		<ItemGroup>
+			<Projects Include="$(RootFolder)\Source\Truncated Namespaces\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
+		</ItemGroup>
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" />
+	</Target>
+	
+	<Target Name="CleanPackages">
+		<ItemGroup>
+			<NugetPkgs Include="$(RootFolder)\Bin\Truncated Namespaces\Bin\Release\*.nupkg" />
+		</ItemGroup>
+		<Delete Files="@(NugetPkgs)" />
+	</Target>
+	
+	<Target Name="Pack" DependsOnTargets="CleanPackages;Restore">
+		<ItemGroup>
+			<Projects Include="$(RootFolder)\Source\Truncated Namespaces\Source\Krypton Components\ComponentFactory.Krypton.*\*.csproj" />
+		</ItemGroup>
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" Targets="Clean" />
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=lite" Targets="Restore" />
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=lite" Targets="Pack" />
+		
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration)" Targets="Clean" />
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=lite" Targets="Restore" />
+		<MSBuild Projects="@(Projects)" Properties="Configuration=$(Configuration);TFMs=all" Targets="Pack" />
+	</Target>
+	
+	<Target Name="Push">
+		<ItemGroup>
+			<NugetPkgs Include="$(RootFolder)\Bin\Truncated Namespaces\Bin\Release\*.$(LibraryVersion).nupkg" />
+		</ItemGroup>
+		<Exec Command="nuget.exe push %(NugetPkgs.Identity)" />
+	</Target>
+</Project>
